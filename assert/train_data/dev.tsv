@@ -44,12 +44,12 @@ mult_constraints_two_reverse	q2690:我们会在哪个民俗节日里吃元宵？
 mult_constraints_two_reverse	q2695:成龙和周星驰共同出演的电影有哪些？	select ?x where { ?x <主演> <成龙_（中国香港演员、导演）>. ?x <主演> <周星驰>. }
 mult_constraints_two_reverse	q2972:位于上海的期货交易所叫什么？	select ?x where { ?x <位置> <上海>. ?x <类别> <期货交易所>. }
 mult_constraints_two_reverse	q2973:位于郑州的期货交易所叫什么？	select ?x where { ?x <位置> <郑州>. ?x <类别> <期货交易所>. }
-mult_constraints_three_reverse_reverse_simple	q969:去瞿塘峡、巫峡、西陵峡旅游需要多少钱门票？	select ?y where { ?x <组成> <瞿塘峡>. ?x <组成> <巫峡_（长江三峡第二峡）>. ?x <组成> <西陵峡>. ?x <门票价格> ?y. }
-mult_constraints_three_reverse_reverse	q3990:哪种检查与检测休克型肺炎、重症急性呼吸综合征和光气中毒有关？	select ?x where { ?x <涉及疾病> <休克型肺炎> . ?x <涉及疾病> <重症急性呼吸综合征> . ?x <涉及疾病> <光气中毒> . }
-mult_constraints_three_reverse_reverse	q3991:怎样的检查可以检测出重症急性呼吸综合征、光气中毒和慢性呼吸衰竭？	select ?x where { ?x <涉及疾病> <重症急性呼吸综合征> . ?x <涉及疾病> <光气中毒> . ?x <涉及疾病> <慢性呼吸衰竭> . }
-mult_constraints_three_reverse_reverse	q3992:患有光气中毒、慢性呼吸衰竭和肺泡蛋白沉着症时，应该做哪种检查项目？	select ?x where { ?x <涉及疾病> <光气中毒> . ?x <涉及疾病> <慢性呼吸衰竭> . ?x <涉及疾病> <肺泡蛋白沉着症> . }
-mult_constraints_three_reverse_reverse	q3993:当得了慢性呼吸衰竭、肺泡蛋白沉着症和气胸这些疾病时，哪一项检查项目是有必要考虑的？	select ?x where { ?x <涉及疾病> <慢性呼吸衰竭> . ?x <涉及疾病> <肺泡蛋白沉着症> . ?x <涉及疾病> <气胸> . }
-mult_constraints_three_reverse_reverse	q3994:能检测肺泡蛋白沉着症、气胸和特发性间质性肺炎这些疾病的检查是什么？	select ?x where { ?x <涉及疾病> <肺泡蛋白沉着症> . ?x <涉及疾病> <气胸> . ?x <涉及疾病> <特发性间质性肺炎> . }
+mult_constraints_three_reverse_simple	q969:去瞿塘峡、巫峡、西陵峡旅游需要多少钱门票？	select ?y where { ?x <组成> <瞿塘峡>. ?x <组成> <巫峡_（长江三峡第二峡）>. ?x <组成> <西陵峡>. ?x <门票价格> ?y. }
+mult_constraints_three_reverse	q3990:哪种检查与检测休克型肺炎、重症急性呼吸综合征和光气中毒有关？	select ?x where { ?x <涉及疾病> <休克型肺炎> . ?x <涉及疾病> <重症急性呼吸综合征> . ?x <涉及疾病> <光气中毒> . }
+mult_constraints_three_reverse	q3991:怎样的检查可以检测出重症急性呼吸综合征、光气中毒和慢性呼吸衰竭？	select ?x where { ?x <涉及疾病> <重症急性呼吸综合征> . ?x <涉及疾病> <光气中毒> . ?x <涉及疾病> <慢性呼吸衰竭> . }
+mult_constraints_three_reverse	q3992:患有光气中毒、慢性呼吸衰竭和肺泡蛋白沉着症时，应该做哪种检查项目？	select ?x where { ?x <涉及疾病> <光气中毒> . ?x <涉及疾病> <慢性呼吸衰竭> . ?x <涉及疾病> <肺泡蛋白沉着症> . }
+mult_constraints_three_reverse	q3993:当得了慢性呼吸衰竭、肺泡蛋白沉着症和气胸这些疾病时，哪一项检查项目是有必要考虑的？	select ?x where { ?x <涉及疾病> <慢性呼吸衰竭> . ?x <涉及疾病> <肺泡蛋白沉着症> . ?x <涉及疾病> <气胸> . }
+mult_constraints_three_reverse	q3994:能检测肺泡蛋白沉着症、气胸和特发性间质性肺炎这些疾病的检查是什么？	select ?x where { ?x <涉及疾病> <肺泡蛋白沉着症> . ?x <涉及疾病> <气胸> . ?x <涉及疾病> <特发性间质性肺炎> . }
 mult_constraints_one_reverse_simple	q2174:《浮夸》的演唱者又被戏称为？	select ?x where { ?y <代表作品> <浮夸_（陈奕迅主唱的歌曲）> . ?y <别名> ?x . }
 mult_constraints_one_reverse_simple	q2194:《东方主义》的作者出生在哪个地方？	select ?y where { ?x <代表作品> <东方主义> . ?x <出生地> ?y . }
 mult_constraints_one_reverse_simple	q2205:唱《七友》的歌手喜欢吃什么食物？	select ?x where { ?y <代表作品> <七友_（梁汉文演唱歌曲）> . ?y <喜爱的食物> ?x . }
