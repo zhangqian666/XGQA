@@ -1,4 +1,1960 @@
 type,string,select
+simple_res	q1:莫妮卡·贝鲁奇的代表作？	select ?x where { <莫妮卡·贝鲁奇> <代表作品> ?x. }
+simple_res	q3:龙卷风的英文名是什么？	select ?x where { <龙卷风_（一种自然天气现象）> <外文名> ?x. }
+simple_res	q4:新加坡的水域率是多少？	select ?x where { <新加坡> <水域率> ?x. }
+simple_res	q5:商朝在哪场战役中走向覆灭？	select ?x where { <商朝> <灭亡> ?x. }
+simple_res	q6:叔本华信仰什么宗教？	select ?y where { <亚瑟·叔本华> <信仰> ?y. }
+simple_res	q7:大兴安岭的终点是哪里？	select ?x where { <大兴安岭> <终点> ?x. }
+simple_res	q8:演员梅艳芳有多高？	select ?y where { <梅艳芳> <身高> ?y. }
+simple_res	q10:北京奥运会的口号是什么？	select ?x where { <2008年北京奥运会> <口号> ?x. }
+simple_res	q11:新加坡的政治元老是谁？	select ?x where { <新加坡> <政治元老> ?x. }
+simple_res	q12:叶文洁毕业于哪个大学？	select ?x where { <叶文洁> <毕业院校> ?x. }
+simple_res	q13:"两弹一星"指的是什么？	select ?x where { <两弹一星> <原指> ?x. }
+simple_res	q14:"超级碗"是什么体育项目联赛的年度冠军赛？	select ?x where { <超级碗> <介绍> ?x. }
+simple_res	q15:清明节起源于哪里？	select ?x where { <清明_（二十四节气之一）> <起源> ?x. }
+simple_res	q16:诗经的内容分为哪三个部分？	select ?x where { <诗经> <内容分类> ?x. }
+simple_res	q18:凯文·杜兰特得过哪些奖？	select ?x where { <凯文·杜兰特> <主要奖项> ?x . }
+simple_res	q19:大连理工大学校歌是？	select ?x where { <大连理工大学> <校歌> ?x . }
+simple_res	q20:清朝词人纳兰性德是哪个民族的人？	select ?y where { <纳兰性德> <民族族群> ?y. }
+simple_res	q21:戊戌变法中创建了什么报纸？	select ?x where { <戊戌变法> <创办报纸> ?x. }
+simple_res	q22:东南大学的现任校长是谁？	select ?x where { <东南大学> <现任校长> ?x . }
+simple_res	q23:华山派的开山鼻祖是谁？	select ?x where { <华山派_（道教支派）> <开派祖师> ?x. }
+simple_res	q24:品牌DQ主要卖什么食品？	select ?y where { <DQ_（DQ冰淇淋）> <经营范围> ?y. }
+simple_res	q25:朱瞻基在位时的年号是什么？	select ?x where { <朱瞻基> <年号> ?x. }
+simple_res	q26:豌豆公主这个形象出自于哪？	select ?x where { <豌豆公主_（安徒生童话）> <作品出处> ?x. }
+simple_res	q27:谁是天蝎座的守护神？	select ?x where { <天蝎座_（占星学）> <守护神> ?x. }
+simple_res	q28:到手香又被称为什么？	select ?x where { <到手香> <别称> ?x. }
+simple_res	q29:李白祖籍是哪里？	select ?x where { <李白_（唐朝著名诗人）> <祖籍> ?x. }
+simple_res	q30:曹雪芹是什么时代的人物？	select ?x where { <曹雪芹_（清代名著《红楼梦》作者）> <所处时代> ?x. }
+simple_res	q33:家喻户晓的角色印第安纳·琼斯是由哪个演员扮演的？	select ?x where { <印第安纳·琼斯> <扮演者> ?x. }
+simple_res	q34:詹姆斯当前效力于哪个队？	select ?x where { <詹姆斯_（勒布朗·詹姆斯）> <所属运动队> ?x. }
+simple_res	q35:小明想调一杯长岛冰茶，他需要哪些酒作为基酒？	select ?x where { <长岛冰茶_（鸡尾酒名称）> <基酒> ?x. }
+simple_res	q36:有什么和"凿壁偷光"意思相近的词语？	select ?x where { <凿壁偷光> <近义词> ?x. }
+simple_res	q37:可以给我推荐一些任天堂公司出的游戏吗？	select ?x where { <任天堂> <主要软件系列> ?x. }
+simple_res	q39:博尔赫斯是哪国人？	select ?y where { <豪尔赫·路易斯·博尔赫斯_（阿根廷作家）> <出生地> ?y. }
+simple_res	q40:2008年奥运会的吉祥物是？	select ?x where { <2008年北京奥运会> <吉祥物> ?x. }
+simple_res	q41:火星的公转周期是多少天？	select ?x where { <火星_（太阳系八大行星之一）> <公转周期> ?x. }
+simple_res	q42:MLB的官网地址是什么	select ?x where { <美国职业棒球大联盟> <官网> ?x . }
+simple_res	q44:列举唐朝的代表诗人？	select ?x where { <唐诗_（唐朝诗歌通称）> <代表诗人> ?x. }
+simple_res	q45:你喜欢吃包子吗，你知道是谁发明的吗？	select ?x where { <包子_（中国传统食品）> <发明者> ?x. }
+simple_res	q46:法国的官方语言是什么？	select ?x where { <法国_（法兰西共和国）> <官方语言> ?x. }
+simple_res	q47:中国一共有多少家肯德基？	select ?x where { <肯德基> <中国门店> ?x. }
+simple_res	q48:泰山有多高？	select ?x where { <泰山_（世界文化与自然双重遗产，国家5A级旅游景区）> <海拔高度> ?x. }
+simple_res	q49:特洛伊战争的结果是什么？	select ?x where { <特洛伊战争_（古希腊战争）> <结果> ?x. }
+simple_res	q50:新海诚动漫《你的名字》由哪个公司出品？	select ?x where { <你的名字_（新海诚执导的动画电影）> <出品> ?x. }
+simple_res	q51:国际足联世界杯的冠军奖杯叫做什么？	select ?x where { <世界杯_（国际足联世界杯）> <奖杯> ?x. }
+simple_res	q52:有"铁血宰相"之称的俾斯麦是哪个国家的？	select ?x where { <奥托·冯·俾斯麦> <国籍> ?x. }
+simple_res	q53:你知道辽宁省的省花是什么吗？	select ?x where { <辽宁> <省花> ?x. }
+simple_res	q54:复旦大学的地址是哪里	select ?x where { <复旦大学> <学校地址> ?x . }
+simple_res	q55:习近平总书记毕业于哪个大学？	select ?x where { <习近平> <毕业院校> ?x. }
+simple_res	q56:深圳市的城市精神是？	select ?x where { <深圳> <城市精神> ?x. }
+simple_res	q57:足球运动的最高赛事是？	select?y where { <足球> <最高赛事> ?y. }
+simple_res	q58:风衣最常在哪个季节穿？	select ?x where { <风衣> <季节> ?x. }
+simple_res	q59:肯德基的中国区总部在哪？	select ?x where { <肯德基> <中国区总部> ?x . }
+simple_res	q61:有多少皮卡丘是雌性的，多少是雄性的？	select ?x where { <皮卡丘> <性别比例> ?x. }
+simple_res	q62:《不平常的蛋糕》是谁写的？	select ?y where { <不平常的蛋糕> <作者> ?y. }
+simple_res	q63:电影《长江7号》是制片成本是多少？	select ?x where { <长江7号> <制片成本> ?x. }
+simple_res	q64:厦门大学的现任校长是谁？	select ?x where { <厦门大学> <现任校长> ?x . }
+simple_res	q66:撒哈拉沙漠的最高温度是？	select ?x where { <撒哈拉沙漠_（北非沙漠名称）> <温度> ?x. }
+simple_res	q68:白居易的那首《长恨歌》一共有多少字？	select ?x where { <长恨歌_（白居易长篇叙事诗）> <字数> ?x. }
+simple_res	q69:肯德基的创始人是谁？	select ?x where { <肯德基> <创始人> ?x . }
+simple_res	q71:如果把《诗经》翻译成英文，应该叫什么？	select ?y where { <诗经> <外文名> ?y. }
+simple_res	q72:古希腊的首都是什么地方？	select ?x where { <古希腊_（爱琴海-色雷斯文明圈的黄金时期）> <首都> ?x. }
+simple_res	q73:"生命在于运动"是谁提出的？	select ?x where { <生命在于运动> <提出者> ?x. }
+simple_res	q74:北邮现在的校长是谁？	select ?x where { <北京邮电大学> <现任校长> ?x. }
+simple_res	q75:被称为"法鲨"的迈克尔·法斯宾德毕业于哪所院校？	select ?x where { <迈克尔·法斯宾德> <毕业院校> ?x. }
+simple_res	q76:书籍《图形学》定价多少？	select ?y where { <图形学> <定价> ?y. }
+simple_res	q77:美苏冷战期间发生了什么重大事件？	select ?x where { <冷战_（美国与苏联为主的政治、经济、军事斗争）> <重大事件> ?x. }
+simple_res	q78:史铁生有哪些代表作品？	select ?y where { <史铁生> <代表作品> ?y. }
+simple_res	q79:鹑吃浆果，狮头鹅吃杂食，请问爪哇闪皮蛇吃什么？	select ?y where { <爪哇闪皮蛇> <食物> ?y. }
+simple_res	q80:法国有哪些著名的汽车品牌？	select ?x where { <法国_（法兰西共和国）> <汽车品牌> ?x. }
+simple_res	q81:钢铁侠加入了哪些组织？	select ?x where { <史塔克_（美国动漫及电影钢铁侠中的人物）> <所属团队> ?x. }
+simple_res	q83:唐寅的别号？	select ?x where { <唐伯虎_（明朝苏州画家）> <字号> ?x . }
+simple_res	q84:《国王的演讲》有多少分钟？	select ?x where { <国王的演讲_（英国2010年汤姆·霍珀执导奥斯卡奖最佳影片）> <片长> ?x. }
+simple_res	q85:我国山西省太原市又称为？	select ?x where { <太原_（山西省省会）> <别名> ?x. }
+simple_res	q86:情人节是哪一天设定的？	select ?x where { <情人节_（爱情节日）> <设定时间> ?x. }
+simple_res	q87:百度公司的具体地址是？	select ?x where { <百度> <公司地址> ?x . }
+simple_res	q88:马尔科·巴萨是哪个国家的？	select ?x where { <马尔科·巴萨> <国籍> ?x. }
+simple_res	q90:苏宁的形象代言人是谁？	select ?x where { <苏宁云商集团股份有限公司> <代言人> ?x. }
+simple_res	q91:马金梁的笔名是什么？	select ?x where { <马金梁> <笔名> ?x. }
+simple_res	q92:黄河最主要的支流有哪些？	select ?x where { <黄河_（中国第二长河）> <主要支流> ?x. }
+simple_res	q93:皮卡丘是什么属性的小精灵？	select ?x where { <皮卡丘> <属性> ?x. }
+simple_res	q94:多人在线战术竞技游戏有哪些代表作？	select ?x where { <MOBA> <代表游戏> ?x. }
+simple_res	q95:腾讯一共有多少员工？	select ?x where { <腾讯> <员工数> ?x. }
+simple_res	q96:杨红樱什么时候创作的淘气包马小跳？	select ?x where { <淘气包马小跳_（杨红樱作品）> <创作时间> ?x. }
+simple_res	q97:黑板有哪几种颜色？	select ?x where { <黑板_（书写用物品）> <颜色> ?x. }
+simple_res	q98:臭豆腐是谁创造的？	select ?x where { <臭豆腐_（小吃）> <创造人> ?x. }
+simple_res	q99:作家狄更斯是哪个国家的？	select ?x where { <查尔斯·狄更斯> <国籍> ?x. }
+simple_res	q100:新加坡的港口是什么？	select ?x where { <新加坡> <港口> ?x. }
+simple_res	q101:三国时期三个国家以及各自的面积？	select ?x where { <三国_（中国东汉与西晋之间的历史时期）> <国土面积> ?x. }
+simple_res	q102:科比很厉害吗，他有多高？	select ?x where { <科比·布莱恩特> <身高> ?x. }
+simple_res	q103:菠萝种植在哪些区域？	select ?x where { <菠萝> <分布区域> ?x. }
+simple_res	q104:歌手许嵩的代表作有哪些？	select ?x where { <许嵩_（中国内地流行音乐男歌手）> <代表作品> ?x . }
+simple_res	q105:微博的官方网站？	select ?x where { <微博_（微型博客）> <官网> ?x. }
+simple_res	q106:M16自动步枪使用多大口径的子弹？	select ?x where { <M16系列自动步枪> <口径> ?x. }
+simple_res	q107:新版《红楼梦》的导演是谁？	select ?x where { <红楼梦_（2010年李少红导演电视剧）> <导演> ?x. }
+simple_res	q108:什么叫神马？	select ?x where { <神马_（词语信息）> <现代解释> ?x. }
+simple_res	q109:舒伯特有哪些代表作？	select ?x where { <舒伯特> <代表作品> ?x. }
+simple_res	q110:苏联是在哪一年解体的？	select ?x where { <苏联> <解体时间> ?x. }
+simple_res	q111:京剧的发源地是哪里？	select ?x where { <京剧_（中国国粹）> <发源地> ?x. }
+simple_res	q112:指环王的拍摄地点在哪里？	select ?y where { <指环王_（英美2001-2003年彼得·杰克逊执导系列电影）> <拍摄地点> ?y. }
+simple_res	q113:范仲淹的谥号是什么？	select ?x where { <范仲淹> <谥号> ?x. }
+simple_res	q114:迪梵是哪个公司旗下的品牌 ？	select ?x where { <DARPHIN迪梵> <隶属> ?x. }
+simple_res	q115:家有儿女太好看了，听说它还获得了电视剧金奖，我想刷完整部剧，你知道它每集有多长吗？	select ?x where { <家有儿女_（2005年林丛执导的系列情景喜剧）> <每集长度> ?x. }
+simple_res	q116:中国目前有多少人口？	select ?x where { <中华人民共和国> <人口数量> ?x. }
+simple_res	q117:抑郁症用英文怎么说？	select ?x where { <抑郁症_（医疗百科）> <英文名称> ?x . }
+simple_res	q118:盐酸从外表看上去是什么样子的？	select ?x where { <盐酸> <外观> ?x. }
+simple_res	q119:李白是哪一年过世的？	select ?x where { <李白_（唐朝著名诗人）> <去世时间> ?x. }
+simple_res	q120:英国探险家弗朗西斯·德雷克出生地是哪里？	select ?x where { <弗朗西斯·德雷克_（16世纪英国航海探险家）> <出生地> ?x. }
+simple_res	q121:杜鹃鸟被归类为哪个亚门？	select ?x where { <子规_（杜鹃鸟）> <亚门> ?x. }
+simple_res	q122:斗破苍穹是谁写的？	select ?x where { <斗破苍穹_（天蚕土豆第二部长篇小说）> <作者> ?x. }
+simple_res	q123:伊拉克国花是什么？	select ?x where { <伊拉克> <国花> ?x. }
+simple_res	q124:吉野家创建于什么时候？	select ?x where { <吉野家_（日本牛肉饭店）> <创始时间> ?x. }
+simple_res	q125:仙剑奇侠传五前传是哪个系列的游戏？	select ?x where { <仙剑奇侠传五前传_（2013年北京软星制作的单机游戏）> <所属系列> ?x. }
+simple_res	q126:"共产主义五大人物"都有哪些？	select ?x where { <共产主义五大人物> <代表人物> ?x. }
+simple_res	q129:中秋节都有哪些习俗？	select ?x where { <中秋节> <习俗> ?x. }
+simple_res	q130:鸿上光生是哪部作品中的人物？	select ?x where { <鸿上光生> <登场作品> ?x. }
+simple_res	q131:白居易的那首《琵琶行》一共有多少字？	select ?x where { <琵琶行_（白居易诗作）> <字数> ?x. }
+simple_res	q132:上海的"东方明珠"有多高？	select ?x where { <东方明珠广播电视塔> <塔高> ?x. }
+simple_res	q134:香榭丽舍大道是哪个城市的？	select ?x where { <香榭丽舍大道> <所属城市> ?x. }
+simple_res	q135:海贼王里布鲁克怕什么？	select ?x where { <布鲁克_（日本动漫《海贼王》中主要人物）> <最怕的东西> ?x. }
+simple_res	q136:新加坡的国土面积是多少？	select ?x where { <新加坡> <国土面积> ?x. }
+simple_res	q137:K2属于哪个山脉？	select ?x where { <k2_（乔戈里峰）> <所属山脉> ?x. }
+simple_res	q138:夏侯瑾轩是哪个游戏里的角色？	select ?x where { <夏侯瑾轩> <登场作品> ?x. }
+simple_res	q139:请推荐几部演员俞飞鸿的作品？	select ?y where { <俞飞鸿> <代表作品> ?y. }
+simple_res	q140:我特别喜欢看老友记，你记得它第一次播出是什么时候吗？	select ?y where { <老友记_（美国情景剧）> <首播时间> ?y. }
+simple_res	q141:重庆大学的现任校长是谁？	select ?x where { <重庆大学> <现任校长> ?x . }
+simple_res	q142:小说鸿雁南飞的作者是谁？	select ?x where { <鸿雁南飞> <作者> ?x. }
+simple_res	q143:在金庸小说《天龙八部》中，谁练成了六脉神剑？	select ?x where { <六脉神剑_（金庸武侠小说《天龙八部》剑法）> <主要练成者> ?x. }
+simple_res	q144:维多利亚火车站是怎样的建筑风格？	select ?x where { <维多利亚火车站> <建筑类型> ?x. }
+simple_res	q145:秦始皇主要依靠什么思想治国?？	select ?x where { <秦始皇_（中国首位皇帝）> <信仰> ?x. }
+simple_res	q146:刘昊然有哪些代表作品？	select ?x where { <刘昊然> <代表作品> ?x. }
+simple_res	q147:伊丽莎白塔是哪个国家的？	select ?x where { <伊丽莎白塔> <所属国家> ?x. }
+simple_res	q148:北京大学有多少个博士点？	select ?y where { <北京大学> <博士点> ?y. }
+simple_res	q149:新加坡的国际区号是什么？	select ?x where { <新加坡> <国际电话区号> ?x. }
+simple_res	q150:我国的国球是什么？	select ?x where { <国球> <我国特指> ?x. }
+simple_res	q151:夏朝在谁的手上走向灭亡？	select ?x where { <夏_（中国第一个朝代）> <末代君主> ?x. }
+simple_res	q153:李敖先生是一个什么性格的人？	select ?x where { <李敖> <性格> ?x. }
+simple_res	q154:加拿大的主要民族？	select ?x where { <加拿大_（北美洲国家）> <主要民族> ?x. }
+simple_res	q155:"提灯女神"南丁格尔毕业于哪所大学？	select ?x where { <弗洛伦斯·南丁格尔_（护理事业的创始人和现代护理教育的奠基人）> <毕业院校> ?x. }
+simple_res	q156:布鲁将军是哪部作品里的角色？	select ?x where { <布鲁将军> <登场作品> ?x. }
+simple_res	q158:战国七雄是指哪七个国家？	select ?x where { <战国_（中国历史时期）> <主要诸侯国> ?x. }
+simple_res	q159:曾为世界最高的巴米扬大佛位于哪一个国家？	select ?x where { <巴米扬大佛> <所属国家> ?x. }
+simple_res	q160:广州市的电话区号是多少？	select ?x where { <广州市_（广东省广州市）> <电话区号> ?x. }
+simple_res	q161:长城有多长？	select ?x where { <万里长城_（中国古代军事工程）> <总长度> ?x. }
+simple_res	q162:中国大陆法定结婚年龄，男生不得早于多少岁？	select ?x where { <法定结婚年龄_（中国大陆法定结婚年龄）> <男方年龄> ?x. }
+simple_res	q163:给出绝望的主妇中的四位女主姓名？	select ?x where { <绝望的主妇_（电视剧）> <主演> ?x. }
+simple_res	q165:南极有哪些世界之最的美誉？	select ?x where { <南极_（南极地区）> <世界之最> ?x. }
+simple_res	q167:你知道我们所在的地球的质量吗？	select ?x where { <地球_（太阳系八大行星之一）> <质量> ?x. }
+simple_res	q168:克苏鲁来自哪个神话体系？	select ?y where { <克苏鲁_（克苏鲁的呼唤神话小说里面的邪灵角色）> <神话体系> ?y. }
+simple_res	q169:白炽灯是什么时候发明的？	select ?x where { <白炽灯> <发明日期> ?x. }
+simple_res	q170:北京大学在哪一天校庆？	select ?y where { <北京大学> <校庆日> ?y. }
+simple_res	q171:IBM官网是啥？	select ?x where { <IBM_（IT公司-国际商业机器公司）> <官网> ?x. }
+simple_res	q172:故宫有什么值得参观的馆藏？	select ?x where { <故宫_（北京故宫）> <馆藏精品> ?x. }
+simple_res	q173:诗经有着怎样的历史地位？	select ?y where { <诗经> <历史地位> ?y. }
+simple_res	q174:老婆饼属于哪个菜系？	select ?y where { <老婆饼_（食品）> <分类> ?y. }
+simple_res	q175:刘昊然的出生日期是什么？	select ?x where { <刘昊然> <出生日期> ?x. }
+simple_res	q176:海贼王里弗兰奇从谁那里学到了修船的技艺？	select ?x where { <弗兰克_（日本动漫《海贼王》中人物）> <师父> ?x. }
+simple_res	q177:民国有四个男人英俊潇洒，被称为"民国四大美男"，他们是谁？	select ?x where { <民国四大美男> <成员> ?x. }
+simple_res	q178:布里斯班的气候如何？	select ?x where { <布里斯班_（澳大利亚昆士兰州首府）> <气候条件> ?x. }
+simple_res	q179:863计划是由哪些科学家提议的？	select ?x where { <国家高技术研究发展计划（863计划）> <科学家提议> ?x. }
+simple_res	q180:电影花样年华的语言是？	select ?x where { <花样年华_（2000年王家卫导演电影）> <对白语言> ?x. }
+simple_res	q181:毕加索在哪一天去世？	select ?x where { <毕加索_（画家）> <逝世日期> ?x. }
+simple_res	q182:眼镜利用了哪方面的物理学原理？	select ?x where { <眼镜_（光学器件装饰品）> <原理> ?x. }
+simple_res	q183:负荆请罪是哪两个人之间发生的故事？	select ?x where { <负荆请罪> <相关人物> ?x. }
+simple_res	q185:林清玄有哪些别名？	select ?x where { <林清玄> <别名> ?x. }
+simple_res	q186:北京大学的发展定位是什么	select ?x where { <北京大学> <发展定位> ?x . }
+simple_res	q187:中华人民共和国的国家领导人是谁？	select ?x where { <中华人民共和国> <国家领袖> ?x . }
+simple_res	q188:墨冰仙是哪个门派的？	select ?x where { <墨冰仙> <门派> ?x. }
+simple_res	q189:在金庸小说《天龙八部》中，斗转星移的修习者是谁？	select ?x where { <斗转星移_（金庸小说武功心法）> <主要修习者> ?x. }
+simple_res	q190:《基督山伯爵》的作者是谁？	select ?x where { <基督山伯爵_（大仲马代表作之一）> <作者> ?x. }
+simple_res	q191:奥运会多久举办一次？	select ?x where { <奥林匹克运动会> <举办时间> ?x. }
+simple_res	q192:音乐剧歌剧魅影的主要演员？	select ?x where { <歌剧魅影_（安德鲁·劳埃德·韦伯创作的音乐剧）> <主演> ?x. }
+simple_res	q193:索尼公司的经营范围有哪些？	select ?x where { <索尼_（世界著名企业）> <经营范围> ?x. }
+simple_res	q194:2014年世界杯的冠军是哪只队？	select ?x where { <2014年巴西世界杯> <冠军> ?x. }
+simple_res	q195:泰铢的通胀率是多少？	select ?x where { <泰铢> <通胀率> ?x. }
+simple_res	q196:小龙虾的中文学名？	select ?x where { <小龙虾_（甲壳纲螯虾科水生动物）> <中文学名> ?x. }
+simple_res	q197:纽约的气候条件是怎样的？	select ?x where { <纽约_（美国第一大城市）> <气候条件> ?x. }
+simple_res	q198:海贼王动画里黑胡子的声优是谁？	select ?x where { <黑胡子_（动漫《海贼王》中人物）> <配音> ?x. }
+simple_res	q199:大连在哪个省份？	select ?x where { <大连_（辽宁省辖市）> <所属地区> ?x. }
+simple_res	q200:新加坡的主要学府有哪些？	select ?x where { <新加坡> <主要学府> ?x. }
+simple_res	q203:戊戌变法开始的标志是什么？	select ?x where { <戊戌变法> <序幕> ?x. }
+simple_res	q204:肯德基的口号是什么？	select ?x where { <肯德基> <公司口号> ?x . }
+simple_res	q205:你知道彩虹又叫做什么吗？	select ?x where { <彩虹_（雨后光学现象）> <又称> ?x. }
+simple_res	q206:巴金的中文名是什么？	select ?x where { <巴金> <中文名> ?x. }
+simple_res	q207:海贼王里布鲁克的梦想是什么？	select ?x where { <布鲁克_（日本动漫《海贼王》中主要人物）> <梦想> ?x. }
+simple_res	q208:你知道铁的熔点吗？	select ?x where { <铁_（最常见的金属元素）> <熔点> ?x. }
+simple_res	q209:书籍《假如给我三天光明》是什么体裁？	select ?x where { <假如给我三天光明> <文学体裁> ?x. }
+simple_res	q210:上海戏剧学院现任校长是谁？	select ?y where { <上海戏剧学院> <现任校长> ?y. }
+simple_res	q211:能告诉我苹果公司的首席执行官吗？	select ?y where { <苹果_（苹果产品公司）> <首席执行官> ?y. }
+simple_res	q213:刻舟求剑这个故事发生在哪个年代？	select ?x where { <刻舟求剑> <产生年代> ?x. }
+simple_res	q214:桂林市的市花是什么？	select ?x where { <桂林_（广西壮族自治区下辖市）> <市花> ?x. }
+simple_res	q215:长城的总长度是？	select ?x where { <万里长城_（中国古代军事工程）> <总长度> ?x . }
+simple_res	q216:浙江大学的地址是哪里	select ?x where { <浙江大学> <学校地址> ?x . }
+simple_res	q217:中国民权保障同盟是谁发起的？	select ?y where { <中国民权保障同盟> <发起人> ?y. }
+simple_res	q218:洞庭湖的面积有多大？	select ?x where { <洞庭湖_（长江流域湖泊）> <面积> ?x. }
+simple_res	q219:马云的别名是什么？	select ?x where { <马云_（阿里巴巴集团创始人）> <别名> ?x. }
+simple_res	q220:土星有多少颗卫星？	select ?x where { <土星_（太阳系八颗行星之一）> <卫星数量> ?x. }
+simple_res	q221:克苏鲁居住在哪里？	select ?y where { <克苏鲁_（克苏鲁的呼唤神话小说里面的邪灵角色）> <居所> ?y. }
+simple_res	q222:黄果树瀑布位于哪个省市？	select ?x where { <黄果树_（国家级风景名胜区）> <所属城市> ?x. }
+simple_res	q223:阿里巴巴创始人马云是什么血型呀？	select ?x where { <马云_（阿里巴巴集团创始人）> <血型> ?x. }
+simple_res	q224:小说《孤军日志》连载于哪个网站？	select ?x where { <孤军日志> <连载网站> ?x. }
+simple_res	q225:里海有多大？	select ?x where { <里海> <占地面积> ?x. }
+simple_res	q226:谁建立了新加坡？	select ?x where { <新加坡> <建国国父> ?x. }
+simple_res	q228:书籍《黄帝内经养生秘法》的作者是谁？	select ?x where { <黄帝内经养生秘法> <作者> ?x. }
+simple_res	q229:自然常数e大约是多少？	select ?x where { <自然常数> <大小> ?x. }
+simple_res	q230:歼20战机是那个单位研发的？	select ?x where { <歼-20> <设计单位> ?x. }
+simple_res	q231:香蕉是什么颜色的？	select ?x where { <香蕉_（芭蕉科芭蕉属植物）> <颜色> ?x. }
+simple_res	q232:澳大利亚代表动物是什么？	select ?y where { <澳大利亚> <代表动物> ?y. }
+simple_res	q233:《星球大战》系列电影的发行公司是哪个？	select ?x where { <星球大战_（卢卡斯电影公司出品《星球大战》系列电影）> <发行公司> ?x. }
+simple_res	q234:冰心原名是什么？	select ?x where { <冰心_（中国现代著名作家）> <中文名> ?x. }
+simple_res	q235:漫水河流经的面积有多大？	select ?x where { <漫水河> <流域面积> ?x. }
+simple_res	q237:汽车的动力是什么？	select ?x where { <汽车> <动力> ?x. }
+simple_res	q238:王力宏的英文名是什么？	select ?x where { <王力宏> <外文名> ?x. }
+simple_res	q239:日本间谍川岛芳子是哪个民族的？	select ?x where { <川岛芳子_（日本间谍，伪满洲国司令）> <民族> ?x. }
+simple_res	q240:吉林大学校歌是？	select ?x where { <吉林大学> <校歌> ?x . }
+simple_res	q241:歌曲《认错》属于歌手许嵩的哪张专辑？	select ?x where { <认错_（许嵩演唱歌曲）> <所属专辑> ?x . }
+simple_res	q242:戊戌变法是在什么条约的签订下展开的？	select ?x where { <戊戌变法> <背景> ?x. }
+simple_res	q243:为什么会发生日食？	select ?x where { <日食> <原因> ?x. }
+simple_res	q245:在新疆主要会听到什么语言？	select ?y where { <新疆_（中国自治区）> <方言> ?y. }
+simple_res	q246:竹子有什么象征意义？	select ?x where { <竹_（禾本科竹属植物）> <象征> ?x. }
+simple_res	q248:你知道新西兰的首都是哪里吗？	select ?x where { <新西兰> <首都> ?x. }
+simple_res	q249:世界杯足球赛隔多久举办一次？	select ?x where { <世界杯_（国际足联世界杯）> <举办时间> ?x. }
+simple_res	q250:奥斯卡金像奖发源于哪一年？	select ?x where { <奥斯卡金像奖> <发起时间> ?x. }
+simple_res	q251:加拿大的国花是什么？	select ?x where { <加拿大_（北美洲国家）> <国花> ?x. }
+simple_res	q252:看朝阳网的总部在哪？	select ?x where { <看朝阳网> <总部地点> ?x. }
+simple_res	q253:《朝花夕拾》的字数是多少？	select ?x where { <朝花夕拾_（鲁迅散文集）> <字数> ?x. }
+simple_res	q254:樱桃种植在哪些区域？	select ?x where { <樱桃_（蔷薇科落叶灌木果树）> <分布区域> ?x. }
+simple_res	q255:矿物自色表示什么含义？	select ?x where { <矿物自色> <含义> ?x. }
+simple_res	q256:香蕉属于什么亚纲？	select ?x where { <香蕉_（芭蕉科芭蕉属植物）> <亚纲> ?x. }
+simple_res	q257:我想看生活大爆炸，在哪儿能找到在线资源啊？	select ?x where { <生活大爆炸> <在线播放平台> ?x. }
+simple_res	q258:林清玄的主要成就是什么？	select ?x where { <林清玄> <主要成就> ?x. }
+simple_res	q259:海贼王里乔巴的克星有谁？	select ?x where { <乔巴_（《海贼王》中的角色）> <害怕的人> ?x. }
+simple_res	q260:巴黎圣母院是什么风格的建筑？	select ?x where { <巴黎圣母院_（法国巴黎教堂）> <建筑风格> ?x. }
+simple_res	q261:《名侦探柯南》是由谁的同名漫画改编的？	select ?x where { <柯南_（同名漫画改编的长篇推理动画）> <原作> ?x. }
+simple_res	q263:浙江大学的现任校长是谁	select ?x where { <浙江大学> <现任校长> ?x . }
+simple_res	q264:电影指环王的导演是谁？	select ?y where { <指环王_（英美2001-2003年彼得·杰克逊执导系列电影）> <导演> ?y. }
+simple_res	q266:武汉大学的地址是哪里	select ?x where { <武汉大学> <学校地址> ?x . }
+simple_res	q267:里奥·梅西的生日是什么时候？	select ?x where { <里奥·梅西_（阿根廷足球运动员）> <出生日期> ?x . }
+simple_res	q269:《冰与火之歌》的英文名字是什么？	select ?x where { <冰与火之歌_（美国HBO电视台制作的电视剧）> <外文名> ?x. }
+simple_res	q270:哈温国际宾馆位于哪儿？	select ?x where { <哈温国际宾馆> <酒店地址> ?x. }
+simple_res	q271:苏格拉底的职业是什么？	select ?x where { <苏格拉底_（古希腊著名哲学家）> <职业> ?x. }
+simple_res	q272:埃及的国花是什么？	select ?x where { <埃及> <国花> ?x. }
+simple_res	q273:电影《低俗小说》的导演是谁？	select ?x where { <低俗小说> <导演> ?x. }
+simple_res	q274:神灯神灯，告诉我自行车到底是干嘛用的？	select ?x where { <自行车_（脚踏车）> <作用> ?x. }
+simple_res	q275:里贝里在哪个队踢球？	select ?x where { <弗兰克·里贝里> <所属运动队> ?x. }
+simple_res	q276:费德勒的网球生涯中有什么成就？	select ?x where { <罗杰·费德勒> <重要事件> ?x. }
+simple_res	q277:RDBMS是什么的缩写？	select ?x where { <RDBMS> <外文名> ?x. }
+simple_res	q278:李白死后被藏在哪儿？	select ?x where { <李白_（唐朝著名诗人）> <墓葬地> ?x. }
+simple_res	q279:清华大学的校歌是？	select ?x where { <清华大学> <校歌> ?x. }
+simple_res	q280:中华人民共和国国歌是由谁作曲的？	select ?x where { <义勇军进行曲> <谱曲> ?x . }
+simple_res	q281:大熊猫又被叫做什么？	select ?x where { <熊猫_（哺乳动物）> <别称> ?x. }
+simple_res	q282:八大菜系有哪些？	select ?x where { <八大菜系> <组成> ?x . }
+simple_res	q284:新疆的气候怎么样？	select ?y where { <新疆_（中国自治区）> <气候条件> ?y. }
+simple_res	q286:品牌亦谷创办于哪一年？	select ?x where { <亦谷> <创办时间> ?x. }
+simple_res	q287:北京的故宫博物院什么季节去最好？	select ?x where { <故宫_（北京故宫）> <适宜游玩季节> ?x. }
+simple_res	q288:NBA中詹姆斯主要是打哪个位置？	select ?x where { <詹姆斯_（勒布朗·詹姆斯）> <位置> ?x. }
+simple_res	q290:淘宝网是在哪一年出现的？	select ?y where { <淘宝网> <成立时间> ?y. }
+simple_res	q291:《史记》的作者是谁？	select ?x where { <史记> <作者> ?x. }
+simple_res	q292:清华大学的主要奖项有哪些	select ?x where { <清华大学> <主要奖项> ?x . }
+simple_res	q293:梁静茹的天黑黑是用国语唱的还是粤语唱的？	select ?x where { <天黑黑_（孙燕姿演唱歌曲）> <歌曲语言> ?x. }
+simple_res	q294:《射雕英雄传》中黄蓉的丈夫是谁？	select ?x where { <黄蓉_（金庸武侠小说《射雕英雄传》女主角）> <丈夫> ?x. }
+simple_res	q295:"打蛇打七寸"中的七寸是什么含义？	select ?x where { <七寸> <原意> ?x. }
+simple_res	q296:林清玄的信仰是什么？	select ?x where { <林清玄> <信仰> ?x. }
+simple_res	q297:C罗效力于哪家足球俱乐部？	select ?x where { <克里斯蒂亚诺·罗纳尔多_（葡萄牙足球运动员）> <所属运动队> ?x. }
+simple_res	q298:K2海拔有多少？	select ?x where { <k2_（乔戈里峰）> <海拔> ?x. }
+simple_res	q299:二郎神身边的神兽哮天犬是哪部作品里的角色？	select ?x where { <哮天犬_（神话传说中二郎神身边的神兽）> <登场作品> ?x. }
+simple_res	q301:新加坡的国家领袖是谁？	select ?x where { <新加坡> <国家领袖> ?x. }
+simple_res	q302:电影《两千狂人》是何时上映的？	select ?x where { <两千狂人> <上映时间> ?x. }
+simple_res	q303:豆瓣鱼是哪里菜？	select ?x where { <豆瓣鱼> <分类> ?x. }
+simple_res	q304:愚人节的英文名称是什么？	select ?x where { <愚人节_（西方节日）> <英文名> ?x. }
+simple_res	q305:五一劳动节是由谁设立的？	select ?x where { <五一国际劳动节> <设立机构> ?x. }
+simple_res	q306:散文《风筝》是哪一年创作的？	select ?y where { <风筝_（鲁迅著散文）> <创作年代> ?y. }
+simple_res	q307:鄱阳湖的高水位是多少？	select ?x where { <鄱阳湖_（长江流域湖泊）> <高水位> ?x. }
+simple_res	q309:曹文轩老师创作的草房子收录在哪里？	select ?x where { <草房子_（1997年曹文轩创作的小说）> <作品出处> ?x. }
+simple_res	q310:鲁迅的笔名有哪些？	select ?x where { <鲁迅_（文学家、思想家）> <别名> ?x . }
+simple_res	q311:2010年世界杯的冠军是哪只队？	select ?x where { <2010年南非世界杯> <冠军> ?x. }
+simple_res	q312:《嘎达梅林》是哪个民族的民歌？	select ?x where { <嘎达梅林_（蒙古族长篇叙事民歌）> <歌曲类别> ?x. }
+simple_res	q314:我们经常吃的油条又称什么？	select ?x where { <油条_（油炸食品）> <别称> ?x. }
+simple_res	q315:二战时期"轴心国"的成员有哪些？	select ?x where { <轴心国> <代表成员> ?x. }
+simple_res	q316:神盾局的死对头是谁？	select ?x where { <神盾局> <主要对手> ?x. }
+simple_res	q317:唐三彩的三种颜色分别是？	select ?x where { <唐三彩_（唐代陶器）> <基本釉色> ?x. }
+simple_res	q318:海王星有多重？	select ?x where { <海王星_（太阳系八大行星之一）> <质量> ?x . }
+simple_res	q320:日本南瓜有什么特点？	select ?x where { <日本南瓜> <特点> ?x. }
+simple_res	q321:打球的周琦是哪里人？	select ?x where { <周琦_（中国篮球运动员）> <出生地> ?x. }
+simple_res	q322:植物冬瓜分布在哪些区域？	select ?y where { <冬瓜> <分布区域> ?y. }
+simple_res	q323:手抓龙虾的主要口味是什么？	select ?x where { <手抓龙虾> <口味> ?x. }
+simple_res	q324:李白葬在哪里？	select ?x where { <李白_（唐朝著名诗人）> <墓葬地> ?x. }
+simple_res	q325:李大钊的妻子是谁？	select ?x where { <李大钊> <妻子> ?x. }
+simple_res	q327:阿尔卑斯山的最高峰是哪里？	select ?x where { <阿尔卑斯山脉> <最高峰> ?x. }
+simple_res	q328:曾荪亚是哪部小说中的人物？	select ?x where { <曾荪亚> <出处> ?x. }
+simple_res	q330:姜夔是哪族人？	select ?x where { <姜夔> <民族族群> ?x. }
+simple_res	q331:汽车的作用是什么？	select ?x where { <汽车> <主要作用> ?x. }
+simple_res	q333:孔子在教育方面有什么主张？	select ?x where { <孔子_（儒家学派创始人）> <教育思想> ?x. }
+simple_res	q334:古希腊神话中雅典娜有哪些兄弟姐妹？	select ?x where { <雅典娜_（古希腊宗教和神话中的智慧与女战神）> <兄弟姐妹> ?x . }
+simple_res	q336:腾讯的公司使命是什么？	select ?x where { <腾讯> <公司使命> ?x. }
+simple_res	q337:腾讯的企业愿景是什么？	select ?x where { <腾讯> <企业愿景> ?x. }
+simple_res	q338:史大刚是何时入党的？	select ?x where { <史大刚> <入党时间> ?x. }
+simple_res	q339:西安大雁塔是什么级别的文物保护单位？	select ?x where { <大雁塔_（西安大慈恩寺佛塔）> <文保级别> ?x. }
+simple_res	q340:尼采的代表作品有哪些？	select ?y where { <弗里德里希·威廉·尼采> <代表作品> ?y. }
+simple_res	q341:火影忍者正篇里用过千年杀的有谁？	select ?x where { <千年杀_（《火影忍者》名词）> <使用者> ?x. }
+simple_res	q342:留声机是谁发明的？	select ?x where { <留声机_（放音装置）> <发明人> ?x. }
+simple_res	q343:成立于1946的Dior年销售额是多少？	select ?x where { <Dior_（奢侈品牌）> <年营业额> ?x. }
+simple_res	q344:尼罗河流入哪一片海域？	select ?x where { <尼罗河_（流经非洲东部与北部的河流）> <注入> ?x. }
+simple_res	q345:宫保鸡丁属于哪个菜系？	select ?x where { <宫保鸡丁_（名菜）> <分类> ?x. }
+simple_res	q346:社会主义核心价值观的主要内容是什么？	select ?x where { <核心价值观> <主要内容> ?x. }
+simple_res	q347:故宫的建造者是谁？	select ?x where { <故宫_（北京故宫）> <建造者> ?x. }
+simple_res	q349:碳化钙在什么温度会熔化？	select ?x where { <碳化钙> <熔点> ?x . }
+simple_res	q350:北美洲的面积有多大？	select ?x where { <北美洲> <面积> ?x. }
+simple_res	q352:古希腊的政治体制是？	select ?x where { <古希腊_（爱琴海-色雷斯文明圈的黄金时期）> <政治体制> ?x. }
+simple_res	q353:北京大学有多少个硕士点？	select ?x where { <北京大学> <硕士点> ?x. }
+simple_res	q354:《生活大爆炸》是近几年一部火爆全球的情景喜剧，里面的主要演员都有谁？	select ?x where { <生活大爆炸> <主演> ?x. }
+simple_res	q355:忍者有什么作用？	select ?y where { <忍者_（日本特殊职业）> <作用> ?y. }
+simple_res	q356:我想去云南大理旅游，坐火车到哪下车离目的地最近？	select ?x where { <大理_（云南省大理白族自治州大理市）> <火车站> ?x. }
+simple_res	q357:尼古拉·哥白尼有什么代表作品？	select ?y where { <尼古拉·哥白尼> <代表作品> ?y. }
+simple_res	q359:珠峰属于哪个山脉？	select ?x where { <珠穆朗玛峰_（世界最高峰）> <所属山系> ?x. }
+simple_res	q360:东南大学的校歌是？	select ?x where { <东南大学> <校歌> ?x . }
+simple_res	q361:肯德基何时成立？	select ?x where { <肯德基> <成立时间> ?x . }
+simple_res	q362:作品《纪伯伦散文》是由谁翻译的？	select ?x where { <纪伯伦散文> <译者> ?x. }
+simple_res	q363:与会计相关的证书都有什么？	select ?x where { <会计> <相关证书> ?x . }
+simple_res	q364:恐龙中的壮龙亚科存活于哪个时期？	select ?x where { <壮龙亚科> <生活> ?x. }
+simple_res	q365:喜乐庄村位于海拔多少米的地方？	select ?x where { <喜乐庄村> <海拔> ?x. }
+simple_res	q366:煞魔蛇是什么器材？	select ?x where { <煞魔蛇> <类型> ?x. }
+simple_res	q368:去后海游玩需要花费多少钱？	select ?x where { <后海_（北京市西城区湖泊景点）> <门票价格> ?x. }
+simple_res	q370:北科归哪个国务院部门管？	select ?x where { <北京科技大学> <主管部门> ?x. }
+simple_res	q371:霍山文峰塔位于哪？	select ?x where { <霍山文峰塔> <地理位置> ?x. }
+simple_res	q373:足球加入奥运会是在哪一年？	select ?y where { <足球> <加入奥运会> ?y. }
+simple_res	q375:《聊斋志异》的作者是谁？	select ?x where { <聊斋志异_（蒲松龄著文言短篇小说集《聊斋志异》）> <作者> ?x. }
+simple_res	q376:林世功的信仰是什么？	select ?x where { <林世功> <信仰> ?x. }
+simple_res	q377:万里长城到底有多长？	select ?x where { <万里长城_（中国古代军事工程）> <总长度> ?x. }
+simple_res	q378:马云的外文名是什么？	select ?x where { <马云_（阿里巴巴集团创始人）> <外文名> ?x. }
+simple_res	q379:看电影霸王别姬得花多久？	select ?y where { <霸王别姬_（1993年陈凯歌执导，张国荣主演电影）> <片长> ?y. }
+simple_res	q380:欧洲的气候条件？	select ?x where { <欧洲_（地球七大洲之一）> <气候条件> ?x. }
+simple_res	q382:中国冶金建设集团鞍山焦化耐火材料设计研究总院在全国排第几位？	select ?x where { <中国冶金建设集团鞍山焦化耐火材料设计研究总院> <排名> ?x. }
+simple_res	q383:电影霸王别姬都获得过哪些荣誉？	select ?x where { <霸王别姬_（1993年陈凯歌执导，张国荣主演电影）> <主要奖项> ?x. }
+simple_res	q384:图灵是哪国人？	select ?x where { <艾伦·麦席森·图灵> <国籍> ?x. }
+simple_res	q385:施瓦辛格是哪个族人？	select ?x where { <阿诺德·施瓦辛格> <民族> ?x. }
+simple_res	q386:清华大学坐落在哪个区？	select ?y where { <清华大学> <所属地区> ?y. }
+simple_res	q387:淘宝办公地建在哪个城市？	select ?y where { <淘宝网> <办公地点> ?y. }
+simple_res	q388:冰心在哪出生的？	select ?x where { <冰心_（中国现代著名作家）> <出生地> ?x. }
+simple_res	q389:海贼王里爱德华更被人熟知的外号是什么？	select ?x where { <爱德华_（《海贼王》人物）> <其他名称> ?x. }
+simple_res	q391:皇马的主席是谁？	select ?x where { <皇家马德里_（皇家马德里足球俱乐部）> <主席> ?x. }
+simple_res	q392:秦始皇的接班人是谁？	select ?x where { <秦始皇_（中国首位皇帝）> <继承人> ?x. }
+simple_res	q393:陈奕迅毕业于哪所大学？	select ?x where { <陈奕迅> <毕业院校> ?x. }
+simple_res	q395:二锅头是什么类型的酒？	select ?x where { <二锅头> <类型> ?x. }
+simple_res	q396:钢铁侠史塔克是哪个学校的校友？	select ?y where { <史塔克_（美国动漫及电影钢铁侠中的人物）> <毕业院校> ?y. }
+simple_res	q397:植物绿心木属于哪个纲？	select ?x where { <绿心木> <纲> ?x. }
+simple_res	q398:加拿大的国土面积有多大？	select ?x where { <加拿大_（北美洲国家）> <国土面积> ?x. }
+simple_res	q399:歼8战机是那个单位研发的？	select ?x where { <歼-8> <设计> ?x. }
+simple_res	q400:作家余秋雨是哪里人呢？	select ?y where { <余秋雨> <出生地> ?y. }
+simple_res	q401:二十四节气中春分之后是？	select ?x where { <春分_（二十四节气之一）> <后一节气> ?x. }
+simple_res	q402:杨绛先生的孩子是谁？	select ?x where { <杨绛> <女儿> ?x. }
+simple_res	q403:青藏铁路有多长？	select ?x where { <青藏铁路> <全长> ?x. }
+simple_res	q404:海贼王里乔巴是被谁养大的？	select ?x where { <乔巴_（《海贼王》中的角色）> <义父> ?x. }
+simple_res	q405:你知道美国的首都是哪里吗？	select ?x where { <美国_（美利坚合众国）> <首都> ?x. }
+simple_res	q406:蜜月湾的水质如何？	select ?x where { <蜜月湾> <水质> ?x. }
+simple_res	q409:首届F1锦标是什么时候？	select ?x where { <世界一级方程式锦标赛> <第一次举办> ?x. }
+simple_res	q410:郭沫若先生会几种语言？	select ?x where { <郭沫若> <语言> ?x. }
+simple_res	q411:新浪公司的官网是？	select ?y where { <新浪> <官网> ?y. }
+simple_res	q412:香港的政治体制是什么？	select ?x where { <香港_（中华人民共和国特别行政区）> <政治体制> ?x. }
+simple_res	q413:"诗鬼"李贺是什么朝代的人？	select ?x where { <李贺_（唐代诗人）> <国籍> ?x. }
+simple_res	q414:电影阿凡达及其制作者们都获得过哪些奖项？	select ?y where { <Avatar_（2009年上映詹姆斯·卡梅隆执导美国电影）> <主要奖项> ?y. }
+simple_res	q415:乙酸的分子式？	select ?x where { <乙酸> <化学式> ?x . }
+simple_res	q416:林徽因写过哪些广为流传的诗？	select ?x where { <林徽因_（中国建筑师、诗人、作家）> <代表作品> ?x. }
+simple_res	q417:拜占庭帝国主要宗教是什么？	select ?x where { <拜占庭帝国> <主要宗教> ?x. }
+simple_res	q418:叠连现象出现的原因是什么？	select ?x where { <叠连现象> <原因> ?x. }
+simple_res	q419:客家语的分布很广，你知道它的主要分布地区在哪里吗？	select ?x where { <客家语> <分布地区> ?x. }
+simple_res	q420:陈奕迅的《爱情转移》收录在哪张专辑？	select ?x where { <爱情转移> <所属专辑> ?x. }
+simple_res	q421:动画电影《功夫熊猫》的主要演员？	select ?x where { <功夫熊猫_（美国2008年马克·奥斯本执导动画电影）> <主演> ?x . }
+simple_res	q422:歌曲《唠嗑歌》的时长是多少？	select ?x where { <浮夸_（陈奕迅主唱的歌曲）> <歌曲时长> ?x. }
+simple_res	q423:潘粤明有什么作品？	select ?x where { <潘粤明> <代表作品> ?x. }
+simple_res	q424:千年隼号的大副是谁？	select ?x where { <千年隼号> <大副> ?x. }
+simple_res	q425:积分返利网的注册会员有多少？	select ?x where { <积分返利网> <注册会员> ?x. }
+simple_res	q426:桃花属于动物分类法中的哪个目？	select ?x where { <桃花_（蔷薇科李属植物）> <目> ?x. }
+simple_res	q427:请问亚里士多德的代表作品有哪些？	select ?x where { <亚里士多德_（古希腊著名思想家）> <代表作品> ?x. }
+simple_res	q428:台灯是干什么用的？	select ?x where { <台灯> <作用> ?x. }
+simple_res	q429:南京大屠杀发生在什么时候？	select ?x where { <南京大屠杀_（日军侵华历史事件）> <发生时间> ?x. }
+simple_res	q430:手表品牌劳力士的总部设在哪个国家？	select ?x where { <劳力士> <总部地点> ?x . }
+simple_res	q432:水在标准大气压下的沸点是多少？	select ?x where { <水_（由氢、氧两种元素组成的无机物质）> <沸点> ?x. }
+simple_res	q433:化学元素周期表是谁创造的？	select ?x where { <元素周期表_（化学元素列表）> <创造者> ?x. }
+simple_res	q434:歌曲遇见的原唱是？	select ?x where { <遇见_（孙燕姿歌曲）> <歌曲原唱> ?x. }
+simple_res	q435:比辛的功效是什么？	select ?x where { <比辛> <功能> ?x. }
+simple_res	q436:《银河系漫游指南》是什么时候出版的？	select ?x where { <银河系漫游指南_（道格拉斯·亚当斯的科幻小说）> <出版时间> ?x. }
+simple_res	q437:希腊神话中阿尔忒弥斯住在哪？	select ?x where { <阿尔忒弥斯_（古希腊神话中月亮与狩猎女神）> <居所> ?x. }
+simple_res	q438:淝水之战的参战双方是谁？	select ?x where { <淝水之战> <参战方> ?x. }
+simple_res	q439:新加坡的官方语言是什么？	select ?x where { <新加坡> <官方语言> ?x. }
+simple_res	q440:作家狄更斯的笔名是什么？	select ?x where { <查尔斯·狄更斯> <笔名> ?x. }
+simple_res	q441:奥黛丽·赫本都曾签约过哪些公司？	select ?x where { <奥黛丽·赫本> <经纪公司> ?x. }
+simple_res	q443:冬季大三角包括哪三颗星星？	select ?x where { <冬季大三角> <组成> ?x. }
+simple_res	q444:武汉大学的主要奖项有哪些	select ?x where { <武汉大学> <主要奖项> ?x . }
+simple_res	q445:紫霞仙子是哪部作品中的人物？	select ?x where { <紫霞仙子_（电影《大话西游》中的角色）> <登场作品> ?x. }
+simple_res	q446:发明世界上第一部电话是谁？	select ?x where { <电话_（通过电信号双向传输话音的设备）> <发明人> ?x. }
+simple_res	q447:勾股定理是由谁提出的？	select ?x where { <勾股定理> <提出者> ?x . }
+simple_res	q448:木村遥是哪个国家的人？	select ?x where { <木村遥> <国籍> ?x. }
+simple_res	q449:你知道《如龙2》游戏的发行商是哪个公司吗？	select ?x where { <如龙2> <发行商> ?x. }
+simple_res	q450:林建华的生日？	select ?x where { <林建华_（北京大学校长）> <出生日期> ?x . }
+simple_res	q451:酸奶主要由哪些原料制作而成？	select ?x where { <酸奶> <主要原料> ?x. }
+simple_res	q452:西藏的平均海拔是多少？	select ?x where { <西藏_（中国自治区）> <平均海拔> ?x. }
+simple_res	q453:《老友记》实在太好看了，你知道它总共有多少集吗，我想全刷一遍？	select ?y where { <老友记_（美国情景剧）> <集数> ?y. }
+simple_res	q454:《地下城与勇士》中鬼剑士大概多高？	select ?x where { <鬼剑士_（地下城与勇士衍生动漫的主角之一）> <身高> ?x. }
+simple_res	q456:苹果公司的总部在哪里？	select ?x where { <苹果_（苹果产品公司）> <总部地点> ?x. }
+simple_res	q457:老子的主要成就有哪些？	select ?x where { <老子_（道家学派创始人）> <主要成就> ?x. }
+simple_res	q458:天津大学的现任校长是谁？	select ?x where { <天津大学> <现任校长> ?x . }
+simple_res	q459:老舍的代表作有哪些？	select ?x where { <老舍> <代表作品> ?x. }
+simple_res	q460:孙悟空的结拜兄弟是谁？	select ?x where { <孙悟空_（古典名著《西游记》中的主角）> <结拜兄弟> ?x. }
+simple_res	q461:清华大学的现任校长是谁	select ?x where { <清华大学> <现任校长> ?x . }
+simple_res	q462:飞卢中文网的主要内容是什么？	select ?x where { <飞卢中文网> <类型> ?x. }
+simple_res	q463:戚继光的祖籍是哪里人？	select ?x where { <戚继光_（明朝抗倭名将、民族英雄）> <祖籍> ?x. }
+simple_res	q464:海贼王里乔巴悬赏金有多少？	select ?x where { <乔巴_（《海贼王》中的角色）> <悬赏金> ?x. }
+simple_res	q465:举世闻名的泰姬陵在哪个国家？	select ?x where { <泰姬陵_（印度知名古建筑）> <所在国家> ?x. }
+simple_res	q466:dota是哪个游戏平台开发的？	select ?x where { <DotA_（魔兽争霸Ⅲ的DOTA）> <游戏平台> ?x. }
+simple_res	q467:钢铁侠史塔克的机器人助手叫什么？	select ?y where { <史塔克_（美国动漫及电影钢铁侠中的人物）> <助手> ?y. }
+simple_res	q468:埃及的首都是哪里？	select ?x where { <埃及> <首都> ?x. }
+simple_res	q469:陈忠实陈老啥时候走的？	select ?x where { <陈忠实_（中国当代作家）> <逝世日期> ?x. }
+simple_res	q470:海贼王里弗兰奇被悬赏多少钱？	select ?x where { <弗兰克_（日本动漫《海贼王》中人物）> <悬赏金> ?x. }
+simple_res	q471:莫扎特花主要生长在哪里？	select ?y where { <莫扎特_（月季品种之一）> <分布区域> ?y. }
+simple_res	q472:梵蒂冈的官方语言是什么？	select ?x where { <梵蒂冈> <官方语言> ?x. }
+simple_res	q473:微软公司的现任CEO是谁？	select ?x where { <微软> <首席执行官> ?x. }
+simple_res	q474:主持人潘晨多高？	select ?x where { <潘晨_（电视节目主持人）> <身高> ?x. }
+simple_res	q475:林徽因是中国近代著名的才女，你知道她在哪两个领域有所建树吗？	select ?x where { <林徽因_（中国建筑师、诗人、作家）> <贡献方向> ?x. }
+simple_res	q476:阿联在哪里打球？	select ?x where { <易建联> <所属运动队> ?x. }
+simple_res	q478:NBA球星詹姆斯生涯的重要事件有哪些？	select ?x where { <詹姆斯_（勒布朗·詹姆斯）> <重要事件> ?x . }
+simple_res	q479:吉林大学的现任校长是谁？	select ?x where { <吉林大学> <现任校长> ?x . }
+simple_res	q480:"一笑一颦"这个词是什么意思？	select ?x where { <一笑一颦> <解释> ?x. }
+simple_res	q481:北京大学的现任校长是谁	select ?x where { <北京大学> <现任校长> ?x . }
+simple_res	q482:新加坡的英文名称是什么？	select ?x where { <新加坡> <英文名称> ?x. }
+simple_res	q483:有什么著名的描写杭州西湖的诗呀？	select ?x where { <西湖_（浙江省杭州市西湖）> <名诗> ?x. }
+simple_res	q484:四川大学的主要奖项有哪些	select ?x where { <四川大学> <主要奖项> ?x . }
+simple_res	q485:韩国属于哪个大洲？	select ?x where { <韩国_（大韩民国）> <所属洲> ?x. }
+simple_res	q486:亚马逊公司成立于哪一年？	select ?x where { <亚马逊_（网络电子商务公司）> <成立时间> ?x. }
+simple_res	q487:网络剧《毛骗》在那个网站平台上播出？	select ?x where { <毛骗_（2010年李洪绸、杨羽所导演的电视剧）> <在线播放平台> ?x. }
+simple_res	q488:音乐人刘洲喜欢哪些动物？	select ?y where { <刘洲_（音乐人）> <喜欢的动物> ?y. }
+simple_res	q490:综艺节目康熙来了是谁主持的？	select ?y where { <康熙来了> <主持人> ?y. }
+simple_res	q491:请列举一些赵本山的作品？	select ?x where { <赵本山> <代表作品> ?x. }
+simple_res	q492:生活中常说的"五金"是指哪几种金属？	select ?x where { <五金> <五种指> ?x. }
+simple_res	q493:爱奇艺啥时候创立的呀？	select ?x where { <爱奇艺> <成立时间> ?x. }
+simple_res	q495:清明节都有哪些习俗？	select ?x where { <清明_（二十四节气之一）> <节日活动> ?x. }
+simple_res	q497:书籍《三国演义》的作者是谁？	select ?x where { <三国演义_（中国古典四大名著之一）> <作者> ?x. }
+simple_res	q498:历史上哪个人物创建了布达拉宫？	select ?x where { <布达拉宫_（中国西藏宫堡式建筑群）> <始建造者> ?x. }
+simple_res	q499:有人向我推荐了家有儿女这部剧，你知道在哪儿能在线看吗，急！？	select ?x where { <家有儿女_（2005年林丛执导的系列情景喜剧）> <在线播放平台> ?x. }
+simple_res	q500:生化危机的主演都有哪些人？	select ?x where { <生化危机_（根据Capcom电子游戏改编的系列电影）> <主演> ?x. }
+simple_res	q501:漫画《银魂》的出版社是哪个？	select ?x where { <银魂_（空知英秋创作的漫画）> <出版社> ?x. }
+simple_res	q502:冰糖葫芦需要哪些原料？	select ?x where { <糖葫芦_（冰糖葫芦）> <主要食材> ?x. }
+simple_res	q503:梵高的画作非常令人印象深刻，你能推荐给我几个吗？	select ?x where { <梵高_（梵高）> <代表作品> ?x. }
+simple_res	q504:电影《沉默的羔羊》是一部什么类型的电影？	select ?x where { <沉默的羔羊_（1991年美国电影）> <类型> ?x. }
+simple_res	q505:请问富士康有多少员工？	select ?x where { <富士康> <员工数> ?x . }
+simple_res	q507:霍加狓属于哪一科？	select ?x where { <霍加狓> <科> ?x. }
+simple_res	q508:足球运动员姆巴米是哪个运动队的？	select ?x where { <姆巴米> <所属运动队> ?x. }
+simple_res	q509:冰与火之歌的拍摄地点在哪里？	select ?y where { <冰与火之歌_（美国HBO电视台制作的电视剧）> <拍摄地点> ?y. }
+simple_res	q510:博尔赫斯的代表作品有什么？	select ?y where { <豪尔赫·路易斯·博尔赫斯_（阿根廷作家）> <代表作品> ?y. }
+simple_res	q511:北洋三杰是谁？	select ?x where { <北洋三杰> <成员> ?x. }
+simple_res	q512:小说《追风筝的人》是谁翻译的？	select ?x where { <追风筝的人_（卡勒德·胡赛尼著小说成长的故事）> <译者> ?x. }
+simple_res	q513:佩特拉古城在哪个国家？	select ?x where { <佩特拉_（约旦古城）> <位置> ?x. }
+simple_res	q514:姚明的篮球生涯中，最高得分多少？	select ?x where { <姚明_（中职联公司董事长兼总经理）> <生涯最高分> ?x. }
+simple_res	q515:富士山有多高？	select ?y where { <富士山> <海拔> ?y. }
+simple_res	q517:季莫申科是哪里人？	select ?x where { <尤利娅·季莫申科> <出生地> ?x. }
+simple_res	q518:范仲淹生活在哪个朝代？	select ?x where { <范仲淹> <所处时代> ?x. }
+simple_res	q519:北大方正集团的总资产是多少？	select ?x where { <方正_（北大方正集团）> <总资产> ?x. }
+simple_res	q520:我超级喜欢《解忧杂货店》这本书的，你知道谁写的吗？	select ?x where { <解忧杂货店_（奇幻温情小说）> <作者> ?x. }
+simple_res	q521:演员霍思燕是什么星座？	select ?y where { <霍思燕> <星座> ?y. }
+simple_res	q522:兰蔻的总部在？	select ?x where { <兰蔻> <总部地点> ?x. }
+simple_res	q523:英国什么时候国庆？	select ?x where { <英国_（大不列颠及北爱尔兰联合王国）> <国庆日> ?x. }
+simple_res	q525:电视剧绯闻女孩在哪拍摄？	select ?x where { <Gossip_（绯闻女孩）> <拍摄地点> ?x. }
+simple_res	q526:陆小凤是哪位作家笔下的人物？	select ?x where { <陆小凤传奇_（古龙武侠小说系列）> <作者> ?x. }
+simple_res	q559:曼昆那本著名的《经济学原理》是谁翻译的？	select ?x where { <经济学原理_（N.格里高利·曼昆著经济学教材）> <译者> ?x. }
+simple_res	q572:《革命之路》与《朗读者》的女主角是谁？	select ?x where { <革命之路_（2008年美国影片）> <主演> ?x. <朗读者_（2008年美国电影）> <主演> ?x. }
+simple_res	q723:哈利波特的作者是谁？	select ?x where { <哈利·波特_（J.K.罗琳创作魔幻系列小说）> <作者> ?x. }
+simple_res	q864:周杰伦和钟兴民的共同创作的歌曲是？	select ?x where { <周杰伦> <代表作品> ?x. <钟兴民> <代表作品> ?x. }
+simple_res	q926:在金庸小说《天龙八部》中，鸠摩智、游坦之和扫地僧都会什么武功？	select ?x where { <鸠摩智> <武功> ?x. <游坦之> <内功> ?x. <扫地僧_（金庸武侠小说《天龙八部》中的人物）> <绝技> ?x. }
+simple_res	q980:卡库、鹤参谋是哪儿的人物？	select ?x where { <鹤参谋> <登场作品> ?x. <卡库> <登场作品> ?x. }
+simple_res	q1022:殖民有怎样的优点和缺点？	select ?x where { {<殖民> <优点> ?x . } union{ <殖民> <缺点> ?x . } . }
+simple_res	q1083:在金庸小说《天龙八部》中，剑神卓不凡属于哪个门派？	select ?x where { <卓不凡_（金庸小说《天龙八部》中人物）> <别名> "剑神". <卓不凡_（金庸小说《天龙八部》中人物）> <门派> ?x. }
+simple_res	q1091:完成天下布武的大名最后在哪里逝世？	select ?x where { <织田信长_（日本战国三杰之一，安土桃山时代的大名）> <主要成就> "天下布武；设立乐市乐座". <织田信长_（日本战国三杰之一，安土桃山时代的大名）> <逝世地> ?x. }
+simple_res	q1095:出演了《仙剑奇侠传三》和《小时代》的明星是谁？	select ?x where { <仙剑奇侠传三_（2009年李国立执导电视剧）> <主演> ?x. <小时代_（2013年郭敬明执导电影）> <主演> ?x. }
+simple_res	q1131:物理学家卢瑟福是哪国人？	select ?x where { <欧内斯特·卢瑟福> <职业> <物理学家_（探索、研究物理学的科学家）>. <欧内斯特·卢瑟福> <国籍> ?x. }
+simple_res	q1147:2008年举办的夏季奥运会是第几届？	select ?x where { <2008年北京奥运会> <赛事类型> <夏季奥林匹克运动会>. <2008年北京奥运会> <届数> ?x. }
+simple_res	q1190:叶芝是哪个国家的著名诗人？	select ?x where { <威廉·巴特勒·叶芝> <职业> <诗人_（汉语词语）>. <威廉·巴特勒·叶芝> <国籍> ?x. }
+simple_res	q1191:《指环王》的作者是谁？	select ?x where { <指环王_（J.R.R.托尔金著系列小说）> <作者> ?x. }
+simple_res	q1284:巴西最大的城市是？	select ?x where { <巴西_（巴西联邦共和国）> <最大城市> ?x. }
+simple_res	q1285:日本战国三英杰是指哪三人？	select ?x where { <日本战国三英杰> <相关人物> ?x. }
+simple_res	q1286:圣诞节是每年的几月几日？	select ?x where { <圣诞节_（节日）> <节日时间> ?x. }
+simple_res	q1287:西塘的邮政编码是什么？	select ?x where { <西塘_（浙江省嘉善县下辖镇）> <邮政区码> ?x. }
+simple_res	q1288:在金庸小说《天龙八部》中，鸠摩智擅长什么武功？	select ?x where { <鸠摩智> <武功> ?x. }
+simple_res	q1289:植物梧桐属于哪个纲？	select ?x where { <梧桐_（锦葵目梧桐科植物）> <纲> ?x. }
+simple_res	q1290:87版《红楼梦》是哪国拍摄的？	select ?x where { <红楼梦_（1987年陈晓旭、欧阳奋强主演央视版电视剧）> <拍摄地点> ?x. }
+simple_res	q1291:大提琴是哪类乐器？	select ?x where { <大提琴_（次中音或低音弦乐器）> <分类> ?x. }
+simple_res	q1292:姜夔是哪个朝代的人？	select ?x where { <姜夔> <所处时代> ?x. }
+simple_res	q1293:"知命"一词出自哪本经典作品？	select ?x where { <知命_（儒家的思想理念）> <出自> ?x. }
+simple_res	q1295:俄罗斯的首都是？	select ?x where { <俄罗斯_（俄罗斯联邦）> <首都> ?x. }
+simple_res	q1296:雅虎公司有多少员工？	select ?y where { <雅虎> <员工数> ?y. }
+simple_res	q1297:武汉长江大桥有多长？	select ?x where { <武汉长江大桥> <总长> ?x. }
+simple_res	q1298:莫言写过哪些著作呢？	select ?x where { <莫言_（中国诺贝尔文学奖获得者）> <代表作品> ?x. }
+simple_res	q1300:二十四节气是依据什么划分的？	select ?x where { <二十四节气_（历法）> <划分依据> ?x. }
+simple_res	q1301:霸王别姬是什么时候登上大荧幕的？	select ?y where { <霸王别姬_（1993年陈凯歌执导，张国荣主演电影）> <上映时间> ?y. }
+simple_res	q1302:里奥·梅西的女友是谁？	select ?x where { <里奥·梅西_（阿根廷足球运动员）> <妻子> ?x . }
+simple_res	q1303:《滕王阁序》的作者是谁？	select ?x where { <滕王阁序> <作者> ?x. }
+simple_res	q1304:梵高是哪个派别？	select ?x where { <梵高_（梵高）> <派别> ?x. }
+simple_res	q1306:法国国歌是什么？	select ?x where { <法国_（法兰西共和国）> <国歌> ?x. }
+simple_res	q1308:胡椒科物种的地理分布？	select ?x where { <胡椒科> <分布区域> ?x . }
+simple_res	q1310:数学符号中的0起源于哪里？	select ?x where { <0_（整数之一）> <发源地> ?x. }
+simple_res	q1311:印度尼西亚的首都是哪里？	select ?x where { <印度尼西亚> <首都> ?x. }
+simple_res	q1312:北斗导航系统是什么时候投入使用的？	select ?x where { <北斗_（国产卫星导航系统）> <时间> ?x. }
+simple_res	q1313:里奥·梅西的国籍是哪里？	select ?x where { <里奥·梅西_（阿根廷足球运动员）> <国籍> ?x . }
+simple_res	q1314:月亮代表我的心的原唱是？	select ?x where { <月亮代表我的心> <歌曲原唱> ?x . }
+simple_res	q1316:雅鲁藏布江流经哪些地方？	select ?x where { <雅鲁藏布江_（藏南大河）> <流经地区> ?x. }
+simple_res	q1317:你知道巴菲特的称号吗？	select ?x where { <沃伦·巴菲特> <别名> ?x. }
+simple_res	q1318:歌手许嵩的身高？	select ?x where { <许嵩_（中国内地流行音乐男歌手）> <身高> ?x . }
+simple_res	q1319:六畜分别是哪六种动物？	select ?x where { <六畜> <主要包括> ?x. }
+simple_res	q1320:IBM有多少员工？	select ?x where { <IBM_（IT公司-国际商业机器公司）> <员工数> ?x. }
+simple_res	q1321:清华大学的校训是什么？	select ?x where { <清华大学> <校训> ?x. }
+simple_res	q1322:都有哪些演员演过蝙蝠侠？	select ?x where { <蝙蝠侠_（蝙蝠侠系列电影）> <主演> ?x. }
+simple_res	q1323:北京邮电大学的校训是什么？	select ?x where { <北京邮电大学> <校训> ?x. }
+simple_res	q1324:麦哲伦的环球航行是在哪个国家的支持下完成的？	select ?x where { <斐迪南·麦哲伦> <支持国> ?x. }
+simple_res	q1325:文房四宝包含哪四样？	select ?x where { <文房四宝_（笔墨纸砚）> <包含> ?x. }
+simple_res	q1327:韩国有哪些著名景点？	select ?x where { <韩国_（大韩民国）> <著名景点> ?x . }
+simple_res	q1328:最早的一款iPhone是哪一年发布的？	select ?x where { <iPhone> <问世时间> ?x. }
+simple_res	q1329:太平洋的面积为大？	select ?x where { <太平洋> <海洋面积> ?x. }
+simple_res	q1330:截拳道的创始人是谁？	select ?x where { <截拳道_（李小龙创立的技击理念，实战运用）> <创始人> ?x. }
+simple_res	q1331:普林斯顿大学刚创建时的校名是？	select ?x where { <普林斯顿大学> <老校名> ?x . }
+simple_res	q1332:著名的散文作家都有谁？	select ?x where { <散文_（文学体裁）> <代表人物> ?x. }
+simple_res	q1333:东条英机是什么时候被执行绞刑的？	select ?x where { <东条英机_（第四十任日本首相）> <逝世日期> ?x. }
+simple_res	q1334:南非的首都在哪里？	select ?x where { <南非共和国> <首都> ?x. }
+simple_res	q1335:歌曲演员的mv导演是谁？	select ?x where { <演员_（薛之谦歌曲）> <mv导演> ?x. }
+simple_res	q1336:"茶马古道"是古代著名的贸易通道，它经过了哪些省份？	select ?x where { <茶马古道_（古代国际商贸通道）> <地理位置> ?x. }
+simple_res	q1337:小林绿子是哪一部小说的角色？	select ?x where { <小林绿子> <登场作品> ?x. }
+simple_res	q1338:地震在地球上每年多少次？	select ?x where { <地震的形成> <频率> ?x. }
+simple_res	q1339:豌豆公主这个形象出自于哪？	select ?x where { <豌豆公主_（安徒生童话）> <作品出处> ?x. }
+simple_res	q1340:瑞金的别名是什么？	select ?x where { <瑞金> <别名> ?x. }
+simple_res	q1341:海贼王里乔巴老家在哪里？	select ?x where { <乔巴_（《海贼王》中的角色）> <出生地> ?x. }
+simple_res	q1342:姜夔的出生时间是什么？	select ?x where { <姜夔> <出生时间> ?x. }
+simple_res	q1343:移山棋是使用哪种棋盘？	select ?x where { <移山棋> <棋盘> ?x. }
+simple_res	q1344:苏联是在哪一年建立的？	select ?x where { <苏联> <成立时间> ?x. }
+simple_res	q1345:一战的主要影响？	select ?x where { <第一次世界大战_（20世纪初帝国主义国家之间的非正义战争）> <影响> ?x. }
+simple_res	q1346:南唐后主老家在哪？	select ?x where { <李煜_（南唐李后主）> <籍贯> ?x. }
+simple_res	q1347:著名建筑埃菲尔铁塔有多少层？	select ?x where { <埃菲尔铁塔_（巴黎城市地标之一）> <建筑层数> ?x. }
+simple_res	q1348:品牌纪梵希的英文名称是什么？	select ?x where { <纪梵希> <英文名称> ?x. }
+simple_res	q1349:京剧成为非物质文化遗产的时间是？	select ?x where { <京剧_（中国国粹）> <批准时间> ?x. }
+simple_res	q1350:马拉松全长多少？	select ?x where { <马拉松_（长跑比赛项目）> <总长> ?x. }
+simple_res	q1351:大漠英雄传中郭靖的妻子是谁？	select ?x where { <郭靖_（金庸武侠小说《射雕英雄传》男主角）> <妻子> ?x. }
+simple_res	q1352:漫威里灭霸翻译成英文应该是什么？	select ?x where { <灭霸> <外文名> ?x. }
+simple_res	q1353:adidas是哪个国家的公司？	select ?x where { <adidas> <总部> ?x. }
+simple_res	q1354:腾讯公司的总部在哪里？	select ?x where { <腾讯> <总部地点> ?x. }
+simple_res	q1355:iPhone使用的是什么操作系统？	select ?x where { <iPhone> <操作系统> ?x. }
+simple_res	q1356:香港四大天王是指哪四个人？	select ?x where { <四大天王_（香港四大天王）> <成员> ?x. }
+simple_res	q1357:电影《末路记事》是在哪个国家拍摄的？	select ?x where { <末路记事> <拍摄地点> ?x. }
+simple_res	q1358:水观乡的占地多少？	select ?x where { <水观乡> <面积> ?x. }
+simple_res	q1359:月全食的发生分为哪几个过程？	select ?x where { <月全食> <过程> ?x. }
+simple_res	q1360:书籍《绑在一起》是由哪个出版社出版的？	select ?x where { <绑在一起> <出版社> ?x. }
+simple_res	q1362:乌拉圭使用什么货币？	select ?x where { <乌拉圭> <货币> ?x. }
+simple_res	q1363:花样滑冰双人滑选手隋文静的舞伴是？	select ?x where { <隋文静> <搭档> ?x. }
+simple_res	q1364:如何向老外表达"人艰不拆"？	select ?y where { <人艰不拆_（网络语）> <外文名> ?y. }
+simple_res	q1365:周星驰是什么血型？	select ?x where { <周星驰> <血型> ?x. }
+simple_res	q1366:汽车的英文名是什么？	select ?x where { <汽车> <英文名> ?x. }
+simple_res	q1367:土豆的斗破苍穹写了多少字？	select ?x where { <斗破苍穹_（天蚕土豆第二部长篇小说）> <总字数> ?x. }
+simple_res	q1368:水浒传是什么体裁的作品？	select ?x where { <水浒传_（中国古典长篇小说，四大名著之一）> <文学体裁> ?x. }
+simple_res	q1369:儒家学派的代表人物有哪些？	select ?x where { <儒家_（信奉孔子学说的学派）> <代表人物> ?x. }
+simple_res	q1370:嘉明镇的气候条件是怎样的？	select ?x where { <嘉明镇> <气候条件> ?x. }
+simple_res	q1371:西班牙城市圣地亚哥的外文名称是？	select ?x where { <圣地亚哥_（西班牙城市）> <外文名称> ?x. }
+simple_res	q1373:电影《辛德勒的名单》的导演是谁？	select ?x where { <辛德勒的名单> <导演> ?x. }
+simple_res	q1374:海贼里百兽凯多在漫画、动画里第一次正式出现是什么时候？	select ?y where { <百兽_（《海贼王》虚构人物）> <初登场> ?y. }
+simple_res	q1375:白雪公主和七个小矮人的故事最早在哪个国家出版？	select ?x where { <白雪公主_（欧洲大陆流传童话故事）> <最早出版> ?x. }
+simple_res	q1376:电视剧《爱情公寓》是何时上映的？	select ?x where { <爱情公寓_（韦正导演的都市爱情情景喜剧）> <上映时间> ?x. }
+simple_res	q1377:94版《三国演义》是由哪些人共同导演的？	select ?x where { <三国演义_（1994年王扶林执导央视版电视剧）> <导演> ?x. }
+simple_res	q1378:肯德基有多少员工？	select ?x where { <肯德基> <员工数> ?x . }
+simple_res	q1379:侯仁之先生最突出的成就是什么？	select ?x where { <侯仁之> <主要成就> ?x. }
+simple_res	q1380:变形金刚是什么时候上映的？	select ?x where { <变形金刚_（2007年派拉蒙影业真人版电影）> <上映时间> ?x. }
+simple_res	q1381:辽宁舰舰长是谁？	select ?x where { <辽宁号航空母舰> <舰长> ?x. }
+simple_res	q1382:蝙蝠侠加入了哪些组织？	select ?x where { <蝙蝠侠_（美国DC漫画旗下超级英雄）> <所属团队> ?x. }
+simple_res	q1383:彩虹西餐厅的人均消费是多少？	select ?x where { <彩虹西餐厅> <人均价格> ?x. }
+simple_res	q1384:电影《夏洛特烦恼》是何时上映的？	select ?x where { <夏洛特烦恼_（开心麻花2015年同名舞台剧改编的电影）> <上映时间> ?x. }
+simple_res	q1385:克苏鲁属于哪个群体？	select ?y where { <克苏鲁_（克苏鲁的呼唤神话小说里面的邪灵角色）> <所属> ?y. }
+simple_res	q1386:迈克尔·杰克逊在什么时间去世的？	select ?x where { <迈克尔·杰克逊> <逝世日期> ?x. }
+simple_res	q1387:汽车的外文名是什么？	select ?x where { <汽车> <外文名> ?x. }
+simple_res	q1388:电视剧《请回答1988》是哪个国家制作的？	select ?x where { <请回答1988> <制片地区> ?x. }
+simple_res	q1389:川西荆芥的拉丁学名是什么？	select ?x where { <川西荆芥> <拉丁学名> ?x. }
+simple_res	q1390:姜夔的去世时间是什么？	select ?x where { <姜夔> <去世时间> ?x. }
+simple_res	q1392:刘慈欣代表作？	select ?x where { <刘慈欣> <代表作品> ?x . }
+simple_res	q1393:臭氧层有什么作用？	select ?x where { <臭氧层> <影响及作用> ?x. }
+simple_res	q1394:电影速度与激情的拍摄地点有？	select ?x where { <速度与激情_（美国赛车动作主题系列电影）> <拍摄地点> ?x. }
+simple_res	q1395:武汉大学的现任校长是谁？	select ?x where { <武汉大学> <现任校长> ?x . }
+simple_res	q1396:蔡元培毕业于哪里？	select ?x where { <蔡元培> <毕业院校> ?x. }
+simple_res	q1397:演员刘昊然的本名叫什么？	select ?y where { <刘昊然> <别名> ?y. }
+simple_res	q1398:诸葛亮的别名是什么？	select ?x where { <诸葛亮_（三国时期蜀汉丞相）> <别名> ?x. }
+simple_res	q1399:肯德基的母公司是哪家公司？	select ?x where { <肯德基> <母公司> ?x . }
+simple_res	q1400:位于湖南的石鼓书院推荐玩多久啊？	select ?x where { <石鼓书院> <建议游玩时长> ?x. }
+simple_res	q1401:赵本山是属什么的？	select ?x where { <赵本山> <生肖> ?x. }
+simple_res	q1402:电视剧冰与火之歌是哪个公司出品？	select ?y where { <冰与火之歌_（美国HBO电视台制作的电视剧）> <出品公司> ?y. }
+simple_res	q1403:澳大利亚著名企业有哪些？	select ?x where { <澳大利亚> <著名企业> ?x. }
+simple_res	q1404:琵琶演奏有哪些流派？	select ?x where { <琵琶_（乐器）> <流派> ?x. }
+simple_res	q1405:紫荆花的拉丁学名是什么？	select ?x where { <紫荆花_（豆科植物）> <拉丁学名> ?x. }
+simple_res	q1408:电影《怦然心动》的主要演员？	select ?x where { <怦然心动_（美国2010年罗伯·莱纳执导电影）> <主演> ?x. }
+simple_res	q1409:蝙蝠侠是哪国人？	select ?x where { <蝙蝠侠_（美国DC漫画旗下超级英雄）> <国籍> ?x. }
+simple_res	q1410:摩根大通有多少资产？	select ?x where { <摩根大通> <总资产> ?x . }
+simple_res	q1411:"琴棋书画"具体指什么内容？	select ?x where { <琴棋书画_（成语）> <内容> ?x. }
+simple_res	q1412:麦当劳的口号是什么？	select ?x where { <麦当劳> <公司口号> ?x. }
+simple_res	q1413:姜夔有哪些主要作品？	select ?x where { <姜夔> <主要作品> ?x. }
+simple_res	q1414:清华大学位于哪个区？	select ?x where { <清华大学> <所属地区> ?x. }
+simple_res	q1415:我想知道演员霍思燕的生日？	select ?y where { <霍思燕> <出生日期> ?y. }
+simple_res	q1416:冰箱的英文名是什么？	select ?x where { <冰箱_（保持恒定低温的一种制冷设备）> <外文名> ?x. }
+simple_res	q1417:血友病有哪些症状？	select ?x where { <血友病_（医疗百科）> <常见症状> ?x . }
+simple_res	q1418:清华大学的地址是哪里？	select ?x where { <清华大学> <学校地址> ?x . }
+simple_res	q1419:番茄的双名法命名？	select ?x where { <番茄_（茄科茄属植物）> <拉丁学名> ?x. }
+simple_res	q1420:牛顿第一运动定律又称惯性定律，你能告诉我它的表达式吗？	select ?x where { <牛顿第一运动定律> <表达式> ?x. }
+simple_res	q1421:苏轼的代表作？	select ?x where { <苏轼_（北宋文学家）> <主要作品> ?x . }
+simple_res	q1422:"信言不美，美言不信"是谁说过的话？	select ?x where { <信言不美，美言不信> <作者> ?x. }
+simple_res	q1423:你知道冥王星的密度吗？	select ?x where { <冥王星_（太阳系中的一个天体）> <平均密度> ?x. }
+simple_res	q1424:《海贼王》是哪位漫画师的作品？	select ?x where { <海贼王_（尾田荣一郎创作的漫画作品）> <作者> ?x. }
+simple_res	q1425:电脑游戏《红色警戒》的制作商是谁？	select ?x where { <红色警戒_（《命令与征服》系列的即时战略游戏）> <开发商> ?x. }
+simple_res	q1426:玉兰这种植物多分布于哪？	select ?x where { <玉兰_（木兰科木兰属植物）> <分布区域> ?x. }
+simple_res	q1427:一天喝多少牛奶最合适呀？	select ?x where { <牛奶_（饮品）> <最佳日用量> ?x. }
+simple_res	q1428:歌曲布列瑟农的原唱是谁？	select ?x where { <布列瑟农> <歌曲原唱> ?x. }
+simple_res	q1429:陈奕迅什么时候出生的？	select ?x where { <陈奕迅> <出生日期> ?x. }
+simple_res	q1430:南京大学的现任校长是谁？	select ?x where { <南京大学> <现任校长> ?x . }
+simple_res	q1433:你知道《家有儿女》是在哪儿拍的吗，这部剧太经典了？	select ?x where { <家有儿女_（2005年林丛执导的系列情景喜剧）> <拍摄地点> ?x. }
+simple_res	q1434:光合作用是在哪个部位起作用的？	select ?x where { <光合作用> <作用部位> ?x. }
+simple_res	q1436:北京大学的校庆日？	select ?x where { <北京大学> <校庆日> ?x. }
+simple_res	q1437:张继科有个绰号叫什么来着？	select ?x where { <张继科> <别名> ?x. }
+simple_res	q1438:"烟花三月下扬州"中的扬州市又称为？	select ?x where { <扬州_（江苏省省辖市）> <别名> ?x. }
+simple_res	q1439:在挪威人们主要信仰什么教？	select ?x where { <挪威> <主要宗教> ?x. }
+simple_res	q1441:张继科是什么项目的运动员？	select ?x where { <张继科> <运动项目> ?x. }
+simple_res	q1442:杜康酒用什么原料酿造？	select ?x where { <杜康酒> <主要原料> ?x. }
+simple_res	q1443:汽车是哪一年发明的？	select ?x where { <汽车> <发明日期> ?x. }
+simple_res	q1444:张靓颖是什么星座的？	select ?x where { <张靓颖> <星座> ?x. }
+simple_res	q1446:重庆市的电话区号是多少？	select ?x where { <重庆_（中华人民共和国直辖市）> <电话区号> ?x. }
+simple_res	q1447:"红豆生南国"这句话来源于哪首诗？	select ?x where { <红豆生南国_（王维的诗《相思》）> <作品名称> ?x. }
+simple_res	q1448:北邮是什么类型的大学？	select ?x where { <北京邮电大学> <学校类型> ?x. }
+simple_res	q1449:中大发展的目标是什么？	select ?x where { <中山大学_（中国广东省高校）> <发展定位> ?x. }
+simple_res	q1450:北京大学有哪些学术传统？	select ?x where { <北京大学> <学术传统> ?x. }
+simple_res	q1452:书籍<高官反腐录>的价格是多少？	select ?x where { <高官反腐录> <定价> ?x. }
+simple_res	q1453:在哪个网站能看动画片神厨小福贵？	select ?x where { <神厨小福贵> <网络播放> ?x. }
+simple_res	q1454:皇马的主场是哪？	select ?x where { <皇家马德里_（皇家马德里足球俱乐部）> <主场馆> ?x. }
+simple_res	q1455:天狼星和地球距离是多少？	select ?x where { <天狼_（大犬座α星）> <距地距离> ?x. }
+simple_res	q1456:大耳朵图图一共有多少集呀？	select ?x where { <大耳朵图图> <集数> ?x. }
+simple_res	q1457:猎户座中最亮的星星是那颗？	select ?x where { <猎户座_（天文学概念）> <最亮星> ?x. }
+simple_res	q1458:北京在哪里？	select ?x where { <北京_（中华人民共和国首都）> <所属地区> ?x. }
+simple_res	q1460:秦始皇的功绩有什么？	select ?x where { <秦始皇_（中国首位皇帝）> <主要成就> ?x. }
+simple_res	q1461:姜夔的主要成就是什么？	select ?x where { <姜夔> <主要成就> ?x. }
+simple_res	q1462:灯影牛肉是什么菜系的菜？	select ?x where { <灯影牛肉> <分类> ?x. }
+simple_res	q1463:导演雷德利·斯科特是哪个国家的？	select ?x where { <雷德利·斯科特> <国籍> ?x. }
+simple_res	q1464:迈克尔·杰克逊的经纪公司是哪一个？	select ?x where { <迈克尔·杰克逊> <经纪公司> ?x. }
+simple_res	q1465:林清玄何时出生？	select ?x where { <林清玄> <出生日期> ?x. }
+simple_res	q1466:汉武帝在位时做过什么让他名留青史？	select ?x where { <汉武帝_（汉朝皇帝）> <主要成就> ?x. }
+simple_res	q1467:品牌哈森成立于哪一年？	select ?x where { <哈森_（皮鞋品牌）> <成立时间> ?x. }
+simple_res	q1468:口红的成分？	select ?x where { <口红_（美容修饰类化妆品）> <成分> ?x. }
+simple_res	q1469:北京大学的发展目标是？	select ?x where { <北京大学> <发展定位> ?x. }
+simple_res	q1470:演员曾安琪身高是多少？	select ?x where { <曾安琪> <身高> ?x. }
+simple_res	q1471:帕瓦罗蒂全名叫什么？	select ?x where { <帕瓦罗蒂_（意大利著名歌手）> <中文名> ?x. }
+simple_res	q1472:书画家郑板桥在哪里出生？	select ?y where { <郑板桥_（清代书画家、文学家）> <出生地> ?y. }
+simple_res	q1473:F-22战斗机是哪一年开始服役的？	select ?x where { <F-22战斗机> <服役时间> ?x. }
+simple_res	q1474:可口可乐竞争对手是？	select ?y where { <可口可乐> <竞争对手> ?y. }
+simple_res	q1475:北京语言大学的校长是谁？	select ?x where { <北京语言大学> <现任校长> ?x. }
+simple_res	q1476:长江三峡是指哪三峡？	select ?x where { <三峡_（长江三峡简称）> <组成> ?x. }
+simple_res	q1477:小明想去安徽玩，你能为他推荐几个景点吗？	select ?x where { <安徽> <著名景点> ?x. }
+simple_res	q1478:请问有多少人居住在伯罗奔尼撒半岛？	select ?x where { <伯罗奔尼撒半岛> <人口> ?x. }
+simple_res	q1479:德意志帝国海军的外文名？	select ?x where { <德意志帝国海军> <外文名> ?x. }
+simple_res	q1480:北京万达广场的建筑面积？	select ?x where { <万达广场_（北京万达广场）> <总建筑面积> ?x . }
+simple_res	q1515:1939年的影片《乱世佳人》又名什么？	select ?x where { <乱世佳人_（美国1939年克拉费雯·丽主演爱情电影）> <出品时间> "1939-01-26". <乱世佳人_（美国1939年克拉费雯·丽主演爱情电影）> <其它译名> ?x. }
+simple_res	q1519:《喜剧之王》中同时担任主演、导演和编剧的是谁？	select ?x where { <喜剧之王_（1999年周星驰主演并执导电影）> <主演> ?x. <喜剧之王_（1999年周星驰主演并执导电影）> <导演> ?x. <喜剧之王_（1999年周星驰主演并执导电影）> <编剧> ?x. }
+simple_res	q1525:腾讯的创始人中，谁的别名是小马哥？	select ?x where { <腾讯> <创始人> ?x. ?x <别名>"小马哥". }
+simple_res	q1552:制作鸡排主要需要准备哪些材料？	select ?x where { <鸡排> <主要食材> ?x. }
+simple_res	q1646:《这个杀手不太冷》和《V字仇杀队》共同的演员是？	select ?x where { <这个杀手不太冷> <主演> ?x. <V字仇杀队_（2005年詹姆斯·麦克提格执导电影）> <主演> ?x. }
+simple_res	q1655:谁在《新青年》上发表了我的马克思主义观？	select ?x where { <我的马克思主义观> <刊登杂志> "新青年". <我的马克思主义观> <作者> ?x. }
+simple_res	q1680:美股指数有哪些？	select ?x where { <美股> <指数> ?x. }
+simple_res	q1681:恒生地产指数是什么指数？	select ?x where { <恒生地产指数> <指数类型> ?x. }
+simple_res	q1682:中证TMT是什么指数？	select ?x where { <中证TMT> <指数类型> ?x. }
+simple_res	q1683:深防御50是什么指数？	select ?x where { <深防御50> <指数类型> ?x. }
+simple_res	q1684:全柴动力是哪个市场发行的股票？	select ?x where { <全柴动力> <市场> ?x. }
+simple_res	q1685:立昂技术是哪个市场发行的股票？	select ?x where { <立昂技术> <市场> ?x. }
+simple_res	q1686:万科是哪个行业？	select ?x where { <万科> <行业> ?x. }
+simple_res	q1689:证券披露三大报是指哪三个？	select ?x where { <证券披露三大报> <相关报纸> ?x. }
+simple_res	q1690:期权开户有年龄限制吗？	select ?x where { <期权开户> <年龄限制> ?x. }
+simple_res	q1691:大华股份实际控制人？	select ?x where { <大华股份> <实际控制人> ?x. }
+simple_res	q1692:大华股份市盈率？	select ?x where { <大华股份> <市盈率> ?x. }
+simple_res	q1693:港股通交易存在哪些风险？	select ?x where { <港股通> <交易风险> ?x. }
+simple_res	q1694:大华股份所属概念？	select ?x where { <大唐电信> <概念> ?x. }
+simple_res	q1695:熔断机制是什么时候开始实施的？	select ?x where { <熔断机制> <实施时间> ?x. }
+simple_res	q1696:熔断机制是什么时候暂停实施的？	select ?x where { <熔断机制> <暂停时间> ?x. }
+simple_res	q1698:如何计算市盈率？	select ?x where { <市盈率> <公式> ?x. }
+simple_res	q1699:如何计算市净率？	select ?x where { <市盈率> <公式> ?x. }
+simple_res	q1700:合格境外机构投资者的英文简称是什么？	select ?x where { <合格境外机构投资者> <英文简称> ?x. }
+simple_res	q1701:国债发行的方式？	select ?x where { <国债发行> <方式> ?x. }
+simple_res	q1702:地方债的期限有哪些？	select ?x where { <地方债> <期限> ?x. }
+simple_res	q1703:企业财务的三大报表有哪些？	select ?x where { <企业财务> <三大报表> ?x. }
+simple_res	q1704:哪些投资者可以参与港股通？	select ?x where { <港股通> <投资者> ?x. }
+simple_res	q1705:信用账户三方存管的银行有哪些？	select ?x where { <信用账户三方存管> <银行> ?x. }
+simple_res	q1706:证券公司可以经营哪些业务？	select ?x where { <证券公司> <经营业务> ?x. }
+simple_res	q1707:上市公司收购可采取哪些方式？	select ?x where { <上市公司> <收购方式> ?x. }
+simple_res	q1708:港股通委托能使用哪些限价盘？	select ?x where { <港股通委托> <限价盘类型> ?x. }
+simple_res	q1709:港股通交易有哪些限制？	select ?x where { <港股通> <交易限制> ?x. }
+simple_res	q1710:国债发行采取什么方式？	select ?x where { <国债发行> <方式> ?x. }
+simple_res	q1711:配股缴款期是几天？	select ?x where { <配股> <缴款期> ?x. }
+simple_res	q1712:恒生香港综合指数的分类有哪些？	select ?x where { <恒生香港综合指数> <分类> ?x. }
+simple_res	q1713:召开临时股东大会的条件有哪些？	select ?x where { <召开临时股东大会> <条件> ?x. }
+simple_res	q1714:证券龙头股有哪些？	select ?x where { <证券> <龙头股> ?x. }
+simple_res	q1715:担保证券转入时间？	select ?x where { <担保证券> <转入时间> ?x. }
+simple_res	q1716:担保资金转入时间？	select ?x where { <担保资金> <转入时间> ?x. }
+simple_res	q1717:收购要约的期限？	select ?x where { <收购要约> <期限> ?x. }
+simple_res	q1718:A股账户销户有哪些注意事项？	select ?x where { <A股账户销户> <注意事项> ?x. }
+simple_res	q1719:证券竞价交易的方式有哪些？	select ?x where { <证券竞价交易> <方式> ?x. }
+simple_res	q1720:沪市新股申购数量要求？	select ?x where { <沪市新股申购> <数量要求> ?x. }
+simple_res	q1721:深市新股申购数量要求？	select ?x where { <深市新股申购> <数量要求> ?x. }
+simple_res	q1722:限售股的分类？	select ?x where { <限售股> <分类> ?x. }
+simple_res	q1723:股份有限公司设立的条件？	select ?x where { <股份有限公司> <设立条件> ?x. }
+simple_res	q1724:一个投资者最多可以申请开立几个Ａ股账户？	select ?x where { <A股账户> <最多申请个数> ?x. }
+simple_res	q1725:集合竞价时间？	select ?x where { <集合竞价> <时间> ?x. }
+simple_res	q1726:浪潮软件收盘价？	select ?x where { <浪潮软件> <收盘价> ?x. }
+simple_res	q1727:试点创新企业在交易所发行上市的品种有哪些？	select ?x where { <试点创新企业> <发行品种> ?x. }
+simple_res	q1728:边缘计算概念的股票有哪些？	select ?x where { <边缘计算概念> <股票> ?x. }
+simple_res	q1729:科创板设立地点？	select ?x where { <科创板> <设立地点> ?x. }
+simple_res	q1730:科创板重点支持哪些产业？	select ?x where { <科创板> <支持产业> ?x. }
+simple_res	q1731:赵薇割韭菜，收到了证监会什么处罚？	select ?x where { <赵薇> <处罚> ?x. }
+simple_res	q1732:期权集合竞价期间的即时行情内容包括什么？	select ?x where { <期权集合竞价> <即时行情内容> ?x. }
+simple_res	q1733:认购期权的特点？	select ?x where { <认购期权> <特点> ?x. }
+simple_res	q1734:立昂技术的股票代码？	select ?x where { <立昂技术> <股票代码> ?x. }
+simple_res	q1736:A股纳入MSCI指数是什么时候？	select ?x where { <A股> <纳入MSCI指数时间> ?x. }
+simple_res	q1737:MSCI新兴市场指数与中国相关的有哪些?	select ?x where { <MSCI新兴市场指数> <中国相关> ?x. }
+simple_res	q1738:上市公司财务造假，监管机构最高罚款金额？	select ?x where { <上市公司财务造假> <最高罚款> ?x. }
+simple_res	q1739:银证转账的时间？	select ?x where { <银证转账> <时间> ?x. }
+simple_res	q1740:股票在除权日当天名称前冠以什么字样？	select ?x where { <除权> <标识> ?x. }
+simple_res	q1741:除息的英文简写？	select ?x where { <除息> <英文简写> ?x. }
+simple_res	q1742:上交所国债逆回购的起点金额？	select ?x where { <上交所国债逆回购> <起点金额> ?x. }
+simple_res	q1743:信用账户销户条件？	select ?x where { <信用账户> <销户条件> ?x. }
+simple_res	q1744:上证有多少家上市公司？	select ?x where { <上证> <上市公司数量> ?x. }
+simple_res	q1745:上证的平均市盈率是多少？	select ?x where { <上证> <平均市盈率> ?x. }
+simple_res	q1746:上证的总流通股本是多少？	select ?x where { <上证> <总流通股本> ?x. }
+simple_res	q1747:上证的总流通市值是多少？	select ?x where { <上证> <总流通市值> ?x. }
+simple_res	q1748:上证的总股本是多少？	select ?x where { <上证> <总流通市值> ?x. }
+simple_res	q1749:上证的总市值是多少？	select ?x where { <上证> <总市值> ?x. }
+simple_res	q1750:深证有多少家上市公司？	select ?x where { <深证> <上市公司数量> ?x. }
+simple_res	q1751:深证的平均市盈率是多少？	select ?x where { <深证> <平均市盈率> ?x. }
+simple_res	q1752:深证的总流通市值是多少？	select ?x where { <深证> <总流通市值> ?x. }
+simple_res	q1753:深证的总市值是多少？	select ?x where { <深证> <总市值> ?x. }
+simple_res	q1754:深证上市证券数？	select ?x where { <深证> <上市证券数> ?x. }
+simple_res	q1755:深证主板上市公司数？	select ?x where { <深证主板> <上市公司数> ?x. }
+simple_res	q1756:深证中小板上市公司数？	select ?x where { <深证中小板> <上市公司数> ?x. }
+simple_res	q1757:深证创业板上市公司数？	select ?x where { <深证创业板> <上市公司数> ?x. }
+simple_res	q1758:公开发行上市对企业有什么风险？	select ?x where { <上市> <风险> ?x. }
+simple_res	q1759:公开发行上市对企业有什么约束？	select ?x where { <上市> <约束> ?x. }
+simple_res	q1760:国债回购证券代码首四位?	select ?x where { <国债回购> <证券代码首四位> ?x. }
+simple_res	q1761:小米上市地点？	select ?x where { <小米> <上市地点> ?x. }
+simple_res	q1762:小米发行价？	select ?x where { <小米> <发行价> ?x. }
+simple_res	q1763:道氏理论有哪三个核心思想？	select ?x where { <道氏理论> <核心思想> ?x. }
+simple_res	q1764:小米的承销商？	select ?x where { <小米> <承销商> ?x. }
+simple_res	q1765:小米的创始人？	select ?x where { <小米> <创始人> ?x. }
+simple_res	q1766:比特币的创始人是谁？	select ?x where { <比特币> <创始人> ?x. }
+simple_res	q1767:比特币的特征？	select ?x where { <比特币> <特征> ?x. }
+simple_res	q1768:九大对冲基金公司？	select ?x where { <九大对冲基金公司> <相关公司> ?x. }
+simple_res	q1769:2019年全球富豪榜榜首的是？	select ?x where { <福布斯全球富豪榜> <榜首> ?x. }
+simple_res	q1771:港股通交易的最大手数？	select ?x where { <港股通> <最大交易手数> ?x. }
+simple_res	q1772:港股通股票暂停交易的情况？	select ?x where { <港股通> <暂停交易情况> ?x. }
+simple_res	q1773:债券质押式回购的风险？	select ?x where { <债券质押式回购> <风险> ?x. }
+simple_res	q1776:新股申购的条件？	select ?x where { <新股申购> <条件> ?x. }
+simple_res	q1777:指定交易有何优点？	select ?x where { <指定交易> <优点> ?x. }
+simple_res	q1778:香港联交所是哪四家合并而成的？	select ?x where { <香港联交所> <组成> ?x. }
+simple_res	q1779:股票质押式回购业务优势？	select ?x where { <股票质押式回购> <优势> ?x. }
+simple_res	q1780:什么情况下会被暂停上市？	select ?x where { <被暂停上市> <情况> ?x. }
+simple_res	q1781:什么情况下会被终止上市？	select ?x where { <被终止上市> <情况> ?x. }
+simple_res	q1782:股票质押式回购业务的融资期限？	select ?x where { <股票质押式回购业务> <融资期限> ?x. }
+simple_res	q1783:基金公司有哪些？	select ?x where { <基金公司> <相关公司> ?x. }
+simple_res	q1784:维持担保比例计算公式？	select ?x where { <维持担保比例> <公式> ?x. }
+simple_res	q1785:约定购回式证券交易的交易时间？	select ?x where { <约定购回式证券> <交易时间> ?x. }
+simple_res	q1786:存托凭证以人民币还是外币计价？	select ?x where { <存托凭证> <计价货币> ?x. }
+simple_res	q1787:证监会的全称是？	select ?x where { <证监会> <全称> ?x. }
+simple_res	q1788:短期国债的偿还期限？	select ?x where { <短期国债> <偿还期限> ?x. }
+simple_res	q1791:什么是产品三要素？	select ?x where { <产品> <三要素> ?x. }
+simple_res	q1792:深交所封闭式证券投资基金证券代码的编制原则?	select ?x where { <深交所封闭式证券投资基金证券代码> <编制原则> ?x. }
+simple_res	q1793:约定购回的警戒线？	select ?x where { <约定购回> <警戒线> ?x. }
+simple_res	q1794:约定购回的处置线？	select ?x where { <约定购回> <处置线> ?x. }
+simple_res	q1795:开立信用账户要求客户有多久的证券交易经验？	select ?x where { <开立信用账户> <证券经验要求> ?x. }
+simple_res	q1796:公开发行公司债券的条件?	select ?x where { <公司债券> <发行条件> ?x. }
+simple_res	q1797:上交所可转债债转股数量规定？	select ?x where { <上交所可转债债转> <数量规定> ?x. }
+simple_res	q1798:可转债债转股的规则？	select ?x where { <可转债债转股> <规则> ?x. }
+simple_res	q1799:港股交收制度？	select ?x where { <港股> <交收制度> ?x. }
+simple_res	q1800:A股交收制度？	select ?x where { <A股> <交收制度> ?x. }
+simple_res	q1801:日K线是红色代表什么意思？	select ?x where { <日K线> <红色含义> ?x. }
+simple_res	q1802:购买开放式基金的条件？	select ?x where { <购买开放式基金> <条件> ?x. }
+simple_res	q1803:基金的运作方式有哪些？	select ?x where { <基金> <运作方式> ?x. }
+simple_res	q1804:基金的报价单位？	select ?x where { <基金> <报价单位> ?x. }
+simple_res	q1805:封闭式基金的认购方式有哪些？	select ?x where { <封闭式基金> <认购方式> ?x. }
+simple_res	q1806:深圳ETF基金卖出后资金什么时候到账？	select ?x where { <深圳ETF> <到账时间> ?x. }
+simple_res	q1807:基金分红方式有哪些？	select ?x where { <基金分红> <方式> ?x. }
+simple_res	q1808:货币基金的特点？	select ?x where { <货币基金> <特点> ?x. }
+simple_res	q1809:基金的交易时间？	select ?x where { <基金> <交易时间> ?x. }
+simple_res	q1810:基金分红有哪些条件？	select ?x where { <基金分红> <条件> ?x. }
+simple_res	q1811:基金开户支持哪些证件类型？	select ?x where { <基金开户> <证件类型> ?x. }
+simple_res	q1812:开放式基金的类型有哪些？	select ?x where { <开放式基金> <类型> ?x. }
+simple_res	q1813:基金认购的收费模式？	select ?x where { <基金认购> <收费模式> ?x. }
+simple_res	q1814:可以T+0交易的基金有哪些？	select ?x where { <基金> <T+0> ?x. }
+simple_res	q1815:可以实现T+0交易的货币基金产品有哪些？	select ?x where { <货币基金> <T+0> ?x. }
+simple_res	q1816:索罗斯经典名言？	select ?x where { <索罗斯> <经典名言> ?x. }
+simple_res	q1817:索罗斯狙击香港发生在什么时候？	select ?x where { <索罗斯狙击香港> <发生时间> ?x. }
+simple_res	q1819:《金融炼金术》一书的作者是？	select ?x where { <《金融炼金术》> <作者> ?x. }
+simple_res	q1822:沪指2850点被称为什么底？	select ?x where { <沪指2850> <别名> ?x. }
+simple_res	q1823:《华尔街之狼》原型是谁？	select ?x where { <《华尔街之狼》> <原型> ?x. }
+simple_res	q1826:詹森指数的公式？	select ?x where { <詹森指数> <公式> ?x. }
+simple_res	q1827:电影《猫鼠游戏》讲诉了一个诈骗天才从FBI历史上最年轻的通缉犯到FBI金融安全顾问的故事，该角色的原型是？	select ?x where { <猫鼠游戏> <原型> ?x. }
+simple_res	q1828:巴菲特的投资名言？	select ?x where { <巴菲特> <投资名言> ?x. }
+simple_res	q1829:巴菲特午餐是从哪年开始拍卖的？	select ?x where { <巴菲特午餐> <起始年份> ?x. }
+simple_res	q1830:华尔街的铜牛雕像身长是？	select ?x where { <华尔街的铜牛雕像> <身长> ?x. }
+simple_res	q1831:青岛啤酒的监事会主席？	select ?x where { <青岛啤酒> <监事会主席> ?x. }
+simple_res	q1832:青岛啤酒的总裁？	select ?x where { <青岛啤酒> <总裁> ?x. }
+simple_res	q1833:青岛啤酒的董事会秘书？	select ?x where { <青岛啤酒> <董事会秘书> ?x. }
+simple_res	q1834:青岛啤酒的董事长？	select ?x where { <青岛啤酒> <董事长> ?x. }
+simple_res	q1835:青岛啤酒的副总裁？	select ?x where { <青岛啤酒> <副总裁> ?x. }
+simple_res	q1836:青岛啤酒的执行董事？	select ?x where { <青岛啤酒> <执行董事> ?x. }
+simple_res	q1837:青岛啤酒的股东监事？	select ?x where { <青岛啤酒> <股东监事> ?x. }
+simple_res	q1838:青岛啤酒的非执行董事？	select ?x where { <青岛啤酒> <非执行董事> ?x. }
+simple_res	q1839:青岛啤酒的独立董事？	select ?x where { <青岛啤酒> <独立董事> ?x. }
+simple_res	q1840:青岛啤酒的总会计师？	select ?x where { <青岛啤酒> <总会计师> ?x. }
+simple_res	q1841:青岛啤酒的职工监事？	select ?x where { <青岛啤酒> <职工监事> ?x. }
+simple_res	q1842:青岛啤酒的财务总监？	select ?x where { <青岛啤酒> <财务总监> ?x. }
+simple_res	q1843:青岛啤酒的股东有？	select ?x where { <青岛啤酒> <股东> ?x. }
+simple_res	q1846:风险警示股票有哪些？	select ?x where { <股票> <风险警示> ?x. }
+simple_res	q1847:上海市场大宗交易的条件？	select ?x where { <上海市场> <大宗交易条件> ?x. }
+simple_res	q1848:深圳市场大宗交易的条件？	select ?x where { <深圳市场> <大宗交易条件> ?x. }
+simple_res	q1849:广发证券有哪些融资类业务？	select ?x where { <广发证券> <融资类业务> ?x. }
+simple_res	q1850:广发证券的客服电话？	select ?x where { <广发证券> <客服电话> ?x. }
+simple_res	q1851:个股期权的合约类型？	select ?x where { <个股期权> <合约类型> ?x. }
+simple_res	q1852:个股期权的交割方式？	select ?x where { <个股期权> <交割方式> ?x. }
+simple_res	q1853:个股期权价格变动的影响因素有哪些？	select ?x where { <个股期权价格变动> <影响因素> ?x. }
+simple_res	q1854:个股期权合约要素？	select ?x where { <个股期权> <合约要素> ?x. }
+simple_res	q1855:上交所期权交易方式？	select ?x where { <上交所期权> <交易方式> ?x. }
+simple_res	q1856:期权的交易方式有？	select ?x where { <期权> <交易方式> ?x. }
+simple_res	q1857:老三板A股的报价单位？	select ?x where { <老三板A股> <报价单位> ?x. }
+simple_res	q1858:老三板B股的报价单位？	select ?x where { <老三板B股> <报价单位> ?x. }
+simple_res	q1859:老三板股票有涨跌幅限制吗？	select ?x where { <老三板股票> <涨跌幅限制> ?x. }
+simple_res	q1860:旧三板股票转让的交易费用？	select ?x where { <旧三板股票转让> <交易费用> ?x. }
+simple_res	q1861:天弘基金官方网站？	select ?x where { <天弘基金> <网址> ?x. }
+simple_res	q1862:天弘基金成立时间？	select ?x where { <天弘基金> <成立时间> ?x. }
+simple_res	q1863:天弘基金客服邮箱为？	select ?x where { <天弘基金> <客服邮箱> ?x. }
+simple_res	q1865:K线的计算周期有哪些？	select ?x where { <K线> <计算周期> ?x. }
+simple_res	q1866:K线看涨形态有？	select ?x where { <K线形态> <看涨> ?x. }
+simple_res	q1867:美股什么颜色代表上涨？	select ?x where { <美股> <上涨颜色> ?x. }
+simple_res	q1868:A股什么颜色代表上涨？	select ?x where { <A股> <上涨颜色> ?x. }
+simple_res	q1869:K线图别名有？	select ?x where { <K线图> <别名> ?x. }
+simple_res	q1870:港股什么颜色代码下跌？	select ?x where { <港股> <下跌颜色> ?x. }
+simple_res	q1871:沪港通的重要意义体现在哪些方面？	select ?x where { <沪港通> <重要意义> ?x. }
+simple_res	q1872:沪港通标的股票范围？	select ?x where { <沪港通> <标的股票范围> ?x. }
+simple_res	q1873:港股通买入后何时可以卖出？	select ?x where { <港股通> <交易机制> ?x. }
+simple_res	q1874:开通港股通权限时冻结资金金额？	select ?x where { <开通港股通权限> <冻结金额> ?x. }
+simple_res	q1875:港股通买卖港股使用哪种货币报价？	select ?x where { <港股通> <报价货币> ?x. }
+simple_res	q1876:港股通买卖港股使用哪种货币交收？	select ?x where { <港股通> <交收货币> ?x. }
+simple_res	q1877:什么是融资融券担保物？	select ?x where { <融资融券> <担保物> ?x. }
+simple_res	q1878:融资融券的交易成本有哪些？	select ?x where { <融资融券> <交易成本> ?x. }
+simple_res	q1879:融资融券交易佣金上限？	select ?x where { <融资融券> <交易佣金上限> ?x. }
+simple_res	q1880:融资融券负债类型？	select ?x where { <融资融券> <负债类型> ?x. }
+simple_res	q1881:融资融券取保线是多少？	select ?x where { <融资融券> <取保线> ?x. }
+simple_res	q1882:一人可以开立多个信用账户吗？	select ?x where { <融资融券> <最多账户数量> ?x. }
+simple_res	q1883:债券的收益包括哪些？	select ?x where { <债券> <收益> ?x. }
+simple_res	q1884:债券的交易方式？	select ?x where { <债券> <交易方式> ?x. }
+simple_res	q1885:银行间债券市场的债券交易类型有哪些？	select ?x where { <银行间债券市场的债券交易> <类型> ?x. }
+simple_res	q1886:债券回购有哪些类型？	select ?x where { <债券回购> <类型> ?x. }
+simple_res	q1887:公司债券暂停的情形有哪些？	select ?x where { <公司债券> <暂停情形> ?x. }
+simple_res	q1888:机构债券投资范围？	select ?x where { <机构债券> <投资范围> ?x. }
+simple_res	q1889:历任中国证监会主席？	select ?x where { <证监会> <主席> ?x. }
+simple_res	q1890:现任证监会主席是谁？	select ?x where { <证监会> <现任主席> ?x. }
+simple_res	q1892:刘士余任职期间，中国股市发生哪些变化？	select ?x where { <刘士余> <政绩> ?x. }
+simple_res	q1894:B股的委托申报方式？	select ?x where { <B股> <委托申报方式> ?x. }
+simple_res	q1895:B股交易的费用？	select ?x where { <B股交易> <费用> ?x. }
+simple_res	q1896:B股的交收规则？	select ?x where { <B股> <交收规则> ?x. }
+simple_res	q1897:B股以什么币种交易？	select ?x where { <B股> <币种> ?x. }
+simple_res	q1898:股票交易费用？	select ?x where { <股票> <交易费用> ?x. }
+simple_res	q1899:ST股票的最大涨跌幅是多少？	select ?x where { <ST股票> <最大涨跌幅> ?x. }
+simple_res	q1900:股票的交易时间？	select ?x where { <股票> <交易时间> ?x. }
+simple_res	q1901:股票最低买多少股？	select ?x where { <股票> <起点数量> ?x. }
+simple_res	q1902:股票的报价单位？	select ?x where { <股票> <报价单位> ?x. }
+simple_res	q1903:深市A股的增发代码是什么？	select ?x where { <深市A股> <增发代码> ?x. }
+simple_res	q1904:停牌股票何时复牌？	select ?x where { <停牌股票> <何时复牌> ?x. }
+simple_res	q1905:新三板转让方式有哪些？	select ?x where { <新三板> <转让方式> ?x. }
+simple_res	q1906:新三板的投资者有哪些？	select ?x where { <新三板> <投资者> ?x. }
+simple_res	q1907:新三板股票代码是以什么开头的？	select ?x where { <新三板股票代码> <号段> ?x. }
+simple_res	q1908:新三板协议转让有哪些成交情况？	select ?x where { <新三板协议转让> <成交情况> ?x. }
+simple_res	q1909:新三板交易时间？	select ?x where { <新三板> <交易时间> ?x. }
+simple_res	q1910:新三板挂牌申请需要多少时间？	select ?x where { <新三板挂牌申请> <费时> ?x. }
+simple_res	q1911:新三板股票的代码有什么特点？	select ?x where { <新三板股票代码> <特点> ?x. }
+simple_res	q1912:中概股有哪些？	select ?x where { <中概股> <相关股票> ?x. }
+simple_res	q1913:XD是什么的缩写？	select ?x where { <XD> <缩写> ?x. }
+simple_res	q1914:股票上市首日冠以什么字样？	select ?x where { <股票上市首日> <字样> ?x. }
+simple_res	q1915:上海A股股票代码是什么开头的？	select ?x where { <上海A股股票代码> <开头数字> ?x. }
+simple_res	q1916:客户风险承受能力分类标准？	select ?x where { <客户风险承受能力> <分类标准> ?x. }
+simple_res	q1917:证券转银行单日限额？	select ?x where { <证券转银行> <单日限额> ?x. }
+simple_res	q1918:上证50ETF期权合约的委托类型？	select ?x where { <上证50ETF期权合约> <委托类型> ?x. }
+simple_res	q1919:股票成交规则是什么？	select ?x where { <股票> <成交规则> ?x. }
+simple_res	q1920:开放式基金的面值是多少？	select ?x where { <开放式基金> <面值> ?x. }
+simple_res	q1921:东方通信的所属行业？	select ?x where { <东方通信> <行业> ?x. }
+simple_res	q1922:东方通信的所在城市？	select ?x where { <东方通信> <城市> ?x. }
+simple_res	q1923:东方通信的所属行业？	select ?x where { <东方通信> <行业> ?x. }
+simple_res	q1924:东方通信的上市时间？	select ?x where { <东方通信> <上市时间> ?x. }
+simple_res	q1925:东方通信的实际控制人？	select ?x where { <东方通信> <实际控制人> ?x. }
+simple_res	q1926:东方通信的所属概念？	select ?x where { <东方通信> <概念> ?x. }
+simple_res	q1927:东方通信的主营产品？	select ?x where { <东方通信> <主营产品> ?x. }
+simple_res	q1928:水泥的上游是？	select ?x where { <水泥> <上游> ?x. }
+simple_res	q1929:水泥的下游是？	select ?x where { <水泥> <下游> ?x. }
+simple_res	q1932:食用油的下位产品？	select ?x where { <食用油> <下位产品> ?x. }
+simple_res	q1935:小包装玉米油的上位产品？	select ?x where { <小包装玉米油> <上位产品> ?x. }
+simple_res	q1936:橄榄油的下游有？	select ?x where { <橄榄油> <下游> ?x. }
+simple_res	q1937:橄榄油的上游有？	select ?x where { <橄榄油> <上游> ?x. }
+simple_res	q1938:国内的量化产品有？	select ?x where { <国内> <量化产品> ?x. }
+simple_res	q1939:借壳重组完成的股票？	select ?x where { <借壳成功> <相关股票> ?x. }
+simple_res	q1940:王亚伟持股的股票？	select ?x where { <王亚伟> <持股> ?x. }
+simple_res	q1941:连续涨停的股票？	select ?x where { <连续涨停> <相关股票> ?x. }
+simple_res	q1942:跌破举牌价的股票？	select ?x where { <跌破举牌价> <相关股票> ?x. }
+simple_res	q1943:数字孪生概念有哪些股票？	select ?x where { <数字孪生概念> <相关股票> ?x. }
+simple_res	q1946:量化回测风险指标？	select ?x where { <量化回测> <风险指标> ?x. }
+simple_res	q1947:夏普比率公式？	select ?x where { <夏普比率> <公式> ?x. }
+simple_res	q1948:麦氏综合指标是谁创的？	select ?x where { <麦氏综合指标> <开创者> ?x. }
+simple_res	q1950:永辉超市主营产品？	select ?x where { <永辉超市> <主营产品> ?x. }
+simple_res	q1951:超市的上游是？	select ?x where { <超市> <上游> ?x. }
+simple_res	q1952:超市的下游是？	select ?x where { <超市> <下游> ?x. }
+simple_res	q1953:迪士尼收购福克斯?	select ?x where { <迪士尼以什么价格收购福克斯> <价格> ?x. }
+simple_res	q1954:阿里巴巴以什么价格收购申通快递？	select ?x where { <阿里巴巴收购申通快递> <价格> ?x. }
+simple_res	q1955:合成树脂的上游是？	select ?x where { <合成树脂> <上游> ?x. }
+simple_res	q1956:钢铁的下游是？	select ?x where { <钢铁> <下游> ?x. }
+simple_res	q1957:产业链有哪四个维度？	select ?x where { <产业链有> <维度> ?x. }
+simple_res	q1961:《ST仰帆股票交易异常波动公告》的公告类型？	select ?x where { <《ST仰帆股票交易异常波动公告》> <公告类型> ?x. }
+simple_res	q1962:深市中小企业板块A股证券代码是多少？	select ?x where { <深市中小企业板块A股> <证券代码> ?x. }
+simple_res	q1963:上交所逆回购的起点金额？	select ?x where { <上交所逆回购> <起点金额> ?x. }
+simple_res	q1964:深交所逆回购的起点金额？	select ?x where { <深交所逆回购> <起点金额> ?x. }
+simple_res	q1965:期权卖方最大收益是什么？	select ?x where { <期权卖方> <最大收益> ?x. }
+simple_res	q1966:新三板股票协议转让的申报类型？	select ?x where { <新三板股票协议转让> <申报类型> ?x. }
+simple_res	q1967:基金信息披露的内容？	select ?x where { <基金> <信息披露内容> ?x. }
+simple_res	q1968:股票有哪些评级？	select ?x where { <股票> <评级> ?x. }
+simple_res	q1969:安控科技市值？	select ?x where { <安控科技> <市值> ?x. }
+simple_res	q1970:针对上市公司的监管类函件有哪些？	select ?x where { <上市公司> <监管类函件> ?x. }
+simple_res	q1971:融资利息如何计算？	select ?x where { <融资利息> <公式> ?x. }
+simple_res	q1972:如何计算融券费用？	select ?x where { <融券费用> <公式> ?x. }
+simple_res	q1973:上市公司发布的公告都有哪些类型？	select ?x where { <公告> <类型> ?x. }
+simple_res	q1974:5G是什么的简称？	select ?x where { <5G> <简称> ?x. }
+simple_res	q1976:云南白药总股本？	select ?x where { <云南白药> <总股本> ?x. }
+simple_res	q1977:上海证券交易所的咨询热线是？	select ?x where { <上海证券交易所> <咨询热线> ?x. }
+simple_res	q1978:深证证券交易所的咨询热线是？	select ?x where { <深证证券交易所> <咨询热线> ?x. }
+simple_res	q1979:中美贸易谈判中方牵头人是？	select ?x where { <中美贸易谈判> <中方牵头人> ?x. }
+simple_res	q1980:交通运输包含哪些二级行业？	select ?x where { <交通运输> <二级行业> ?x. }
+simple_res	q1981:公用事业包含哪些二级行业？	select ?x where { <公用事业> <二级行业> ?x. }
+simple_res	q1982:市场择时的分类？	select ?x where { <市场择时> <分类> ?x. }
+simple_res	q1983:趋势择时有哪些技术面指标？	select ?x where { <趋势择时> <技术面指标> ?x. }
+simple_res	q1984:牙膏的上游是？	select ?x where { <牙膏> <上游> ?x. }
+simple_res	q1985:风电的上游是？	select ?x where { <风电> <上游> ?x. }
+simple_res	q1986:顺丰控股主营产品有？	select ?x where { <顺丰控股> <主营产品> ?x. }
+simple_res	q1988:养殖的上游是？	select ?x where { <养殖> <上游> ?x. }
+simple_res	q1989:养殖的下游是？	select ?x where { <养殖> <下游> ?x. }
+simple_res	q1990:美国三大证券交易所？	select ?x where { <美国> <三大证券交易所> ?x. }
+simple_res	q1992:老虎证券的投资方？	select ?x where { <老虎证券> <投资方> ?x. }
+simple_res	q1995:美股的开盘时间？	select ?x where { <美股> <开盘时间> ?x. }
+simple_res	q1996:索尼公司的总市值？	select ?x where { <索尼公司> <总市值> ?x. }
+simple_res	q1997:索尼公司的网站地址？	select ?x where { <索尼公司> <网站地址> ?x. }
+simple_res	q1998:索尼公司的所属行业？	select ?x where { <索尼公司> <所属行业> ?x. }
+simple_res	q1999:索尼公司的成立时间？	select ?x where { <索尼公司> <成立时间> ?x. }
+simple_res	q2009:谁会蛤蟆功？	select ?x where { <蛤蟆功_（金庸小说中的武功）> <修习者> ?x . }
+simple_res	q2012:"全真七子"都有谁？	select ?x where { <全真七子> <成员> ?x . }
+simple_res	q2013:"江南七怪"都有谁？	select ?x where { <江南七怪_（小说《射雕英雄传》中人物组合）> <成员> ?x . }
+simple_res	q2015:郭靖和黄蓉都会什么武功？	select ?x where { <郭靖_（金庸武侠小说《射雕英雄传》男主角）> <武功> ?x . <黄蓉_（金庸武侠小说《射雕英雄传》女主角）> <武功> ?x . }
+simple_res	q2016:包惜弱的丈夫是谁？	select ?x where { <包惜弱> <丈夫> ?x . }
+simple_res	q2019:周伯通在哪里创出了空明拳？	select ?x where { <空明拳> <创始地> ?x . <空明拳> <创始者> <周伯通> . }
+simple_res	q2021:杨过使用什么武器？	select ?x where { <杨过> <武器> ?x . }
+simple_res	q2026:郭靖和黄蓉的子女是谁？	select ?x where { <郭靖_（金庸武侠小说《射雕英雄传》男主角）> <子女> ?x . <黄蓉_（金庸武侠小说《射雕英雄传》女主角）> <子女> ?x . }
+simple_res	q2028:明教"四大法王"是谁？	select ?x where { <明教四大法王> <成员> ?x . }
+simple_res	q2031:"少林金刚伏魔圈"由哪三人组成？	select ?x where { <少林金刚伏魔圈> <使用者> ?x . }
+simple_res	q2033:谁练成了九阳神功？	select ?x where { <九阳神功_（金庸小说中的武功）> <练成神功者> ?x . }
+simple_res	q2034:谁没有练成九阳神功？	select ?x where { <九阳神功_（金庸小说中的武功）> <练功未成者> ?x . }
+simple_res	q2035:张三丰创立了什么门派？	select ?x where { <张三丰_（武侠小说人物）> <荣誉> ?x . }
+simple_res	q2038:灭绝师太的哪个徒弟会九阴白骨爪？	select ?x where { <灭绝师太_（小说《倚天屠龙记》人物）> <徒弟> ?x . <九阴白骨爪> <修习者> ?x . }
+simple_res	q2042:令狐冲的师父是谁？	select ?x where { <令狐冲> <师传> ?x . }
+simple_res	q2051:《巴黎圣母院》和《悲惨世界》的作者是哪国人？	select ?x where { <巴黎圣母院_（维克多·雨果长篇小说）> <作者> ?y . <悲惨世界_（法国作家雨果创作长篇小说）> <作者> ?y . <雨果_（法国作家）> <国籍> ?x . }
+simple_res	q2057:诺贝尔奖包含哪些奖项同？	select ?x where { { <诺贝尔奖> <包含奖项1> ?x. } UNION { <诺贝尔奖> <包含奖项2> ?x. }}
+simple_res	q2073:老佛爷参与设计了哪些品牌？	select ?x where { <老佛爷_（知名设计师卡尔·拉格斐）> <主要成就> ?x . }
+simple_res	q2074:SHE的成员有哪些？	select ?x where { <S.H.E> <组合成员> ?x . }
+simple_res	q2075:夫妻肺片是用什么做的？	select ?x where { <夫妻肺片> <主要食材> ?x . }
+simple_res	q2076:小棋养了一只萨摩耶，你能告诉他萨摩耶喜欢什么食物吗？	select ?x where { <萨摩耶犬_（犬科哺乳动物）> <喜食> ?x . }
+simple_res	q2078:地球可以分为七大洲四大洋，其中四大洋分别指什么？	select ?x where { <四大洋> <特指> ?x . }
+simple_res	q2079:小明很想去看极光，他应该去什么地方？	select ?x where { <极光_（自然现象）> <极光区> ?x . }
+simple_res	q2080:康乃馨象征着什么？	select ?x where { <康乃馨_（石竹属植物）> <象征意义> ?x . }
+simple_res	q2081:星巴克出售什么？	select ?x where { <星巴克_（美国连锁咖啡公司）> <经营范围> ?x . }
+simple_res	q2082:世界三大饮料？	select ?x where { <世界三大饮料> <三大饮料> ?x . }
+simple_res	q2083:常染色体病是由什么引起的？	select ?x where { <常染色体病> <原因> ?x . }
+simple_res	q2084:怎么判断是否出现了倒春寒现象？	select ?x where { <倒春寒> <标准> ?x . }
+simple_res	q2085:七夕这一天人们一般会做什么？	select ?x where { <七夕节> <节日活动> ?x.  }
+simple_res	q2086:七八月份，我国东南沿海地区大多会遭遇台风，台风是由什么引发的？	select ?x where { <台风_（气象学名词）> <成因> ?x . }
+simple_res	q2087:庞贝古城是因什么而毁灭的？	select ?x where { <庞贝古城_（亚平宁半岛古城）> <毁灭原因> ?x . }
+simple_res	q2088:元宵节为什么要吃汤圆？	select ?x where { <汤圆_（中国传统食品汤圆）> <意义> ?x . }
+simple_res	q2089:文艺复兴运动的起源地在哪里？	select ?x where { <文艺复兴> <兴起国家> ?x . }
+simple_res	q2090:小明想去杭州游玩，听说西湖景区有"一山、二塔、三岛、三堤、五湖"，你能告诉他三堤是指什么吗？	select ?x where { <西湖_（浙江省杭州市西湖）> <湖中三堤> ?x . }
+simple_res	q2091:历史上泰坦尼克号是在哪一天沉没的？	select ?x where { <泰坦尼克号_（英国豪华邮轮）> <沉没时间> ?x . }
+simple_res	q2092:小明去西藏旅游时，当地的少数民族向他献上了哈达，是什么意思？	select ?x where { <哈达_（蒙古族、藏族传统丝织品）> <意义> ?x . }
+simple_res	q2093:深度学习可以应用在哪些领域？	select ?x where { <深度学习> <应用领域> ?x . }
+simple_res	q2096:化学元素碳可以组成哪些单质？	select ?x where { <碳单质> <存在形式> ?x . }
+simple_res	q2098:氯元素的原子量是？	select ?x where { <氯> <原子量> ?x . }
+simple_res	q2100:酸洗工艺中主要用到了哪一种典型的二元酸？	select ?x where { <酸洗工艺> <主要成分> ?x . <二元酸> <典型例子> ?x . }
+simple_res	q2109:飞船"黄金之心"出自哪个作品？	select ?x where { <黄金之心_（科幻小说中的飞船）> <作品名称> ?x . }
+simple_res	q2112:itoa函数来自哪个编程语言？	select ?x where { <itoa函数> <来源> ?x . }
+simple_res	q2114:科学家牛顿的英文名是？	select ?x where { <牛顿_（艾萨克·牛顿）> <外文名> ?x . }
+simple_res	q2116:科学家牛顿的英文名是？	select ?x where { <牛顿_（艾萨克·牛顿）> <外文名> ?x . }
+simple_res	q2121:圆周率有哪些近似值？	select ?x where { <圆周率> <近似值> ?x . }
+simple_res	q2124:作家余华有哪些代表作？	select ?x where { <余华_（当代作家）> <代表作品> ?x . }
+simple_res	q2125:一氧化碳的爆炸极限是？	select ?x where { <一氧化碳> <爆炸极限> ?x . }
+simple_res	q2127:四氯化碳要如何储存？	select ?x where { <四氯化碳> <储存方式> ?x . }
+simple_res	q2129:小说《流浪地球》的作者是？	select ?x where { <流浪地球_（书名）> <作者> ?x . }
+simple_res	q2131:数字49的二进制表示为？	select ?x where { <49_（数字）> <二进制> ?x . }
+simple_res	q2132:百度的董事长是谁？	select ?x where { <百度> <董事长> ?x . }
+simple_res	q2134:科学家牛顿的英文名是？	select ?x where { <牛顿_（艾萨克·牛顿）> <外文名> ?x . }
+simple_res	q2135:元素周期表是由谁创建的？	select ?x where { <元素周期表_（化学元素列表）> <创造者> ?x . }
+simple_res	q2136:恒星的"氦闪"是一种什么性质的物理过程？	select ?x where { <氦闪> <性质> ?x . }
+simple_res	q2138:如何用罗马数字书写十进制数48？	select ?x where { <48> <罗马数字> ?x . }
+simple_res	q2139:火柴头的成分中，哪一个化学物质属于助燃剂？	select ?x where { <火柴头> <组成> ?x . <助燃剂> <例子> ?x . }
+simple_res	q2140:电流通常用哪个英文字母表示？	select ?x where { <电流> <物理量符号> ?x . }
+simple_res	q2141:北京大学的学术传统是什么？	select ?x where { <北京大学> <学术传统> ?x . }
+simple_res	q2142:北京大学的校歌是什么？	select ?x where { <北京大学> <校歌> ?x . }
+simple_res	q2143:刘昊然是什么星座的？	select ?x where { <刘昊然> <星座> ?x . }
+simple_res	q2144:刘昊然的粉丝称为什么？	select ?x where { <刘昊然> <粉丝名> ?x . }
+simple_res	q2149:莎士比亚是哪国的戏剧家？	select ?x where { <莎士比亚_（欧洲文艺复兴时期戏剧家）> <国籍> ?x . }
+simple_res	q2151:伦敦市的人口有多少？	select ?x where { <伦敦_（英国首都）> <人口> ?x . }
+simple_res	q2153:纽约的气候是怎样的？	select ?x where { <纽约_（美国第一大城市）> <气候条件> ?x . }
+simple_res	q2155:海南有什么著名景点？	select ?x where { <海南_（中国行政区）> <著名景点> ?x . }
+simple_res	q2156:电影《教父》得过什么奖？	select ?x where { <教父_（1972年美国黑帮电影）> <主要奖项> ?x . }
+simple_res	q2157:著名moba类游戏dota2的开发商是谁？	select ?x where { <dota2> <开发商> ?x . }
+simple_res	q2158:哲学家柏拉图出生在哪里？	select ?x where { <柏拉图_（古希腊哲学家）> <出生地> ?x . }
+simple_res	q2162:dell公司的口号是什么？	select ?x where { <戴尔公司> <公司口号> ?x . }
+simple_res	q2163:苹果公司成立于哪一天？	select ?x where { <苹果_（苹果产品公司）> <成立时间> ?x . }
+simple_res	q2164:苹果公司总部在哪？	select ?x where { <苹果_（苹果产品公司）> <总部地点> ?x . }
+simple_res	q2165:苹果公司的现任CEO是谁？	select ?x where { <苹果_（苹果产品公司）> <首席执行官> ?x . }
+simple_res	q2167:清华大学的校训是什么？	select ?x where { <清华大学> <校训> ?x . }
+simple_res	q2169:周杰伦的血型？	select ?x where { <周杰伦> <血型> ?x . }
+simple_res	q2171:香港词人黄伟文出生于哪一年？	select ?x where { <黄伟文_（香港填词人、时尚评论人）> <出生日期> ?x . }
+simple_res	q2173:著名歌手陈奕迅的出生日期是？	select ?x where { <陈奕迅> <外文名> ?x . }
+simple_res	q2176:奥斯卡金像奖的发起单位是？	select ?x where { <奥斯卡金像奖> <发起单位> ?x . }
+simple_res	q2179:漫威公司成立于哪一年？	select ?x where { <漫威> <成立时间> ?x . }
+simple_res	q2181:名模卡莉·克劳斯的身高？	select ?x where { <卡莉·克劳斯_（美国超模）> <身高> ?x . }
+simple_res	q2183:被无数人称为"老婆"的新垣结衣是干什么的？	select ?x where { <新垣结衣> <职业> ?x . }
+simple_res	q2185:被誉为"性感小野马"的金泫雅有多重？	select ?x where { <金泫雅> <体重> ?x . }
+simple_res	q2187:《春光乍泄》中黎耀辉的恋人是谁？	select ?x where { <黎耀辉> <恋人> ?x . }
+simple_res	q2189:姓"江"的代表人物有哪些？	select ?x where { <江_（中国姓氏）> <代表人物> ?x . }
+simple_res	q2192:白居易的那首《长恨歌》一共有多少字？	select ?x where { <长恨歌_（白居易长篇叙事诗）> <字数> ?x . }
+simple_res	q2197:第一届奥斯卡举办于哪一年？	select ?x where { <奥斯卡金像奖> <发起时间> ?x . }
+simple_res	q2222:唯美主义的流派有哪些代表人物？	select ?x where { <唯美主义> <代表人物> ?x . }
+simple_res	q2226:詹姆斯卡梅隆出生于加拿大的哪里？	select ?x where { <詹姆斯·卡梅隆_（加拿大电影导演）> <出生地> ?x . }
+simple_res	q2236:文艺复兴在法国有哪些代表人物？	select ?x where { <法国文艺复兴> <代表人物> ?x . }
+simple_res	q2240:特洛伊战争主要有哪些将领指挥？	select ?x where { <特洛伊战争_（古希腊战争）> <主要指挥官> ?x . }
+simple_res	q2296:华为的董事长是谁？	select ?x where { <华为技术有限公司> <董事长> ?x . }
+simple_res	q2299:德国有哪些著名的汽车品牌？	select ?x where { <德国_（德意志联邦共和国）> <汽车品牌> ?x. }
+simple_res	q2300:微软公司有什么软件产品？	select ?x where { <微软> <主要软件产品> ?x. }
+simple_res	q2301:美国总统奥巴马出生在什么地方？	select ?x where { <侯赛因_（美国总统）> <出生地> ?x. }
+simple_res	q2302:麻省理工学院的创建者是？	select ?x where { <麻省理工学院> <创办者> ?x. }
+simple_res	q2303:舒伯特是哪国人？	select ?x where { <舒伯特> <国籍> ?x. }
+simple_res	q2305:第一部《异形》的导演是谁？	select ?x where { <异形_（《异形》系列电影第一部）> <导演> ?x. }
+simple_res	q2306:曲毛楼梯草的主要分布在哪？	select ?x where { <曲毛楼梯草> <分布区域> ?x . }
+simple_res	q2307:汤显祖是哪个朝代的人？	select ?x where { <汤显祖_（中国明代戏曲家、文学家）> <国籍> ?x. }
+simple_res	q2308:暗夜女神勒托出自哪个神话体系？	select ?x where { <勒托> <神话体系> ?x. }
+simple_res	q2309:魅族CEO是谁？	select ?x where { <魅族_（魅族科技有限公司）> <现任ceo> ?x . }
+simple_res	q2310:柳明珠的主要成就是什么？	select ?x where { <柳明珠> <主要成就> ?x. }
+simple_res	q2311:中国实行什么政治制度？	select ?x where { <中华人民共和国> <政治体制> ?x. }
+simple_res	q2312:乌克兰的气候是什么类型？	select ?x where { <乌克兰> <气候> ?x. }
+simple_res	q2313:里奥·梅西现在效力哪只球队？	select ?x where { <里奥·梅西_（阿根廷足球运动员）> <所属运动队> ?x . }
+simple_res	q2315:《山楂树之恋》是谁拍的？	select ?x where { <山楂树_（2010年张艺谋执导电影）> <导演> ?x. }
+simple_res	q2316:张国荣是哪里人？	select ?x where { <张国荣_（华语歌手、演员、音乐人）> <出生地> ?x. }
+simple_res	q2317:布偶猫原产地在哪里？	select ?y where { <布偶猫_（动物）> <原产地> ?y. }
+simple_res	q2319:北京大学的主要奖项有哪些？	select ?x where { <北京大学> <主要奖项> ?x . }
+simple_res	q2320:白垩纪时霸王龙曾分布在哪些地方？	select ?x where { <霸王龙_（已灭绝的白垩纪晚期爬行动物）> <分布区域> ?x. }
+simple_res	q2321:厦门大学校歌是？	select ?x where { <厦门大学> <校歌> ?x . }
+simple_res	q2322:《骄儿诗》是谁写的？	select ?x where { <骄儿诗> <作者> ?x. }
+simple_res	q2323:茶是什么时候开始兴起的？	select ?x where { <茶_（饮品）> <兴起时间> ?x. }
+simple_res	q2324:金庸的本名是什么？	select ?x where { <金庸> <中文名> ?x. }
+simple_res	q2325:北京大学的地址是哪里？	select ?x where { <北京大学> <学校地址> ?x . }
+simple_res	q2326:AK-47突击步枪使用多大口径的子弹？	select ?x where { <AK-47突击步枪> <口径> ?x. }
+simple_res	q2327:陈奕迅的英文名是什么？	select ?x where { <陈奕迅> <外文名> ?x. }
+simple_res	q2328:当年都有谁教过体操王子李宁？	select ?x where { <李宁_（体操王子）> <教练> ?x. }
+simple_res	q2329:复旦大学的现任校长是谁？	select ?x where { <复旦大学> <现任校长> ?x . }
+simple_res	q2330:京沪高铁有多长？	select ?x where { <京沪高速铁路> <里程> ?x. }
+simple_res	q2331:熊猫是熊还是猫？	select ?x where { <熊猫_（哺乳动物）> <科> ?x. }
+simple_res	q2332:漫威公司的成立时间是哪一年？	select ?x where { <漫威> <成立时间> ?x. }
+simple_res	q2334:肯德基的官网是什么？	select ?x where { <肯德基> <官网> ?x. }
+simple_res	q2336:中国东海的起止点一般是指？	select ?x where { <东海_（常规东海、中国东海和东中国海）> <习称东海> ?x. }
+simple_res	q2338:网络游戏的传播媒介是？	select ?x where { <网络游戏_（联网进行的多人电子游戏）> <传输媒介> ?x. }
+simple_res	q2339:初唐四杰分别是谁？	select ?x where { <初唐四杰> <人物> ?x. }
+simple_res	q2340:现存的社会主义国家有哪些？	select ?x where { <社会主义国家> <国家> ?x. }
+simple_res	q2341:郭沫若的原名和字号是什么？	select ?x where { <郭沫若> <别名> ?x. }
+simple_res	q2342:奥巴马都从事过什么职业？	select ?x where { <侯赛因_（美国总统）> <职业> ?x. }
+simple_res	q2345:富士康有多少名员工？	select ?x where { <富士康> <员工数> ?x . }
+simple_res	q2346:一打是指多少个？	select ?x where { <一打> <含义> ?x. }
+simple_res	q2347:刘涛的老公是谁？	select ?y where { <刘涛_（中国内地女演员）> <丈夫> ?y. }
+simple_res	q2348:北京大学校庆日也是一个非常重要的节日，是哪一天？	select ?x where { <北京大学> <校庆日> ?x. }
+simple_res	q2350:电影钢铁侠在哪里取景拍摄？	select ?x where { <Ironman_（美国2008年小罗伯特·唐尼主演电影）> <拍摄地点> ?x. }
+simple_res	q2351:棉花糖在英语中怎么讲？	select ?x where { <棉花糖_（糖果）> <外文名> ?x. }
+simple_res	q2352:钱钟书的代表作有哪些？	select ?x where { <钱钟书> <代表作品> ?x. }
+simple_res	q2354:鼩鼱的天敌是什么？	select ?x where { <鼩鼱> <天敌> ?x. }
+simple_res	q2355:在个人准则层面，我们应该如何践行社会主义核心价值观？	select ?x where { <核心价值观> <个人准则> ?x. }
+simple_res	q2356:拜占庭帝国是哪一年建立的？	select ?x where { <拜占庭帝国> <建立时间> ?x. }
+simple_res	q2357:洋务运动的结果？	select ?x where { <洋务运动> <结果> ?x . }
+simple_res	q2358:史诗《伊利亚特》的作者是谁？	select ?x where { <伊利亚特_（《荷马史诗》之一）> <作者> ?x. }
+simple_res	q2359:爱伦·坡的主要成就是什么？	select ?y where { <埃德加·爱伦·坡> <主要成就> ?y. }
+simple_res	q2360:复旦大学的主要奖项有哪些？	select ?x where { <复旦大学> <主要奖项> ?x . }
+simple_res	q2361:门捷列夫在什么时候公布了元素周期律？	select ?x where { <元素周期表_（化学元素列表）> <发明日期> ?x. }
+simple_res	q2362:加拿大的首都是哪里？	select ?x where { <加拿大_（北美洲国家）> <首都> ?x. }
+simple_res	q2363:新加坡的国际机场有哪些？	select ?x where { <新加坡> <国际机场> ?x. }
+simple_res	q2364:在美国华盛顿特区，我们应该去哪乘坐飞机？	select ?x where { <华盛顿哥伦比亚特区_（美国首都）> <机场> ?x . }
+simple_res	q2365:输入东坡先生字什么？	select ?x where { <苏轼_（北宋文学家）> <字号> ?x. }
+simple_res	q2366:化妆品牌薇姿出自哪国？	select ?x where { <薇姿> <产地> ?x. }
+simple_res	q2367:由史蒂芬·乔布斯创立的苹果公司的理念与口号是什么？	select ?x where { <苹果_（苹果产品公司）> <公司口号> ?x . }
+simple_res	q2368:男朋友跟我说他感到"累觉不爱"，他到底是什么意思？	select ?y where { <累觉不爱_（网络词汇）> <释义> ?y. }
+simple_res	q2369:西里斯的葡萄酒有什么特点？	select ?x where { <西里斯> <葡萄酒特点> ?x. }
+simple_res	q2371:剑桥大学的学院有哪些？	select ?x where { <剑桥大学> <主要院系> ?x . }
+simple_res	q2372:八宝山的海拔？	select ?x where { <八宝山_（北京八宝山）> <海拔> ?x . }
+simple_res	q2374:微软研发的软件都有哪些？	select ?x where { <微软> <主要软件产品> ?x. }
+simple_res	q2375:联合国五大常任理事国有哪些？	select ?x where { <联合国_（国际组织）> <常任理事国> ?x. }
+simple_res	q2376:饮品养乐多又叫什么？	select ?y where { <养乐多> <别名> ?y. }
+simple_res	q2377:清华大学是一所什么类型的学校？	select ?x where { <清华大学> <学校类型> ?x. }
+simple_res	q2378:唐朝的选官制度？	select ?x where { <唐朝_（中国历史朝代）> <选官制度> ?x. }
+simple_res	q2379:哈萨克斯坦人主要是什么民族？	select ?x where { <哈萨克斯坦> <主要民族> ?x. }
+simple_res	q2381:中国人口总数？	select ?x where { <中华人民共和国> <人口数量> ?x . }
+simple_res	q2382:神厨小福贵有多少集？	select ?x where { <神厨小福贵> <集数> ?x . }
+simple_res	q2383:神厨小福贵的出品人是谁？	select ?x where { <神厨小福贵> <出品人> ?x . }
+simple_res	q2384:你知道法语的类别吗？	select ?x where { <法语> <类别> ?x. }
+simple_res	q2385:第一次工业革命的主要国家有哪些？	select ?x where { <第一次工业革命> <主要国家> ?x . }
+simple_res	q2386:爱伦·坡出生在哪个城市？	select ?y where { <埃德加·爱伦·坡> <出生地> ?y. }
+simple_res	q2387:前赤壁赋的作者？	select ?x where { <前赤壁赋> <作者> ?x . }
+simple_res	q2388:大流士三世是哪个帝国的皇帝？	select ?x where { <大流士三世_（波斯帝国末代君主）> <国籍> ?x. }
+simple_res	q2389:歌手杨丞琳毕业于？	select ?y where { <杨丞琳> <毕业院校> ?y. }
+simple_res	q2390:小说《鬼吹灯》的作者是谁？	select ?x where { <鬼吹灯_（天下霸唱创作小说）> <作者> ?x. }
+simple_res	q2392:四川大学的地址是哪里？	select ?x where { <四川大学> <学校地址> ?x . }
+simple_res	q2393:埃及的英文全名是什么？	select ?x where { <埃及> <英文名称> ?x. }
+simple_res	q2394:荀子主张"人性本恶"，那你知道性善论是谁提出的吗？	select ?x where { <性善论> <提出者> ?x. }
+simple_res	q2395:数据库在哪一年产生？	select ?y where { <数据库> <产生时间> ?y. }
+simple_res	q2396:范冰冰多高？	select ?x where { <范冰冰> <身高> ?x . }
+simple_res	q2397:潭柘寺何时建造？	select ?x where { <潭柘寺> <创建年代> ?x . }
+simple_res	q2398:林清玄的外文名是什么？	select ?x where { <林清玄> <外文名> ?x. }
+simple_res	q2399:电视剧绯闻女孩在哪拍摄？	select ?x where { <Gossip_（绯闻女孩）> <拍摄地点> ?x. }
+simple_res	q2400:姚明是中国著名的篮球运动员，那么姚明研究生就读于哪所大学？	select ?x where { <姚明_（中职联公司董事长兼总经理）> <研究生> ?x. }
+simple_res	q2401:冥王星的外文名是什么？	select ?x where { <冥王星_（太阳系中的一个天体）> <外文名> ?x. }
+simple_res	q2402:查士丁尼出生在哪里？	select ?x where { <查士丁尼皇帝> <出生地> ?x. }
+simple_res	q2403:微软公司有多少员工？	select ?x where { <微软> <员工数> ?x. }
+simple_res	q2404:小沈阳媳妇是谁？	select ?x where { <小沈阳> <妻子> ?x. }
+simple_res	q2405:足球运动员恩科诺惯用哪支脚？	select ?x where { <恩科诺> <惯用脚> ?x. }
+simple_res	q2406:柏拉图的著名哲学主张是？	select ?x where { <柏拉图_（古希腊哲学家）> <主张> ?x. }
+simple_res	q2407:九叶诗派的主要成员有哪些？	select ?x where { <九叶诗派> <主要成员> ?x. }
+simple_res	q2408:你知道王老吉的配方吗？	select ?x where { <王老吉_（王老吉凉茶）> <主要原料> ?x. }
+simple_res	q2410:博尔赫斯是什么民族？	select ?y where { <豪尔赫·路易斯·博尔赫斯_（阿根廷作家）> <民族> ?y. }
+simple_res	q2411:小罗伯特唐尼是什么血型？	select ?x where { <小罗伯特·唐尼> <血型> ?x. }
+simple_res	q2413:动漫形象皮卡丘出自于哪部作品？	select ?x where { <皮卡丘> <登场作品> ?x. }
+simple_res	q2414:请问孔子的主要作品有哪些？	select ?x where { <孔子_（儒家学派创始人）> <主要作品> ?x. }
+simple_res	q2415:制作面包需要哪些原材料啊？	select ?x where { <面包> <主要食材> ?x. }
+simple_res	q2416:在金庸小说《天龙八部》中，段正淳的情妇都有谁？	select ?x where { <段正淳_（金庸作品《天龙八部》中的人物）> <情妇> ?x. }
+simple_res	q2417:慈禧的名字是什么？	select ?x where { <慈禧太后_（清朝晚期重要政治人物）> <中文名> ?x . }
+simple_res	q2418:古时候的一个时辰在现在是多长时间？	select ?x where { <时辰> <换算> ?x. }
+simple_res	q2419:告诉我杰尼龟的性别比例？	select ?x where { <杰尼龟> <性别比例> ?x. }
+simple_res	q2421:苻坚是哪个国家的统治者？	select ?x where { <苻坚> <国籍> ?x. }
+simple_res	q2422:4-甲基苯磺酸钾的英文名是什么？	select ?x where { <4-甲基苯磺酸钾> <英文名> ?x. }
+simple_res	q2423:编织鞋的优点是什么？	select ?x where { <编织鞋> <优点> ?x. }
+simple_res	q2424:闰年的时间有什么规律？	select ?x where { <闰年_（历法中的名词）> <置闰法则> ?x. }
+simple_res	q2425:元宵节都有哪些风俗活动？	select ?x where { <元宵节_（中国传统节日）> <节日活动> ?x. }
+simple_res	q2426:贺龙体育馆地处哪座城市？	select ?x where { <贺龙体育馆> <所属城市> ?x. }
+simple_res	q2427:珠穆朗玛峰的最高海拔为多少？	select ?x where { <珠穆朗玛峰_（世界最高峰）> <最高海拔> ?x. }
+simple_res	q2428:王菲的《催眠》收录在哪张专辑？	select ?x where { <催眠_（王菲演唱歌曲）> <所属专辑> ?x. }
+simple_res	q2429:唐代女诗人薛涛于哪年去世？	select ?x where { <薛涛_（唐代女诗人）> <去世时间> ?x. }
+simple_res	q2430:有什么数学方面的著作？	select ?x where { <数学_（学科）> <相关著作> ?x. }
+simple_res	q2431:《中华人民共和国行政诉讼法》是何时开始施行的？	select ?x where { <中华人民共和国行政诉讼法_（法律条文）> <实施日期> ?x . }
+simple_res	q2433:电影《我是奋青》的票房是多少？	select ?x where { <我是奋青> <票房> ?x. }
+simple_res	q2434:老舍原名是什么？	select ?x where { <老舍> <中文名> ?x. }
+simple_res	q2437:梅艳芳名下有哪个个人基金？	select ?y where { <梅艳芳> <个人基金> ?y. }
+simple_res	q2439:电视剧《冰与火之歌》在哪里拍摄？	select ?x where { <冰与火之歌_（美国HBO电视台制作的电视剧）> <拍摄地点> ?x. }
+simple_res	q2440:勾股定理是何时提出的？	select ?x where { <勾股定理> <提出时间> ?x . }
+simple_res	q2441:四川大学的现任校长是谁？	select ?x where { <四川大学> <现任校长> ?x . }
+simple_res	q2442:柳絮是柳树的哪一个器官？	select ?x where { <柳絮_（基本概念）> <器官> ?x. }
+simple_res	q2443:请问华南虎分布在哪些区域？	select ?y where { <华南虎_（中国特有虎亚种）> <分布区域> ?y. }
+simple_res	q2444:王选在哪里毕业的？	select ?x where { <王选_（中国科学院院士、国家最高科学技术奖获得者）> <毕业院校> ?x. }
+simple_res	q2445:《全新版大学英语》有多少页？	select ?x where { <全新版大学英语> <页数> ?x . }
+simple_res	q2448:莎士比亚写过哪些著作呢？	select ?x where { <莎士比亚_（欧洲文艺复兴时期戏剧家）> <代表作品> ?x. }
+simple_res	q2449:网络剧《法医秦明》在那个网站平台上播出？	select ?x where { <法医秦明> <在线播放平台> ?x. }
+simple_res	q2450:菠萝有什么样的象征意义？	select ?y where { <菠萝> <象征意义> ?y. }
+simple_res	q2451:加拿大的人口有多少？	select ?x where { <加拿大_（北美洲国家）> <人口数量> ?x. }
+simple_res	q2452:螺蛳粉是哪个地方的小吃？	select ?x where { <螺蛳粉> <产地> ?x. }
+simple_res	q2453:阿波罗计划实在什么时候开始的？	select ?y where { <阿波罗计划> <起始时间> ?y. }
+simple_res	q2454:品牌爱马仕都卖哪些类别的东西？	select ?x where { <hermes_（法国奢侈品牌：爱马仕）> <经营范围> ?x. }
+simple_res	q2456:中国有几个直辖市？	select ?x where { <中国省级行政单位> <直辖市> ?x. }
+simple_res	q2457:《富春山居图》是谁的作品？	select ?x where { <富春山居图_（元朝画家黄公望作品）> <作者> ?x. }
+simple_res	q2458:电视剧《同居损友》是何时上映的？	select ?x where { <同居损友> <上映时间> ?x. }
+simple_res	q2459:小孔成像的光学原理是什么？	select ?x where { <小孔成像> <成像原理> ?x. }
+simple_res	q2460:马云的主要成就是什么？	select ?x where { <马云_（阿里巴巴集团创始人）> <主要成就> ?x. }
+simple_res	q2461:耐克的创始人是谁？	select ?x where { <NIKE> <创始人> ?x. }
+simple_res	q2462:输入成龙的儿子是谁？	select ?x where { <成龙_（中国香港演员、导演）> <儿子> ?x. }
+simple_res	q2463:芝加哥公牛队的主场馆是？	select ?x where { <芝加哥公牛队> <主场馆> ?x. }
+simple_res	q2464:武汉大学占地面积多大？	select ?x where { <武汉大学> <占地面积> ?x . }
+simple_res	q2466:基督教起源于什么地方？	select ?x where { <基督教> <创始地点> ?x. }
+simple_res	q2467:塘红乡的人口数量是多少？	select ?x where { <塘红乡> <人口> ?x. }
+simple_res	q2468:一年有多少天？	select ?x where { <年_（计时单位）> <解释> ?x. }
+simple_res	q2469:你知道玫瑰属于什么植物纲吗？	select ?x where { <玫瑰_（中药）> <纲> ?x. }
+simple_res	q2470:电影《长江7号》是由哪个电影公司出品的？	select ?x where { <长江7号> <出品公司> ?x. }
+simple_res	q2472:唐太宗的丰功伟绩？	select ?x where { <李世民_（唐太宗）> <主要成就> ?x . }
+simple_res	q2473:雨伞是用什么东西做的？	select ?x where { <雨伞_（生活工具）> <材料> ?x. }
+simple_res	q2476:歌曲《唠嗑歌》的时长是多少？	select ?x where { <唠嗑歌> <歌曲时长> ?x. }
+simple_res	q2477:古罗马帝国的人口有多少？	select ?x where { <罗马_（古罗马时代）> <人口数量> ?x. }
+simple_res	q2478:海贼里四皇都有谁？	select ?x where { <四皇_（日本动漫《海贼王》中人物）> <现任成员> ?x. }
+simple_res	q2479:上海申花队的主场是哪里？	select ?x where { <上海绿地申花足球俱乐部> <主场馆> ?x. }
+simple_res	q2480:里奥·梅西至今为止获得过的主要奖项有哪些？	select ?x where { <里奥·梅西_（阿根廷足球运动员）> <主要奖项> ?x . }
+simple_res	q2481:成龙是哪个国家的人？	select ?x where { <成龙_（中国香港演员、导演）> <国籍> ?x. }
+simple_res	q2482:请问什么叫做假寐？	select ?x where { <假寐> <解释> ?x. }
+simple_res	q2483:梵高英年早逝，那么他是什么时候去世的？	select ?x where { <梵高_（梵高）> <逝世日期> ?x. }
+simple_res	q2485:诗人李白是哪个时代的人？	select ?x where { <李白_（唐朝著名诗人）> <所处时代> ?x . }
+simple_res	q2488:豆瓣的官方网站？	select ?x where { <豆瓣_（网站名称）> <官网> ?x. }
+simple_res	q2489:李白出生时间是哪一年？	select ?x where { <李白_（唐朝著名诗人）> <出生时间> ?x. }
+simple_res	q2490:为什么要庆祝圣诞节？	select ?x where { <圣诞节_（节日）> <节日意义> ?x. }
+simple_res	q2492:南开大学的现任校长是谁？	select ?x where { <南开大学_（全国重点大学）> <现任校长> ?x . }
+simple_res	q2493:要多少步才能让一只蛋孵化成杰尼龟？	select ?x where { <杰尼龟> <孵化步数> ?x. }
+simple_res	q2494:书籍《亚利安01》的价格是多少？	select ?x where { <亚利安01> <定价> ?x. }
+simple_res	q2495:五子棋是哪个国家发明的？	select ?x where { <五子棋_（两人对弈的策略型棋类游戏）> <起源> ?x. }
+simple_res	q2496:《蒹葭》是一部非常经典、脍炙人口的作品，请问它出自哪里？	select ?x where { <蒹葭_（诗词）> <作品出处> ?x. }
+simple_res	q2497:拉萨的市花是什么？	select ?x where { <拉萨> <市花> ?x. }
+simple_res	q2498:三国时期的政治体制是？	select ?x where { <三国_（中国东汉与西晋之间的历史时期）> <政治体制> ?x. }
+simple_res	q2535:《阳关三叠》是什么时候的琴曲？	select ?x where { <阳关三叠> <歌曲类型> <古琴曲>. <阳关三叠> <朝代> ?x. }
+simple_res	q2569:微积分中的微、积分是什么关系？	select ?x where { <微积分_（数学概念）> <微、积分关系> ?x. }
+simple_res	q2585:小说《哈利波特》的作者是谁？	select ?x where { <哈利·波特_（J.K.罗琳创作魔幻系列小说）> <作者> ?x. }
+simple_res	q2605:郦道元的《水经注》编撰于哪个朝代？	select ?x where { <水经注> <作者> <郦道元>. <水经注> <创作年代> ?x. }
+simple_res	q2665:江泽民同志提出"三个代表"重要思想的时间是？	select ?x where { <三个代表重要思想> <提出人> <江泽民>. <三个代表重要思想> <提出时间> ?x. }
+simple_res	q2692:在金庸小说《天龙八部》中，鸠摩智和游坦之都会什么武功？	select ?x where { <鸠摩智> <武功> ?x. <游坦之> <内功> ?x. }
+simple_res	q2699:康佳集团的法人是谁?	select ?x where { <康佳集团股份有限公司> <法定代表人> ?x. }
+simple_res	q2700:飞亚股份的公司名称?	select ?x where { <飞亚股份> <公司名称> ?x. }
+simple_res	q2701:飞亚股份的董事长是谁?	select ?x where { <飞亚股份> <董事长> ?x. }
+simple_res	q2702:飞亚股份的总经理叫什么?	select ?x where { <飞亚股份> <总经理> ?x. }
+simple_res	q2703:飞亚股份的董事会秘书是谁?	select ?x where { <飞亚股份> <董事会秘书> ?x. }
+simple_res	q2704:飞亚股份的副总经理有哪几位?	select ?x where { <飞亚股份> <副总经理> ?x. }
+simple_res	q2705:飞亚股份的董事有哪几位?	select ?x where { <飞亚股份> <董事> ?x. }
+simple_res	q2706:飞亚股份的独立董事有哪几位?	select ?x where { <飞亚股份> <独立董事> ?x. }
+simple_res	q2707:飞亚股份的总会计师是谁?	select ?x where { <飞亚股份> <总会计师> ?x. }
+simple_res	q2708:飞亚股份的职工监事是谁?	select ?x where { <飞亚股份> <职工监事> ?x. }
+simple_res	q2709:飞亚股份的职工代表监事是谁?	select ?x where { <飞亚股份> <职工代表监事> ?x. }
+simple_res	q2710:飞亚股份的总经理助理是谁?	select ?x where { <飞亚股份> <总经理助理> ?x. }
+simple_res	q2716:恒生电子的董事长是谁？	select ?x where { <恒生电子> <董事长> ?x. }
+simple_res	q2717:恒生电子股份有限公司的总裁叫什么名字？	select ?x where { <恒生电子> <总裁> ?x. }
+simple_res	q2718:平安银行的全称是什么？	select ?x where { <平安银行> <公司名称> ?x. }
+simple_res	q2719:平安银行的间接兄弟企业都有哪些？	select ?x where { <平安银行> <间接兄弟企业> ?x. }
+simple_res	q2720:平安银行的间接兄弟企业是谁？	select ?x where { <平安银行> <间接兄弟企业> ?x. }
+simple_res	q2721:平安银行的间接非控股股东都有哪些？	select ?x where { <平安银行> <间接非控股股东> ?x. }
+simple_res	q2722:平安银行的间接控股股东都有哪些？	select ?x where { <平安银行> <间接控股股东> ?x. }
+simple_res	q2723:平安银行的兄弟企业都有哪些？	select ?x where { <平安银行> <兄弟企业> ?x. }
+simple_res	q2724:平安银行的下属子公司、参股公司都有哪些？	select ?x where { <平安银行> <下属子公司、参股公司> ?x. }
+simple_res	q2725:平安银行的母公司都有哪些？	select ?x where { <平安银行> <母公司> ?x. }
+simple_res	q2726:恒生电子的下属子公司、参股公司有哪些？	select ?x where { <恒生电子> <下属子公司、参股公司> ?x. }
+simple_res	q2727:恒生电子有哪些子公司？	select ?x where { <恒生电子> <子公司> ?x. }
+simple_res	q2728:恒生电子的兄弟企业有哪几家？	select ?x where { <恒生电子> <兄弟企业> ?x. }
+simple_res	q2729:恒生电子的联营企业都有谁？	select ?x where { <恒生电子> <联营企业> ?x. }
+simple_res	q2730:恒生电子的母公司是谁？	select ?x where { <恒生电子> <母公司> ?x. }
+simple_res	q2731:恒生电子参股了哪些公司？	select ?x where { <恒生电子> <下属子公司、参股公司> ?x. }
+simple_res	q2732:A股有多少上市公司？	select ?x where { <A股> <上市公司数量> ?x. }
+simple_res	q2733:什么是指数型基金？	select ?x where { <指数型基金> <释义> ?x. }
+simple_res	q2734:大数据100指数是什么指数？	select ?x where { <大数据100指数> <释义> ?x. }
+simple_res	q2735:什么是长多？	select ?x where { <长多> <释义> ?x. }
+simple_res	q2736:融资融券的费率？	select ?x where { <融资融券> <费率> ?x. }
+simple_res	q2737:什么是RSI指标?	select ?x where { <RSI指标> <释义> ?x. }
+simple_res	q2738:恒生电子在哪里上市的	select ?x where { <恒生电子> <上市地点> ?x. }
+simple_res	q2739:恒生电子的是什么性质的	select ?x where { <恒生电子> <公司性质> ?x. }
+simple_res	q2740:恒生电子是哪年成立的	select ?x where { <恒生电子> <成立时间> ?x. }
+simple_res	q2742:国农科技的主要业务是啥？	select ?x where { <国农科技> <主要业务> ?x. }
+simple_res	q2743:深圳世纪星源股份有限公司主要是干什么的？	select ?x where { <国农科技> <主要业务> ?x. }
+simple_res	q2744:神州高铁技术股份有限公司的主营产品是什么	select ?x where { <国农科技> <主要业务> ?x. }
+simple_res	q2745:海泰发展的股票代码是多少	select ?x where { <海泰发展> <股票代码> ?x. }
+simple_res	q2746:恒生电子的十大股东都有谁	select ?x where { <恒生电子> <最大股票> ?x. }
+simple_res	q2747:大华股份的全称是什么	select ?x where { <大华股份> <公司名称> ?x. }
+simple_res	q2748:蚂蚁金服旗下有哪些主要产品？	select ?x where { <蚂蚁金服> <产品> ?x. }
+simple_res	q2749:蚂蚁金服的融资时间？	select ?x where { <蚂蚁金服> <融资时间> ?x. }
+simple_res	q2750:支付宝成立时间？	select ?x where { <支付宝> <成立时间> ?x. }
+simple_res	q2752:信雅达的法定代表人是谁	select ?x where { <信雅达> <法人> ?x. }
+simple_res	q2753:信雅达的注册资本是多少？	select ?x where { <信雅达> <注册资本> ?x. }
+simple_res	q2754:海康威视总部在哪里？	select ?x where { <海康威视> <总部地址> ?x. }
+simple_res	q2755:海康威视的企业口号是什么？	select ?x where { <海康威视> <企业口号> ?x. }
+simple_res	q2756:国内有哪些期货交易所？	select ?x where { <期货交易所> <类别> ?x. }
+simple_res	q2757:上海有几个期货交易所	select ?x where { <上海> <期货交易所数量> ?x. }
+simple_res	q2758:中国有几个期货交易所	select ?x where { <中国> <期货交易所数量> ?x. }
+simple_res	q2759:郑州有几个期货交易所？	select ?x where { <郑州> <期货交易所数量> ?x. }
+simple_res	q2760:大连有几个期货交易所？	select ?x where { <大连> <期货交易所数量> ?x. }
+simple_res	q2761:上期所都交易什么期货？	select ?x where { <上期所> <交易品种> ?x. }
+simple_res	q2762:黄金期货可以在哪里交易？	select ?x where { <黄金期货> <交易机构> ?x. }
+simple_res	q2763:燃料油期货在哪交易	select ?x where { <燃料油期货> <交易机构> ?x. }
+simple_res	q2764:橡胶期货在哪个交易所交易	select ?x where { <橡胶期货> <交易机构> ?x. }
+simple_res	q2765:郑商所可以交易什么期货？	select ?x where { <郑商所> <交易品种> ?x. }
+simple_res	q2766:大商所都能交易什么期货	select ?x where { <大商所> <交易品种> ?x. }
+simple_res	q2767:郑商所交易的期货有几种	select ?x where { <郑商所> <交易品种数量> ?x. }
+simple_res	q2768:上期所交易的期货有几种	select ?x where { <上期所> <交易品种数量> ?x. }
+simple_res	q2769:大商所的期货交易有多少种	select ?x where { <大商所> <交易品种数量> ?x. }
+simple_res	q2770:上期所在中国哪个城市	select ?x where { <上期所> <位置> ?x. }
+simple_res	q2771:大商所在中国哪个城市	select ?x where { <大商所> <位置> ?x. }
+simple_res	q2772:郑商所在中国哪个城市	select ?x where { <郑商所> <位置> ?x. }
+simple_res	q2773:位于大连的期货交易所叫什么	select ?x where { <大连> <期货交易所> ?x. }
+simple_res	q2774:海康威视的截止到2019年3月12日的市值是多少？	select ?x where { <海康威视> <市值> ?x. }
+simple_res	q2775:截止到2019年3月12日国内最大的安防企业的市盈率是多少	select ?x where { <大华股份> <市盈率> ?x. }
+simple_res	q2776:大华股份的股票代码是多少？	select ?x where { <大华股份> <股票代码> ?x. }
+simple_res	q2777:大华股份的市值是多少？	select ?x where { <大华股份> <市值> ?x. }
+simple_res	q2778:大华股份的净资产是多少？	select ?x where { <大华股份> <净资产> ?x. }
+simple_res	q2779:大华股份的净利润是多少？	select ?x where { <大华股份> <净利润> ?x. }
+simple_res	q2780:大华股份的市盈率是多少？	select ?x where { <大华股份> <市盈率> ?x. }
+simple_res	q2781:大华股份的市净率是多少？	select ?x where { <大华股份> <市净率> ?x. }
+simple_res	q2782:大华股份的毛利率是多少？	select ?x where { <大华股份> <毛利率> ?x. }
+simple_res	q2783:大华股份的净利率是多少？	select ?x where { <大华股份> <净利率> ?x. }
+simple_res	q2784:大华股份的ROE是多少？	select ?x where { <大华股份> <ROE> ?x. }
+simple_res	q2785:长江和记实业有限公司的中文简称是什么	select ?x where { <长江和记实业有限公司> <公司简称> ?x. }
+simple_res	q2786:长江和记实业有限公司的注册地址是哪里	select ?x where { <长江和记实业有限公司> <注册地址> ?x. }
+simple_res	q2787:长江和记实业有限公司是谁名下的企业	select ?x where { <长江和记实业有限公司> <法人> ?x. }
+simple_res	q2788:信和置业的全称是什么	select ?x where { <信和置业> <公司名称> ?x. }
+simple_res	q2789:信和置业的外文名称	select ?x where { <信和置业> <外文名称> ?x. }
+simple_res	q2790:银河娱乐集团有限公司简称什么	select ?x where { <银河娱乐集团有限公司> <公司简称> ?x. }
+simple_res	q2791:银河娱乐集团有限公司外文名称	select ?x where { <银河娱乐集团有限公司> <外文名称> ?x. }
+simple_res	q2792:银河娱乐集团有限公司什么时候成立的	select ?x where { <银河娱乐集团有限公司> <成立时间> ?x. }
+simple_res	q2793:银河娱乐集团有限公司的注册地址	select ?x where { <银河娱乐集团有限公司> <公司简称> ?x. }
+simple_res	q2794:银河娱乐集团有限公司的主席是谁	select ?x where { <银河娱乐集团有限公司> <主席> ?x. }
+simple_res	q2795:银河娱乐集团有限公司的传真是多少	select ?x where { <银河娱乐集团有限公司> <传真> ?x. }
+simple_res	q2796:周生生集团国际有限公司简称什么	select ?x where { <周生生集团国际有限公司> <公司简称> ?x. }
+simple_res	q2797:周生生集团国际有限公司外文名称	select ?x where { <周生生集团国际有限公司> <外文名称> ?x. }
+simple_res	q2798:周生生集团国际有限公司的注册地址	select ?x where { <周生生集团国际有限公司> <注册地址> ?x. }
+simple_res	q2799:周生生集团国际有限公司的主席是谁	select ?x where { <周生生集团国际有限公司> <主席> ?x. }
+simple_res	q2800:周生生集团国际有限公司的传真是多少	select ?x where { <周生生集团国际有限公司> <传真> ?x. }
+simple_res	q2801:中国银行在哪里的上市的？	select ?x where { <中国银行> <上市地点> ?x. }
+simple_res	q2802:中国上市公司的股票有哪几种	select ?x where { <股票> <类别> ?x. }
+simple_res	q2803:中国工商银行哪一年成立的	select ?x where { <中国工商> <成立时间> ?x. }
+simple_res	q2804:中国工商银行在哪里上市的	select ?x where { <中国工商> <上市地点> ?x. }
+simple_res	q2805:香港证券交易总部所在哪里	select ?x where { <香港证券交易所> <总部位置> ?x. }
+simple_res	q2806:上海证券交易总部所在哪？	select ?x where { <上海证券交易所> <总部位置> ?x. }
+simple_res	q2807:中国农业银行总部设在哪里	select ?x where { <中国农业银行> <总部位置> ?x. }
+simple_res	q2808:金融业包括哪些行业	select ?x where { <金融业> <行业类别> ?x. }
+simple_res	q2809:00国债08的全称？	select ?x where { <00国债08> <债券名称> ?x. }
+simple_res	q2810:丝绸转债的全称？	select ?x where { <丝绸转债> <债券名称> ?x. }
+simple_res	q2811:支付宝（中国）网络技术有限公司的法定代表人是谁	select ?x where { <支付宝（中国）网络技术有限公司> <法人> ?x. }
+simple_res	q2813:支付宝（中国）网络技术有限公司的注册资本是多少	select ?x where { <支付宝（中国）网络技术有限公司> <注册资本> ?x. }
+simple_res	q2814:支付宝（中国）网络技术有限公司的成立日期	select ?x where { <支付宝（中国）网络技术有限公司> <成立日期> ?x. }
+simple_res	q2815:支付宝（中国）网络技术有限公司的统一社会信用代码	select ?x where { <支付宝（中国）网络技术有限公司> <统一社会信用代码> ?x. }
+simple_res	q2816:支付宝（中国）网络技术有限公司的工商注册号	select ?x where { <支付宝（中国）网络技术有限公司> <工商注册号> ?x. }
+simple_res	q2817:支付宝（中国）网络技术有限公司的组织机构代码	select ?x where { <支付宝（中国）网络技术有限公司> <组织机构代码> ?x. }
+simple_res	q2818:支付宝（中国）网络技术有限公司的英文名称	select ?x where { <支付宝（中国）网络技术有限公司> <外文名称> ?x. }
+simple_res	q2819:支付宝（中国）网络技术有限公司的注册地址	select ?x where { <支付宝（中国）网络技术有限公司> <注册地址> ?x. }
+simple_res	q2820:支付宝（中国）网络技术有限公司的历史法人	select ?x where { <支付宝（中国）网络技术有限公司> <历史法人> ?x. }
+simple_res	q2821:浙江大华技术股份有限公司成立日期？	select ?x where { <浙江大华技术股份有限公司> <成立时间> ?x. }
+simple_res	q2822:浙江大华技术股份有限公司企业地址？	select ?x where { <浙江大华技术股份有限公司> <总部地址> ?x. }
+simple_res	q2823:浙江大华技术股份有限公司的英文名称？	select ?x where { <浙江大华技术股份有限公司> <外文名称> ?x. }
+simple_res	q2824:阿里巴巴的法人代表是谁	select ?x where { <阿里巴巴> <法人> ?x. }
+simple_res	q2826:华泰证券总部在哪个城市	select ?x where { <华泰证券> <总部地址> ?x. }
+simple_res	q2828:华泰证券前十大股东是谁	select ?x where { <华泰证券> <十大股东> ?x. }
+simple_res	q2829:华泰证券在哪上市的	select ?x where { <华泰证券> <上市地点> ?x. }
+simple_res	q2830:华泰证券在A股上市时间？	select ?x where { <华泰证券> <上市时间> ?x. }
+simple_res	q2831:华泰证券的全资子公司有哪些？	select ?x where { <华泰证券> <全资子公司> ?x. }
+simple_res	q2832:华泰证券控股了哪些公司？	select ?x where { <华泰证券> <控股公司> ?x. }
+simple_res	q2833:华泰证券参股了哪些公司？	select ?x where { <华泰证券> <参股公司> ?x. }
+simple_res	q2834:光大证券董事长是谁？	select ?x where { <光大证券> <董事长> ?x. }
+simple_res	q2835:光大证券的十大股东都有谁？	select ?x where { <光大证券> <十大股东> ?x. }
+simple_res	q2836:光大证券的股票代码是什么？	select ?x where { <光大证券> <股票代码> ?x. }
+simple_res	q2837:光大证券的主营业务是什么？	select ?x where { <光大证券> <主营业务> ?x. }
+simple_res	q2838:光大证券的董事会秘书？	select ?x where { <光大证券> <公司董秘> ?x. }
+simple_res	q2839:光大证券的法人代表？	select ?x where { <光大证券> <法人> ?x. }
+simple_res	q2840:光大证券的中文全称是什么？	select ?x where { <光大证券> <公司名称> ?x. }
+simple_res	q2841:光大证券的外文全称是什么？	select ?x where { <光大证券> <外文名称> ?x. }
+simple_res	q2842:光大证券的办公地址在哪？	select ?x where { <光大证券> <总部地址> ?x. }
+simple_res	q2843:光大证券的注册资本是多少？	select ?x where { <光大证券> <注册资本> ?x. }
+simple_res	q2844:光大证券的总经理是谁？	select ?x where { <光大证券> <总经理> ?x. }
+simple_res	q2845:光大证券的员工人数？	select ?x where { <光大证券> <员工人数> ?x. }
+simple_res	q2846:光大证券属于哪个行业？	select ?x where { <光大证券> <行业类别> ?x. }
+simple_res	q2847:申万行业有多少个行业类别	select ?x where { <申万行业> <类别数> ?x. }
+simple_res	q2848:申万行业分类类别？	select ?x where { <申万行业> <类别> ?x. }
+simple_res	q2849:招商证券开户方式	select ?x where { <招商证券> <开户方式> ?x. }
+simple_res	q2850:证券交易方式？	select ?x where { <证券> <交易方式> ?x. }
+simple_res	q2851:招商证券的客服电话？	select ?x where { <招商证券> <客服电话> ?x. }
+simple_res	q2852:什么是证券投资基金	select ?x where { <证券投资基金> <释义> ?x. }
+simple_res	q2853:基金涉及哪些当事人?	select ?x where { <基金> <关联方> ?x. }
+simple_res	q2854:基金可分为哪几类？	select ?x where { <基金> <类别> ?x. }
+simple_res	q2855:LOF的全称是什么？	select ?x where { <LOF> <基金名称> ?x. }
+simple_res	q2856:基金交易时间?	select ?x where { <基金> <交易时间> ?x. }
+simple_res	q2857:基金交易实行三大原则?	select ?x where { <基金> <交易三原则> ?x. }
+simple_res	q2858:专户业务的投资范围是什么？	select ?x where { <专户> <投资范围> ?x. }
+simple_res	q2859:养老金的覆盖范围有哪些？	select ?x where { <养老金> <类别> ?x. }
+simple_res	q2860:天弘基金的成立时间？	select ?x where { <天弘基金> <成立时间> ?x. }
+simple_res	q2861:天弘基金的股东？	select ?x where { <天弘基金> <股东> ?x. }
+simple_res	q2862:保险可以分成什么类型？	select ?x where { <保险> <类别> ?x. }
+simple_res	q2863:人身保险可划分为哪几类？	select ?x where { <人身保险> <类别> ?x. }
+simple_res	q2864:一般的企业财产保险可分为哪几类？	select ?x where { <企业财产保险> <类别> ?x. }
+simple_res	q2865:可以将信用保险分为哪几类？	select ?x where { <信用保险> <类别> ?x. }
+simple_res	q2866:责任保险种类？	select ?x where { <责任保险> <类别> ?x. }
+simple_res	q2867:保险中介组成？	select ?x where { <保险中介> <构成成分> ?x. }
+simple_res	q2868:保险法组成?	select ?x where { <保险中介> <构成成分> ?x. }
+simple_res	q2869:保险资格考试包括哪几类？	select ?x where { <保险法> <构成成分> ?x. }
+simple_res	q2870:再保险可以分成什么类别？	select ?x where { <再保险> <类别> ?x. }
+simple_res	q2871:海通证券曾用名？	select ?x where { <海通证券> <曾用名> ?x. }
+simple_res	q2872:海通证券所属行业	select ?x where { <海通证券> <所属行业> ?x. }
+simple_res	q2873:海通证券的董事长是谁？	select ?x where { <海通证券> <董事长> ?x. }
+simple_res	q2874:海通证券的注册资本是多少？	select ?x where { <海通证券> <注册资本> ?x. }
+simple_res	q2875:海通证券的总经理是谁？	select ?x where { <海通证券> <总经理> ?x. }
+simple_res	q2876:海通证券的董秘是谁？	select ?x where { <海通证券> <公司董秘> ?x. }
+simple_res	q2877:黄金期货的交易代码	select ?x where { <黄金期货> <交易代码> ?x. }
+simple_res	q2878:黄金期货的交割方式	select ?x where { <黄金期货> <交割方式> ?x. }
+simple_res	q2879:黄金期货在哪里交易	select ?x where { <黄金期货> <交易地点> ?x. }
+simple_res	q2880:黄金期货的交易单位	select ?x where { <黄金期货> <交易单位> ?x. }
+simple_res	q2881:黄金期货的报价单位	select ?x where { <黄金期货> <报价单位> ?x. }
+simple_res	q2882:美国有几个股票交易所	select ?x where { <美国> <证券交易所数量> ?x. }
+simple_res	q2883:美国有哪几个股票交易所	select ?x where { <美国> <证券交易所> ?x. }
+simple_res	q2884:美国证券交易所纽约证券交易所的简称是什么	select ?x where { <纽约证券交易所> <简称> ?x. }
+simple_res	q2885:美国证券交易所全美证券交易所的简称是什么	select ?x where { <全美证券交易所> <简称> ?x. }
+simple_res	q2886:美国证券交易所纳斯达克证券交易所的简称是什么	select ?x where { <纳斯达克证券交易所> <简称> ?x. }
+simple_res	q2887:阿里巴巴股票代码	select ?x where { <阿里巴巴> <股票代码> ?x. }
+simple_res	q2888:支付宝的母公司是谁？	select ?x where { <支付宝> <母公司> ?x. }
+simple_res	q2889:金融期货有哪些？	select ?x where { <金融期货> <类别> ?x. }
+simple_res	q2890:环球主要的期货交易所？	select ?x where { <环球交易所> <类别> ?x. }
+simple_res	q2891:亚太指数有哪些？	select ?x where { <亚太指数> <类别> ?x. }
+simple_res	q2892:美洲指数有哪些？	select ?x where { <美洲指数> <类别> ?x. }
+simple_res	q2893:欧洲指数有哪些？	select ?x where { <亚太指数> <类别> ?x. }
+simple_res	q2894:上证指数的代码是多少	select ?x where { <上证指数> <代码> ?x. }
+simple_res	q2895:小米科技有限责任公司股票代码是多少？	select ?x where { <小米科技有限责任公司> <股票代码> ?x. }
+simple_res	q2896:小米公司什么时候上市的？	select ?x where { <小米公司> <上市时间> ?x. }
+simple_res	q2897:小米公司在哪里上市的？	select ?x where { <小米公司> <上市地点> ?x. }
+simple_res	q2898:小米科技有限责任公司统一社会信用代码是多少？	select ?x where { <小米科技有限责任公司> <统一社会信用代码> ?x. }
+simple_res	q2899:小米科技有限责任公司纳税人识别号是多少？	select ?x where { <小米科技有限责任公司> <纳税人识别号> ?x. }
+simple_res	q2900:小米科技有限责任公司营业期限是多少？	select ?x where { <小米科技有限责任公司> <营业期限> ?x. }
+simple_res	q2901:小米科技有限责任公司注册地址是多少？	select ?x where { <小米科技有限责任公司> <注册地址> ?x. }
+simple_res	q2902:小米科技有限责任公司组织机构代码是多少？	select ?x where { <小米科技有限责任公司> <织机构代码> ?x. }
+simple_res	q2903:小米科技有限责任公司公司的公司类型？	select ?x where { <小米科技有限责任公司> <公司类型> ?x. }
+simple_res	q2904:小米科技有限责任公司所属行业？	select ?x where { <小米科技有限责任公司> <所属行业> ?x. }
+simple_res	q2905:小米科技有限责任公司登记机关？	select ?x where { <小米科技有限责任公司> <登记机关> ?x. }
+simple_res	q2906:小米科技有限责任公司英文名称？	select ?x where { <小米科技有限责任公司> <外文名称> ?x. }
+simple_res	q2907:小米科技有限责任公司A轮融资是什么时候	select ?x where { <小米科技有限责任公司> <A轮融资时间> ?x. }
+simple_res	q2908:小米科技有限责任公司IPO上市前经历了几轮融资	select ?x where { <小米科技有限责任公司> <融资次数> ?x. }
+simple_res	q2909:小米科技有限责任公司有哪些产品	select ?x where { <小米科技有限责任公司> <产品> ?x. }
+simple_res	q2910:奥美医疗的股票代码是多少？	select ?x where { <奥美医疗> <股票代码> ?x. }
+simple_res	q2911:西安银行的股票代码是多少？	select ?x where { <西安银行> <股票代码> ?x. }
+simple_res	q2912:华阳国际的股票代码是多少？	select ?x where { <华阳国际> <股票代码> ?x. }
+simple_res	q2913:威派格的股票代码是多少？	select ?x where { <威派格> <股票代码> ?x. }
+simple_res	q2914:七彩化学的股票代码是多少？	select ?x where { <七彩化学> <股票代码> ?x. }
+simple_res	q2915:立华股份的股票代码是多少？	select ?x where { <立华股份> <股票代码> ?x. }
+simple_res	q2916:福莱特的全称是什么？	select ?x where { <福莱特> <公司名称> ?x. }
+simple_res	q2917:恒铭达的全称是什么？	select ?x where { <恒铭达> <公司名称> ?x. }
+simple_res	q2918:威尔药业的全称是什么？	select ?x where { <威尔药业> <公司名称> ?x. }
+simple_res	q2919:华致酒行的全称是什么？	select ?x where { <华致酒行> <公司名称> ?x. }
+simple_res	q2920:动力煤的交易单位是多少？	select ?x where { <动力煤> <交易单位> ?x. }
+simple_res	q2921:动力煤的报价单位？	select ?x where { <动力煤> <报价单位> ?x. }
+simple_res	q2922:动力煤的最小变动价位？	select ?x where { <动力煤> <最小变动单位> ?x. }
+simple_res	q2923:证监会全称？	select ?x where { <证监会> <全称> ?x. }
+simple_res	q2924:银监会全称？	select ?x where { <银监会> <全称> ?x. }
+simple_res	q2925:保监会全称？	select ?x where { <保监会> <全称> ?x. }
+simple_res	q2926:证监会主席是谁	select ?x where { <证监会> <主席> ?x. }
+simple_res	q2927:证监会领导都有谁？	select ?x where { <证监会> <领导> ?x. }
+simple_res	q2928:银监会主席是谁	select ?x where { <银监会> <领导> ?x. }
+simple_res	q2929:银监会领导都有谁？	select ?x where { <银监会> <领导> ?x. }
+simple_res	q2930:万达董事长是谁	select ?x where { <万达> <董事长> ?x. }
+simple_res	q2931:万达集团创建于哪一年？	select ?x where { <万达集团> <创建时间> ?x. }
+simple_res	q2932:百度上市时间	select ?x where { <百度> <上市时间> ?x. }
+simple_res	q2933:百度在哪里上市的？	select ?x where { <百度> <上市地点> ?x. }
+simple_res	q2934:百度董事长是谁？	select ?x where { <百度> <董事长> ?x. }
+simple_res	q2935:欢聚时代旗下有哪些产品？	select ?x where { <欢聚时代> <产品> ?x. }
+simple_res	q2936:余额宝的基金管理人是谁？	select ?x where { <余额宝> <基金管理人> ?x. }
+simple_res	q2937:天弘基金有哪些基金产品？	select ?x where { <天弘基金> <基金产品> ?x. }
+simple_res	q2938:余额宝的起购金额最小是多少？	select ?x where { <余额宝> <起购金额> ?x. }
+simple_res	q2939:余额宝现在一共接入了几支基金	select ?x where { <余额宝> <接入基金数量> ?x. }
+simple_res	q2940:西藏自治区有多少家上市公司	select ?x where { <西藏自治区> <上市公司数量> ?x. }
+simple_res	q2941:上海的上市公司有多少	select ?x where { <上海> <上市公司数量> ?x. }
+simple_res	q2942:江苏省的上市公司一共有多少家？	select ?x where { <江苏省> <上市公司数量> ?x. }
+simple_res	q2943:属于上海自贸概念股的上市公司有多少？	select ?x where { <上海自贸概念股> <上市公司数量> ?x. }
+simple_res	q2946:华昌化工是属于什么概念股的？	select ?x where { <华昌化工> <概念股类别> ?x. }
+simple_res	q2947:福建金森是属于什么行业的？	select ?x where { <福建金森> <行业类别> ?x. }
+simple_res	q2948:信托的构成要素包括什么？	select ?x where { <信托> <构成要素> ?x. }
+simple_res	q2949:京东方科技集团股份有限公司的曾用名？	select ?x where { <京东方科技集团股份有限公司> <曾用名> ?x. }
+simple_res	q2950:京东方科技集团股份有限公司的主营业务包括什么？	select ?x where { <京东方科技集团股份有限公司> <主营业务> ?x. }
+simple_res	q2951:京东方科技集团股份有限公司的董秘是谁？	select ?x where { <京东方科技集团股份有限公司> <公司董秘> ?x. }
+simple_res	q2952:京东方科技集团股份有限公司的股票简称是什么	select ?x where { <京东方科技集团股份有限公司> <股票简称> ?x. }
+simple_res	q2953:京东方A的上市日期？	select ?x where { <京东方A> <上市日期> ?x. }
+simple_res	q2954:京东方A的主承销商？	select ?x where { <京东方A> <主承销商> ?x. }
+simple_res	q2955:京东方A的最大股东是谁？	select ?x where { <京东方A> <最大股东> ?x. }
+simple_res	q2956:京东方A的十大股东？	select ?x where { <京东方A> <十大股东> ?x. }
+simple_res	q3001:肺炎衣原体核酸检测属于什么类型？	select ?x where { <肺炎衣原体核酸检测> <类型> ?x. }
+simple_res	q3002:肺炎衣原体核酸检测涉及到哪些症状？	select ?x where { <肺炎衣原体核酸检测> <涉及症状> ?x. }
+simple_res	q3003:尿液肺炎链球菌抗原检测试验属于哪种类型？	select ?x where { <尿液肺炎链球菌抗原检测试验> <类型> ?x. }
+simple_res	q3004:尿液肺炎链球菌抗原检测试验与什么样的症状有关？	select ?x where { <尿液肺炎链球菌抗原检测试验> <涉及症状> ?x. }
+simple_res	q3005:肺炎支原体检测属于哪种类型的检查？	select ?x where { <肺炎支原体检测> <类型> ?x. }
+simple_res	q3006:肺炎支原体检测的涉及症状是什么？	select ?x where { <肺炎支原体检测> <涉及症状> ?x. }
+simple_res	q3007:肺炎衣原体检测属于哪种类型的检查？	select ?x where { <肺炎衣原体检测> <类型> ?x. }
+simple_res	q3008:肺炎衣原体检测的涉及症状是什么？	select ?x where { <肺炎衣原体检测> <涉及症状> ?x. }
+simple_res	q3009:肺炎支原体补体结合试验属于哪种类型？	select ?x where { <肺炎支原体补体结合试验> <类型> ?x. }
+simple_res	q3010:肺炎克雷伯杆菌抗体测定属于哪种类型？	select ?x where { <肺炎克雷伯杆菌抗体测定> <类型> ?x. }
+simple_res	q3011:肺炎克雷伯杆菌抗体测定的涉及症状有什么？	select ?x where { <肺炎克雷伯杆菌抗体测定> <涉及症状> ?x. }
+simple_res	q3012:肺炎支原体抗体测定属于什么类型的检测？	select ?x where { <肺炎支原体抗体测定> <类型> ?x. }
+simple_res	q3013:肺炎支原体抗体测定所涉及什么症状？	select ?x where { <肺炎支原体抗体测定> <涉及症状> ?x. }
+simple_res	q3014:肺炎球菌抗体检测属于哪种类型的检测？	select ?x where { <肺炎球菌抗体检测> <类型> ?x. }
+simple_res	q3015:肺炎球菌抗体检测涉及怎样的症状？	select ?x where { <肺炎球菌抗体检测> <涉及症状> ?x. }
+simple_res	q3016:肺炎球菌抗原检测属于哪种类型的检测？	select ?x where { <肺炎球菌抗原检测> <类型> ?x. }
+simple_res	q3017:肺炎球菌抗原检测涉及怎样的症状？	select ?x where { <肺炎球菌抗原检测> <涉及症状> ?x. }
+simple_res	q3018:肺炎衣原体抗体测定属于哪种类型的测定？	select ?x where { <肺炎衣原体抗体测定> <类型> ?x. }
+simple_res	q3019:肺炎衣原体抗体测定涉及怎样的症状？	select ?x where { <肺炎衣原体抗体测定> <涉及症状> ?x. }
+simple_res	q3020:抗沙眼衣原体、肺炎衣原体和鹦鹉热衣原体IgG和IgM抗体测定属于哪种类型的测定？	select ?x where { <抗沙眼衣原体、肺炎衣原体和鹦鹉热衣原体IgG和IgM抗体测定> <类型> ?x. }
+simple_res	q3021:抗沙眼衣原体、肺炎衣原体和鹦鹉热衣原体IgG和IgM抗体测定涉及怎样的症状？	select ?x where { <抗沙眼衣原体、肺炎衣原体和鹦鹉热衣原体IgG和IgM抗体测定> <涉及症状> ?x. }
+simple_res	q3022:肺炎支原体寒冷凝集试验属于哪种类型的检查？	select ?x where { <肺炎支原体寒冷凝集试验> <类型> ?x. }
+simple_res	q3023:肺炎支原体寒冷凝集试验涉及的疾病有什么？	select ?x where { <肺炎支原体寒冷凝集试验> <涉及疾病> ?x. }
+simple_res	q3024:血常规属于什么类型的检查？	select ?x where { <血常规> <类型> ?x. }
+simple_res	q3025:血常规涉及的症状有哪些？	select ?x where { <血常规> <涉及症状> ?x. }
+simple_res	q3026:血常规的检查与哪些疾病有关？	select ?x where { <血常规> <涉及疾病> ?x. }
+simple_res	q3027:血常规属于什么科室？	select ?x where { <血常规> <所属科目> ?x. }
+simple_res	q3028:血常规的检查方式是什么？	select ?x where { <血常规> <检查方式> ?x. }
+simple_res	q3029:淋巴细胞计数属于什么类型的检查？	select ?x where { <淋巴细胞计数> <类型> ?x. }
+simple_res	q3030:淋巴细胞计数涉及到哪些症状？	select ?x where { <淋巴细胞计数> <涉及症状> ?x. }
+simple_res	q3031:淋巴细胞计数与哪些疾病有关？	select ?x where { <淋巴细胞计数> <涉及疾病> ?x. }
+simple_res	q3032:D-二聚体属于什么类型的检查？	select ?x where { <D-二聚体> <类型> ?x. }
+simple_res	q3033:肌红蛋白属于什么类型的测定？	select ?x where { <肌红蛋白> <类型> ?x. }
+simple_res	q3034:肌红蛋白涉及到哪些症状？	select ?x where { <肌红蛋白> <涉及症状> ?x. }
+simple_res	q3035:肌红蛋白与什么疾病有关？	select ?x where { <肌红蛋白> <涉及疾病> ?x. }
+simple_res	q3036:肌钙蛋白属于什么类型的测定？	select ?x where { <肌钙蛋白> <类型> ?x. }
+simple_res	q3037:肌钙蛋白与什么疾病有关？	select ?x where { <肌钙蛋白> <涉及疾病> ?x. }
+simple_res	q3038:耳、鼻、咽拭子细菌培养属于什么类型的测定？	select ?x where { <耳、鼻、咽拭子细菌培养> <类型> ?x. }
+simple_res	q3039:耳、鼻、咽拭子细菌培养涉及到哪些症状？	select ?x where { <耳、鼻、咽拭子细菌培养> <涉及症状> ?x. }
+simple_res	q3040:耳、鼻、咽拭子细菌培养与哪些疾病有关？	select ?x where { <耳、鼻、咽拭子细菌培养> <涉及疾病> ?x. }
+simple_res	q3041:动脉血氧分压属于什么类型的测定？	select ?x where { <动脉血氧分压> <类型> ?x. }
+simple_res	q3042:动脉血氧分压与哪些疾病有关？	select ?x where { <动脉血氧分压> <涉及疾病> ?x. }
+simple_res	q3043:PaO2属于什么类型的测定？	select ?x where { <PaO2> <类型> ?x. }
+simple_res	q3044:PaO2涉及症状有哪些？	select ?x where { <PaO2> <涉及症状> ?x. }
+simple_res	q3045:PaO2与哪些疾病有关？	select ?x where { <PaO2> <涉及疾病> ?x. }
+simple_res	q3046:氧分压属于什么类型的检查？	select ?x where { <氧分压> <类型> ?x. }
+simple_res	q3047:氧分压涉及症状有哪些？	select ?x where { <氧分压> <涉及症状> ?x. }
+simple_res	q3048:氧分压与哪些疾病有关？	select ?x where { <氧分压> <涉及疾病> ?x. }
+simple_res	q3049:核酸检测属于什么类型的检查？	select ?x where { <核酸检测> <类型> ?x. }
+simple_res	q3050:干扰素属于什么类型?	select ?x where { <干扰素> <类型> ?x. }
+simple_res	q3051:干扰素与什么疾病有关？	select ?x where { <干扰素> <涉及疾病> ?x. }
+simple_res	q3052:尿常规属于什么类型的检查？	select ?x where { <尿常规> <类型> ?x. }
+simple_res	q3053:尿常规涉及到的症状有哪些？	select ?x where { <尿常规> <涉及症状> ?x. }
+simple_res	q3054:尿常规与什么疾病有关？	select ?x where { <尿常规> <涉及疾病> ?x. }
+simple_res	q3055:动脉血气分析属于什么类型的测定？	select ?x where { <动脉血气分析> <类型> ?x. }
+simple_res	q3056:动脉血气分析涉及到的症状有哪些？	select ?x where { <动脉血气分析> <涉及症状> ?x. }
+simple_res	q3057:动脉血气分析与什么疾病有关？	select ?x where { <动脉血气分析> <涉及疾病> ?x. }
+simple_res	q3058:心肌酶属于什么类型的测定？	select ?x where { <心肌酶> <类型> ?x. }
+simple_res	q3059:心肌酶涉及到的症状有什么？	select ?x where { <心肌酶> <涉及症状> ?x. }
+simple_res	q3060:心肌酶的测定与什么疾病有关？	select ?x where { <心肌酶> <涉及疾病> ?x. }
+simple_res	q3061:体温属于什么类型的检查？	select ?x where { <体温> <类型> ?x. }
+simple_res	q3062:体温涉及到的症状有哪些？	select ?x where { <体温> <涉及症状> ?x. }
+simple_res	q3063:急性呼吸窘迫综合征属于什么?	select ?x where { <急性呼吸窘迫综合征> <类型> ?x. }
+simple_res	q3064:急性呼吸窘迫综合征属于什么科？	select ?x where { <急性呼吸窘迫综合征> <科室> ?x. }
+simple_res	q3065:急性呼吸窘迫综合征的同义词是什么？	select ?x where { <急性呼吸窘迫综合征> <同义词> ?x. }
+simple_res	q3066:急性呼吸窘迫综合征涉及到的症状有哪些？	select ?x where { <急性呼吸窘迫综合征> <涉及症状> ?x. }
+simple_res	q3067:急性呼吸窘迫综合征伴随症状有哪些？	select ?x where { <急性呼吸窘迫综合征> <伴随症状> ?x. }
+simple_res	q3068:休克属于什么？	select ?x where { <休克> <类型> ?x. }
+simple_res	q3069:休克需要在什么科就诊？	select ?x where { <休克> <科室> ?x. }
+simple_res	q3070:休克涉及什么检查？	select ?x where { <休克> <涉及检查> ?x. }
+simple_res	q3071:休克涉及到的症状有哪些？	select ?x where { <休克> <涉及症状> ?x. }
+simple_res	q3072:中毒属于什么类型？	select ?x where { <中毒> <类型> ?x. }
+simple_res	q3073:冠状病毒感染属于什么类型？	select ?x where { <冠状病毒感染> <类型> ?x. }
+simple_res	q3074:冠状病毒感染常见病因是什么？	select ?x where { <冠状病毒感染> <常见病因> ?x. }
+simple_res	q3075:冠状病毒感染应该在什么科室就诊？	select ?x where { <冠状病毒感染> <科室> ?x. }
+simple_res	q3076:冠状病毒感染的同义词是什么？	select ?x where { <冠状病毒感染> <同义词> ?x. }
+simple_res	q3077:皮肌炎属于什么?	select ?x where { <皮肌炎> <类型> ?x. }
+simple_res	q3078:皮肌炎患者应在什么科室就诊？	select ?x where { <皮肌炎> <科室> ?x. }
+simple_res	q3079:皮肌炎涉及什么项目的检查？	select ?x where { <皮肌炎> <涉及检查> ?x. }
+simple_res	q3080:衣原体肺炎属于什么?	select ?x where { <衣原体肺炎> <类型> ?x. }
+simple_res	q3081:衣原体肺炎患者应在什么科室就诊？	select ?x where { <衣原体肺炎> <科室> ?x. }
+simple_res	q3082:衣原体肺炎的同义词是什么？	select ?x where { <衣原体肺炎> <同义词> ?x. }
+simple_res	q3083:衣原体肺炎涉及什么项目的检查？	select ?x where { <衣原体肺炎> <涉及检查> ?x. }
+simple_res	q3084:衣原体肺炎涉及到的症状有什么？	select ?x where { <衣原体肺炎> <涉及症状> ?x. }
+simple_res	q3085:血管炎属于什么？	select ?x where { <血管炎> <类型> ?x. }
+simple_res	q3086:病毒性肺炎是什么类型？	select ?x where { <病毒性肺炎> <类型> ?x. }
+simple_res	q3087:细菌性肺炎是什么类型？	select ?x where { <细菌性肺炎> <类型> ?x. }
+simple_res	q3088:社区获得性肺炎属于什么类型？	select ?x where { <社区获得性肺炎> <类型> ?x. }
+simple_res	q3089:社区获得性肺炎患者应在什么科室就诊？	select ?x where { <社区获得性肺炎> <科室> ?x. }
+simple_res	q3090:社区获得性肺炎的同义词是什么？	select ?x where { <社区获得性肺炎> <类型> ?x. }
+simple_res	q3091:胸腔积液属于什么类型？	select ?x where { <胸腔积液> <类型> ?x. }
+simple_res	q3092:胸腔积液患者应在什么科室就诊？	select ?x where { <胸腔积液> <科室> ?x. }
+simple_res	q3093:胸腔积液的同义词是什么？	select ?x where { <胸腔积液> <同义词> ?x. }
+simple_res	q3094:胸腔积液涉及到的症状有什么？	select ?x where { <胸腔积液> <涉及症状> ?x. }
+simple_res	q3095:胸腔积液与什么疾病有关？	select ?x where { <胸腔积液> <涉及疾病> ?x. }
+simple_res	q3096:细菌感染属于什么？	select ?x where { <细菌感染> <类型> ?x. }
+simple_res	q3097:细菌感染患者应在什么科室就诊？	select ?x where { <细菌感染> <科室> ?x. }
+simple_res	q3098:细菌感染涉及到的症状有哪些？	select ?x where { <细菌感染> <涉及症状> ?x. }
+simple_res	q3099:细菌感染与什么疾病有关？	select ?x where { <细菌感染> <涉及疾病> ?x. }
+simple_res	q3100:痞满属于什么？	select ?x where { <痞满> <类型> ?x. }
+simple_res	q3101:糖皮质激素不敏感综合征属于什么类型？	select ?x where { <糖皮质激素不敏感综合征> <类型> ?x. }
+simple_res	q3102:糖皮质激素不敏感综合征属于什么科？	select ?x where { <糖皮质激素不敏感综合征> <科室> ?x. }
+simple_res	q3103:与糖皮质激素不敏感综合征相近的词是什么？	select ?x where { <糖皮质激素不敏感综合征> <同义词> ?x. }
+simple_res	q3104:糖皮质激素性青光眼属于什么类型？	select ?x where { <糖皮质激素性青光眼> <类型> ?x. }
+simple_res	q3105:糖皮质激素性青光眼属于什么科？	select ?x where { <糖皮质激素性青光眼> <科室> ?x. }
+simple_res	q3106:糖皮质激素性青光眼的同义词是什么？	select ?x where { <糖皮质激素性青光眼> <同义词> ?x. }
+simple_res	q3107:恶性肿瘤中性粒细胞缺乏并发热属于什么类型？	select ?x where { <恶性肿瘤中性粒细胞缺乏并发热> <类型> ?x. }
+simple_res	q3108:恶性肿瘤中性粒细胞缺乏并发热属于什么科？	select ?x where { <恶性肿瘤中性粒细胞缺乏并发热> <科室> ?x. }
+simple_res	q3109:急性发热性嗜中性皮肤病属于什么类型？	select ?x where { <急性发热性嗜中性皮肤病> <类型> ?x. }
+simple_res	q3110:急性发热性嗜中性皮肤病属于什么科？	select ?x where { <急性发热性嗜中性皮肤病> <科室> ?x. }
+simple_res	q3111:急性发热性嗜中性皮肤病的同义词是什么？	select ?x where { <急性发热性嗜中性皮肤病> <同义词> ?x. }
+simple_res	q3112:经行发热属于什么?	select ?x where { <经行发热> <类型> ?x. }
+simple_res	q3113:内伤发热属于什么?	select ?x where { <内伤发热> <类型> ?x. }
+simple_res	q3114:子宫收缩乏力属于什么?	select ?x where { <子宫收缩乏力> <类型> ?x. }
+simple_res	q3115:子宫收缩乏力属于什么科？	select ?x where { <子宫收缩乏力> <科室> ?x. }
+simple_res	q3116:子宫收缩乏力的同义词是什么？	select ?x where { <子宫收缩乏力> <同义词> ?x. }
+simple_res	q3117:子宫收缩乏力涉及怎样的症状？	select ?x where { <子宫收缩乏力> <同义词> ?x. }
+simple_res	q3118:烧伤后腹泻属于什么?	select ?x where { <烧伤后腹泻> <类型> ?x. }
+simple_res	q3119:烧伤后腹泻属于什么科？	select ?x where { <烧伤后腹泻> <科室> ?x. }
+simple_res	q3120:慢性腹泻属于什么类型?	select ?x where { <慢性腹泻> <类型> ?x. }
+simple_res	q3121:慢性腹泻属于什么科？	select ?x where { <慢性腹泻> <科室> ?x. }
+simple_res	q3122:非感染性腹泻病属于什么类型?	select ?x where { <非感染性腹泻病> <类型> ?x. }
+simple_res	q3123:非感染性腹泻病属于什么科？	select ?x where { <非感染性腹泻病> <科室> ?x. }
+simple_res	q3124:胰致腹泻瘤属于什么类型?	select ?x where { <胰致腹泻瘤> <类型> ?x. }
+simple_res	q3125:胰致腹泻瘤属于什么科？	select ?x where { <胰致腹泻瘤> <科室> ?x. }
+simple_res	q3126:胰致腹泻瘤的同义词是什么？	select ?x where { <胰致腹泻瘤> <同义词> ?x. }
+simple_res	q3127:婴儿腹泻是什么？	select ?x where { <婴儿腹泻> <类型> ?x. }
+simple_res	q3128:腹泻疾病属于什么类型?	select ?x where { <腹泻疾病> <类型> ?x. }
+simple_res	q3129:婴幼儿腹泻属于什么类型?	select ?x where { <婴幼儿腹泻> <类型> ?x. }
+simple_res	q3130:新生儿流行性腹泻属于什么类型?	select ?x where { <新生儿流行性腹泻> <类型> ?x. }
+simple_res	q3131:小儿迁延与慢性腹泻属于什么类型?	select ?x where { <小儿迁延与慢性腹泻> <类型> ?x. }
+simple_res	q3132:旅行者腹泻属于什么类型?	select ?x where { <旅行者腹泻> <类型> ?x. }
+simple_res	q3133:热带性口炎性腹泻属于什么类型?	select ?x where { <热带性口炎性腹泻> <类型> ?x. }
+simple_res	q3134:星状病毒性腹泻属于什么类型?	select ?x where { <星状病毒性腹泻> <类型> ?x. }
+simple_res	q3135:小儿腹泻属于什么类型?	select ?x where { <小儿腹泻> <类型> ?x. }
+simple_res	q3136:老年人急性呼吸窘迫综合征属于什么类型?	select ?x where { <老年人急性呼吸窘迫综合征> <类型> ?x. }
+simple_res	q3137:老年人急性呼吸窘迫综合征涉及什么检查项目？	select ?x where { <老年人急性呼吸窘迫综合征> <涉及检查> ?x. }
+simple_res	q3138:小儿急性呼吸窘迫综合征属于什么类型?	select ?x where { <小儿急性呼吸窘迫综合征> <类型> ?x. }
+simple_res	q3139:新生儿晚期代谢性酸中毒属于什么类型?	select ?x where { <新生儿晚期代谢性酸中毒> <类型> ?x. }
+simple_res	q3140:新生儿晚期代谢性酸中毒涉及什么检查项目？	select ?x where { <新生儿晚期代谢性酸中毒> <涉及检查> ?x. }
+simple_res	q3141:老年人代谢性酸中毒属于什么类型?	select ?x where { <老年人代谢性酸中毒> <类型> ?x. }
+simple_res	q3142:老年人代谢性酸中毒涉及什么检查项目？	select ?x where { <老年人代谢性酸中毒> <涉及检查> ?x. }
+simple_res	q3143:新生儿迟发性代谢性酸中毒属于什么类型?	select ?x where { <新生儿迟发性代谢性酸中毒> <类型> ?x. }
+simple_res	q3144:新生儿迟发性代谢性酸中毒涉及什么检查项目？	select ?x where { <新生儿迟发性代谢性酸中毒> <涉及检查> ?x. }
+simple_res	q3145:支原体肺炎属于什么类型?	select ?x where { <支原体肺炎> <类型> ?x. }
+simple_res	q3146:支原体肺炎属于什么科？	select ?x where { <支原体肺炎> <科室> ?x. }
+simple_res	q3147:支原体肺炎的同义词是什么？	select ?x where { <支原体肺炎> <同义词> ?x. }
+simple_res	q3148:支原体肺炎会涉及什么症状？	select ?x where { <支原体肺炎> <涉及症状> ?x. }
+simple_res	q3149:炭疽病属于什么类型?	select ?x where { <炭疽病> <类型> ?x. }
+simple_res	q3150:炭疽病有什么症状？	select ?x where { <炭疽病> <症状> ?x. }
+simple_res	q3151:营养不良属于什么类型?	select ?x where { <营养不良> <类型> ?x. }
+simple_res	q3152:非特异性阴道炎属于什么类型?	select ?x where { <非特异性阴道炎> <类型> ?x. }
+simple_res	q3153:肺动脉高压属于什么类型?	select ?x where { <肺动脉高压> <类型> ?x. }
+simple_res	q3154:毛周角化病属于什么类型?	select ?x where { <毛周角化病> <类型> ?x. }
+simple_res	q3155:疖子属于什么类型?	select ?x where { <疖子> <类型> ?x. }
+simple_res	q3156:心力衰竭属于什么?	select ?x where { <心力衰竭> <类型> ?x. }
+simple_res	q3157:心力衰竭涉及哪些症状？	select ?x where { <心力衰竭> <涉及症状> ?x. }
+simple_res	q3158:心力衰竭与什么疾病有关？	select ?x where { <心力衰竭> <涉及疾病> ?x. }
+simple_res	q3159:动脉导管未闭属于什么类型?	select ?x where { <动脉导管未闭> <类型> ?x. }
+simple_res	q3160:充血性心力衰竭属于什么类型?	select ?x where { <充血性心力衰竭> <类型> ?x. }
+simple_res	q3161:脑梗死属于什么类型?	select ?x where { <脑梗死> <类型> ?x. }
+simple_res	q3162:百日咳属于什么类型?	select ?x where { <百日咳> <类型> ?x. }
+simple_res	q3163:百日咳要去哪个科室？	select ?x where { <百日咳> <科室> ?x. }
+simple_res	q3164:百日咳的同义词是什么？	select ?x where { <百日咳> <同义词> ?x. }
+simple_res	q3165:百日咳涉及什么检查科目？	select ?x where { <百日咳> <涉及检查> ?x. }
+simple_res	q3166:百日咳涉及哪些症状？	select ?x where { <百日咳> <涉及症状> ?x. }
+simple_res	q3167:金钱癣属于什么?	select ?x where { <金钱癣> <类型> ?x. }
+simple_res	q3168:脑疝属于什么?	select ?x where { <脑疝> <类型> ?x. }
+simple_res	q3169:性欲减退属于什么?	select ?x where { <性欲减退> <类型> ?x. }
+simple_res	q3170:甲癣在什么科室就诊？	select ?x where { <甲癣> <就诊科室> ?x. }
+simple_res	q3171:鼻咽癌属于什么?	select ?x where { <鼻咽癌> <类型> ?x. }
+simple_res	q3172:鼻咽癌在什么科室就诊？	select ?x where { <鼻咽癌> <科室> ?x. }
+simple_res	q3173:鼻咽癌的同义词是什么？	select ?x where { <鼻咽癌> <同义词> ?x. }
+simple_res	q3174:鼻咽癌涉及哪些症状？	select ?x where { <鼻咽癌> <涉及症状> ?x. }
+simple_res	q3175:房性早搏属于什么?	select ?x where { <房性早搏> <类型> ?x. }
+simple_res	q3176:子宫内膜炎属于什么?	select ?x where { <子宫内膜炎> <类型> ?x. }
+simple_res	q3177:糖尿病酮症酸中毒属于什么?	select ?x where { <糖尿病酮症酸中毒> <类型> ?x. }
+simple_res	q3178:硬皮病属于什么?	select ?x where { <硬皮病> <类型> ?x. }
+simple_res	q3179:桃花癣属于什么?	select ?x where { <桃花癣> <类型> ?x. }
+simple_res	q3180:食管癌属于什么?	select ?x where { <食管癌> <类型> ?x. }
+simple_res	q3181:食管癌患者在什么科室就诊？	select ?x where { <食管癌> <科室> ?x. }
+simple_res	q3182:食管癌的同义词是什么？	select ?x where { <食管癌> <同义词> ?x. }
+simple_res	q3183:食管癌涉及哪些症状？	select ?x where { <食管癌> <涉及症状> ?x. }
+simple_res	q3184:皮肤癣菌病属于什么?	select ?x where { <皮肤癣菌病> <类型> ?x. }
+simple_res	q3185:皮肤癣菌病在什么科室就诊？	select ?x where { <皮肤癣菌病> <就诊科室> ?x. }
+simple_res	q3186:肝纤维化属于什么?	select ?x where { <肝纤维化> <类型> ?x. }
+simple_res	q3187:牛皮癣属于什么?	select ?x where { <牛皮癣> <类型> ?x. }
+simple_res	q3188:阴虱病在什么科室就诊？	select ?x where { <阴虱病> <就诊科室> ?x. }
+simple_res	q3189:慢性鼻炎属于什么?	select ?x where { <慢性鼻炎> <类型> ?x. }
+simple_res	q3190:慢性支气管炎属于什么?	select ?x where { <慢性支气管炎> <类型> ?x. }
+simple_res	q3191:脑出血属于什么?	select ?x where { <脑出血> <类型> ?x. }
+simple_res	q3192:周围神经病属于什么?	select ?x where { <周围神经病> <类型> ?x. }
+simple_res	q3193:椎管狭窄属于什么?	select ?x where { <椎管狭窄> <类型> ?x. }
+simple_res	q3194:急性淋巴细胞白血病属于什么?	select ?x where { <急性淋巴细胞白血病> <类型> ?x. }
+simple_res	q3195:急性淋巴细胞白血病属于什么科？	select ?x where { <急性淋巴细胞白血病> <科室> ?x. }
+simple_res	q3196:急性淋巴细胞白血病的同义词是什么？	select ?x where { <急性淋巴细胞白血病> <同义词> ?x. }
+simple_res	q3197:急性淋巴细胞白血病涉及哪些检查项目？	select ?x where { <急性淋巴细胞白血病> <涉及检查> ?x. }
+simple_res	q3198:急性淋巴细胞白血病涉及哪些症状？	select ?x where { <急性淋巴细胞白血病> <涉及症状> ?x. }
+simple_res	q3199:重症急性呼吸综合征属于什么?	select ?x where { <重症急性呼吸综合征> <类型> ?x. }
+simple_res	q3200:重症急性呼吸综合征涉及哪些检查项目？	select ?x where { <重症急性呼吸综合征> <涉及检查> ?x. }
+simple_res	q3201:强迫症属于什么?	select ?x where { <强迫症> <类型> ?x. }
+simple_res	q3202:血管神经性水肿属于什么?	select ?x where { <血管神经性水肿> <类型> ?x. }
+simple_res	q3203:血管神经性水肿属于什么科？	select ?x where { <血管神经性水肿> <科室> ?x. }
+simple_res	q3204:血管神经性水肿的同义词是什么？	select ?x where { <血管神经性水肿> <同义词> ?x. }
+simple_res	q3205:血管神经性水肿涉及哪些症状？	select ?x where { <血管神经性水肿> <涉及症状> ?x. }
+simple_res	q3206:心脏病属于什么?	select ?x where { <心脏病> <类型> ?x. }
+simple_res	q3207:泪道堵塞属于什么?	select ?x where { <泪道堵塞> <类型> ?x. }
+simple_res	q3208:先天性腭裂属于什么?	select ?x where { <先天性腭裂> <类型> ?x. }
+simple_res	q3209:视网膜脱离属于什么?	select ?x where { <视网膜脱离> <类型> ?x. }
+simple_res	q3210:恙虫病的病因是什么？	select ?x where { <恙虫病> <常见病因> ?x. }
+simple_res	q3211:非典属于什么?	select ?x where { <非典> <类型> ?x. }
+simple_res	q3212:非典涉及什么检查？	select ?x where { <非典> <涉及检查> ?x. }
+simple_res	q3213:窦性心律失常属于什么?	select ?x where { <窦性心律失常> <类型> ?x. }
+simple_res	q3214:霰粒肿属于什么?	select ?x where { <霰粒肿> <类型> ?x. }
+simple_res	q3215:白血病属于什么?	select ?x where { <白血病> <类型> ?x. }
+simple_res	q3216:白血病涉及什么检查？	select ?x where { <白血病> <涉及检查> ?x. }
+simple_res	q3217:婴儿湿疹属于什么?	select ?x where { <湿疹> <类型> ?x. }
+simple_res	q3218:扁平足属于什么?	select ?x where { <扁平足> <类型> ?x. }
+simple_res	q3219:阿-斯综合征属于什么?	select ?x where { <阿-斯综合征> <类型> ?x. }
+simple_res	q3220:脚气属于什么?	select ?x where { <脚气> <类型> ?x. }
+simple_res	q3221:心衰属于什么?	select ?x where { <心衰> <类型> ?x. }
+simple_res	q3222:室性早搏属于什么?	select ?x where { <室性早搏> <类型> ?x. }
+simple_res	q3223:痄腮属于什么?	select ?x where { <痄腮> <类型> ?x. }
+simple_res	q3224:性功能障碍属于什么?	select ?x where { <性功能障碍> <类型> ?x. }
+simple_res	q3225:自然流产属于什么?	select ?x where { <自然流产> <类型> ?x. }
+simple_res	q3226:自然流产需要去什么科就诊？	select ?x where { <自然流产> <科室> ?x. }
+simple_res	q3227:自然流产涉及什么症状？	select ?x where { <自然流产> <涉及症状> ?x. }
+simple_res	q3228:低钾血症属于什么?	select ?x where { <低钾血症> <类型> ?x. }
+simple_res	q3229:伤寒属于什么?	select ?x where { <伤寒> <类型> ?x. }
+simple_res	q3230:什么能预防伤寒？	select ?x where { <伤寒> <预防> ?x. }
+simple_res	q3231:伤寒要去哪个科室就诊？	select ?x where { <伤寒> <科室> ?x. }
+simple_res	q3232:痣细胞痣属于什么?	select ?x where { <痣细胞痣> <类型> ?x. }
+simple_res	q3233:脊柱炎属于什么?	select ?x where { <脊柱炎> <类型> ?x. }
+simple_res	q3234:水痘属于什么?	select ?x where { <水痘> <类型> ?x. }
+simple_res	q3235:水痘要去什么科？	select ?x where { <水痘> <科室> ?x. }
+simple_res	q3236:水痘的同义词有哪些？	select ?x where { <水痘> <同义词> ?x. }
+simple_res	q3237:水痘涉及什么检查？	select ?x where { <水痘> <涉及检查> ?x. }
+simple_res	q3238:激素性皮炎属于什么?	select ?x where { <激素性皮炎> <类型> ?x. }
+simple_res	q3239:黑色素瘤属于什么?	select ?x where { <黑色素瘤> <类型> ?x. }
+simple_res	q3240:肺栓塞属于什么?	select ?x where { <肺栓塞> <类型> ?x. }
+simple_res	q3241:肺栓塞属于什么科?	select ?x where { <肺栓塞> <科室> ?x. }
+simple_res	q3242:肺栓塞的同义词是什么？	select ?x where { <肺栓塞> <同义词> ?x. }
+simple_res	q3243:肺栓塞涉及什么检查？	select ?x where { <肺栓塞> <涉及检查> ?x. }
+simple_res	q3244:肺栓塞涉及什么症状？	select ?x where { <肺栓塞> <涉及症状> ?x. }
+simple_res	q3245:胎儿窘迫属于什么?	select ?x where { <胎儿窘迫> <类型> ?x. }
+simple_res	q3246:胎儿窘迫属于什么科？	select ?x where { <胎儿窘迫> <科室> ?x. }
+simple_res	q3247:胎儿窘迫涉及什么检查？	select ?x where { <胎儿窘迫> <涉及检查> ?x. }
+simple_res	q3248:胎儿窘迫涉及什么症状？	select ?x where { <胎儿窘迫> <涉及症状> ?x. }
+simple_res	q3249:网球肘属于什么?	select ?x where { <网球肘> <类型> ?x. }
+simple_res	q3250:四环素牙属于什么?	select ?x where { <四环素牙> <类型> ?x. }
+simple_res	q3251:布鲁氏菌病属于什么?	select ?x where { <布鲁氏菌病> <类型> ?x. }
+simple_res	q3252:布鲁氏菌病要在哪个科室就诊？	select ?x where { <布鲁氏菌病> <科室> ?x. }
+simple_res	q3253:布鲁氏菌病的同义词是什么？	select ?x where { <布鲁氏菌病> <同义词> ?x. }
+simple_res	q3254:布鲁氏菌病涉及什么检查？	select ?x where { <布鲁氏菌病> <涉及检查> ?x. }
+simple_res	q3255:胆总管囊肿属于什么?	select ?x where { <胆总管囊肿> <类型> ?x. }
+simple_res	q3256:尿路感染属于什么?	select ?x where { <尿路感染> <类型> ?x. }
+simple_res	q3257:尿路感染要去哪个科室就诊？	select ?x where { <尿路感染> <科室> ?x. }
+simple_res	q3258:尿路感染的同义词是什么？	select ?x where { <尿路感染> <同义词> ?x. }
+simple_res	q3259:尿路感染涉及哪些症状？	select ?x where { <尿路感染> <涉及症状> ?x. }
+simple_res	q3260:尿毒症属于什么?	select ?x where { <尿毒症> <类型> ?x. }
+simple_res	q3261:破伤风属于什么?	select ?x where { <破伤风> <类型> ?x. }
+simple_res	q3262:肌萎缩侧索硬化属于什么?	select ?x where { <肌萎缩侧索硬化> <类型> ?x. }
+simple_res	q3263:肌萎缩侧索硬化涉及什么检查？	select ?x where { <肌萎缩侧索硬化> <涉及检查> ?x. }
+simple_res	q3264:结核病属于什么?	select ?x where { <结核病> <类型> ?x. }
+simple_res	q3265:结核病常见的病因是什么？	select ?x where { <结核病> <常见病因> ?x. }
+simple_res	q3266:脑动脉硬化症属于什么?	select ?x where { <脑动脉硬化症> <类型> ?x. }
+simple_res	q3267:痈属于什么?	select ?x where { <痈> <类型> ?x. }
+simple_res	q3268:麻风病属于什么?	select ?x where { <麻风病> <类型> ?x. }
+simple_res	q3269:脑积水属于什么?	select ?x where { <脑积水> <类型> ?x. }
+simple_res	q3270:腰肌劳损属于什么?	select ?x where { <腰肌劳损> <类型> ?x. }
+simple_res	q3271:胆结石属于什么?	select ?x where { <胆结石> <类型> ?x. }
+simple_res	q3272:慢粒属于什么?	select ?x where { <慢粒> <类型> ?x. }
+simple_res	q3273:接触性皮炎属于什么?	select ?x where { <接触性皮炎> <类型> ?x. }
+simple_res	q3274:接触性皮炎患者应该去哪个科室就诊？	select ?x where { <接触性皮炎> <科室> ?x. }
+simple_res	q3275:接触性皮炎涉及哪些症状？	select ?x where { <接触性皮炎> <涉及症状> ?x. }
+simple_res	q3276:猩红热属于什么?	select ?x where { <猩红热> <类型> ?x. }
+simple_res	q3277:猩红热患者应该去哪个科室就诊？	select ?x where { <猩红热> <科室> ?x. }
+simple_res	q3278:猩红热的同义词是什么？	select ?x where { <猩红热> <同义词> ?x. }
+simple_res	q3279:猩红热涉及哪些症状？	select ?x where { <猩红热> <涉及症状> ?x. }
+simple_res	q3280:阴囊湿疹属于什么?	select ?x where { <阴囊湿疹> <类型> ?x. }
+simple_res	q3281:结肠息肉属于什么?	select ?x where { <结肠息肉> <类型> ?x. }
+simple_res	q3282:肝炎属于什么?	select ?x where { <肝炎> <类型> ?x. }
+simple_res	q3283:引起肝炎的肇因是什么？	select ?x where { <肝炎> <肇因> ?x. }
+simple_res	q3284:肝炎涉及什么检查？	select ?x where { <肝炎> <涉及检查> ?x. }
+simple_res	q3285:耳聋属于什么?	select ?x where { <耳聋> <类型> ?x. }
+simple_res	q3286:附件炎属于什么?	select ?x where { <附件炎> <类型> ?x. }
+simple_res	q3287:血脂异常属于什么?	select ?x where { <血脂异常> <类型> ?x. }
+simple_res	q3288:痔疮属于什么?	select ?x where { <痔疮> <类型> ?x. }
+simple_res	q3289:冻疮属于什么?	select ?x where { <冻疮> <类型> ?x. }
+simple_res	q3290:中风属于什么?	select ?x where { <中风> <类型> ?x. }
+simple_res	q3291:性心理障碍属于什么?	select ?x where { <性心理障碍> <类型> ?x. }
+simple_res	q3292:绒癌属于什么?	select ?x where { <绒癌> <类型> ?x. }
+simple_res	q3293:疣属于哪个科室的病症？	select ?x where { <疣> <就诊科室> ?x. }
+simple_res	q3294:风疹属于什么?	select ?x where { <风疹> <类型> ?x. }
+simple_res	q3295:风疹患者应该去哪个科室就诊？	select ?x where { <风疹> <科室> ?x. }
+simple_res	q3296:风疹的同义词是什么？	select ?x where { <风疹> <同义词> ?x. }
+simple_res	q3297:风疹涉及什么检查？	select ?x where { <风疹> <涉及检查> ?x. }
+simple_res	q3298:风疹涉及哪些症状？	select ?x where { <风疹> <涉及症状> ?x. }
+simple_res	q3299:性早熟属于什么?	select ?x where { <性早熟> <类型> ?x. }
+simple_res	q3300:绝经属于什么?	select ?x where { <绝经> <类型> ?x. }
+simple_res	q3301:血小板减少性紫癜属于什么?	select ?x where { <血小板减少性紫癜> <类型> ?x. }
+simple_res	q3302:偏头痛属于什么?	select ?x where { <偏头痛> <类型> ?x. }
+simple_res	q3303:葡萄膜炎属于什么?	select ?x where { <葡萄膜炎> <类型> ?x. }
+simple_res	q3304:慢性扁桃体炎属于什么?	select ?x where { <慢性扁桃体炎> <类型> ?x. }
+simple_res	q3305:神经母细胞瘤属于什么?	select ?x where { <神经母细胞瘤> <类型> ?x. }
+simple_res	q3306:传染性非典型肺炎属于什么?	select ?x where { <传染性非典型肺炎> <类型> ?x. }
+simple_res	q3307:松皮癣属于什么?	select ?x where { <松皮癣> <类型> ?x. }
+simple_res	q3308:性冷淡属于什么?	select ?x where { <性冷淡> <类型> ?x. }
+simple_res	q3309:原醛症属于什么?	select ?x where { <原醛症> <类型> ?x. }
+simple_res	q3310:蛛网膜下腔出血属于什么?	select ?x where { <蛛网膜下腔出血> <类型> ?x. }
+simple_res	q3311:侏儒症属于什么?	select ?x where { <侏儒症> <类型> ?x. }
+simple_res	q3312:功能失调性子宫出血属于什么?	select ?x where { <功能失调性子宫出血> <类型> ?x. }
+simple_res	q3313:功能失调性子宫出血要去哪个科室就诊？	select ?x where { <功能失调性子宫出血> <科室> ?x. }
+simple_res	q3314:功能失调性子宫出血的同义词是什么？	select ?x where { <功能失调性子宫出血> <同义词> ?x. }
+simple_res	q3315:功能失调性子宫出血涉及什么症状？	select ?x where { <功能失调性子宫出血> <涉及症状> ?x. }
+simple_res	q3316:肺心病属于什么?	select ?x where { <肺心病> <类型> ?x. }
+simple_res	q3317:腕管综合征属于什么?	select ?x where { <腕管综合征> <类型> ?x. }
+simple_res	q3318:视神经萎缩属于什么?	select ?x where { <视神经萎缩> <类型> ?x. }
+simple_res	q3319:卵巢囊肿属于什么?	select ?x where { <卵巢囊肿> <类型> ?x. }
+simple_res	q3320:晕车属于什么?	select ?x where { <晕车> <类型> ?x. }
+simple_res	q3321:汗管瘤属于什么?	select ?x where { <汗管瘤> <类型> ?x. }
+simple_res	q3322:鼻中隔偏曲属于什么?	select ?x where { <鼻中隔偏曲> <类型> ?x. }
+simple_res	q3323:鼻中隔偏曲患者应该去哪个科室就诊？	select ?x where { <鼻中隔偏曲> <科室> ?x. }
+simple_res	q3324:鼻中隔偏曲涉及什么症状？	select ?x where { <鼻中隔偏曲> <涉及症状> ?x. }
+simple_res	q3325:股癣患者应该去哪个科室就诊？	select ?x where { <股癣> <就诊科室> ?x. }
+simple_res	q3326:高血压属于什么?	select ?x where { <高血压> <类型> ?x. }
+simple_res	q3327:宫颈息肉属于什么?	select ?x where { <宫颈息肉> <类型> ?x. }
+simple_res	q3328:库欣综合征属于什么?	select ?x where { <库欣综合征> <类型> ?x. }
+simple_res	q3329:消化不良属于什么?	select ?x where { <消化不良> <类型> ?x. }
+simple_res	q3330:斜视属于什么?	select ?x where { <斜视> <类型> ?x. }
+simple_res	q3331:直肠肛管周围脓肿属于什么?	select ?x where { <直肠肛管周围脓肿> <类型> ?x. }
+simple_res	q3332:肺炎支原体肺炎属于什么?	select ?x where { <肺炎支原体肺炎> <类型> ?x. }
+simple_res	q3333:肺炎支原体肺炎属于什么科?	select ?x where { <肺炎支原体肺炎> <科室> ?x. }
+simple_res	q3334:肺炎支原体肺炎涉及哪些症状？	select ?x where { <肺炎支原体肺炎> <涉及症状> ?x. }
+simple_res	q3335:慢性胃炎属于什么?	select ?x where { <慢性胃炎> <类型> ?x. }
+simple_res	q3336:慢性胃炎属于什么科？	select ?x where { <慢性胃炎> <科室> ?x. }
+simple_res	q3337:慢性胃炎的同义词是什么？	select ?x where { <慢性胃炎> <同义词> ?x. }
+simple_res	q3338:慢性胃炎涉及什么症状？	select ?x where { <慢性胃炎> <涉及症状> ?x. }
+simple_res	q3339:腹股沟斜疝属于什么?	select ?x where { <腹股沟斜疝> <类型> ?x. }
+simple_res	q3340:牙龈萎缩属于什么?	select ?x where { <牙龈萎缩> <类型> ?x. }
+simple_res	q3341:胃溃疡属于什么?	select ?x where { <胃溃疡> <类型> ?x. }
+simple_res	q3342:病毒性脑膜炎属于什么?	select ?x where { <病毒性脑膜炎> <类型> ?x. }
+simple_res	q3343:引起病毒性脑膜炎的病因是什么？	select ?x where { <病毒性脑膜炎> <常见病因> ?x. }
+simple_res	q3344:肺水肿属于什么?	select ?x where { <肺水肿> <类型> ?x. }
+simple_res	q3345:血管性水肿属于什么?	select ?x where { <血管性水肿> <类型> ?x. }
+simple_res	q3346:鸡眼属于什么?	select ?x where { <鸡眼> <类型> ?x. }
+simple_res	q3347:胎盘早剥属于什么?	select ?x where { <胎盘早剥> <类型> ?x. }
+simple_res	q3348:胎盘早剥应该去哪个科室就诊？	select ?x where { <胎盘早剥> <科室> ?x. }
+simple_res	q3349:胎盘早剥的同义词是什么？	select ?x where { <胎盘早剥> <同义词> ?x. }
+simple_res	q3350:胎盘早剥涉及哪些症状？	select ?x where { <胎盘早剥> <涉及症状> ?x. }
+simple_res	q3351:肾功能不全属于什么?	select ?x where { <肾功能不全> <类型> ?x. }
+simple_res	q3352:与登革热的相似疾病或共病有什么？	select ?x where { <登革热> <相似疾病或共病> ?x. }
+simple_res	q3353:小儿肺炎属于什么?	select ?x where { <小儿肺炎> <类型> ?x. }
+simple_res	q3354:小儿肺炎涉及什么检查项目？	select ?x where { <小儿肺炎> <涉及检查> ?x. }
+simple_res	q3355:乳腺病属于什么?	select ?x where { <乳腺病> <类型> ?x. }
+simple_res	q3356:碱性反流性胃炎属于什么?	select ?x where { <碱性反流性胃炎> <类型> ?x. }
+simple_res	q3357:红眼病属于什么?	select ?x where { <红眼病> <类型> ?x. }
+simple_res	q3358:疥疮属于什么?	select ?x where { <疥疮> <类型> ?x. }
+simple_res	q3359:疥疮的就诊科室在哪？	select ?x where { <疥疮> <就诊科室> ?x. }
+simple_res	q3360:颈椎间盘突出属于什么?	select ?x where { <颈椎间盘突出> <类型> ?x. }
+simple_res	q3361:脓毒症属于什么?	select ?x where { <脓毒症> <类型> ?x. }
+simple_res	q3362:脓毒症就诊科室是什么科？	select ?x where { <脓毒症> <科室> ?x. }
+simple_res	q3363:脓毒症的同义词是什么？	select ?x where { <脓毒症> <同义词> ?x. }
+simple_res	q3364:脓毒症涉及什么症状？	select ?x where { <脓毒症> <涉及症状> ?x. }
+simple_res	q3365:变应性鼻炎属于什么?	select ?x where { <变应性鼻炎> <类型> ?x. }
+simple_res	q3366:变应性鼻炎在什么科室就诊？	select ?x where { <变应性鼻炎> <科室> ?x. }
+simple_res	q3367:与变应性鼻炎相近的的词是什么？	select ?x where { <变应性鼻炎> <同义词> ?x. }
+simple_res	q3368:变应性鼻炎涉及什么症状？	select ?x where { <变应性鼻炎> <涉及症状> ?x. }
+simple_res	q3369:尿道结石属于什么?	select ?x where { <尿道结石> <类型> ?x. }
+simple_res	q3370:急性白血病属于什么?	select ?x where { <急性白血病> <类型> ?x. }
+simple_res	q3371:急性白血病在什么科室就诊？	select ?x where { <急性白血病> <科室> ?x. }
+simple_res	q3372:急性白血病涉及哪些症状？	select ?x where { <急性白血病> <涉及症状> ?x. }
+simple_res	q3373:脓疱疮属于什么?	select ?x where { <脓疱疮> <类型> ?x. }
+simple_res	q3374:脓疱疮常见病因是什么？	select ?x where { <脓疱疮> <常见病因> ?x. }
+simple_res	q3375:脓疱疮是怎么传播的？	select ?x where { <脓疱疮> <传播途径> ?x. }
+simple_res	q3376:脓疱疮在什么科室就诊？	select ?x where { <脓疱疮> <就诊科室> ?x. }
+simple_res	q3377:脓疱疮属于什么科？	select ?x where { <脓疱疮> <科室> ?x. }
+simple_res	q3378:脓疱疮的同义词是什么？	select ?x where { <脓疱疮> <同义词> ?x. }
+simple_res	q3379:脓疱疮涉及什么症状？	select ?x where { <脓疱疮> <涉及症状> ?x. }
+simple_res	q3380:坐骨神经痛属于什么?	select ?x where { <坐骨神经痛> <类型> ?x. }
+simple_res	q3381:睾丸癌属于什么?	select ?x where { <睾丸癌> <类型> ?x. }
+simple_res	q3382:心房颤动属于什么?	select ?x where { <心房颤动> <类型> ?x. }
+simple_res	q3383:获得性免疫缺陷综合征属于什么?	select ?x where { <获得性免疫缺陷综合征> <类型> ?x. }
+simple_res	q3384:获得性免疫缺陷综合征患者在什么科室就诊？	select ?x where { <获得性免疫缺陷综合征> <科室> ?x. }
+simple_res	q3385:获得性免疫缺陷综合征的同义词是什么？	select ?x where { <获得性免疫缺陷综合征> <同义词> ?x. }
+simple_res	q3386:获得性免疫缺陷综合征涉及什么检查？	select ?x where { <获得性免疫缺陷综合征> <涉及检查> ?x. }
+simple_res	q3387:获得性免疫缺陷综合征涉及哪些症状？	select ?x where { <获得性免疫缺陷综合征> <涉及症状> ?x. }
+simple_res	q3388:高催乳素血症属于什么?	select ?x where { <高催乳素血症> <类型> ?x. }
+simple_res	q3389:室性期前收缩属于什么?	select ?x where { <室性期前收缩> <类型> ?x. }
+simple_res	q3390:慢性前列腺炎属于什么?	select ?x where { <慢性前列腺炎> <类型> ?x. }
+simple_res	q3391:慢性前列腺炎患者在什么科室就诊？	select ?x where { <慢性前列腺炎> <科室> ?x. }
+simple_res	q3392:慢性前列腺炎涉及哪些症状？	select ?x where { <慢性前列腺炎> <涉及症状> ?x. }
+simple_res	q3393:外阴溃疡属于什么?	select ?x where { <外阴溃疡> <类型> ?x. }
+simple_res	q3394:脑性瘫痪属于什么?	select ?x where { <脑性瘫痪> <类型> ?x. }
+simple_res	q3395:急性冠状动脉综合征属于什么?	select ?x where { <急性冠状动脉综合征> <类型> ?x. }
+simple_res	q3396:不安腿综合征属于什么?	select ?x where { <不安腿综合征> <类型> ?x. }
+simple_res	q3397:尿道下裂属于什么?	select ?x where { <尿道下裂> <类型> ?x. }
+simple_res	q3398:慢性乙型肝炎属于什么?	select ?x where { <慢性乙型肝炎> <类型> ?x. }
+simple_res	q3399:血小板增多症属于什么?	select ?x where { <血小板增多症> <类型> ?x. }
+simple_res	q3400:颈椎病属于什么?	select ?x where { <颈椎病> <类型> ?x. }
+simple_res	q3401:新生儿肺炎属于什么?	select ?x where { <新生儿肺炎> <类型> ?x. }
+simple_res	q3402:新生儿肺炎涉及什么检查？	select ?x where { <新生儿肺炎> <涉及检查> ?x. }
+simple_res	q3403:引起滴虫性阴道炎的原因是什么？	select ?x where { <滴虫性阴道炎> <常见病因> ?x. }
+simple_res	q3404:过敏性鼻炎有什么症状？	select ?x where { <过敏性鼻炎> <症状> ?x. }
+simple_res	q3405:过敏性鼻炎有怎样的风险因子（英语：Riskfactor）?	select ?x where { <过敏性鼻炎> <风险因子（英语：Riskfactor）> ?x. }
+simple_res	q3406:与过敏性鼻炎相似的疾病或者共病是什么？	select ?x where { <过敏性鼻炎> <相似疾病或共病> ?x. }
+simple_res	q3407:房室传导阻滞属于什么?	select ?x where { <房室传导阻滞> <类型> ?x. }
+simple_res	q3408:房室传导阻滞应在哪个科室就诊？	select ?x where { <房室传导阻滞> <科室> ?x. }
+simple_res	q3409:房室传导阻滞的同义词是什么？	select ?x where { <房室传导阻滞> <同义词> ?x. }
+simple_res	q3410:房室传导阻滞涉及什么症状？	select ?x where { <房室传导阻滞> <涉及症状> ?x. }
+simple_res	q3411:黏液囊肿属于什么?	select ?x where { <黏液囊肿> <类型> ?x. }
+simple_res	q3412:直肠脱垂属于什么?	select ?x where { <直肠脱垂> <类型> ?x. }
+simple_res	q3413:急性咽炎属于什么?	select ?x where { <急性咽炎> <类型> ?x. }
+simple_res	q3414:急性咽炎应该去哪个科室就诊？	select ?x where { <急性咽炎> <科室> ?x. }
+simple_res	q3415:急性咽炎涉及哪些症状？	select ?x where { <急性咽炎> <涉及症状> ?x. }
+simple_res	q3416:中暑属于什么?	select ?x where { <中暑> <类型> ?x. }
+simple_res	q3417:中暑适合去什么科室就诊？	select ?x where { <中暑> <科室> ?x. }
+simple_res	q3418:中暑涉及什么检查？	select ?x where { <中暑> <涉及检查> ?x. }
+simple_res	q3419:耵聍栓塞属于什么?	select ?x where { <耵聍栓塞> <类型> ?x. }
+simple_res	q3420:肠易激综合征属于什么?	select ?x where { <肠易激综合征> <类型> ?x. }
+simple_res	q3421:羊水栓塞属于什么?	select ?x where { <羊水栓塞> <类型> ?x. }
+simple_res	q3422:肺气肿属于什么?	select ?x where { <肺气肿> <类型> ?x. }
+simple_res	q3423:肺气肿适合去什么科室就诊？	select ?x where { <肺气肿> <科室> ?x. }
+simple_res	q3424:与肺气肿相近词是什么？	select ?x where { <肺气肿> <同义词> ?x. }
+simple_res	q3425:肺气肿涉及什么检查？	select ?x where { <肺气肿> <涉及检查> ?x. }
+simple_res	q3426:肺气肿涉及哪些症状？	select ?x where { <肺气肿> <涉及症状> ?x. }
+simple_res	q3427:脂肪瘤属于什么?	select ?x where { <脂肪瘤> <类型> ?x. }
+simple_res	q3428:脂肪瘤适合去什么科室就诊？	select ?x where { <脂肪瘤> <科室> ?x. }
+simple_res	q3429:脂肪瘤涉及哪些症状？	select ?x where { <脂肪瘤> <涉及症状> ?x. }
+simple_res	q3430:扁平苔藓属于什么?	select ?x where { <扁平苔藓> <类型> ?x. }
+simple_res	q3431:湿疹属于什么?	select ?x where { <湿疹> <类型> ?x. }
+simple_res	q3432:湿疹适合去什么科室就诊？	select ?x where { <湿疹> <科室> ?x. }
+simple_res	q3433:湿疹的同义词是什么？	select ?x where { <湿疹> <同义词> ?x. }
+simple_res	q3434:湿疹涉及哪些症状？	select ?x where { <湿疹> <涉及症状> ?x. }
+simple_res	q3435:先天性卵巢发育不全属于什么?	select ?x where { <先天性卵巢发育不全> <类型> ?x. }
+simple_res	q3436:外耳炎有怎样的症状？	select ?x where { <外耳炎> <症状> ?x. }
+simple_res	q3437:宫外孕属于什么?	select ?x where { <宫外孕> <类型> ?x. }
+simple_res	q3438:甲状腺肿属于什么?	select ?x where { <甲状腺肿> <类型> ?x. }
+simple_res	q3439:颈部淋巴结结核属于什么?	select ?x where { <颈部淋巴结结核> <类型> ?x. }
+simple_res	q3440:异位妊娠属于什么?	select ?x where { <异位妊娠> <类型> ?x. }
+simple_res	q3441:痛性抽搐属于什么?	select ?x where { <痛性抽搐> <类型> ?x. }
+simple_res	q3442:角结膜干燥症属于什么?	select ?x where { <角结膜干燥症> <类型> ?x. }
+simple_res	q3443:雀斑属于什么?	select ?x where { <雀斑> <类型> ?x. }
+simple_res	q3444:肾衰竭属于什么?	select ?x where { <肾衰竭> <类型> ?x. }
+simple_res	q3445:会厌炎属于什么?	select ?x where { <会厌炎> <类型> ?x. }
+simple_res	q3446:肝内胆管结石属于什么?	select ?x where { <肝内胆管结石> <类型> ?x. }
+simple_res	q3447:足癣患者在什么科室就诊？	select ?x where { <足癣> <就诊科室> ?x. }
+simple_res	q3448:新生儿溶血属于什么?	select ?x where { <新生儿溶血> <类型> ?x. }
+simple_res	q3449:神经性耳聋属于什么?	select ?x where { <神经性耳聋> <类型> ?x. }
+simple_res	q3450:感音神经性耳聋属于什么?	select ?x where { <感音神经性耳聋> <类型> ?x. }
+simple_res	q3451:鼻窦炎有什么症状?	select ?x where { <鼻窦炎> <症状> ?x. }
+simple_res	q3452:鼻窦炎的风险因子（英语：Riskfactor）有哪些？	select ?x where { <鼻窦炎> <风险因子（英语：Riskfactor）> ?x. }
+simple_res	q3453:法洛四联症属于什么?	select ?x where { <法洛四联症> <类型> ?x. }
+simple_res	q3454:法洛四联症适合去什么科室？	select ?x where { <法洛四联症> <科室> ?x. }
+simple_res	q3455:法洛四联症有什么同义词？	select ?x where { <法洛四联症> <同义词> ?x. }
+simple_res	q3456:法洛四联症涉及什么症状？	select ?x where { <法洛四联症> <涉及症状> ?x. }
+simple_res	q3457:细菌性阴道炎属于什么?	select ?x where { <细菌性阴道炎> <类型> ?x. }
+simple_res	q3458:肾结石属于什么?	select ?x where { <肾结石> <类型> ?x. }
+simple_res	q3459:心脏性猝死属于什么?	select ?x where { <心脏性猝死> <类型> ?x. }
+simple_res	q3460:急性胆囊炎属于什么?	select ?x where { <急性胆囊炎> <类型> ?x. }
+simple_res	q3461:急性胆囊炎应该送往什么科？	select ?x where { <急性胆囊炎> <科室> ?x. }
+simple_res	q3462:急性胆囊炎的同义词是什么？	select ?x where { <急性胆囊炎> <同义词> ?x. }
+simple_res	q3463:急性胆囊炎涉及哪些症状？	select ?x where { <急性胆囊炎> <涉及症状> ?x. }
+simple_res	q3464:新生儿黄疸属于什么?	select ?x where { <新生儿黄疸> <类型> ?x. }
+simple_res	q3465:前列腺癌属于什么?	select ?x where { <前列腺癌> <类型> ?x. }
+simple_res	q3466:胃下垂属于什么?	select ?x where { <胃下垂> <类型> ?x. }
+simple_res	q3467:麻疹属于什么?	select ?x where { <麻疹> <类型> ?x. }
+simple_res	q3468:麻疹是怎么传播的？	select ?x where { <麻疹> <传播途径> ?x. }
+simple_res	q3469:麻疹在什么科室就诊？	select ?x where { <麻疹> <科室> ?x. }
+simple_res	q3470:麻疹的同义词是什么？	select ?x where { <麻疹> <同义词> ?x. }
+simple_res	q3471:麻疹涉及什么检查？	select ?x where { <麻疹> <涉及检查> ?x. }
+simple_res	q3472:麻疹涉及哪些症状？	select ?x where { <麻疹> <涉及症状> ?x. }
+simple_res	q3473:雪口病属于什么?	select ?x where { <雪口病> <类型> ?x. }
+simple_res	q3474:痔属于什么?	select ?x where { <痔> <类型> ?x. }
+simple_res	q3475:念珠菌病属于什么?	select ?x where { <念珠菌病> <类型> ?x. }
+simple_res	q3476:糖尿病足属于什么?	select ?x where { <糖尿病足> <类型> ?x. }
+simple_res	q3477:糖尿病足去什么科室就诊？	select ?x where { <糖尿病足> <科室> ?x. }
+simple_res	q3478:糖尿病足涉及什么检查？	select ?x where { <糖尿病足> <涉及检查> ?x. }
+simple_res	q3479:糖尿病足涉及哪些症状？	select ?x where { <糖尿病足> <涉及症状> ?x. }
+simple_res	q3480:不宁腿综合征属于什么?	select ?x where { <不宁腿综合征> <类型> ?x. }
+simple_res	q3481:老年疣属于什么?	select ?x where { <老年疣> <类型> ?x. }
+simple_res	q3482:烟雾病属于什么?	select ?x where { <烟雾病> <类型> ?x. }
+simple_res	q3483:牙髓炎属于什么?	select ?x where { <牙髓炎> <类型> ?x. }
+simple_res	q3484:急性单纯性胃炎属于什么?	select ?x where { <急性单纯性胃炎> <类型> ?x. }
+simple_res	q3485:狂躁症属于什么?	select ?x where { <狂躁症> <类型> ?x. }
+simple_res	q3486:蛲虫病属于什么?	select ?x where { <蛲虫病> <类型> ?x. }
+simple_res	q3487:多形红斑属于什么?	select ?x where { <多形红斑> <类型> ?x. }
+simple_res	q3488:干燥综合征属于什么?	select ?x where { <干燥综合征> <类型> ?x. }
+simple_res	q3489:主动脉夹层动脉瘤属于什么?	select ?x where { <主动脉夹层动脉瘤> <类型> ?x. }
+simple_res	q3490:椎间盘突出症属于什么?	select ?x where { <椎间盘突出症> <类型> ?x. }
+simple_res	q3491:虫咬皮炎属于什么?	select ?x where { <虫咬皮炎> <类型> ?x. }
+simple_res	q3492:磨牙属于什么?	select ?x where { <磨牙> <类型> ?x. }
+simple_res	q3493:斑秃属于什么?	select ?x where { <斑秃> <类型> ?x. }
+simple_res	q3494:肥胖症属于什么?	select ?x where { <肥胖症> <类型> ?x. }
+simple_res	q3495:肾小球肾炎属于什么?	select ?x where { <肾小球肾炎> <类型> ?x. }
+simple_res	q3496:胃食管反流病属于什么?	select ?x where { <胃食管反流病> <类型> ?x. }
+simple_res	q3497:肾病综合征属于什么?	select ?x where { <肾病综合征> <类型> ?x. }
+simple_res	q3498:躁狂症属于什么?	select ?x where { <躁狂症> <类型> ?x. }
+simple_res	q3499:Down综合征属于什么?	select ?x where { <Down综合征> <类型> ?x. }
+simple_res	q3500:黑素细胞痣属于什么?	select ?x where { <黑素细胞痣> <类型> ?x. }
 simple_res	q3501:烧伤属于什么?	select ?x where { <烧伤> <类型> ?x. }
 simple_res	q3502:烧伤应该去哪个科室就诊？	select ?x where { <烧伤> <科室> ?x. }
 simple_res	q3503:烧伤会涉及哪些症状？	select ?x where { <烧伤> <涉及症状> ?x. }
