@@ -1,0 +1,6 @@
+mult_constraints_two	q572:《革命之路》与《朗读者》的女主角是谁？	select ?x where { <革命之路_（2008年美国影片）> <主演> ?x. <朗读者_（2008年美国电影）> <主演> ?x. }
+mult_constraints_two	q864:周杰伦和钟兴民的共同创作的歌曲是？	select ?x where { <周杰伦> <代表作品> ?x. <钟兴民> <代表作品> ?x. }
+mult_constraints_two	q980:卡库、鹤参谋是哪儿的人物？	select ?x where { <鹤参谋> <登场作品> ?x. <卡库> <登场作品> ?x. }
+mult_constraints_two	q1095:出演了《仙剑奇侠传三》和《小时代》的明星是谁？	select ?x where { <仙剑奇侠传三_（2009年李国立执导电视剧）> <主演> ?x. <小时代_（2013年郭敬明执导电影）> <主演> ?x. }
+mult_constraints_two	q1646:《这个杀手不太冷》和《V字仇杀队》共同的演员是？	select ?x where { <这个杀手不太冷> <主演> ?x. <V字仇杀队_（2005年詹姆斯·麦克提格执导电影）> <主演> ?x. }
+mult_constraints_two	q2692:在金庸小说《天龙八部》中，鸠摩智和游坦之都会什么武功？	select ?x where { <鸠摩智> <武功> ?x. <游坦之> <内功> ?x. }

@@ -1,0 +1,5 @@
+simple_attr	q60:建宁公主与韦小宝是什么关系？	select ?x where { <建宁公主_（金庸小说《鹿鼎记》人物）> ?x <韦小宝_（武侠小说《鹿鼎记》人物）>. }
+simple_attr	q89:瓦妮莎是科比的什么人？	select ?x ?y where { <科比·布莱恩特> ?x <瓦妮莎·布莱恩特>. }
+simple_attr	q506:林徽因和梁思成是什么关系？	select ?x where { <林徽因_（中国建筑师、诗人、作家）> ?x <梁思成>. }
+simple_attr	q1391:查理·布朗是史努比的谁？	select ?x where { <史努比_（美国漫画《花生漫画》角色）> ?x <查理·布朗>. }
+simple_attr	q2041:令狐冲和岳灵珊是什么关系？	select ?x where { <令狐冲> ?x <岳灵珊>. }

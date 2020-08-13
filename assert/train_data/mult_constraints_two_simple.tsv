@@ -1,0 +1,35 @@
+mult_constraints_two_simple	q634:由景甜主演，张艺谋导演的电影的中文名是？	select ?x where { ?y <主演> <景甜>. ?y <导演> <张艺谋>. ?y <中文名> ?x. }
+mult_constraints_two_simple	q686:古希腊诗人有哪些代表作品？	select ?y where { ?x <国籍> <古希腊_（爱琴海-色雷斯文明圈的黄金时期）>. ?x <职业> <诗人_（汉语词语）>. ?x <代表作品> ?y. }
+mult_constraints_two_simple	q700:由伊达勇登导演、隅泽克之编剧的动画在哪个电视台首播？	select ?y where { ?x <导演> <伊达勇登>. ?x <编剧> <隅泽克之>. ?x <首播电视台> ?y. }
+mult_constraints_two_simple	q709:我国近代擅长画虾的绘画大师出生在哪座城市？	select ?y where { ?x <职业> <画家>. ?x <代表作品> <墨虾>. ?x <出生地> ?y. }
+mult_constraints_two_simple	q827:毕业于中央大学，出生于长野的日本作家有哪些代表作品？	select ?y where { ?x <毕业院校> <中央大学_（日本中央大学）> . ?x <出生地> <长野_（日本县份）>. ?x <代表作品> ?y. }
+mult_constraints_two_simple	q837:明朝永乐大帝是谁？	select ?y where { ?x <中文名> ?y. ?x <年号> <永乐_（明成祖朱棣年号）>. ?x <国籍> <明朝_（中国历史朝代）>. }
+mult_constraints_two_simple	q933:诺兰执导的科幻片的英文名都有哪些？	select ?y where { ?x <导演> <诺兰_（英国导演）>. ?x <类型> <科学幻想>. ?x <外文名> ?y. }
+mult_constraints_two_simple	q979:由大隈重信创始的综合性大学的英文名是？	select ?y where { ?x <创始人> <大隈重信>. ?x <类别> <综合性大学>. ?x <英文名> ?y. }
+mult_constraints_two_simple	q998:写出《诀别书》和《白头吟》的这位才女是哪个朝代的？	select ?x where { ?y <主要作品> <诀别书>. ?y <主要作品> <白头吟_（卓文君诗作）>. ?y <所处时代> ?x. }
+mult_constraints_two_simple	q1000:中国历史上佛教和道教盛行的时期，其对应的政治体制是什么？	select distinct ?y where { ?x <主要宗教> <佛教>. ?x <主要宗教> <道教>. ?x <政治体制> ?y. }
+mult_constraints_two_simple	q1014:海贼王里最贪财的主角是什么星座的？	select ?y where { ?x <登场作品> <海贼王_（尾田荣一郎创作的漫画作品）>. ?x <喜欢的东西> <金钱_（汉语词汇）>. ?x <星座> ?y. }
+mult_constraints_two_simple	q1025:出生于英国的足球门将的身高是多少？	select ?y where { ?x <场上位置> <门将>. ?x <出生地> <英国_（大不列颠及北爱尔兰联合王国）>. ?x <身高> ?y. }
+mult_constraints_two_simple	q1045:捷克的首都有什么样的美誉？	select ?y where { ?x <所属地区> <捷克> . ?x <行政区类别> <首都_（汉语词语）> . ?x <别名> ?y. }
+mult_constraints_two_simple	q1070:有一部电影是由马里奥·普佐的小说改编，马龙·白兰度主演，请问它在哪一年上映？	select ?y where { ?x <原著> <马里奥·普佐>. ?x <主演> <马龙·白兰度>. ?x <上映时间> ?y. }
+mult_constraints_two_simple	q1071:前妻是葛天的110米栏世界冠军，他的教练是谁？	select ?y where { ?x <运动项目> <110米栏>. ?x <前妻> <葛天>. ?x <教练> ?y. }
+mult_constraints_two_simple	q1105:由张歆艺主演，王晓明导演的电视剧的中文名是？	select ?x where { ?y <主演> <张歆艺>. ?y <导演> <王晓明_（中国内地演员）>. ?y <中文名> ?x. }
+mult_constraints_two_simple	q1112:南起北山路，北接天目山路的这条路长为多少？	select ?x where { ?y <南起> <北山路_（浙江省杭州市北山路）>. ?y <北接> <天目山路>. ?y <长> ?x. }
+mult_constraints_two_simple	q1152:出生于上海且曾在《微微一笑很倾城》中扮演角色的演员毕业于哪所学校？	select ?y where { ?x <出生地> <上海_（中华人民共和国直辖市）> . ?x <代表作品> <微微一笑很倾城_（2016年郑爽、杨洋主演电视剧）>. ?x <毕业院校> ?y. }
+mult_constraints_two_simple	q1184:中国史上有一位出生在台安县的一级上将，他的妻子是谁？	select ?y where { ?x <出生地> <台安县>. ?x <军衔> <一级上将>. ?y <丈夫> ?x. }
+mult_constraints_two_simple	q1198:成立于广东的物流公司CEO是谁？	select ?y where { ?x <成立地点> <广东>. ?x <经营范围> <物流公司>. ?x <集团总裁> ?y. }
+mult_constraints_two_simple	q1213:身为宦官的齐国公的历史功绩是什么?？	select ?x where { ?y <封爵> <齐国公>. ?y <职业> <宦官>. ?y <主要成就> ?x. }
+mult_constraints_two_simple	q1239:海贼王里吹牛成性的家伙的外号是什么？	select ?y where { ?x <登场作品> <海贼王_（尾田荣一郎创作的漫画作品）>. ?x <性格> <吹牛_（汉语词语）>. ?x <其他名称> ?y. }
+mult_constraints_two_simple	q1540:孙中山和黎元洪等人领导的革命有着什么样的目的？	select ?y where { ?x <主要人物> <孙中山_（中国近代伟大的民主革命先行者）>. ?x <主要人物> <黎元洪>. ?x <目的> ?y. }
+mult_constraints_two_simple	q1629:由吉赛贝·托纳多雷导演，蒂姆·罗斯主演的电影曾获得过哪些奖项？	select ?x where { ?y <主演> <蒂姆·罗斯>. ?y <导演> <吉赛贝·托纳多雷>. ?y <主要奖项> ?x. }
+mult_constraints_two_simple	q1632:写作了《论三位一体》的主教的历史评价是？	select ?y where { ?x <代表作品> <论三位一体>. ?x <职业> <主教_（宗教中的神职人员）>. ?x <历史评价> ?y. }
+mult_constraints_two_simple	q2196:在黑龙江出生并且任职于九校联盟中的大学的老师有哪些？	select ?x where { ?x <出生地> <黑龙江_（最北和最东的省级行政区）> . ?x <职业> ?y . ?y <属性> <C9_（九校联盟）> }
+mult_constraints_two_simple	q2204:王菲和金城武共同主演的电影有多长时间片长？	select ?x where { ?y <主演> <王菲_（华语女歌手、演员）> . ?y <主演> <金城武> . ?y <片长> ?x . }
+mult_constraints_two_simple	q2504:陈可辛导演黄晓明主演的电影票房是多少？	select ?y where { ?x <导演> <陈可辛>. ?x <主演> <黄晓明_（中国内地男演员、歌手、商人）>. ?x <票房> ?y. }
+mult_constraints_two_simple	q2556:DC漫画中有一个蝙蝠侠和超人共同参与的团队，请问它第一次登场于哪部作品？	select ?y where { ?x <主要成员> <超人_（美国DC漫画旗下超级英雄）>. ?x <主要成员> <蝙蝠侠_（美国DC漫画旗下超级英雄）>. ?x <首次出场> ?y. }
+mult_constraints_two_simple	q2583:演唱《十年》的歌手毕业于哪个大学？	select ?y where { ?x <职业> <歌手_（职业名称）>. ?x <代表作品> <十年_（陈奕迅演唱歌曲）>. ?x <毕业院校> ?y. }
+mult_constraints_two_simple	q2607:由张国荣、巩俐主演的电影的导演是谁？	select ?x where { ?y <主演> <张国荣_（华语歌手、演员、音乐人）>. ?y <主演> <巩俐>. ?y <导演> ?x. }
+mult_constraints_two_simple	q2638:周迅和金城武共同出演的电影的导演是？	select ?x where { ?y <主演> <周迅_（中国内地女演员、歌手）>. ?y <主演> <金城武>. ?y <导演> ?x. }
+mult_constraints_two_simple	q2669:何炅和张杰老婆合作的节目作品是啥？	select ?x where { ?y <配偶> <张杰_（中国四川籍男歌手）>. ?y <代表作品> ?x. <何炅> <代表作品> ?x. }
+mult_constraints_two_simple	q2679:电系神奇宝贝都有哪些特性？	select ?y where { ?x <登场作品> <神奇宝贝_（汤山邦彦执导的日本动画系列）>. ?x <属性> <电_（自然现象之一）>. ?x <特性> ?y. }
+mult_constraints_two_simple	q2998:阿里巴巴逍遥子的职位是什么	select ?x where { ?y <别称> <逍遥子>. ?y <任职公司> <阿里巴巴>. ?y <任职职位> ?x.  }

@@ -1,0 +1,127 @@
+mult_constraints_one_reverse_simple	q554:宗馥莉任董事长的公司的公司口号是？	select ?y where { ?x <董事长> <宗馥莉>. ?x <公司口号> ?y. }
+mult_constraints_one_reverse_simple	q567:有哪些巴西足球运动员荣获过世界足球先生称号？	select ?x where { ?x <国籍> <巴西_（巴西联邦共和国）>. ?x <主要奖项> ?y. filter regex(?y, '世界足球先生'). }
+mult_constraints_one_reverse_simple	q577:被称为诗佛的诗人有什么作品？	select ?y where { ?x <别称> <诗佛_（唐代诗人王维绰号）>. ?x <主要作品> ?y. }
+mult_constraints_one_reverse_simple	q585:代表作品有《泰山之光》的学者的出生日期是什么时候？	select ?x where { ?y <代表作品> <泰山之光>. ?y <出生日期> ?x. }
+mult_constraints_one_reverse_simple	q598:哪个集团的董事长现在是文坊中心学校的校长？	select ?x where { ?x <董事长> ?y. <文坊中心学校> <现任校长> ?y. }
+mult_constraints_one_reverse_simple	q604:《吉檀迦利》的作者是哪国人？	select distinct ?y where { ?x <代表作品> <吉檀迦利>. ?x <国籍> ?y. }
+mult_constraints_one_reverse_simple	q616:红豆的演唱者出生在？	select ?y where { ?x <代表作品> <红豆_（王菲演唱歌曲）>. ?x <出生地> ?y. }
+mult_constraints_one_reverse_simple	q621:《自然哲学的数学原理》的作者的IQ有多高？	select ?y where { ?x <代表作品> <自然哲学的数学原理>. ?x <智商> ?y. }
+mult_constraints_one_reverse_simple	q631:由孙泽洲担任总设计师的作品所用的发射用火箭是哪个？	select ?x where { ?y <总设计师> <孙泽洲> . ?y <发射用火箭> ?x. }
+mult_constraints_one_reverse_simple	q640:熊本县的著名人物职业是什么？	select ?y where { ?x <地理位置> <熊本县>. ?x <职业> ?y. }
+mult_constraints_one_reverse_simple	q644:著名景点有松鹤斋的避暑山庄所属的气候类型是什么样的？	select ?x where { ?y <著名景点> <松鹤斋>. ?y <气候类型> ?x. }
+mult_constraints_one_reverse_simple	q654:侦探们的经典台词有哪些？	select ?y where { ?x <职业> <侦探_（ACGN侦探们）>. ?x <名言> ?y. }
+mult_constraints_one_reverse_simple	q655:拥有橡胶果实能力的角色最擅长什么霸气？	select ?x where { ?y <恶魔果实> <橡胶果实>. ?y <最擅长霸气> ?x. }
+mult_constraints_one_reverse_simple	q663:史记作者的官职是？	select ?x where { ?y <代表作品> <史记>. ?y <官职> ?x. }
+mult_constraints_one_reverse_simple	q704:陈嗣庆的女儿写了什么书？	select ?y where { ?x <父亲> <陈嗣庆>. ?x <代表作品> ?y. }
+mult_constraints_one_reverse_simple	q705:李十二是我国哪个朝代的人？	select ?x where { ?y <别称> <李十二>. ?y <所处时代> ?x. }
+mult_constraints_one_reverse_simple	q734:朝花夕拾的作者原名是什么？	select ?y where { ?x <代表作品> <朝花夕拾_（鲁迅散文集）>. ?x <原名> ?y. }
+mult_constraints_one_reverse_simple	q776:写作《关于费尔巴哈的提纲》的社会学家的主要成就是？	select ?y where { ?x <代表作品> <关于费尔巴哈的提纲>. ?x <主要成就> ?y. }
+mult_constraints_one_reverse_simple	q789:《实践理性批判》的作者从事的职业是？	select ?y where { ?x <代表作品> <实践理性批判>. ?x <职业> ?y. }
+mult_constraints_one_reverse_simple	q819:《卖炭翁》的作者生活在哪个朝代？	select ?y where { ?x <主要作品> <卖炭翁>. ?x <所处时代> ?y. }
+mult_constraints_one_reverse_simple	q823:《罗密欧与朱丽叶》的作者是信什么教的？	select ?x where { ?y <代表作品> <罗密欧与朱丽叶_（莎士比亚著名戏剧）>. ?y <信仰> ?x. }
+mult_constraints_one_reverse_simple	q830:垓下歌的作者什么时候死的？	select ?x where { ?y <主要作品> <垓下歌_（项羽诗歌）>. ?y <去世时间> ?x. }
+mult_constraints_one_reverse_simple	q833:梁启超的儿媳妇是谁？	select ?y where { ?x <父亲> <梁启超_（中国近代思想家、政治家、教育家）>. ?x <配偶> ?y . }
+mult_constraints_one_reverse_simple	q863:《背影》的作者毕业于哪个大学？	select ?y where { ?x <代表作品> <背影_（朱自清散文）>. ?x <毕业院校> ?y. }
+mult_constraints_one_reverse_simple	q867:唐玄宗的出生地是哪里？	select ?y where { ?x <出生地> ?y. ?x <庙号> <玄宗_（帝王庙号）>. }
+mult_constraints_one_reverse_simple	q876:主要作品是临川先生文集的先生曾任什么官职？	select ?y where { ?x <主要作品> <临川先生文集>. ?x <官职> ?y. }
+mult_constraints_one_reverse_simple	q887:宝安国际机场所在的省的省会是？	select ?x where { ?y <机场> <深圳宝安国际机场>. ?y <政府驻地> ?x. }
+mult_constraints_one_reverse_simple	q890:中国历史上以门阀政治为主要政治制度的时期，其对应的政体是什么？	select ?y where { ?x <政治制度> <门阀政治>. ?x <政治体制> ?y. }
+mult_constraints_one_reverse_simple	q908:天空之城的作者是哪个星座？	select ?y where { ?x <代表作品> <天空之城_（日本1986年宫崎骏执导动画电影）>. ?x <星座> ?y. }
+mult_constraints_one_reverse_simple	q916:总部设在意大利的FILA主要销售什么？	select ?y where { ?x <公司总部> <意大利_（意大利共和国）>. ?x <主营产品> ?y. }
+mult_constraints_one_reverse_simple	q917:美国漫画里的超级英雄们都毕业于哪些高校？	select ?y where { ?x <职业> <超级英雄_（美国漫画里的超级英雄）>. ?x <毕业院校> ?y. }
+mult_constraints_one_reverse_simple	q922:<江陵愁望寄子安>的作者信仰什么教？	select ?x where { ?y <代表作品> <江陵愁望寄子安>. ?y <信仰> ?x. }
+mult_constraints_one_reverse_simple	q927:俗称"猪仔笼"的植物的拉丁学名是什么？	select ?x where { ?y <别称> <猪仔笼>. ?y <拉丁学名> ?x. }
+mult_constraints_one_reverse_simple	q961:释永信担任主持的寺庙有哪些著名景点？	select ?y where { ?x <现任住持> <释永信>. ?x <著名景点> ?y. }
+mult_constraints_one_reverse_simple	q993:与nba对应的中国相应的协会的英文缩写是什么？	select ?x where { ?y <主要赛事> <NBA>. ?y <中国篮球协会> ?x. }
+mult_constraints_one_reverse_simple	q1001:有哪些中国足球运动员荣获过亚洲足球先生称号？	select ?x where { ?x <国籍> <中华人民共和国>. ?x <主要奖项> ?y. filter regex(?y, '亚洲足球先生'). }
+mult_constraints_one_reverse_simple	q1009:张柏芝、谢霆锋合作的动作电影里的服装是谁设计的？	select ?y where { ?x ?a <张柏芝>. ?x ?b <谢霆锋>. ?x <类型> <动作_（词语解释）>. ?x <服装设计> ?y. }
+mult_constraints_one_reverse_simple	q1042:市花是月季花的城市机场叫什么？	select ?y where { ?x <市花、市树> <月季_（蔷薇科植物之一）>. ?x <机场> ?y. }
+mult_constraints_one_reverse_simple	q1043:美国总统罗斯福的母校的位置？	select ?y where { ?x <知名校友> <罗斯福_（美国第三十二届总统）>. ?x <所属地区> ?y. }
+mult_constraints_one_reverse_simple	q1047:被称为"李供奉"的诗人有哪些作品？	select ?y where { ?x <别称> <李供奉>. ?x <主要作品> ?y. }
+mult_constraints_one_reverse_simple	q1051:当拓跋焘执掌政权时，国家的人口数量大约是多少？	select ?y where { ?x <国家领袖> <拓跋焘>. ?x <人口数量> ?y. }
+mult_constraints_one_reverse_simple	q1052:斯德哥尔摩所在的国家主要民族是？	select ?x where { ?y <首都> <斯德哥尔摩_（瑞典首都）>. ?y <主要民族> ?x. }
+mult_constraints_one_reverse_simple	q1063:《论衡》的作者是哪个民族的人氏？	select ?y where { ?x <代表作品> <论衡>. ?x <民族> ?y. }
+mult_constraints_one_reverse_simple	q1077:《纯粹理性批判》的作者诞生于什么时间？	select ?y where { ?x <代表作品> <纯粹理性批判>. ?x <出生日期> ?y. }
+mult_constraints_one_reverse_simple	q1087:那个作家，就是写了《古炉》的，是啥时候生人啊？	select ?x where { ?y <代表作品> <古炉>. ?y <出生日期> ?x. }
+mult_constraints_one_reverse_simple	q1103:《谈艺录》的作者是哪个学校毕业的？	select ?x where { ?y <代表作品> <谈艺录_（钱钟书创作诗话作品）>. ?y <毕业院校> ?x. }
+mult_constraints_one_reverse_simple	q1104:静夜思的作者的祖籍是哪里？	select ?x where { ?y <主要作品> <静夜思_（李白诗作）>. ?y <祖籍> ?x. }
+mult_constraints_one_reverse_simple	q1108:李宗翰、张柏芝合作的动作片有多长？	select ?y where { ?x ?a <张柏芝>. ?x ?b <李宗翰>. ?x <类型> <动作_（词语解释）>. ?x <片长> ?y. }
+mult_constraints_one_reverse_simple	q1117:你读过《追风筝的人》吗，你知道他的作者是哪个国家的人吗？	select ?y where { ?x <代表作品> <追风筝的人_（卡勒德·胡赛尼著小说成长的故事）>. ?x <国籍> ?y . }
+mult_constraints_one_reverse_simple	q1119:安菲尔德球场容纳人数为？	select ?y where { ?x <主场馆> <安菲尔德球场>. ?x <容纳人数> ?y. }
+mult_constraints_one_reverse_simple	q1123:写出《形而上学的沉思》的那名哲学家出生于哪里？	select ?y where { ?x <代表作品> <形而上学的沉思>. ?x <出生地> ?y. }
+mult_constraints_one_reverse_simple	q1137:比尔·盖茨创建的公司有什么软件产品？	select ?y where { ?x <联合创始人> <比尔·盖茨_（美国微软公司联合创始人）>. ?x <主要软件产品> ?y. }
+mult_constraints_one_reverse_simple	q1164:画出《墨虾》的画家是哪里人？	select ?y where { ?x <代表作品> <墨虾>. ?x <出生地> ?y. }
+mult_constraints_one_reverse_simple	q1168:美国总统罗斯福的母校创办时间？	select ?y where { ?x <知名校友> <罗斯福_（美国第三十二届总统）>. ?x <创办时间> ?y. }
+mult_constraints_one_reverse_simple	q1169:史诗《伊利亚特》的作者诞生于何时？	select ?y where { ?x <代表作品> <伊利亚特_（《荷马史诗》之一）>. ?x <出生日期> ?y. }
+mult_constraints_one_reverse_simple	q1178:楚玉是哪位作家所创作的角色？	select ?x where { ?x <代表作品> ?z. ?z <主要人物> <楚玉>. }
+mult_constraints_one_reverse_simple	q1183:丈夫是电视剧《红高粱》男主角的女明星？	select ?x where { ?x <丈夫> ?y. ?y <代表作品> <红高粱_（2014年郑晓龙执导周迅主演电视剧）>. }
+mult_constraints_one_reverse_simple	q1193:宋徽宗的主要作品有哪些？	select ?y where { ?x <庙号> <徽宗>. ?x <主要作品> ?y. }
+mult_constraints_one_reverse_simple	q1202:由卡尔·马克思发起的思想潮流，其著名口号是?？	select ?z where { ?x <发起者> <卡尔·马克思_（马克思主义创始人）>. ?x <口号> ?z. }
+mult_constraints_one_reverse_simple	q1238:pku的现任校长是谁？	select ?x where { ?y <简称> <pku_（北京大学的英文缩写）>. ?y <现任校长> ?x. }
+mult_constraints_one_reverse_simple	q1242:被称为扫帚星的天体，它有怎么样的轨道倾角？	select ?x where { ?y <别称> <扫帚星>. ?y <轨道倾角> ?x. }
+mult_constraints_one_reverse_simple	q1255:写有菩提十书的作家信仰什么宗教？	select ?y where { ?x <代表作品> <菩提十书>. ?x <信仰> ?y. }
+mult_constraints_one_reverse_simple	q1261:龙珠主角的招牌招式有什么？	select ?x ?y where { ?x <登场作品> <七龙珠_（漫画《龙珠》改编制作动画）> . ?x <常用招式> ?y . }
+mult_constraints_one_reverse_simple	q1277:陵寝是惠陵的人的主要成就是？	select ?y where { ?x <陵寝> <惠陵_（汉昭烈帝刘备陵寝）>. ?x <主要成就> ?y. }
+mult_constraints_one_reverse_simple	q1487:耶路撒冷所在国家的最大城市是什么？	select ?y where { ?x <首都> <耶路撒冷_（宗教圣地）>. ?x <最大城市> ?y. }
+mult_constraints_one_reverse_simple	q1492:甄嬛传女主角的老公叫什么？	select ?y where { ?x <代表作品> <甄嬛传_（2011年郑晓龙执导古装清宫斗争剧）>. ?x <配偶> ?y. }
+mult_constraints_one_reverse_simple	q1513:NBA是美国著名的体育联盟，那么对应的球类运动起源于哪里？	select ?y where { ?x <主要赛事> <NBA>. ?x <起源地点> ?y. }
+mult_constraints_one_reverse_simple	q1523:被称为"宾尼兔"的小兔子主要吃什么？	select ?y where { ?x <别称> <宾尼兔> . ?x <主食> ?y. }
+mult_constraints_one_reverse_simple	q1580:演唱《心墙》的歌手的星座是什么？	select ?y where { ?x <代表作品> <心墙_（郭静演唱歌曲）>. ?x <星座> ?y. }
+mult_constraints_one_reverse_simple	q1583:创作著名篇章《兰亭集序》的书法家有什么称号？	select ?y where { ?x <代表作品> <兰亭集序_（集序文章）>. ?x <称号> ?y. }
+mult_constraints_one_reverse_simple	q1607:pku坐落于什么位置？	select ?x where { ?y <简称> <pku_（北京大学的英文缩写）>. ?y <学校地址> ?x. }
+mult_constraints_one_reverse_simple	q1609:孙子兵法的作者是哪个学派？	select ?y where { ?x <主要作品> <孙子兵法_（中国古典军事文化著作）>. ?x <学派> ?y. }
+mult_constraints_one_reverse_simple	q1628:《忏悔录》的作者的信仰是？	select ?y where { ?x <代表作品> <忏悔录_（卢梭作品《忏悔录》）>. ?x <信仰> ?y. }
+mult_constraints_one_reverse_simple	q1635:"美猴王"会多少般变化？	select ?x where { ?y <称号> <美猴王_（2010年陈家奇执导动画片）>. ?y <技能> ?x. }
+mult_constraints_one_reverse_simple	q1647:《将进酒》的作者祖籍在哪里？	select ?x where { ?y <主要作品> <将进酒_（唐代李白诗作）>. ?y <祖籍> ?x. }
+mult_constraints_one_reverse_simple	q1657:东京电视台出品的动画的导演有哪些？	select ?y where { ?x <出品> <东京电视台>. ?x <导演> ?y. }
+mult_constraints_one_reverse_simple	q1658:科比的老婆是做什么工作的？	select ?y where { ?x <丈夫> <科比·布莱恩特>. ?x <职业> ?y. }
+mult_constraints_one_reverse_simple	q1663:汤山邦彦导演的动画都是什么类型的？	select ?y where { ?x <导演> <汤山邦彦>. ?x <类型> ?y. }
+mult_constraints_one_reverse_simple	q1672:汪峰在专辑《信仰在空中飘扬》中发表了哪些代表性的作品？	select ?x where { ?x <所属专辑> <信仰在空中飘扬_（汪峰2009年发行音乐专辑）>. <汪峰_（歌手）> <代表作品> ?x. }
+mult_constraints_one_reverse_simple	q1675:钱钟书的妻子的代表作有哪些？	select ?y where { ?x <丈夫> <钱钟书>. ?x <代表作品> ?y. }
+mult_constraints_one_reverse_simple	q1676:中国北京有一所大学校庆日是5月4日，它的现任校长是谁？	select ?y where { ?x <校庆日>"05-4". ?x <现任校长> ?y . ?x <所属地区> <北京_（中华人民共和国首都）>. }
+mult_constraints_one_reverse_simple	q1735:多个国家宣布禁飞波音737 MAX 8飞机，影响的是哪国股价？	select ?x where { ?y <产品> <波音737_MAX_8飞机>. ?y <国家> ?x. }
+mult_constraints_one_reverse_simple	q1774:300017的员工人数？	select ?x where { ?y <股票代码> <300017>. ?y <员工人数> ?x. }
+mult_constraints_one_reverse_simple	q1820:股神的主要成就？	select ?x where { ?y <别名> <股神>. ?y <主要成就> ?x. }
+mult_constraints_one_reverse_simple	q1944:白酒行业景气周期延续对哪些股票有利好？	select ?x where { ?y <事件> <白酒行业景气周期延续>. ?x <行业> ?y. }
+mult_constraints_one_reverse_simple	q1960:网宿科技2月以来股价翻倍本周酱油超40亿市值限售股解禁影响的公司是？	select ?x where { ?y <事件> <网宿科技2月以来股价翻倍本周酱油超40亿市值限售股解禁>. ?x <股东> ?y. }
+mult_constraints_one_reverse_simple	q2014:杨康的爸爸的孙子是谁？	select distinct ?y where { ?x <儿子> <杨康_（武侠小说《射雕英雄传》中的人物）> . ?x <孙子> ?y . }
+mult_constraints_one_reverse_simple	q2017:裘千仞的妹妹是谁？	select ?y where { ?x <弟弟> <裘千仞> . ?x <妹妹> ?y . }
+mult_constraints_one_reverse_simple	q2036:使用"真武七截阵"的七人分别是谁？	select ?y where { ?x <成员> ?y . ?x <阵法> <真武七截阵_（小说《倚天屠龙记》武当派阵式）> . }
+mult_constraints_one_reverse_simple	q2039:杨不悔的爸爸是谁？	select ?x where { ?y <岳父> ?x . ?y <妻子> <杨不悔_（金庸小说《倚天屠龙记》中人物）> . }
+mult_constraints_one_reverse_simple	q2058:柯南·道尔笔下，华生的搭档的原型是谁？	select ?x where { ?y <搭档> <华生_（侦探小说《福尔摩斯探案记》中的人物）> . ?y <原型> ?x . }
+mult_constraints_one_reverse_simple	q2059:高田贤三是一知名品牌的设计师，这一品牌的设计原则是什么？	select ?x where { ?y <设计师> <高田贤三> . ?y <设计原则> ?x . }
+mult_constraints_one_reverse_simple	q2061:卡西尼发现的行星有几颗卫星？	select ?x where { ?y <发现者> <卡西尼_（意大利天文学家）> . ?y <卫星数量> ?x . }
+mult_constraints_one_reverse_simple	q2071:马里奥的弟弟是什么职业？	select ?x where { ?y <哥哥> <马里奥_（任天堂公司游戏角色）> . ?y <职业> ?x . }
+mult_constraints_one_reverse_simple	q2115:使用ios操作系统的手机上运行名称为何的应用商店？	select ?x where { ?y <操作系统> <iOS_（苹果公司的移动操作系统）> . ?y <应用商店> ?x . }
+mult_constraints_one_reverse_simple	q2119:地球大气中包含的哪种元素是科学家舍勒发现的？	select ?x where { ?x <发现人> <舍勒_（瑞典化学家）> . <地球大气> <成份> ?x . }
+mult_constraints_one_reverse_simple	q2130:小说《达芬奇密码》的作者出生于何时？	select ?x where { ?y <出生日期> ?x . ?y <代表作品> <达芬奇密码_（图书）> . }
+mult_constraints_one_reverse_simple	q2150:《罗密欧与朱丽叶》的作者有什么别名？	select ?x where { ?y <代表作品> <罗密欧与朱丽叶_（莎士比亚著名戏剧）> . ?y <别名> ?x . }
+mult_constraints_one_reverse_simple	q2170:昆凌女儿是什么星座的？	select ?x where { ?y <妈妈> <昆凌> . ?y <星座> ?x . }
+mult_constraints_one_reverse_simple	q2174:《浮夸》的演唱者又被戏称为？	select ?x where { ?y <代表作品> <浮夸_（陈奕迅主唱的歌曲）> . ?y <别名> ?x . }
+mult_constraints_one_reverse_simple	q2194:《东方主义》的作者出生在哪个地方？	select ?y where { ?x <代表作品> <东方主义> . ?x <出生地> ?y . }
+mult_constraints_one_reverse_simple	q2205:唱《七友》的歌手喜欢吃什么食物？	select ?x where { ?y <代表作品> <七友_（梁汉文演唱歌曲）> . ?y <喜爱的食物> ?x . }
+mult_constraints_one_reverse_simple	q2210:同时参与到日本1996年和2015年两版"恶作剧之吻"的男演员是？	select ?x where { ?x <代表作品> <恶作剧之吻_（2015年李海娜，MIKE主演电视剧）> . <恶作剧之吻_（日本1996年柏原崇、佐藤蓝子主演电视剧）> <主演> ?x . }
+mult_constraints_one_reverse_simple	q2216:"乐府双璧"中哪一首是北魏时期的民歌？	select ?x where { ?x <创作年代> <北魏> . <乐府双璧> <分类> ?x . }
+mult_constraints_one_reverse_simple	q2220:请列述《西风颂》作者的成就。	select ?x where { ?y <主要成就> ?x . <西风颂> <作者> ?y . }
+mult_constraints_one_reverse_simple	q2229:王小波的丈母娘是谁？	select ?x where { ?y <配偶> <王小波_（中国当代作家、学者、文学家）> . ?y <母亲> ?x . }
+mult_constraints_one_reverse_simple	q2502:匈奴成为中国的主要民族的时期的人口数量有多少？	select ?y where { ?x <主要民族> <匈奴>. ?x <人口数量> ?y. }
+mult_constraints_one_reverse_simple	q2511:郭德纲创立的相声社团宗旨是什么？	select ?y where { ?x <创始人> <郭德纲>. ?x <主旨> ?y. }
+mult_constraints_one_reverse_simple	q2514:演唱《街角的祝福》的歌手是哪国人？	select ?y where { ?x <代表作品> <街角的祝福>. ?x <国籍> ?y. }
+mult_constraints_one_reverse_simple	q2525:《蒙娜丽莎》的作者皈依的是什么宗教？	select ?x where { ?y <代表作品> <蒙娜丽莎_（列奥纳多·达·芬奇画作）>. ?y <信仰> ?x. }
+mult_constraints_one_reverse_simple	q2526:赵明诚的配偶有哪些主要作品？	select ?y where { ?x <配偶> <赵明诚>. ?x <主要作品> ?y. }
+mult_constraints_one_reverse_simple	q2542:曾毅所在的音乐组合有哪些代表作品？	select ?y where { ?x <组合成员> <曾毅_（凤凰传奇组合男主唱）>. ?x <代表作品> ?y. }
+mult_constraints_one_reverse_simple	q2543:《蜀道难》的作者的别称？	select ?x where { ?y <主要作品> <蜀道难_（李白作古体诗）> . ?y <别称> ?x. }
+mult_constraints_one_reverse_simple	q2544:著有《杜工部集》的诗人处于哪个朝代？	select ?y where { ?x <主要作品> <杜工部集>. ?x <所处时代> ?y. }
+mult_constraints_one_reverse_simple	q2577:司徒镇（高邮市）的特产中老少皆宜的是？	select ?x where { ?x <适宜人群> <老少皆宜>. <司徒镇（高邮市）> <特产> ?x. }
+mult_constraints_one_reverse_simple	q2581:《秦律》的作者有哪些成就？	select ?y where { ?x <主要作品> <秦律>. ?x <主要成就> ?y. }
+mult_constraints_one_reverse_simple	q2611:有哪些德国足球运动员荣获过世界杯金靴奖？	select ?x where { ?x <国籍> <德国_（德意志联邦共和国）>. ?x <主要奖项> ?y. filter regex(?y, '世界杯金靴奖'). }
+mult_constraints_one_reverse_simple	q2630:唱《钟无艳》的歌手在哪里毕业的？	select ?x where { ?y <代表作品> <钟无艳_（中国古代四大丑女之一）>. ?y <毕业院校> ?x. }
+mult_constraints_one_reverse_simple	q2651:《出师表》的作者逝世后被安葬于何处？	select ?y where { ?x <代表作品> <出师表_（诸葛亮作品）>. ?x <墓葬> ?y. }
+mult_constraints_one_reverse_simple	q2654:华盖集的作者有哪些别名呢？	select ?y where { ?x <代表作品> <华盖集>. ?x <别名> ?y. }
+mult_constraints_one_reverse_simple	q2663:长篇小说《骆驼祥子》的作者是哪个民族？	select ?y where { ?x <代表作品> <骆驼祥子_（国家大剧院原创歌剧）>. ?x <民族> ?y. }
+mult_constraints_one_reverse_simple	q2670:慕尼黑工业大学属于哪个国家哪个州？	select ?y where { ?x <著名大学> <慕尼黑工业大学>. ?x <所属地区> ?y. }
+mult_constraints_one_reverse_simple	q2672:曹丕执政时期国家流通的货币是什么？	select ?y where { ?x <国家领袖> <曹丕_（三国时期曹魏开国皇帝）>. ?x <货币> ?y. }
+mult_constraints_one_reverse_simple	q2686:在金庸小说《天龙八部》中，带头大哥的儿子是谁？	select ?y where { ?x <绰号> <带头大哥>. ?y <父亲> ?x. }
+mult_constraints_one_reverse_simple	q2965:600570上市时间是什么时候？	select ?x where { ?y <股票代码> <600570>. ?y <上市时间> ?x. }
+mult_constraints_one_reverse_simple	q2966:600570的发行总股本是多少？	select ?x where { ?y <股票代码> <600570>. ?y <发行总股本> ?x. }
+mult_constraints_one_reverse_simple	q2967:600570的流通A股是多少？	select ?x where { ?y <股票代码> <600570>. ?y <上市时间> ?x. }

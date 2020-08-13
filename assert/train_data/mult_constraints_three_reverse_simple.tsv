@@ -1,0 +1,4 @@
+mult_constraints_three_reverse_simple	q969:去瞿塘峡、巫峡、西陵峡旅游需要多少钱门票？	select ?y where { ?x <组成> <瞿塘峡>. ?x <组成> <巫峡_（长江三峡第二峡）>. ?x <组成> <西陵峡>. ?x <门票价格> ?y. }
+mult_constraints_three_reverse_simple	q1245:那位普瓦捷大学毕业的法国著名哲学家做出了什么突出贡献？	select ?y where { ?x <毕业院校> <普瓦捷大学>. ?x <国籍> <法国_（法兰西共和国）>. ?x <职业> <哲学家_（基础含义）>. ?x <主要成就> ?y. }
+mult_constraints_three_reverse_simple	q1482:作为985,211重点工程学校，以世界一流大学为发展目标的某校，它的现任校长是谁？	select ?y where { ?x <属性> <211工程>. ?x <属性> <985工程>. ?x <发展定位> <世界一流大学>. ?x <现任校长> ?y. }
+mult_constraints_three_reverse_simple	q1486:梁胜权执导的主演为胡歌林依晨的电视剧在什么时候上映？	select ?x where { ?y <主演> <胡歌_（中国内地男演员）>. ?y <主演> <林依晨> . ?y <导演> <梁胜权>. ?y <上映时间> ?x. }

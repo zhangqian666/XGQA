@@ -1,0 +1,10 @@
+# Created by .ignore support plugin (hsz.mobi)
+.gitignore
+.idea/
+assert/.DS_Store
+assert/pkubase-mention2ent.txt
+assert/train_data/__init__.py
+assert/train_data/pkubase-complete2.txt
+assert/train_data/pkubase-complete2.txt.zip
+gstore/__pycache__/
+utils/__pycache__/

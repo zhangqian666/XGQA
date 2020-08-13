@@ -1,0 +1,30 @@
+mult_constraints_two2_simple	q594:詹妮弗·安妮斯顿出演了一部1994年上映的美国情景剧，这部美剧共有多少集？	select ?y where { ?x <主演> <詹妮弗·安妮斯顿>. ?x <上映时间> "1994". ?x <集数> ?y. }
+mult_constraints_two2_simple	q694:李安导演的获得奥斯卡最佳外语片奖的电影获得了多少票房？	select ?z where { ?x <导演> <李安_（华人导演）>. ?x <主要奖项> "奥斯卡最佳外语片奖". ?x <票房> ?z. }
+mult_constraints_two2_simple	q710:每一年的9月10日是感谢传道授业解惑的教师的节日，请问这个节日是什么时候设立的？	select ?y where { ?x <节日时间> <9月10日>. ?x <节日意义> "感谢传道授业解惑的教师". ?x <设定时间> ?y. }
+mult_constraints_two2_simple	q712:海泽王里11月11号出生的人出自登场在哪一话？	select ?x where { ?y <登场作品> <海贼王_（尾田荣一郎创作的漫画作品）>. ?y <生日> "11-11". ?y <初次登场> ?x. }
+mult_constraints_two2_simple	q786:电影《食神》的导演,6次打破香港电影票房纪录,他的出生日期？	select ?x where { ?y <主要成就> "6次打破香港电影票房纪录". ?y <代表作品> <食神_（1996年周星驰自编自导自主演喜剧片）>. ?y <出生日期> ?x. }
+mult_constraints_two2_simple	q791:发明了飞机的美国人信仰什么宗教？	select ?y where { ?x <国籍> <美国_（美利坚合众国）>. ?x <主要成就> "发明了飞机". ?x <信仰> ?y. }
+mult_constraints_two2_simple	q881:原产自苏联、输入射速为600发/分的步枪有效射程是多远？	select ?y where { ?x <有效射程> "300". ?x <原产国> <苏联>. ?x <售价> ?y. }
+mult_constraints_two2_simple	q896:汽车制造行业创立于"1953-07-15"的公司的外文名是?？	select ?y where { ?x <所属行业> <汽车制造>. ?x <创立时间> "1953-07-15". ?x <英文名称> ?y. }
+mult_constraints_two2_simple	q923:海贼王里梦想成为世界第一大剑豪的主角被悬赏多少赏金？	select ?x where { ?y <登场作品> <海贼王_（尾田荣一郎创作的漫画作品）>. ?y <梦想> "成为世界第一的大剑豪". ?y <悬赏金> ?x. }
+mult_constraints_two2_simple	q941:列举出Eason Chan的粤语代表歌曲？	select ?x where { ?x <外文名> "Eason Chan". ?x <代表作品> ?y. ?y <歌曲语言> <粤语_（汉藏语系下的语言）> . }
+mult_constraints_two2_simple	q953:唐人公司出品的射雕英雄传是哪一年的版本？	select ?y where { ?x <出品公司> <唐人_（唐人电影）>. ?x <中文名> "射雕英雄传". ?x <出品时间> ?y. }
+mult_constraints_two2_simple	q1019:校庆日在09-29且现任校长是谢和平的学校建在什么地方？	select ?y where { ?x <校庆日> "09-29". ?x <现任校长> <谢和平>. ?x <所属地区> ?y. }
+mult_constraints_two2_simple	q1090:地处长沙、输入创办于1904年的高中的校训是什么？	select ?y where { ?x <创办时间> "1904". ?x <所属地区> <长沙_（湖南省省会）> . ?x <校训> ?y. }
+mult_constraints_two2_simple	q1098:中国南昌有一所大学校庆日是5月4日，它的现任校长是谁？	select ?y where { ?x <校庆日> "05-4". ?x <现任校长> ?y . ?x <所属地区> <南昌_（江西省省会）>. }
+mult_constraints_two2_simple	q1106:《封神演义》中姬发的兄弟，有一对翅膀的人，他的师父是谁？	select ?y where { ?x <别名> "蝉之子、义子". ?x <兄弟> <姬发>. ?x <师父> ?y. }
+mult_constraints_two2_simple	q1188:中国有一所1897年5月21日建立的大学，它的校训是"福建地税精神"，它的现任校长是谁？	select ?y where { ?x <创办时间> "1897-05-21". ?x <现任校长> ?y . ?x <校训> <福建地税精神>. }
+mult_constraints_two2_simple	q1590:陕西出土的西汉文物现被保存在哪个博物馆？	select ?y where { ?x <所属年代> <西汉>. ?x <出土地点> "陕西省". ?x <馆藏地点> ?y. }
+mult_constraints_two2_simple	q1618:著名导演克里斯托弗·诺兰的代表作品都有哪些？	select ?y where { ?x <中文名> "克里斯托弗·诺兰" . ?x <职业> <导演> . ?x <代表作品> ?y . }
+mult_constraints_two2_simple	q1624:有一位演员，6次打破香港电影票房纪录，主演电影《功夫》，他的出生地是哪里？	select ?x where { ?y <主要成就> "6次打破香港电影票房纪录". ?y <代表作品> <功夫_（2004年周星驰主演电影）>. ?y <出生地> ?x. }
+mult_constraints_two2_simple	q2055:歌手陈粒毕业于哪个学校？	select ?x where { ?y <中文名> "陈粒" . ?y <职业> <歌手_（职业名称）> . ?y <毕业院校> ?x . }
+mult_constraints_two2_simple	q2117:密度为1.18g/cm3的一种强酸是？	select ?x where { ?x <密度> "1.18g/cm3" . <强酸> <主要> ?x . }
+mult_constraints_two2_simple	q2148:英文名为"KRIS"的歌手的中文名？	select ?x where { ?y <外文名> "KRIS" . ?y <职业> <歌手_（职业名称）> . ?y <中文名> ?x . }
+mult_constraints_two2_simple	q2209:由徐和瑾先生翻译的长达三百万字数的外文小说是？	select ?x where { ?x <首版字数> "3000000" . <徐和瑾> <代表作品> ?x . }
+mult_constraints_two2_simple	q2548:电影《盗梦空间》哪个男主角是和族？	select ?y where { ?x <中文名> "盗梦空间". ?x <主演> ?y. ?y <民族> <和族>. }
+mult_constraints_two2_simple	q2560:李安导演的获得奥斯卡最佳外语片奖的电影翻译成英文叫什么？	select ?z where { ?x <导演> <李安_（华人导演）>. ?x <主要奖项> "奥斯卡最佳外语片奖". ?x <外文名> ?z. }
+mult_constraints_two2_simple	q2578:三门峡出过哪些演员？	select ?x where { ?x <出生地> <三门峡> . ?x <职业> ?y . ?y <中文名> "演员". }
+mult_constraints_two2_simple	q2617:位于梵蒂冈的"Sweet Holiday Rome"酒店的中文名称是？	select ?x where { ?y <英文名称> "Sweet Holiday Rome". ?y <地理位置> <梵蒂冈>. ?y <中文名称> ?x. }
+mult_constraints_two2_simple	q2621:小罗伯特·唐尼2008年主演的成名电影的导演是谁？	select ?x where { ?y <主演> <小罗伯特·唐尼>. ?y <出品时间> "2008". ?y <导演> ?x. }
+mult_constraints_two2_simple	q2653:42小罗伯特·唐尼2008年主演的成名电影的制片人是谁？	select ?x where { ?y <主演> <小罗伯特·唐尼>. ?y <出品时间> "2008". ?y <制片人> ?x. }
+mult_constraints_two2_simple	q2684:海贼王里外号海贼猎人、绿藻头的人长得有多高？	select ?x where { ?y <登场作品> <海贼王_（尾田荣一郎创作的漫画作品）>. ?y <其他名称> "海贼猎人、绿藻头". ?y <身高> ?x. }

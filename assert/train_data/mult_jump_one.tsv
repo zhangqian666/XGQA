@@ -1,0 +1,409 @@
+mult_jump_one	q524:博尔赫斯的国家首都在哪里？	select ?x where { <豪尔赫·路易斯·博尔赫斯_（阿根廷作家）> <出生地> ?y. ?y <首都> ?x}
+mult_jump_one	q547:拉斯维加斯所属州的别名是什么？	select ?x where { <拉斯维加斯_（美国内华达州的最大城市）> <所属地区> ?y. ?y <别名> ?x. }
+mult_jump_one	q550:印度教主神毗湿奴的坐骑的原型是什么？	select ?x where { <毗湿奴_（印度教主神）> <坐骑> ?y. ?y <原型> ?x. }
+mult_jump_one	q553:俄罗斯的首都有多少人口？	select ?x where { <俄罗斯_（俄罗斯联邦）> <首都> ?y. ?y <人口> ?x. }
+mult_jump_one	q557:中国的首都的占地面积多少？	select ?x where { <中华人民共和国> <首都> ?y. ?y <面积> ?x. }
+mult_jump_one	q560:加拿大最大城市有哪些机场？	select ?x where { <加拿大_（北美洲国家）> <最大城市> ?y. ?y <机场> ?x. }
+mult_jump_one	q566:上海期货交易所所在地区有机场吗？	select ?x where { <上海期货交易所> <地区> ?y. ?y <机场> ?x. }
+mult_jump_one	q570:阿根廷央行的职责是什么？	select ?x where { <阿根廷_（阿根廷共和国）> <中央银行> ?y. ?y <职责> ?x. }
+mult_jump_one	q574:电影钢铁侠的主演都有哪些代表作品？	select ?x where { <Ironman_（美国2008年小罗伯特·唐尼主演电影）> <主演> ?y. ?y <代表作品> ?x. }
+mult_jump_one	q575:出品速度与激情系列电影的公司的总部在哪里？	select ?x where { <速度与激情_（美国赛车动作主题系列电影）> <出品公司> ?y. ?y <总部地点> ?x. }
+mult_jump_one	q587:宋雪桦是在哪个地区上的大学？	select ?x where { <宋雪桦> <毕业院校> ?y. ?y <所属地区> ?x. }
+mult_jump_one	q599:小说《诛仙》的主要角色有哪些法宝？	select ?x where { <诛仙_（萧鼎著古典仙侠小说）> <主要角色> ?y. ?y <法宝武器> ?x. }
+mult_jump_one	q602:蜀道难的作者祖籍在哪里？	select ?x where { <蜀道难_（李白作古体诗）> <作者> ?y. ?y <祖籍> ?x. }
+mult_jump_one	q603:与刘昊然的星座相邻的有哪些星座？	select ?x where { <刘昊然> <星座> ?y. ?y <邻接星座> ?x. }
+mult_jump_one	q605:指环王拍摄地国土面积有多大？	select ?x where { <指环王_（英美2001-2003年彼得·杰克逊执导系列电影）> <拍摄地点> ?y.?y <国土面积> ?x. }
+mult_jump_one	q608:加拿大最高建筑的地理位置？	select ?x where { <加拿大_（北美洲国家）> <最高建筑> ?y. ?y <地理位置> ?x. }
+mult_jump_one	q613:钢铁侠的大学是谁创办的？	select ?x where { <史塔克_（美国动漫及电影钢铁侠中的人物）> <毕业院校> ?y. ?y <创办者> ?x. }
+mult_jump_one	q615:冰与火之歌的拍摄地点的官方语言是什么？	select ?x where { <冰与火之歌_（美国HBO电视台制作的电视剧）> <拍摄地点> ?y.?y <官方语言> ?x. }
+mult_jump_one	q617:北京国安的主场最多能够容纳多少人？	select ?x where { <北京国安足球俱乐部> <主场馆> ?y. ?y <座位数量> ?x. }
+mult_jump_one	q618:北京奥运的吉祥物是谁设计的？	select ?x where { <2008年北京奥运会> <吉祥物> ?y. ?y <设计者> ?x. }
+mult_jump_one	q624:古希腊悲剧《俄狄浦斯王》的作者有哪些代表作品？	select ?x where { <俄狄浦斯王_（古希腊悲剧）> <作者> ?y. ?y <代表作品> ?x. }
+mult_jump_one	q639:windows系统的开发商的CEO是哪国人？	select ?x where { <Windows操作系统> <发行者> ?y. ?y <首席执行官> ?z. ?z <国籍> ?x. }
+mult_jump_one	q675:你知道几个那些主角吊炸天的漫画的作者？	select ?x where { <高武世界_（指具体的高武世界（位面））> <代表> ?y. ?y <作者> ?x. }
+mult_jump_one	q683:俞敏洪母校的校庆日是哪一天？	select ?x where { <俞敏洪> <毕业院校> ?y. ?y <校庆日> ?x. }
+mult_jump_one	q726:康熙王朝的纸片人毕业于哪个学校？	select ?x where { <康熙王朝_（中国2001年陈家林执导陈道明主演电视剧）> <制片人> ?y. ?y <毕业院校> ?x. }
+mult_jump_one	q735:加拿大首都使用的语言？	select ?x where { <加拿大_（北美洲国家）> <首都> ?y . ?y <方言> ?x. }
+mult_jump_one	q737:阿根廷首都面积有多大？	select ?x where { <阿根廷_（阿根廷共和国）> <首都> ?y. ?y <面积> ?x. }
+mult_jump_one	q741:《半生缘》的作者的毕业院校是？	select ?x where { <半生缘_（张爱玲作品）> <作者> ?y. ?y <毕业院校> ?x. }
+mult_jump_one	q742:发行电影《谍影重重3》的公司的组织形式是怎样的？	select ?x where { <谍影重重3> <发行公司> ?y. ?y <组织形式> ?x. }
+mult_jump_one	q743:苹果公司的创始人什么时候去世的？	select ?x where { <苹果_（苹果产品公司）> <创始人> ?y. ?y <逝世日期> ?x. }
+mult_jump_one	q745:杜邦传的作者身高多少？	select ?x where { <杜邦传> <作者> ?y. ?y <身高> ?x. }
+mult_jump_one	q752:阿根廷国鸟属于哪个目？	select ?x where { <阿根廷_（阿根廷共和国）> <国鸟> ?y. ?y <目> ?x. }
+mult_jump_one	q763:北大校长的生日是什么时候？	select ?x where { <北京大学> <现任校长> ?y. ?y <出生日期> ?x. }
+mult_jump_one	q764:阿根廷的官方语言全球有多少人在用？	select ?x where { <阿根廷_（阿根廷共和国）> <官方语言> ?y. ?y <使用人数> ?x. }
+mult_jump_one	q768:阜田镇的方言属于哪个语系？	select ?x where { <阜田镇> <方言> ?y. ?y <所属语系> ?x. }
+mult_jump_one	q780:古希腊悲剧《俄狄浦斯王》的作者的出生日期？	select ?x where { <俄狄浦斯王_（古希腊悲剧）> <作者> ?y. ?y <出生日期> ?x. }
+mult_jump_one	q782:神话中赫拉的配偶的外文名？	select ?x where { <赫拉_（古希腊神话中的第三代天后）> <配偶> ?y . ?y <外文名> ?x. }
+mult_jump_one	q792:指环王是在哪个洲拍摄的？	select ?x where { <指环王_（英美2001-2003年彼得·杰克逊执导系列电影）> <拍摄地点> ?y.?y <所属洲> ?x. }
+mult_jump_one	q793:J联赛球队大阪樱花的主场最多能够容纳多少人？	select ?x where { <大阪樱花足球俱乐部> <主场馆> ?y. ?y <容量> ?x. }
+mult_jump_one	q795:《丰乳肥臀》的作者其民族是？	select ?x where { <丰乳肥臀> <作者> ?y. ?y <民族> ?x. }
+mult_jump_one	q796:小说《放手那么难》的连载网站的网址是什么？	select ?x where { <放手那么难> <连载网站> ?y. ?y <官网> ?x. }
+mult_jump_one	q797:巴黎的市长是在哪出生的？	select ?x where { <巴黎_（法国首都）> <市长> ?y. ?y <出生地> ?x. }
+mult_jump_one	q802:长城所在国家的首都是？	select ?x where { <万里长城_（中国古代军事工程）> <所属国家> ?y. ?y <首都> ?x. }
+mult_jump_one	q804:黄贯中的老婆参演了哪些影视作品？	select ?x where { <黄贯中> <配偶> ?y. ?y <代表作品> ?x. }
+mult_jump_one	q805:NIKE创始人的毕业院校是什么？	select ?x where { <NIKE> <创始人> ?y. ?y <毕业院校> ?x. }
+mult_jump_one	q811:北京大学现任校长的学历？	select ?x where { <北京大学> <现任校长> ?y . ?y <毕业院校> ?x. }
+mult_jump_one	q818:《野草》的作者其民族是？	select ?x where { <野草_（鲁迅创作散文诗集）> <作者> ?y. ?y <民族> ?x. }
+mult_jump_one	q820:《半生缘》的作者的主要成就有哪些？	select ?x where { <半生缘_（张爱玲作品）> <作者> ?y. ?y <血型> ?x. }
+mult_jump_one	q836:《丰乳肥臀》的作者的别名有？	select ?x where { <丰乳肥臀> <作者> ?y. ?y <别名> ?x. }
+mult_jump_one	q844:叔本华信仰的宗教主要分布在哪些区域？	select ?x where { <亚瑟·叔本华> <信仰> ?y. ?y <主要分布区域> ?x. }
+mult_jump_one	q845:冰与火之歌拍摄地国土面积有多大？	select ?x where { <冰与火之歌_（美国HBO电视台制作的电视剧）> <拍摄地点> ?y.?y <国土面积> ?x. }
+mult_jump_one	q847:建宁公主是哪位作家笔下的人物？	select ?x where { <建宁公主_（金庸小说《鹿鼎记》人物）> <登场作品> ?y. ?y <作者> ?x. }
+mult_jump_one	q850:上海总商会的首任总理是何时去世的？	select ?x where { <上海总商会> <首任总理> ?y. ?y <去世时间> ?x. }
+mult_jump_one	q852:《丰乳肥臀》的作者出生日期是？	select ?x where { <丰乳肥臀> <作者> ?y. ?y <出生日期> ?x. }
+mult_jump_one	q855:《半生缘》的作者其民族是？	select ?x where { <半生缘_（张爱玲作品）> <作者> ?y. ?y <民族> ?x. }
+mult_jump_one	q857:爱伦·坡出生的城市有哪些著名景点？	select ?x where { <埃德加·爱伦·坡> <出生地> ?y. ?y <著名景点> ?x. }
+mult_jump_one	q877:北京大学现任校长有哪些主要成就？	select ?x where { <北京大学> <现任校长> ?y. ?y <主要成就> ?x . }
+mult_jump_one	q884:沈从文的同族人他们一般聚居在哪？	select ?x where { <沈从文> <民族> ?y. ?y <主要分布区> ?x. }
+mult_jump_one	q891:毛泽东家乡的气候条件如何？	select ?x where { <毛泽东_（无产阶级革命家）> <出生地> ?y. ?y <气候条件> ?x . }
+mult_jump_one	q898:阿塞拜疆所属洲主要有哪些国家？	select ?x where { <阿塞拜疆> <所属洲> ?y. ?y <主要国家> ?x. }
+mult_jump_one	q911:《丰乳肥臀》的作者的主要成就是？	select ?x where { <丰乳肥臀> <作者> ?y. ?y <主要成就> ?x. }
+mult_jump_one	q929:上海期货交易所所在地区的气候怎么样？	select ?x where { <上海期货交易所> <地区> ?y. ?y <气候条件> ?x. }
+mult_jump_one	q964:《根鸟》的作者是哪个民族的人	select ?x where { <根鸟> <作者> ?y . ?y <民族> ?x . }
+mult_jump_one	q967:电影阿凡达的导演来自哪个国家？	select ?x where { <Avatar_（2009年上映詹姆斯·卡梅隆执导美国电影）> <导演> ?y. ?y <国籍> ?x. }
+mult_jump_one	q991:周杰伦经纪公司的外文名？	select ?x where { <周杰伦> <经纪公司> ?y. ?y <外文名> ?x. }
+mult_jump_one	q994:"国际章"上的大学还出了什么名人？	select ?x where { <章子怡> <毕业院校> ?y. ?y <知名校友> ?x. }
+mult_jump_one	q1038:《醉翁亭记》是哪个朝代的人写的？	select ?x where { <醉翁亭记> <作者> ?y. ?y <国籍> ?x. }
+mult_jump_one	q1039:著有《百年孤独》一书的作者出生于何时？	select ?x where { <百年孤独> <作者> ?y. ?y <出生日期> ?x. }
+mult_jump_one	q1048:星爷的公司是哪年成立的？	select ?x where { <周星驰> <经纪公司> ?y. ?y <成立时间> ?x. }
+mult_jump_one	q1053:电视剧冰与火之歌的出品公司的官方网站是什么？	select ?x where { <冰与火之歌_（美国HBO电视台制作的电视剧）> <出品公司> ?y.?y <官网> ?x. }
+mult_jump_one	q1060:歌曲《红玫瑰》的原唱歌手是什么民族的？	select ?x where { <红玫瑰_（陈奕迅演唱歌曲）> <歌曲原唱> ?y. ?y <民族> ?x. }
+mult_jump_one	q1062:金正恩父亲的军衔有多高？	select ?x where { <金正恩_（朝鲜最高领导人）> <父亲> ?y. ?y <军衔> ?x. }
+mult_jump_one	q1072:《野草》的作者的代表作品有哪些？	select ?x where { <野草_（鲁迅创作散文诗集）> <作者> ?y. ?y <代表作品> ?x. }
+mult_jump_one	q1075:NIKE总部所在地有哪些大学？	select ?x where { <NIKE> <总部地点> ?y. ?y <高等院校> ?x. }
+mult_jump_one	q1079:《乡土中国》的作者有哪些代表作品	select ?x where { <乡土中国> <作者> ?y . ?y <代表作品> ?x . }
+mult_jump_one	q1086:游戏《敢死队的战争》的发行站点的网站口号是什么？	select ?x where { <敢死队的战争> <游戏站点> ?y. ?y <公司口号> ?x. }
+mult_jump_one	q1097:《丰乳肥臀》的作者的毕业院校是？	select ?x where { <丰乳肥臀> <作者> ?y. ?y <毕业院校> ?x. }
+mult_jump_one	q1101:朱茵的丈夫有哪些音乐作品？	select ?x where { <朱茵_（中国香港女演员）> <配偶> ?y. ?y <代表作品> ?x. }
+mult_jump_one	q1102:皇马的主席毕业于哪个学校？	select ?x where { <皇家马德里_（皇家马德里足球俱乐部）> <主席> ?y. ?y <毕业院校> ?x. }
+mult_jump_one	q1113:《悲惨世界》的作者的毕业院校是？	select ?x where { <悲惨世界_（法国作家雨果创作长篇小说）> <作者> ?y. ?y <毕业院校> ?x. }
+mult_jump_one	q1116:《乡土中国》的作者毕业于哪个大学	select ?x where { <乡土中国> <作者> ?y . ?y <毕业院校> ?x . }
+mult_jump_one	q1126:《随想录》的作者其代表作品有哪些？	select ?x where { <随想录> <作者> ?y. ?y <代表作品> ?x. }
+mult_jump_one	q1136:《根鸟》的作者的出生日期是哪一天	select ?x where { <根鸟> <作者> ?y . ?y <出生日期> ?x . }
+mult_jump_one	q1146:瑞士国歌的发行时间？	select ?x where { <瑞士> <国歌> ?y. ?y <发行时间> ?x. }
+mult_jump_one	q1150:龙凤店的导演的出生地是哪？	select ?x where { <龙凤店> <导演> ?y. ?y <出生地> ?x. }
+mult_jump_one	q1153:李宗伟的祖国的首都是哪里？	select ?x where { <李宗伟> <国籍> ?y. ?y <首都> ?x. }
+mult_jump_one	q1156:湛江市市花又叫做什么？	select ?x where { <湛江> <市花> ?y. ?y <别称> ?x. }
+mult_jump_one	q1167:高加索地区所属大陆的人口密度？	select ?x where { <高加索> <所属地区> ?y. ?y <人口密度> ?x. }
+mult_jump_one	q1175:贝多芬的国家的首都是？	select ?x where { <音乐家贝多芬> <国籍> ?y. ?y <首都> ?x. }
+mult_jump_one	q1186:《随想录》的作者出生日期是？	select ?x where { <随想录> <作者> ?y. ?y <出生日期> ?x. }
+mult_jump_one	q1189:秦始皇的继任者葬在哪里了？	select ?x where { <秦始皇_（中国首位皇帝）> <继承人> ?y. ?y <陵墓> ?x. }
+mult_jump_one	q1201:《根鸟》的作者毕业于哪个大学	select ?x where { <根鸟> <作者> ?y . ?y <毕业院校> ?x . }
+mult_jump_one	q1205:纪录片舌尖上的中国的导演毕业于哪个学校？	select ?x where { <舌尖上的中国_（2012年陈晓卿执导纪录片）> <导演> ?y. ?y <毕业院校> ?x. }
+mult_jump_one	q1208:电影钢铁侠的导演都有哪些代表作品？	select ?x where { <Ironman_（美国2008年小罗伯特·唐尼主演电影）> <导演> ?y. ?y <代表作品> ?x. }
+mult_jump_one	q1219:《随想录》的作者其原名是？	select ?x where { <随想录> <作者> ?y. ?y <中文名> ?x. }
+mult_jump_one	q1224:俄罗斯的首都是何时建城的？	select ?x where { <俄罗斯_（俄罗斯联邦）> <首都> ?y. ?y <建城时间> ?x. }
+mult_jump_one	q1225:电影《白日焰火》的导演有哪些代表作品？	select ?x where { <白日焰火> <导演> ?y. ?y <代表作品> ?x. }
+mult_jump_one	q1229:孙燕姿的出生地的国歌时什么？	select ?x where { <孙燕姿> <出生地> ?y. ?y <国歌> ?x. }
+mult_jump_one	q1232:洋毛子说的是哪儿的人啊？	select ?x where { <洋毛子> <特指> ?y. ?y <主要分布> ?x. }
+mult_jump_one	q1240:《半生缘》的作者其出生日期是？	select ?x where { <半生缘_（张爱玲作品）> <作者> ?y. ?y <出生日期> ?x. }
+mult_jump_one	q1243:成龙儿子的职业是什么？	select ?x where { <成龙_（中国香港演员、导演）> <儿子> ?y. ?y <职业> ?x. }
+mult_jump_one	q1249:主演天地英雄里的河北演员是什么星座？	select ?x where { <红高粱_（1987年张艺谋执导电影）> <主演> ?y. ?y <出生地> <河北_（中国省级行政区）>. ?y <星座> ?x. }
+mult_jump_one	q1262:阿塞拜疆所属洲的别称是什么？	select ?x where { <阿塞拜疆> <所属洲> ?y. ?y <别名> ?x. }
+mult_jump_one	q1275:环太平洋的导演的出生地是哪？	select ?x where { <环太平洋_（美国2013年吉尔莫·德尔·托罗执导的科幻电影）> <导演> ?y. ?y <出生地> ?x. }
+mult_jump_one	q1281:出版书籍《宋史新探》的出版社是何时成立的？	select ?x where { <宋史新探> <出版社> ?y. ?y <成立时间> ?x. }
+mult_jump_one	q1283:《悲惨世界》的作者的主要成就是？	select ?x where { <悲惨世界_（法国作家雨果创作长篇小说）> <作者> ?y. ?y <主要成就> ?x. }
+mult_jump_one	q1484:C++之父是哪国人？	select ?x where { <c++> <创始人> ?y. ?y <国籍> ?x. }
+mult_jump_one	q1488:威猛先生隶属于哪个公司？	select ?x where { <威猛先生> <隶属> ?y. ?y <公司名称> ?x. }
+mult_jump_one	q1494:成龙的儿子毕业于哪一所学校？	select ?x where { <成龙_（中国香港演员、导演）> <儿子> ?y. ?y <毕业院校> ?x. }
+mult_jump_one	q1502:《中国在梁庄》的作者毕业于哪个大学？	select ?x where { <中国在梁庄> <作者> ?y . ?y <毕业院校> ?x . }
+mult_jump_one	q1520:钢铁侠的大学的校友获得过哪些奖项？	select ?x where { <史塔克_（美国动漫及电影钢铁侠中的人物）> <毕业院校> ?y. ?y <主要奖项> ?x. }
+mult_jump_one	q1534:指环王的拍摄地点的官方语言是什么？	select ?x where { <指环王_（英美2001-2003年彼得·杰克逊执导系列电影）> <拍摄地点> ?y.?y <官方语言> ?x. }
+mult_jump_one	q1551:林徽因的丈夫的父亲是？	select ?x where { <林徽因_（中国建筑师、诗人、作家）> <丈夫> ?y. ?y <父亲> ?x. }
+mult_jump_one	q1561:《根鸟》的作者有哪些代表作品？	select ?x where { <根鸟> <作者> ?y . ?y <代表作品> ?x . }
+mult_jump_one	q1562:伊利企业董事长出生在？	select ?x where { <伊利_（内蒙古伊利实业集团股份有限公司）> <董事长> ?y. ?y <出生地> ?x. }
+mult_jump_one	q1566:尼采毕业学校的官网是什么？	select ?x where { <弗里德里希·威廉·尼采> <毕业院校> ?y. ?y <官网> ?x. }
+mult_jump_one	q1567:《盗墓笔记》的作者其笔名是？	select ?x where { <随想录> <作者> ?y. ?y <笔名> ?x. }
+mult_jump_one	q1577:记忆魔法的导演是哪个国家的？	select ?x where { <记忆魔方_（美国电影）> <导演> ?y. ?y <国籍> ?x. }
+mult_jump_one	q1582:巴西首都的时区？	select ?x where { <巴西_（巴西联邦共和国）> <首都> ?y. ?y <时区> ?x. }
+mult_jump_one	q1588:著有《藕与莼菜》一书的作者出生于何时？	select ?x where { <藕与莼菜> <作者> ?y. ?y <出生日期> ?x. }
+mult_jump_one	q1596:电影阿凡达的导演的出生地是哪里？	select ?x where { <Avatar_（2009年上映詹姆斯·卡梅隆执导美国电影）> <导演> ?y. ?y <出生地> ?x. }
+mult_jump_one	q1597:孔子祖籍城市现有多少人口？	select ?x where { <孔子_（儒家学派创始人）> <祖籍> ?y. ?y <人口> ?x. }
+mult_jump_one	q1606:《悲惨世界》的作者的出生地是？	select ?x where { <悲惨世界_（法国作家雨果创作长篇小说）> <作者> ?y. ?y <出生地> ?x. }
+mult_jump_one	q1608:红楼梦中王熙凤丈夫的原型是谁？	select ?x where { <王熙凤> <丈夫> ?y. ?y <人物原型> ?x. }
+mult_jump_one	q1617:电影钢铁侠的主演都获得过那些奖项？	select ?x where { <Ironman_（美国2008年小罗伯特·唐尼主演电影）> <主演> ?y. ?y <主要成就> ?x. }
+mult_jump_one	q1638:《野草》的作者主要成就是？	select ?x where { <野草_（鲁迅创作散文诗集）> <作者> ?y. ?y <主要成就> ?x. }
+mult_jump_one	q1639:《悲惨世界》的作者的血型是？	select ?x where { <悲惨世界_（法国作家雨果创作长篇小说）> <作者> ?y. ?y <血型> ?x. }
+mult_jump_one	q1649:俄罗斯的国花有毒吗？	select ?x where { <俄罗斯_（俄罗斯联邦）> <国花> ?y. ?y <毒性> ?x. }
+mult_jump_one	q1664:蔡元培毕业的学校在哪里？	select ?x where { <蔡元培> <毕业院校> ?y. ?y <地理位置> ?x. }
+mult_jump_one	q1688:全柴动力所在的股票市场实行哪种交易制度？	select ?x where { <全柴动力> <市场> ?y. ?y <交易制度> ?x. }
+mult_jump_one	q1770:2019年全球品牌500强榜首是哪个国家的？	select ?x where { <全球品牌价值500强> <榜首> ?y. ?y <国家> ?x. }
+mult_jump_one	q1775:布丁股份董事长的年龄？	select ?x where { <布丁股份> <董事长> ?y. ?y <年龄> ?x. }
+mult_jump_one	q1891:现任证监会主席毕业于哪所学校？	select ?x where { <证监会> <现任主席> ?y. ?y <毕业院校> ?x. }
+mult_jump_one	q2048:海底捞的创始人有什么爱好？	select ?x where { <海底捞> <创始人> ?y . ?y <爱好> ?x . }
+mult_jump_one	q2049:"薰衣草之者"属于什么气候？	select ?x where { <薰衣草之都> <所指> ?y . ?y <气候条件> ?x . }
+mult_jump_one	q2050:"路不拾遗，夜不闭户"的时代是谁开创的？	select ?x where { <路不拾遗，夜不闭户> <时代> ?y . ?y <开创者> ?x . }
+mult_jump_one	q2052:海伦公式的提出者还有哪些成就？	select ?x where { <海伦公式> <提出者> ?y . ?y <主要成就> ?x . }
+mult_jump_one	q2054:《守望先锋》的开发公司是哪一年成立的？	select ?x where { <守望先锋_（2016年暴雪娱乐发行的团队射击游戏）> <发行商> ?y . ?y <成立时间> ?x . }
+mult_jump_one	q2065:期望效应的具体含义？	select ?x where { <期望效应> <实质> ?y . ?y <基本信息> ?x . }
+mult_jump_one	q2067:中华民国的首都又称为？	select ?x where { <中华民国> <首都> ?y . ?y <别名> ?x . }
+mult_jump_one	q2108:钠皂的主要成分的熔点是？	select ?x where { <钠皂> <主要成分> ?y . ?y <熔点> ?x . }
+mult_jump_one	q2110:史强是哪位作家所著科幻小说中的人物？	select ?x where { <史强_（科幻小说《三体》系列中的人物）> <登场作品> ?y . ?y <作者> ?x . }
+mult_jump_one	q2113:<悼念玛丽·居里>的作者所属于哪个民族？	select ?x where { <悼念玛丽·居里> <作者> ?y . ?y <民族> ?x . }
+mult_jump_one	q2123:苹果公司的创始人于哪一天去世？	select ?x where { <苹果_（苹果产品公司）> <创始人> ?y . ?y <逝世日期> ?x . }
+mult_jump_one	q2147:胡歌的毕业院校在哪里？	select ?x where { <胡歌_（中国内地男演员）> <毕业院校> ?y . ?y <所属地区> ?x . }
+mult_jump_one	q2152:英国首都的机场叫什么？	select ?x where { <英国_（大不列颠及北爱尔兰联合王国）> <首都> ?y . ?y <机场> ?x . }
+mult_jump_one	q2154:美国首都面积多大？	select ?x where { <美国_（美利坚合众国）> <首都> ?y . ?y <面积> ?x . }
+mult_jump_one	q2159:哲学家柏拉图的老师的信仰是什么？	select ?x where { <柏拉图_（古希腊哲学家）> <老师> ?y . ?y <信仰> ?x . }
+mult_jump_one	q2160:哲学家柏拉图的老师逝世于哪一年？	select ?x where { <柏拉图_（古希腊哲学家）> <老师> ?y . ?y <逝世日期> ?x . }
+mult_jump_one	q2161:dell创始人来自哪个国家？	select ?x where { <戴尔公司> <创始人> ?y . ?y <国籍> ?x . }
+mult_jump_one	q2166:苹果公司创始人出生于哪天？	select ?x where { <苹果_（苹果产品公司）> <创始人> ?y . ?y <出生日期> ?x . }
+mult_jump_one	q2168:斯坦福大学现任校长得过什么奖？	select ?x where { <斯坦福大学> <现任校长> ?y . ?y <主要成就> ?x . }
+mult_jump_one	q2177:电影《泰坦尼克号》导演的国籍是？	select ?x where { <泰坦尼克号_（2012年詹姆斯·卡梅隆执导3D电影）> <导演> ?y . ?y <国籍> ?x . }
+mult_jump_one	q2180:漫威的母公司的官网域名是？	select ?x where { <漫威> <母公司> ?y . ?y <官网> ?x . }
+mult_jump_one	q2182:发行专辑《1989》的歌手出生于哪天？	select ?x where { <1989_（泰勒·斯威夫特第五张录音室专辑）> <专辑歌手> ?y . ?y <出生日期> ?x . }
+mult_jump_one	q2184:电视剧《失恋职人巧克力》的女主身高多少？	select ?x where { <失恋巧克力职人_（2014年日本富士电视台电视剧）> <主演> ?y . ?y <身高> ?x . }
+mult_jump_one	q2202:索肖队主教练有多高？	select ?x where { <索肖队> <主教练> ?y . ?y <身高> ?x . }
+mult_jump_one	q2207:角色谢尔顿·库珀最先于哪一年在影视作品中出现？	select ?x where { <谢尔顿·库珀> <登场作品> ?y . ?y <上映时间> ?x . }
+mult_jump_one	q2212:塑造了"平谷一点红"该角色形象的古装电视剧首播于哪个电视频道？	select ?x where { <平谷一点红> <登场作品> ?y . ?y <首播频道> ?x . }
+mult_jump_one	q2214:《南腔北调集》的作者是哪一年去世的？	select ?x where { <南腔北调集> <作者> ?y . ?y <逝世日期> ?x . }
+mult_jump_one	q2215:《资本论》的作者出生于哪个城市？	select ?x where { <资本论_（卡尔·马克思著作）> <作者> ?y . ?y <出生地> ?x . }
+mult_jump_one	q2218:《遐思录》的作者活了多少岁？	select ?x where { <遐思录> <作者> ?y . ?y <终年岁数> ?x . }
+mult_jump_one	q2219:《浮士德》的作者是哪国人？	select ?x where { <浮士德_（以德国民间传说为题材长篇诗剧）> <作者> ?y . ?y <国籍> ?x . }
+mult_jump_one	q2221:《夜莺颂》作者的宗教信仰是？	select ?x where { <夜莺颂> <作者> ?y . ?y <信仰> ?x . }
+mult_jump_one	q2232:塞万提斯的代表作品有多少个字？	select ?x where { <塞万提斯·萨维德拉> <代表作品> ?y . ?y <字数> ?x . }
+mult_jump_one	q2234:唱《给所有知道我名字的人》的歌手是哪个星座的？	select ?x where { <给所有知道我的名字的人> <演唱> ?y . ?y <星座> ?x . }
+mult_jump_one	q2241:制作Kindle的公司的官网是？	select ?x where { <Kindle> <制作方> ?y . ?y <官网> ?x . }
+mult_jump_one	q2243:某位以魔幻现实主义著称的作家于1985年首发的长篇小说名字是？	select ?x where { <魔幻现实主义> <代表作家> ?y . ?y <代表作品> ?x . ?x <首版时间> "1985" . }
+mult_jump_one	q2500:缅甸最大城市有哪些著名景点？	select ?x where { <缅甸> <最大城市> ?y. ?y <著名景点> ?x. }
+mult_jump_one	q2512:《随想录》的作者的出生地是？	select ?x where { <随想录> <作者> ?y. ?y <出生地> ?x. }
+mult_jump_one	q2513:中国古代神话中嫦娥的宠物象征了什么？	select ?x where { <嫦娥_（中国上古神话传说人物）> <宠物> ?y . ?y <象征> ?x. }
+mult_jump_one	q2517:华为公司董事长毕业于哪所院校？	select ?x where { <华为技术有限公司> <董事长> ?y. ?y <毕业院校> ?x. }
+mult_jump_one	q2537:加拿大国树的分布区域？	select ?x where { <加拿大_（北美洲国家）> <国树> ?y. ?y <分布区域> ?x. }
+mult_jump_one	q2539:《悲惨世界》的作者的出生日期是？	select ?x where { <悲惨世界_（法国作家雨果创作长篇小说）> <作者> ?y. ?y <出生日期> ?x. }
+mult_jump_one	q2549:《野草》的作者出生日期是？	select ?x where { <野草_（鲁迅创作散文诗集）> <作者> ?y. ?y <出生日期> ?x. }
+mult_jump_one	q2554:俄罗斯的官方语言属于哪个语系？	select ?x where { <俄罗斯_（俄罗斯联邦）> <官方语言> ?y. ?y <语系> ?x. }
+mult_jump_one	q2589:绥靖天皇的父亲是何时即位的？	select ?x where { <绥靖天皇> <父亲> ?y. ?y <即位年月> ?x. }
+mult_jump_one	q2594:电影神秘家族的导演出生于什么时候？	select ?x where { <神秘家族_（2016年朴裕焕执导电影）> <导演> ?y. ?y <出生日期> ?x. }
+mult_jump_one	q2600:皇马的主场的西班牙文名是什么？	select ?x where { <皇家马德里_（皇家马德里足球俱乐部）> <主场馆> ?y. ?y <外文名> ?x. }
+mult_jump_one	q2613:钱钟书是在哪个地区上的大学？	select ?x where { <钱钟书> <毕业院校> ?y. ?y <所属地区> ?x. }
+mult_jump_one	q2615:俄罗斯的首都的邮政区码是多少？	select ?x where { <俄罗斯共和国> <首都> ?y. ?y <邮政区码> ?x. }
+mult_jump_one	q2632:朴槿惠父亲的主要成就？	select ?x where { <朴槿惠> <父亲> ?y. ?y <主要成就> ?x. }
+mult_jump_one	q2633:冰与火之歌是在哪个洲拍摄的？	select ?x where { <冰与火之歌_（美国HBO电视台制作的电视剧）> <拍摄地点> ?y.?y <所属洲> ?x. }
+mult_jump_one	q2652:比利·海灵顿的出生地有哪些院校/研究所？	select ?x where { <比利·海灵顿> <出生地> ?y. ?y <院校、研究所> ?x. }
+mult_jump_one	q2657:联想GPU所用操作系统的特点有哪些？	select ?x where { <联想GPU> <操作系统> ?y. ?y <特点> ?x. }
+mult_jump_one	q2676:演员陈晓的经纪公司建在哪里？	select ?x where { <陈晓_（中国内地男演员）> <经纪公司> ?y. ?y <总部地点> ?x. }
+mult_jump_one	q2677:《半生缘》的作者其笔名有？	select ?x where { <半生缘_（张爱玲作品）> <作者> ?y. ?y <笔名> ?x. }
+mult_jump_one	q2683:《野草》的作者原名是？	select ?x where { <野草_（鲁迅创作散文诗集）> <作者> ?y. ?y <原名> ?x. }
+mult_jump_one	q2711:中粮地产的董事长上任时间?	select ?x where { <中粮地产> <董事长> ?y. ?y <上任时间> ?x. }
+mult_jump_one	q2712:中粮地产的法人上任时间?	select ?x where { <中粮地产> <法人> ?y. ?y <上任时间> ?x. }
+mult_jump_one	q2713:中粮地产的职工监事上任时间?	select ?x where { <中粮地产> <职工监事> ?y. ?y <上任时间> ?x. }
+mult_jump_one	q2714:中粮地产的监事会主席上任时间?	select ?x where { <中粮地产> <监事会主席> ?y. ?y <上任时间> ?x. }
+mult_jump_one	q2715:中粮地产的监事会副主席上任时间?	select ?x where { <中粮地产> <监事会副主席> ?y. ?y <上任时间> ?x. }
+mult_jump_one	q2812:支付宝（中国）网络技术有限公司的法定代表人名下有多少家公司	select ?x where { <支付宝（中国）网络技术有限公司> <法人> ?y. ?y <参股企业数量> ?x }
+mult_jump_one	q2825:阿里巴巴的法人代表参股了多少家公司	select ?x where { <阿里巴巴> <法人> ?y. ?y <参股公司数> ?x }
+mult_jump_one	q2957:恒生电子董事长的薪酬是多少	select ?x where { <恒生电子> <董事长> ?y. ?y <年薪> ?x. }
+mult_jump_one	q2958:恒生电子董事长的性别是什么	select ?x where { <恒生电子> <董事长> ?y. ?y <性别> ?x. }
+mult_jump_one	q2959:恒生电子的现任董事长是什么时候开始履职的？	select ?x where { <恒生电子> <董事长> ?y. ?y <任职日期> ?x. }
+mult_jump_one	q2960:恒生电子的董事长的持股数量是多少	select ?x where { <恒生电子> <董事长> ?y. ?y <持股数量> ?x. }
+mult_jump_one	q2961:恒生电子的董事长的持股总数占比是多少	select ?x where { <恒生电子> <董事长> ?y. ?y <持股占比> ?x. }
+mult_jump_one	q2962:恒生电子股份有限公司的董事长多大年纪了	select ?x where { <恒生电子> <董事长> ?y. ?y <年龄> ?x. }
+mult_jump_one	q2963:恒生电子股份有限公司的董事长是什么学历	select ?x where { <恒生电子> <董事长> ?y. ?y <学历> ?x. }
+mult_jump_one	q2964:恒生电子股份有限公司的董事长毕业于哪所大学	select ?x where { <恒生电子> <董事长> ?y. ?y <毕业院校> ?x. }
+mult_jump_one	q2968:大华股份的董事长是哪一年生的	select ?x where { <大华股份> <董事长> ?y. ?y <出生日期> ?x. }
+mult_jump_one	q2969:大华股份的董事长毕业于哪所高校	select ?x where { <大华股份> <董事长> ?y. ?y <毕业院校> ?x. }
+mult_jump_one	q2970:蚂蚁金服现任总裁是什么时候上任的？	select ?x where { <蚂蚁金服> <总裁> ?y. ?y <任职日期> ?x. }
+mult_jump_one	q2971:蚂蚁金服最近一融资额是多少？	select ?x where { <蚂蚁金服> <融资> ?y. ?y <融资金额> ?x. ?y <融资时间> <最近一次>  }
+mult_jump_one	q2975:位于魔都的期货交易所叫什么	select ?x where { <上海> <别称> ?y. ?y <期货交易所> ?x. }
+mult_jump_one	q2976:位于河南省会的期货交易所叫什么	select ?x where { <河南> <省会> ?y. ?y <期货交易所> ?x. }
+mult_jump_one	q2977:位于河南省会的期货交易所全称叫什么	select ?x where { <河南> <省会> ?y. ?y <期货交易所> ?x. }
+mult_jump_one	q2983:和记黄埔的董事长有什么企业	select ?x where { <和记黄埔> <董事长> ?y. ?y <参股公司> ?x. }
+mult_jump_one	q2984:中国银行什么时候在香港证券交易所上市	select ?x where { <中国银行> <上市> ?y. ?y <上市地点> <香港证券交易所>. ?y <上市时间> ?x. }
+mult_jump_one	q2985:恒生电子股份有限公司董事长名下有多少家公司	select ?x where { <恒生电子股份有限公司> <董事长> ?y. ?y <参股公司数> ?x. }
+mult_jump_one	q2986:恒生电子股份有限公司总裁名下有多少家公司	select ?x where { <恒生电子股份有限公司> <总裁> ?y. ?y <参股公司数> ?x. }
+mult_jump_one	q2987:浙江大华技术股份有限公司董事长任职多少家企业？	select ?x where { <浙江大华技术股份有限公司> <董事长> ?y. ?y <参股公司数> ?x. }
+mult_jump_one	q2988:华泰证券什时候在H股上市的？	select ?x where { <华泰证券> <上市> ?y. ?y <上市地点> <H股>. ?y <上市时间> ?x }
+mult_jump_one	q2989:华泰证券的董事长年龄多大了？	select ?x where { <华泰证券> <董事长> ?y. ?y <年龄> ?x. }
+mult_jump_one	q2990:华泰证券的董事长是什么学历？	select ?x where { <华泰证券> <董事长> ?y. ?y <学历> ?x. }
+mult_jump_one	q2991:光大证券董事长多大年纪了？	select ?x where { <光大证券> <董事长> ?y. ?y <年纪> ?x. }
+mult_jump_one	q2992:光大证券董事长是什么学历？	select ?x where { <光大证券> <董事长> ?y. ?y <学历> ?x. }
+mult_jump_one	q2993:光大证券董事长年薪是多少？	select ?x where { <光大证券> <董事长> ?y. ?y <年薪> ?x. }
+mult_jump_one	q2994:海通证券的董事长是什么学历？	select ?x where { <海通证券> <董事长> ?y. ?y <学历> ?x. }
+mult_jump_one	q2995:海通证券的董事长年薪是多少？	select ?x where { <海通证券> <董事长> ?y. ?y <年薪> ?x. }
+mult_jump_one	q2996:海通证券的董事长多大年龄？	select ?x where { <海通证券> <董事长> ?y. ?y <年纪> ?x. }
+mult_jump_one	q2997:与海通证券董事长关联的公司有几家？	select ?x where { <海通证券> <董事长> ?y. ?y <关联公司数量> ?x. }
+mult_jump_one	q2999:小米科技有限责任公司法定代表人有多少家关联公司？	select ?x where { <小米科技有限责任公司> <法人> ?y. ?y <关联公司数量> ?x. }
+mult_jump_one	q3000:小米科技董事长名下有哪些上市公司	select ?x where { <小米科技> <董事长> ?y. ?y <参股公司> ?x. }
+mult_jump_one	q536:发明显微镜的人是什么职业？	select ?y where { <显微镜> <发明人> ?x. ?x <职业> ?y. }
+mult_jump_one	q537:汉武帝的陵墓在哪里？	select ?y where { <汉武帝_（汉朝皇帝）> <陵墓> ?x. ?x <地理位置> ?y. }
+mult_jump_one	q543:三国后期一位名将曾"偷渡阴平"灭亡蜀国，他被封了什么爵位？	select ?y where { <偷渡阴平> <提出> ?x. ?x <爵位> ?y . }
+mult_jump_one	q548:董仲舒信奉的思想流派的代表人物有谁？	select ?y where { <董仲舒_（西汉思想家）> <信仰> ?x. ?x <代表人物> ?y . }
+mult_jump_one	q563:《天工开物》的作者出生在哪个朝代？	select ?y where { <天工开物_（中国古代科学著作）> <作者> ?x. ?x <国籍> ?y. }
+mult_jump_one	q568:犹太人领袖摩西的出生地在哪个大洲？	select ?y where { <摩西_（犹太人的民族领袖）> <出生地> ?x. ?x <所属洲> ?y. }
+mult_jump_one	q569:提出"绝对指令"的哲学家是哪个国家的人？	select ?y where { <绝对指令> <提出人> ?x. ?x <职业> <哲学家_（基础含义）>. ?x <国籍> ?y. }
+mult_jump_one	q586:《琵琶行》的作者有什么贡献？	select ?y where { <琵琶行_（白居易诗作）> <作者> ?x. ?x <主要成就> ?y . }
+mult_jump_one	q596:刚玉的主要成分的化学式是什么？	select ?y where { <刚玉> <主要成份> ?x. ?x <化学式> ?y. }
+mult_jump_one	q597:北大现任校长何时出生？	select ?y where { <北京大学> <现任校长> ?x. ?x <出生日期> ?y. }
+mult_jump_one	q600:苹果公司的现任董事长外文名是什么？	select ?y where { <苹果_（苹果产品公司）> <现任董事长> ?x. ?x <外文名> ?y. }
+mult_jump_one	q601:《路西法效应》的作者从事什么职业？	select ?y where { <路西法效应> <作者> ?x. ?x <职业> ?y. }
+mult_jump_one	q612:施耐庵的代表作写于什么时候？	select ?y where { <施耐庵_（水浒传作者）> <代表作品> ?x. ?x <创作年代> ?y . }
+mult_jump_one	q623:味精主要成分的化学式是什么？	select ?y where { <味精> <成分> ?x. ?x <化学式> ?y. }
+mult_jump_one	q626:《额尔古纳河右岸》的作者何时出生？	select ?y where { <额尔古纳河右岸> <作者> ?x. ?x <出生日期> ?y. }
+mult_jump_one	q636:埃菲尔铁塔的设计师是什么时候去世的？	select ?y where { <埃菲尔铁塔_（巴黎城市地标之一）> <设计者> ?x. ?x <逝世日期> ?y. }
+mult_jump_one	q637:织田信长所处的乱世在哪一年结束？	select ?y where { <织田信长_（日本战国三杰之一，安土桃山时代的大名）> <所处时代> ?x. ?x <结束时间> ?y. }
+mult_jump_one	q641:《天龙八部》小说的作者是哪个民族的人？	select ?y where { <天龙八部_（金庸创作小说）> <作者> ?x. ?x <民族> ?y . }
+mult_jump_one	q645:汽车的动力的外文名是什么？	select ?y where { <汽车> <动力> ?x. ?x <外文名> ?y. }
+mult_jump_one	q649:《欢乐颂》作者的老师都有谁？	select ?y where { <欢乐颂_（贝多芬作品）> <谱曲> ?x. ?x <老师> ?y. }
+mult_jump_one	q662:黄帝的妻子有什么成就？	select ?y where { <黄帝> <配偶> ?x. ?x <主要成就> ?y. }
+mult_jump_one	q666:电影阿凡达的出品公司的经营范围有哪些？	select ?y where { <Avatar_（2009年上映詹姆斯·卡梅隆执导美国电影）> <出品公司> ?x. ?x <经营范围> ?y. }
+mult_jump_one	q673:奥地利的首都的城市面积有多大？	select ?y where { <奥地利> <首都> ?x. ?x <城市面积> ?y. }
+mult_jump_one	q674:开发chrome浏览器的公司的CEO是谁？	select ?y where { <Chrome_（谷歌浏览器）> <开发商> ?x. ?x <首席执行官> ?y. }
+mult_jump_one	q680:任天堂的创始人在哪一年去世？	select ?y where { <任天堂> <创始人> ?x. ?x <逝世日期> ?y. }
+mult_jump_one	q693:故宫的建造者的陵墓在哪里？	select ?y where { <故宫_（北京故宫）> <建造者> ?x. ?x <陵墓> ?y. }
+mult_jump_one	q697:肯德基的创始人有哪些别名？	select ?y where { <肯德基> <创始人> ?x . ?x <别名> ?y . }
+mult_jump_one	q716:X射线具有的性质有由谁提出的？	select ?y where { <X射线> <性质> ?x. ?x <提出者> ?y. }
+mult_jump_one	q721:《未来形而上学导论》的作者于什么事件逝世？	select ?y where { <未来形而上学导论> <作者> ?x. ?x <逝世日期> ?y. }
+mult_jump_one	q722:苹果公司的现任首席执行官出生于什么时间？	select ?y where { <苹果_（苹果产品公司）> <首席执行官> ?x. ?x <出生日期> ?y. }
+mult_jump_one	q725:哪个朝代的人发明了活字印刷术？	select ?y where { <活字印刷术> <发明者> ?x. ?x <国籍> ?y . }
+mult_jump_one	q728:"三吏三别"是哪个朝代的作品？	select ?y where { <三吏三别> <作者> ?x. ?x <所处时代> ?y . }
+mult_jump_one	q730:肯德基的创始人何时逝世？	select ?y where { <肯德基> <创始人> ?x . ?x <逝世日期> ?y . }
+mult_jump_one	q732:冯小刚的女儿在哪儿上的大学？	select ?y where { <冯小刚> <女儿> ?x. ?x <毕业院校> ?y. }
+mult_jump_one	q733:舒伯特出生城市有什么著名景点？	select ?y where { <舒伯特> <出生地> ?x. ?x <著名景点> ?y. }
+mult_jump_one	q736:# 邓稼先的母校的校训是？	select ?y where { <邓稼先_（中国科学院院士）> <毕业院校> ?x. ?x <校训> ?y. }
+mult_jump_one	q744:算盘的发明者是什么时代的人？	select ?y where { <算盘> <发明者> ?x. ?x <所处时代> ?y. }
+mult_jump_one	q759:文艺复兴的指导思想有怎样的世界观?？	select ?y where { <文艺复兴> <指导思想> ?x . ?x <世界观> ?y . }
+mult_jump_one	q765:亚马孙河所在的大洲主要使用哪些语言？	select ?y where { <亚马孙河> <所属地区> ?x. ?x <语言> ?y. }
+mult_jump_one	q773:太平天国所信仰的宗教是什么时间建立的？	select ?y where { <太平天国_（中国历史政权）> <主要宗教> ?x. ?x <创建时间> ?y . }
+mult_jump_one	q775:《最后的晚餐》的作者出生地是哪里？	select ?y where { <最后的晚餐_（达·芬奇画作）> <作者> ?x. ?x <出生地> ?y. }
+mult_jump_one	q787:《聊斋志异》的作者被人们称为什么？	select ?y where { <聊斋志异_（蒲松龄著文言短篇小说集《聊斋志异》）> <作者> ?x. ?x <别称> ?y. }
+mult_jump_one	q799:电影阿凡达的出品公司的成立时间？	select ?y where { <Avatar_（2009年上映詹姆斯·卡梅隆执导美国电影）> <出品公司> ?x. ?x <成立时间> ?y. }
+mult_jump_one	q800:冥王星的发现者的外文名是什么？	select ?y where { <冥王星_（太阳系中的一个天体）> <发现者> ?x. ?x <外文名> ?y. }
+mult_jump_one	q803:天蝎座的守护神的居所在哪里？	select ?y where { <天蝎座_（占星学）> <守护神> ?x. ?x <居所> ?y. }
+mult_jump_one	q812:"骐骥一跃不能十步"的作者的知名弟子有哪些？	select ?y where { <骐骥一跃不能十步> <作者> ?x. ?x <著名弟子> ?y. }
+mult_jump_one	q816:《街头霸王》系列游戏的发行公司成立于哪一年？	select ?y where { <街头霸王_（日本CAPCOM公司推出电子游戏系列）> <发行商> ?x. ?x <成立时间> ?y. }
+mult_jump_one	q824:《水浒传》所属文学体裁的三要素是什么？	select ?y where { <水浒传（竖版）> <类型> ?x. ?x <三要素> ?y. }
+mult_jump_one	q825:光合作用发生的部位长度是多少？	select ?y where { <光合作用> <作用部位> ?x. ?x <长径> ?y. }
+mult_jump_one	q828:提出相对论的是哪个国家的人？	select ?y where { <相对论_（关于时空和引力的基本理论）> <提出者> ?x. ?x <国籍> ?y . }
+mult_jump_one	q840:冥王星的发现者是哪国人？	select ?y where { <冥王星_（太阳系中的一个天体）> <发现者> ?x. ?x <国籍> ?y. }
+mult_jump_one	q843:小说《伊豆的舞女》的作者出生日期是哪年?	select ?y where { <雪国_（日本川端康成著小说）> <作者> ?x. ?x <出生日期> ?y. }
+mult_jump_one	q846:李世民推崇的思想流派的代表人物有谁？	select ?y where { <李世民_（唐太宗）> <信仰> ?x. ?x <代表人物> ?y . }
+mult_jump_one	q882:《额尔古纳河右岸》的作者出生在哪里？	select ?y where { <额尔古纳河右岸> <作者> ?x. ?x <出生地> ?y. }
+mult_jump_one	q888:在金庸小说《天龙八部》中，无崖子的师妹的外孙女是谁？	select ?y where { <无崖子> <师妹> ?x. ?x <外孙女> ?y. }
+mult_jump_one	q893:舒伯特出生城市的车牌代码是什么？	select ?y where { <舒伯特> <出生地> ?x. ?x <车牌代码> ?y. }
+mult_jump_one	q894:纳兰性德的父亲担任过什么官职？	select ?y where { <纳兰性德> <父亲> ?x. ?x <主要职位> ?y. }
+mult_jump_one	q901:苹果公司的现任首席设计师是哪个国家的？	select ?y where { <苹果_（苹果产品公司）> <首席设计师> ?x. ?x <国籍> ?y. }
+mult_jump_one	q905:《孙子兵法》的作者本名是什么？	select ?y where { <孙子兵法_（中国古典军事文化著作）> <作者> ?x. ?x <本名> ?y . }
+mult_jump_one	q906:指环王导演获得过那些奖项？	select ?y where { <指环王_（英美2001-2003年彼得·杰克逊执导系列电影）> <导演> ?x. ?x <主要成就> ?y. }
+mult_jump_one	q910:《指环王》系列电影的导演是哪个国家的？	select ?y where { <指环王_（英美2001-2003年彼得·杰克逊执导系列电影）> <导演> ?x. ?x <国籍> ?y. }
+mult_jump_one	q912:《全唐诗》编于哪个朝代？	select ?y where { <全唐诗> <作者> ?x. ?x <所处时代> ?y. }
+mult_jump_one	q919:清华校长是哪里人？	select ?y where { <清华大学> <现任校长> ?x. ?x <出生地> ?y. }
+mult_jump_one	q921:成龙的儿子有哪些代表作？	select ?y where { <成龙_（中国香港演员、导演）> <儿子> ?x. ?x <代表作品> ?y. }
+mult_jump_one	q931:演员刘烨的儿女是哪国人？	select ?y where { <刘烨_（中国内地男演员）> <子女> ?x. ?x <国籍> ?y. }
+mult_jump_one	q936:"声东击西"出自古代的一本兵书，你知道是谁写的吗？	select ?y where { <声东击西> <出处> ?x. ?x <作者> ?y . }
+mult_jump_one	q943:天龙八部的作者原名是什么？	select ?y where { <天龙八部_（金庸创作小说）> <作者> ?x. ?x <中文名> ?y. }
+mult_jump_one	q944:主要分布着亚马纳人的岛屿是什么气候类型？	select ?y where { <亚马纳人> <分布> ?x. ?x <气候条件> ?y . }
+mult_jump_one	q949:宋代词人李清照的丈夫是什么职业？	select ?y where { <李清照_（宋代女词人）> <配偶> ?x. ?x <职业> ?y. }
+mult_jump_one	q962:《EVA》片头曲的原唱是谁？	select ?y where { <eva_（福音战士ACGN系列）> <片头曲> ?x. ?x <歌曲原唱> ?y. }
+mult_jump_one	q963:故宫的建造者还有哪些其他的成就？	select ?y where { <故宫_（北京故宫）> <建造者> ?x. ?x <主要成就> ?y. }
+mult_jump_one	q965:《巴黎圣母院》的作者有什么成就？	select ?y where { <巴黎圣母院_（维克多·雨果长篇小说）> <作者> ?x. ?x <主要成就> ?y. }
+mult_jump_one	q972:舒伯特出生城市有什么国籍组织？	select ?y where { <舒伯特> <出生地> ?x. ?x <国际组织> ?y. }
+mult_jump_one	q974:澳大利亚的首都有多少人口？	select ?y where { <澳大利亚> <首都> ?x. ?x <人口> ?y. }
+mult_jump_one	q975:美元的使用地区属于哪个洲?？	select ?y where { <美元> <使用地区> ?x . ?x <所属洲> ?y . }
+mult_jump_one	q984:福尔摩斯的哥哥从事什么职业？	select ?y where { <福尔摩斯_（英国作家阿瑟·柯南·道尔创作人物）> <哥哥> ?x. ?x <职业> ?y. }
+mult_jump_one	q990:无产阶级革命家的代表人物、对立统一原则的创始人在哪里去世？	select ?y where { <无产阶级革命家> <代表人物> ?x. <对立统一> <创始人> ?x. ?x <逝世地> ?y. }
+mult_jump_one	q1008:克里斯蒂亚诺·罗纳尔多所属的运动队主席是谁？	select ?y where { <克里斯蒂亚诺·罗纳尔多_（葡萄牙足球运动员）> <所属运动队> ?x. ?x <主席> ?y. }
+mult_jump_one	q1015:朱元璋的妻子葬于哪里？	select ?y where { <朱元璋_（明朝开国皇帝）> <配偶> ?x. ?x <陵寝> ?y . }
+mult_jump_one	q1018:《指环王》系列电影的发行公司后来被哪个公司收购了？	select ?y where { <指环王_（英美2001-2003年彼得·杰克逊执导系列电影）> <发行公司> ?x. ?x <收购公司> ?y. }
+mult_jump_one	q1020:北大现任校长的信仰是什么？	select ?y where { <北京大学> <现任校长> ?x. ?x <信仰> ?y. }
+mult_jump_one	q1029:《存在与时间》一书的作者是哪个民族的人？	select ?y where { <存在与时间> <作者> ?x. ?x <民族> ?y. }
+mult_jump_one	q1030:腾讯的创始人都有哪些主要成就？	select ?y where { <腾讯> <创始人> ?x. ?x <主要成就> ?y. }
+mult_jump_one	q1034:毒战导演有哪些代表作品？	select ?y where { <毒战> <导演> ?x. ?x <代表作品> ?y. }
+mult_jump_one	q1035:故宫的建造者的逝世地点在哪里？	select ?y where { <故宫_（北京故宫）> <建造者> ?x. ?x <逝世地点> ?y. }
+mult_jump_one	q1037:多元组：克苏鲁出自哪位作家创作的小说？	select ?y where { <克苏鲁_（克苏鲁的呼唤神话小说里面的邪灵角色）> <出处> ?x. ?x <作者> ?y. }
+mult_jump_one	q1040:北京大学的现任校长是什么时候出生的？	select ?y where { <北京大学> <现任校长> ?x. ?x <出生日期> ?y. }
+mult_jump_one	q1044:火腿起源于我国古代的一个朝代，它的选官制度是什么？	select ?y where { <火腿_（腌制或熏制的猪腿）> <起源> ?x. ?x <选官制度> ?y. }
+mult_jump_one	q1069:中国首都的电话区号是多少？	select ?y where { <中华人民共和国> <首都> ?x. ?x <电话区号> ?y. }
+mult_jump_one	q1089:汉高祖刘邦的陵寝的别名是什么？	select ?y where { <刘邦_（汉朝开国皇帝）> <陵墓> ?x. ?x <别名> ?y . }
+mult_jump_one	q1100:北大现任校长何时开始工作？	select ?y where { <北京大学> <现任校长> ?x. ?x <工作时间> ?y. }
+mult_jump_one	q1109:小苏打片的主要成分的化学式是什么？	select ?y where { <小苏打片> <成份> ?x. ?x <化学式> ?y. }
+mult_jump_one	q1115:女王尼托克丽丝统治的王国面积有多大？	select ?y where { <尼托克丽丝> <出生地> ?x. ?x <国土面积> ?y. }
+mult_jump_one	q1125:"而立之年"这一说法的提出者原名是什么？	select ?y where { <而立之年_（汉语成语）> <提出人> ?x. ?x <本名> ?y. }
+mult_jump_one	q1130:《全职猎人》因为其作者不务正业更新缓慢，请问作者沉迷的爱好是什么？	select ?y where { <全职猎人_（富坚义博创作的漫画）> <作者> ?x. ?x <爱好> ?y. }
+mult_jump_one	q1132:《额尔古纳河右岸》的作者有哪些代表作？	select ?y where { <额尔古纳河右岸> <作者> ?x. ?x <代表作品> ?y . }
+mult_jump_one	q1133:肯德基的创始人是哪国人？	select ?y where { <肯德基> <创始人> ?x . ?x <国籍> ?y . }
+mult_jump_one	q1138:肯德基的创始人何时出生？	select ?y where { <肯德基> <创始人> ?x . ?x <出生日期> ?y . }
+mult_jump_one	q1144:腾讯公司董事长毕业于哪个学校？	select ?y where { <腾讯> <董事局主席> ?x. ?x <毕业院校> ?y . }
+mult_jump_one	q1165:秦始皇的继承者的结局？	select ?y where { <秦始皇_（中国首位皇帝）> <继承人> ?x. ?x <人物结局> ?y . }
+mult_jump_one	q1181:张继科参加的比赛项目起源于哪里？	select ?y where { <张继科> <运动项目> ?x. ?x <起源> ?y. }
+mult_jump_one	q1194:启蒙运动的代表人物都来自哪些国家？	select ?y where { <启蒙运动> <代表人物> ?x. ?x <国籍> ?y. }
+mult_jump_one	q1197:广义信息论的提出者的代表作品有哪些？	select ?y where { <广义信息论> <提出者> ?x. ?x <代表作品> ?y. }
+mult_jump_one	q1209:天蝎座的守护神的妻子是谁？	select ?y where { <天蝎座_（占星学）> <守护神> ?x. ?x <配偶> ?y. }
+mult_jump_one	q1210:安徽省会的邮政编码是多少？	select ?y where { <安徽> <省会> ?x . ?x <邮政区码> ?y . }
+mult_jump_one	q1211:著有长篇小说白鹿原的作者有哪些成就？	select ?y where { <白鹿原_（陈忠实长篇小说）> <作者> ?x. ?x <主要成就> ?y. }
+mult_jump_one	q1212:北大现任校长有哪些主要成就？	select ?y where { <北京大学> <现任校长> ?x. ?x <主要成就> ?y. }
+mult_jump_one	q1215:你知道守望先锋里的角色的外国名字吗？	select ?y where { <守望先锋_（2016年暴雪娱乐发行的团队射击游戏）> <主要角色> ?x . ?x <外文名> ?y. }
+mult_jump_one	q1220:《时间简史》的作者是哪个国家的？	select ?y where { <时间简史_（斯蒂芬·霍金著作）> <作者> ?x. ?x <国籍> ?y. }
+mult_jump_one	q1226:请问歌手刘德华的妻子出生于哪个国家？	select ?y where { <刘德华_（中国香港男演员、歌手、词作人）> <妻子> ?x. ?x <国籍> ?y . }
+mult_jump_one	q1228:网络动画秦时明月的原作者的英文名是啥？	select ?y where { <秦时明月_（沈乐平执导TV/网络动画系列）> <原作> ?x. ?x <外文名> ?y. }
+mult_jump_one	q1246:凯撒的祖国的官方语言是什么？	select ?y where { <凯撒_（凯撒）> <国籍> ?x. ?x <官方语言> ?y. }
+mult_jump_one	q1256:电影朝花夕拾的编剧是哪里人？	select ?y where { <朝花夕拾_（1987年方中信主演香港电影）> <编剧> ?x. ?x <出生地> ?y. }
+mult_jump_one	q1260:汽车的动力的工作原理是什么？	select ?y where { <汽车> <动力> ?x. ?x <工作原理> ?y. }
+mult_jump_one	q1267:基因载体的组成是什么？	select ?y where { <基因> <载体> ?x. ?x <组成> ?y. }
+mult_jump_one	q1270:理查德·道金斯的代表作是什么时候出版的？	select ?y where { <理查德·道金斯> <代表作品> ?x. ?x <出版时间> ?y. }
+mult_jump_one	q1274:足球运动员梅西所在的球队现任主教练是谁？	select ?y where { <里奥·梅西_（阿根廷足球运动员）> <所属运动队> ?x. ?x <现任主教练> ?y. }
+mult_jump_one	q1280:"超人主义"的提出人的代表作品有哪些？	select ?y where { <超人主义> <提出者> ?x. ?x <代表作品> ?y. }
+mult_jump_one	q1483:角色金田一郎所在的漫画是什么时候出版的？	select ?y where { <金田一郎> <登场作品> ?x. ?x <出版时间> ?y. }
+mult_jump_one	q1485:《清明上河图》的作者信奉什么思想？	select ?y where { <清明上河图_（北宋张择端风俗画）> <作者> ?x. ?x <信仰> ?y . }
+mult_jump_one	q1508:刘嘉玲老公的星座是？	select ?y where { <刘嘉玲> <丈夫> ?x . ?x <星座> ?y. }
+mult_jump_one	q1510:中国古代四大发明的提出者毕业于哪个学校？	select ?y where { <四大发明_（中国古代四大发明）> <提出者> ?x. ?x <毕业院校> ?y. }
+mult_jump_one	q1512:天蝎座的守护神的外文名是什么？	select ?y where { <天蝎座_（占星学）> <守护神> ?x. ?x <外文名> ?y. }
+mult_jump_one	q1514:《寻秦记》小说的作者出生于哪一年？	select ?y where { <寻秦记_（黄易所著历史武侠小说）> <作者> ?x. ?x <出生日期> ?y . }
+mult_jump_one	q1517:电影阿凡达的主演们都获得过那些成就？	select ?y where { <Avatar_（2009年上映詹姆斯·卡梅隆执导美国电影）> <主演> ?x. ?x <主要成就> ?y. }
+mult_jump_one	q1518:搜狐公司董事长毕业于哪个学校？	select ?y where { <搜狐> <创办人> ?x. ?x <毕业院校> ?y . }
+mult_jump_one	q1527:存在主义伦理学的代表人物都有哪些代表作？	select ?y where { <存在主义伦理学> <主要代表人物> ?x. ?x <代表作品> ?y. }
+mult_jump_one	q1533:洞庭湖所属水系的发源地在哪里？	select ?y where { <洞庭湖_（长江流域湖泊）> <所属水系> ?x. ?x <发源地> ?y . }
+mult_jump_one	q1536:在金庸小说《天龙八部》中，阿紫的师父有什么法宝？	select ?y where { <阿紫_（金庸武侠小说《天龙八部》人物）> <师父> ?x. ?x <星宿三宝> ?y. }
+mult_jump_one	q1539:《百年孤独》的作者是哪个国家的？	select ?y where { <百年孤独> <作者> ?x. ?x <国籍> ?y. }
+mult_jump_one	q1544:法国国花的拉丁文学名是什么？	select ?y where { <法国_（法兰西共和国）> <国花> ?x. ?x <拉丁学名> ?y. }
+mult_jump_one	q1547:《茶经》的作者被人们尊称为什么？	select ?y where { <茶经_（中国茶道奠基人陆羽所著茶学专著）> <作者> ?x. ?x <尊号> ?y . }
+mult_jump_one	q1548:汉武帝刘彻的陵寝在哪里？	select ?y where { <汉武帝_（汉朝皇帝）> <陵墓> ?x. ?x <地理位置> ?y . }
+mult_jump_one	q1549:网易公司创始人被人们戏称为什么？	select ?y where { <网易公司> <创始人> ?x. ?x <别名> ?y . }
+mult_jump_one	q1558:《时间简史》的作者的英文全名是什么？	select ?y where { <时间简史_（斯蒂芬·霍金著作）> <作者> ?x. ?x <外文名> ?y. }
+mult_jump_one	q1563:郭麒麟师父的儿子叫什么名字？	select ?y where { <郭麒麟> <师父> ?x. ?x <儿子> ?y . }
+mult_jump_one	q1578:舒伯特出生城市有多大？	select ?y where { <舒伯特> <出生地> ?x. ?x <城市面积> ?y. }
+mult_jump_one	q1585:卧虎藏龙的导演是什么星座？	select ?y where { <卧虎藏龙_（李安导演电影）> <导演> ?x. ?x <星座> ?y. }
+mult_jump_one	q1589:《西厢记》小说的作者的出生地是哪里？	select ?y where { <西厢记_（元代王实甫著古典戏剧）> <作者> ?x. ?x <出生地> ?y . }
+mult_jump_one	q1591:我们经常吃的东坡肉的发明者的字号是什么？	select ?y where { <东坡肉> <创制人> ?x. ?x <字号> ?y. }
+mult_jump_one	q1601:《指环王》系列电影的拍摄地点在哪个大洲？	select ?y where { <指环王_（英美2001-2003年彼得·杰克逊执导系列电影）> <拍摄地点> ?x. ?x <所属洲> ?y. }
+mult_jump_one	q1602:提出"星云假说"的哲学家的代表作品有哪些？	select ?y where { <星云假说> <提出人> ?x. ?x <职业> <哲学家_（基础含义）>. ?x <代表作品> ?y. }
+mult_jump_one	q1603:天蝎座的守护神的的管辖范围是哪里？	select ?y where { <天蝎座_（占星学）> <守护神> ?x. ?x <司掌> ?y. }
+mult_jump_one	q1610:李寻欢出自哪个作家的作品？	select ?y where { <李寻欢_（古龙武侠小说《多情剑客无情剑》中主人公）> <登场作品> ?x. ?x <作者> ?y. }
+mult_jump_one	q1614:《西游记》中，牛魔王的妻子的法宝是什么？	select ?y where { <牛魔王_（小说《西游记》中的角色）> <妻子> ?x. ?x <法宝> ?y . }
+mult_jump_one	q1621:"万有引力定律"的提出者的信仰是？	select ?y where { <万有引力定律> <提出者> ?x. ?x <信仰> ?y. }
+mult_jump_one	q1630:老干妈的创始人是什么职位？	select ?y where { <老干妈> <创始人> ?x. ?x <任职> ?y. }
+mult_jump_one	q1631:《苍蝇不叮无缝的蛋》的连载平台前身是什么？	select ?y where { <苍蝇不叮无缝的蛋> <连载平台> ?x . ?x <前身> ?y . }
+mult_jump_one	q1633:唐家三少的出生地有哪些机场？	select ?y where { <唐家三少> <出生地> ?x . ?x <机场> ?y . }
+mult_jump_one	q1652:新文化运动的发起者中那位出生于河北的志士别名为？	select ?y where { <新文化运动> <代表人物> ?x. ?x <出生地> <河北_（中国省级行政区）> . ?x <别名> ?y. }
+mult_jump_one	q1656:秦始皇推崇的思想流派的鼻祖是谁？	select ?y where { <秦始皇_（中国首位皇帝）> <信仰> ?x. ?x <法家始祖> ?y . }
+mult_jump_one	q1660:《三体》的作者毕业于哪所大学？	select ?y where { <三体_（刘慈欣著科幻小说）> <作者> ?x. ?x <毕业院校> ?y. }
+mult_jump_one	q1665:计算机的发明者是哪个民族的人？	select ?y where { <计算机> <发明者> ?x. ?x <民族> ?y. }
+mult_jump_one	q1669:主演卧虎藏龙的有哪儿的人？	select ?y where { <卧虎藏龙_（李安导演电影）> <主演> ?x. ?x <出生地> ?y. }
+mult_jump_one	q1679:《EVA》的导演毕业于哪所大学？	select ?y where { <eva_（福音战士ACGN系列）> <导演> ?x. ?x <毕业院校> ?y. }
+mult_jump_one	q2025:公孙绿萼的爸爸会什么武功？	select ?y where { <公孙绿萼> <父亲> ?x . ?x <武功> ?y . }
+mult_jump_one	q2037:宋远桥的儿子的喜欢谁？	select ?y where { <宋远桥> <儿子> ?x . ?x <心上人> ?y . }
+mult_jump_one	q2045:任盈盈的爸爸是什么门派？	select ?y where { <任盈盈> <父亲> ?x . ?x <门派> ?y . }
+mult_jump_one	q2195:孔子的爸爸是什么时候去世的？	select ?y where { <孔子_（儒家学派创始人）> <父亲> ?x . ?x <逝世日期> ?y . }
+mult_jump_one	q2506:"黑洞无毛定理"的提出者的成就主要有哪些？	select ?y where { <黑洞无毛定理> <提出者> ?x. ?x <主要成就> ?y. }
+mult_jump_one	q2520:飞机的发明者出生于哪里？	select ?y where { <飞机_（交通工具）> <发明者> ?x. ?x <出生地> ?y . }
+mult_jump_one	q2527:《额尔古纳河右岸》的作者来自哪个民族？	select ?y where { <额尔古纳河右岸> <作者> ?x. ?x <民族> ?y. }
+mult_jump_one	q2530:奥地利的首都在哪个时区？	select ?y where { <奥地利> <首都> ?x. ?x <时区> ?y. }
+mult_jump_one	q2531:《指环王》的原著作者毕业于哪所大学？	select ?y where { <指环王_（英美2001-2003年彼得·杰克逊执导系列电影）> <原著作者> ?x. ?x <毕业院校> ?y. }
+mult_jump_one	q2532:留声机的发明者是哪个国家的人？	select ?y where { <留声机_（放音装置）> <发明人> ?x. ?x <国籍> ?y . }
+mult_jump_one	q2541:《辛德勒的名单》的导演是哪个国家的？	select ?y where { <辛德勒的名单> <导演> ?x. ?x <国籍> ?y. }
+mult_jump_one	q2579:小说《伊豆的舞女》的作者在什么时间去世了？	select ?y where { <雪国_（日本川端康成著小说）> <作者> ?x. ?x <逝世日期> ?y. }
+mult_jump_one	q2584:电影《霸王别姬》中出生香港的著名男演员有哪些兴趣爱好？	select ?y where { <霸王别姬_（1993年陈凯歌执导，张国荣主演电影）> <主演> ?x. ?x <出生地> <香港_（中华人民共和国特别行政区）> . ?x <爱好> ?y. }
+mult_jump_one	q2588:冯小刚的女儿的出生日期是什么？	select ?y where { <冯小刚> <女儿> ?x. ?x <出生日期> ?y . }
+mult_jump_one	q2608:"柳暗花明又一村"的出处属于什么文学体裁？	select ?y where { <柳暗花明又一村> <作品出处> ?x . ?x <文学体裁> ?y . }
+mult_jump_one	q2610:肯德基的创始人的外文名是什么？	select ?y where { <肯德基> <创始人> ?x . ?x <外文名> ?y . }
+mult_jump_one	q2614:哈利波特系列小说的作者是哪个国家的？	select ?y where { <哈利·波特_（J.K.罗琳创作魔幻系列小说）> <作者> ?x. ?x <国籍> ?y. }
+mult_jump_one	q2620:流行演唱团体S.H.E.的成员分别是什么时候出生的？	select ?y where { <S.H.E> <组合成员> ?x. ?x <出生日期> ?y. }
+mult_jump_one	q2627:梅西所在俱乐部成立时间？	select ?y where { <里奥·梅西_（阿根廷足球运动员）> <所属运动队> ?x. ?x <成立时间> ?y. }
+mult_jump_one	q2636:《甄嬛传》中甄嬛的饰演者的老公是谁？	select ?y where { <甄嬛_（小说《后宫·甄嬛传》的人物）> <饰演者> ?x. ?x <配偶> ?y. }
+mult_jump_one	q2639:Windows操作系统发行公司的创始人是谁？	select ?y where { <Windows操作系统> <发行者> ?x. ?x <联合创始人> ?y. }
+mult_jump_one	q2643:共产主义的发起者是哪个学校毕业的？	select ?y where { <共产主义> <发起者> ?x. ?x <毕业院校> ?y. }
+mult_jump_one	q2660:03版《天龙八部》电视剧的总制片人的妻子是谁？	select ?y where { <天龙八部_（2003年胡军主演电视剧）> <总制片人> ?x. ?x <配偶> ?y . }
+mult_jump_one	q2666:北大现任校长毕业于哪所大学？	select ?y where { <北京大学> <现任校长> ?x. ?x <毕业院校> ?y. }
+mult_jump_one	q2680:在金庸小说《天龙八部》中，萧峰的师父属于哪个帮派？	select ?y where { <萧峰_（金庸武侠小说《天龙八部》的男主角）> <师傅> ?x. ?x <帮派> ?y. }
+mult_jump_one	q2688:《额尔古纳河右岸》的作者有何社会评价？	select ?y where { <额尔古纳河右岸> <作者> ?x. ?x <社会评价> ?y. }
+mult_jump_one	q2697:《西游记》小说的作者的出生地是哪里？	select ?y where { <西游记_（中国古典长篇小说）> <作者> ?x. ?x <出生地> ?y . }
