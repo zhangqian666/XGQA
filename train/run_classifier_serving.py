@@ -224,10 +224,12 @@ class XGProcessor(DataProcessor):
     def get_labels(self):
         """See base class."""
         return ["simple_res", "simple_res_reverse", "simple_attr", "mult_jump_one",
-                "mult_constraints_two", "mult_constraints_three", "mult_constraints_one_reverse_simple",
+                "mult_constraints_two", "mult_constraints_three",
                 "mult_constraints_two_reverse", "mult_constraints_three_reverse",
-                "mult_constraints_one_reverse_simple", "mult_constraints_two_reverse_simple",
-                "mult_constraints_three_reverse_simple", "mult_constraints_two2_simple"]
+                "mult_constraints_two_simple", "mult_constraints_three_simple",
+                "mult_constraints_one_reverse_simple",
+                "mult_constraints_two_reverse_simple",
+                "mult_constraints_three_reverse_simple"]
 
     def _create_examples(self, lines, set_type):
         """Creates examples for the training and dev sets."""

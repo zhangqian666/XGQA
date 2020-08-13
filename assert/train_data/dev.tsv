@@ -1,31 +1,81 @@
 type	string	select
-mult_constraints_two_reverse_simple	q2617:位于梵蒂冈的"Sweet Holiday Rome"酒店的中文名称是？	select ?x where { ?y <英文名称> "Sweet Holiday Rome". ?y <地理位置> <梵蒂冈>. ?y <中文名称> ?x. }
-mult_constraints_two_reverse_simple	q2621:小罗伯特·唐尼2008年主演的成名电影的导演是谁？	select ?x where { ?y <主演> <小罗伯特·唐尼>. ?y <出品时间> "2008". ?y <导演> ?x. }
+mult_constraints_three_reverse_simple	q1486:梁胜权执导的主演为胡歌林依晨的电视剧在什么时候上映？	select ?x where { ?y <主演> <胡歌_（中国内地男演员）>. ?y <主演> <林依晨> . ?y <导演> <梁胜权>. ?y <上映时间> ?x. }
 mult_constraints_two_reverse_simple	q2653:42小罗伯特·唐尼2008年主演的成名电影的制片人是谁？	select ?x where { ?y <主演> <小罗伯特·唐尼>. ?y <出品时间> "2008". ?y <制片人> ?x. }
 mult_constraints_two_reverse_simple	q2684:海贼王里外号海贼猎人、绿藻头的人长得有多高？	select ?x where { ?y <登场作品> <海贼王_（尾田荣一郎创作的漫画作品）>. ?y <其他名称> "海贼猎人、绿藻头". ?y <身高> ?x. }
-simple_res	q3666:颈动脉狭窄属于什么?	select ?x where { <颈动脉狭窄> <类型> ?x. }
-simple_res	q3667:胆囊结石属于什么?	select ?x where { <胆囊结石> <类型> ?x. }
-simple_res	q3668:横纹肌肉瘤属于什么?	select ?x where { <横纹肌肉瘤> <类型> ?x. }
-simple_res	q3669:梅毒患者应在什么科室就诊？	select ?x where { <梅毒> <就诊科室> ?x. }
-simple_res	q3670:贫血属于什么?	select ?x where { <贫血> <类型> ?x. }
-simple_res	q3671:肾积水属于什么?	select ?x where { <肾积水> <类型> ?x. }
-simple_res	q3672:急性盆腔炎属于什么?	select ?x where { <急性盆腔炎> <类型> ?x. }
-simple_res	q3673:急性盆腔炎应该去哪个科室就诊？	select ?x where { <急性盆腔炎> <科室> ?x. }
-simple_res	q3674:急性盆腔炎涉及哪些症状？	select ?x where { <急性盆腔炎> <涉及症状> ?x. }
-simple_res	q3675:荨麻疹属于什么?	select ?x where { <荨麻疹> <类型> ?x. }
-simple_res	q3676:荨麻疹的同义词是什么？	select ?x where { <荨麻疹> <同义词> ?x. }
-simple_res	q3677:荨麻疹涉及哪些症状？<斑疹>	select ?x where { <荨麻疹> <涉及症状> ?x. }
-simple_res	q3678:萎缩性鼻炎属于什么?	select ?x where { <萎缩性鼻炎> <类型> ?x. }
-simple_res	q3679:萎缩性鼻炎在什么科室就诊？	select ?x where { <萎缩性鼻炎> <科室> ?x. }
-simple_res	q3680:萎缩性鼻炎的同义词是什么？	select ?x where { <萎缩性鼻炎> <同义词> ?x. }
-simple_res	q3681:萎缩性鼻炎涉及哪些症状？	select ?x where { <萎缩性鼻炎> <涉及症状> ?x. }
-simple_res_reverse	q2474:三色堇是哪个国家的国花？	select ?x where { ?x <国花> <三色堇_（草本植物）>. }
-simple_res_reverse	q2475:赵本山是哪几部电视剧的制片人？	select ?x where { ?x <制片人> <赵本山>. }
-simple_res_reverse	q2484:黄泉果实被谁吃了？	select ?x where { ?x <恶魔果实> <黄泉果实>. }
-simple_res_reverse	q2521:指环王中有些人物？	select ?y where { ?y <登场作品> <指环王_（J.R.R.托尔金著系列小说）>. }
-simple_res_reverse	q2751:芝麻信用的所有者是谁？	select ?x where { ?x <产品> <芝麻信用>. }
-simple_attr	q1391:查理·布朗是史努比的谁？	select ?x where { <史努比_（美国漫画《花生漫画》角色）> ?x <查理·布朗>. }
-simple_attr	q2041:令狐冲和岳灵珊是什么关系？	select ?x where { <令狐冲> ?x <岳灵珊>. }
+mult_constraints_one_reverse_simple	q2966:600570的发行总股本是多少？	select ?x where { ?y <股票代码> <600570>. ?y <发行总股本> ?x. }
+mult_constraints_one_reverse_simple	q2967:600570的流通A股是多少？	select ?x where { ?y <股票代码> <600570>. ?y <上市时间> ?x. }
+mult_constraints_three_simple	q1486:梁胜权执导的主演为胡歌林依晨的电视剧在什么时候上映？	select ?x where { ?y <主演> <胡歌_（中国内地男演员）>. ?y <主演> <林依晨> . ?y <导演> <梁胜权>. ?y <上映时间> ?x. }
+mult_constraints_two_simple	q2204:王菲和金城武共同主演的电影有多长时间片长？	select ?x where { ?y <主演> <王菲_（华语女歌手、演员）> . ?y <主演> <金城武> . ?y <片长> ?x . }
+mult_constraints_two_simple	q2504:陈可辛导演黄晓明主演的电影票房是多少？	select ?y where { ?x <导演> <陈可辛>. ?x <主演> <黄晓明_（中国内地男演员、歌手、商人）>. ?x <票房> ?y. }
+mult_constraints_two_simple	q2556:DC漫画中有一个蝙蝠侠和超人共同参与的团队，请问它第一次登场于哪部作品？	select ?y where { ?x <主要成员> <超人_（美国DC漫画旗下超级英雄）>. ?x <主要成员> <蝙蝠侠_（美国DC漫画旗下超级英雄）>. ?x <首次出场> ?y. }
+mult_constraints_two_simple	q2583:演唱《十年》的歌手毕业于哪个大学？	select ?y where { ?x <职业> <歌手_（职业名称）>. ?x <代表作品> <十年_（陈奕迅演唱歌曲）>. ?x <毕业院校> ?y. }
+mult_constraints_two_simple	q2607:由张国荣、巩俐主演的电影的导演是谁？	select ?x where { ?y <主演> <张国荣_（华语歌手、演员、音乐人）>. ?y <主演> <巩俐>. ?y <导演> ?x. }
+mult_constraints_two_simple	q2638:周迅和金城武共同出演的电影的导演是？	select ?x where { ?y <主演> <周迅_（中国内地女演员、歌手）>. ?y <主演> <金城武>. ?y <导演> ?x. }
+mult_constraints_two_simple	q2669:何炅和张杰老婆合作的节目作品是啥？	select ?x where { ?y <配偶> <张杰_（中国四川籍男歌手）>. ?y <代表作品> ?x. <何炅> <代表作品> ?x. }
+mult_constraints_two_simple	q2679:电系神奇宝贝都有哪些特性？	select ?y where { ?x <登场作品> <神奇宝贝_（汤山邦彦执导的日本动画系列）>. ?x <属性> <电_（自然现象之一）>. ?x <特性> ?y. }
+mult_constraints_two_simple	q2998:阿里巴巴逍遥子的职位是什么	select ?x where { ?y <别称> <逍遥子>. ?y <任职公司> <阿里巴巴>. ?y <任职职位> ?x.  }
+mult_constraints_three_reverse	q3993:当得了慢性呼吸衰竭、肺泡蛋白沉着症和气胸这些疾病时，哪一项检查项目是有必要考虑的？	select ?x where { ?x <涉及疾病> <慢性呼吸衰竭> . ?x <涉及疾病> <肺泡蛋白沉着症> . ?x <涉及疾病> <气胸> . }
+mult_constraints_three_reverse	q3994:能检测肺泡蛋白沉着症、气胸和特发性间质性肺炎这些疾病的检查是什么？	select ?x where { ?x <涉及疾病> <肺泡蛋白沉着症> . ?x <涉及疾病> <气胸> . ?x <涉及疾病> <特发性间质性肺炎> . }
+mult_constraints_three_reverse	q3995:哪项检查对于测定气胸、特发性间质性肺炎和动脉硬化性血管病比较有效？	select ?x where { ?x <涉及疾病> <气胸> . ?x <涉及疾病> <特发性间质性肺炎> . ?x <涉及疾病> <动脉硬化性血管病> . }
+mult_constraints_three_reverse	q3996:得了特发性间质性肺炎、动脉硬化性血管病和中毒性肺炎的患者应该去做哪一项检查？	select ?x where { ?x <涉及疾病> <特发性间质性肺炎> . ?x <涉及疾病> <动脉硬化性血管病> . ?x <涉及疾病> <中毒性肺炎> . }
+mult_constraints_three_reverse	q3997:哪项医学检查可以检测出动脉硬化性血管病、中毒性肺炎和老年人慢性阻塞性肺疾病？	select ?x where { ?x <涉及疾病> <动脉硬化性血管病> . ?x <涉及疾病> <中毒性肺炎> . ?x <涉及疾病> <老年人慢性阻塞性肺疾病> . }
+mult_constraints_three_reverse	q3998:有怎样的检查项目能对中毒性肺炎、老年人慢性阻塞性肺疾病以及新生儿呼吸暂停做出检测？	select ?x where { ?x <涉及疾病> <中毒性肺炎> . ?x <涉及疾病> <老年人慢性阻塞性肺疾病> . ?x <涉及疾病> <新生儿呼吸暂停> . }
+mult_constraints_three_reverse	q3999:患有老年人慢性阻塞性肺疾病、新生儿呼吸暂停和先天性肺动静脉瘘这些疾病时，应该去做哪项检查？	select ?x where { ?x <涉及疾病> <老年人慢性阻塞性肺疾病> . ?x <涉及疾病> <新生儿呼吸暂停> . ?x <涉及疾病> <先天性肺动静脉瘘> . }
+mult_constraints_three_reverse	q4000:有什么样的检查项目能检测新生儿呼吸暂停、先天性肺动静脉瘘和老年人急性呼吸窘迫综合征这些疾病？	select ?x where { ?x <涉及疾病> <新生儿呼吸暂停> . ?x <涉及疾病> <先天性肺动静脉瘘> . ?x <涉及疾病> <老年人急性呼吸窘迫综合征> . }
+mult_constraints_two_reverse	q2582:胡歌霍建华共同主演的电视剧有什么？	select ?x where { ?x <主演> <胡歌_（中国内地男演员）>. ?x <主演> <霍建华_（中国台湾男演员）>. }
+mult_constraints_two_reverse	q2596:所有血型是O的篮球运动员？	select ?x where { ?x <血型> <O型>. ?x <运动项目> <篮球_（球类运动）>. }
+mult_constraints_two_reverse	q2598:理查德·格里格和菲利普·津巴多合著的书是什么？	select ?x where { ?x <作者> <理查德·格里格>. ?x <作者> <菲利普·津巴多>. }
+mult_constraints_two_reverse	q2606:和小狮座与大熊座相邻的星座是那一个？	select ?x where { ?x <邻接星座> <小狮座>. ?x <邻接星座> <大熊座>. }
+mult_constraints_two_reverse	q2616:"自强不息厚德载物"是哪个学校的校训？	select ?x where { ?x <校训> <自强不息>. ?x <校训> <厚德载物_（成语）>. }
+mult_constraints_two_reverse	q2631:指环王中有哪些男性角色？	select ?y where { ?y <登场作品> <指环王_（J.R.R.托尔金著系列小说）>. ?y <性别> <男>. }
+mult_constraints_two_reverse	q2634:英国有哪些著名的数学家？	select ?x where { ?x <国籍> <英国_（大不列颠及北爱尔兰联合王国）>. ?x <职业> <数学家_（数学家（世界著名数学家））>. }
+mult_constraints_two_reverse	q2642:波恩大学培养出的诗人有哪些？	select ?x where { ?x <职业> <诗人_（汉语词语）>. ?x <毕业院校> <波恩大学>. }
+mult_constraints_two_reverse	q2646:王学兵和桂纶镁共同主演了哪些作品？	select ?x where { ?x <主演> <王学兵>. ?x <主演> <桂纶镁>. }
+mult_constraints_two_reverse	q2648:有哪些维吾尔族演员？	select ?x where { ?x <民族> <维吾尔族>. ?x <职业> <演员_（职业）>. }
+mult_constraints_two_reverse	q2650:由国防科技大学设计研发的的超级计算机叫什么名字？	select ?x where { ?x <属性> <超级计算机>. ?x <开发机构> <国防科学技术大学>. }
+mult_constraints_two_reverse	q2678:亚洲哪个国家的主要民族是马来人？	select ?x where { ?x <所属洲> <亚洲>. ?x <主要民族> <马来人>. }
+mult_constraints_two_reverse	q2687:李安导演过哪些3D电影？	select ?x where { ?x <类型> <3D_（三维的英文缩写）>. ?x <导演> <李安_（华人导演）>. }
+mult_constraints_two_reverse	q2690:我们会在哪个民俗节日里吃元宵？	select ?x where { ?x <类别> <民俗>. ?x <节日饮食> <元宵_（食品）>. }
+mult_constraints_two_reverse	q2695:成龙和周星驰共同出演的电影有哪些？	select ?x where { ?x <主演> <成龙_（中国香港演员、导演）>. ?x <主演> <周星驰>. }
+mult_constraints_two_reverse	q2972:位于上海的期货交易所叫什么？	select ?x where { ?x <位置> <上海>. ?x <类别> <期货交易所>. }
+mult_constraints_two_reverse	q2973:位于郑州的期货交易所叫什么？	select ?x where { ?x <位置> <郑州>. ?x <类别> <期货交易所>. }
+mult_constraints_two_reverse	q2974:位于大连的期货交易所叫什么	select ?x where { ?x <位置> <大连>. ?x <类别> <期货交易所>. }
+mult_constraints_three	q1519:《喜剧之王》中同时担任主演、导演和编剧的是谁？	select ?x where { <喜剧之王_（1999年周星驰主演并执导电影）> <主演> ?x. <喜剧之王_（1999年周星驰主演并执导电影）> <导演> ?x. <喜剧之王_（1999年周星驰主演并执导电影）> <编剧> ?x. }
+mult_constraints_two	q1646:《这个杀手不太冷》和《V字仇杀队》共同的演员是？	select ?x where { <这个杀手不太冷> <主演> ?x. <V字仇杀队_（2005年詹姆斯·麦克提格执导电影）> <主演> ?x. }
+mult_constraints_two	q2692:在金庸小说《天龙八部》中，鸠摩智和游坦之都会什么武功？	select ?x where { <鸠摩智> <武功> ?x. <游坦之> <内功> ?x. }
+mult_jump_one	q1589:《西厢记》小说的作者的出生地是哪里？	select ?y where { <西厢记_（元代王实甫著古典戏剧）> <作者> ?x. ?x <出生地> ?y . }
+mult_jump_one	q1591:我们经常吃的东坡肉的发明者的字号是什么？	select ?y where { <东坡肉> <创制人> ?x. ?x <字号> ?y. }
+mult_jump_one	q1601:《指环王》系列电影的拍摄地点在哪个大洲？	select ?y where { <指环王_（英美2001-2003年彼得·杰克逊执导系列电影）> <拍摄地点> ?x. ?x <所属洲> ?y. }
+mult_jump_one	q1602:提出"星云假说"的哲学家的代表作品有哪些？	select ?y where { <星云假说> <提出人> ?x. ?x <职业> <哲学家_（基础含义）>. ?x <代表作品> ?y. }
+mult_jump_one	q1603:天蝎座的守护神的的管辖范围是哪里？	select ?y where { <天蝎座_（占星学）> <守护神> ?x. ?x <司掌> ?y. }
+mult_jump_one	q1610:李寻欢出自哪个作家的作品？	select ?y where { <李寻欢_（古龙武侠小说《多情剑客无情剑》中主人公）> <登场作品> ?x. ?x <作者> ?y. }
+mult_jump_one	q1614:《西游记》中，牛魔王的妻子的法宝是什么？	select ?y where { <牛魔王_（小说《西游记》中的角色）> <妻子> ?x. ?x <法宝> ?y . }
+mult_jump_one	q1621:"万有引力定律"的提出者的信仰是？	select ?y where { <万有引力定律> <提出者> ?x. ?x <信仰> ?y. }
+mult_jump_one	q1630:老干妈的创始人是什么职位？	select ?y where { <老干妈> <创始人> ?x. ?x <任职> ?y. }
+mult_jump_one	q1631:《苍蝇不叮无缝的蛋》的连载平台前身是什么？	select ?y where { <苍蝇不叮无缝的蛋> <连载平台> ?x . ?x <前身> ?y . }
+mult_jump_one	q1633:唐家三少的出生地有哪些机场？	select ?y where { <唐家三少> <出生地> ?x . ?x <机场> ?y . }
+mult_jump_one	q1652:新文化运动的发起者中那位出生于河北的志士别名为？	select ?y where { <新文化运动> <代表人物> ?x. ?x <出生地> <河北_（中国省级行政区）> . ?x <别名> ?y. }
+mult_jump_one	q1656:秦始皇推崇的思想流派的鼻祖是谁？	select ?y where { <秦始皇_（中国首位皇帝）> <信仰> ?x. ?x <法家始祖> ?y . }
+mult_jump_one	q1660:《三体》的作者毕业于哪所大学？	select ?y where { <三体_（刘慈欣著科幻小说）> <作者> ?x. ?x <毕业院校> ?y. }
+mult_jump_one	q1665:计算机的发明者是哪个民族的人？	select ?y where { <计算机> <发明者> ?x. ?x <民族> ?y. }
+mult_jump_one	q1669:主演卧虎藏龙的有哪儿的人？	select ?y where { <卧虎藏龙_（李安导演电影）> <主演> ?x. ?x <出生地> ?y. }
+mult_jump_one	q1679:《EVA》的导演毕业于哪所大学？	select ?y where { <eva_（福音战士ACGN系列）> <导演> ?x. ?x <毕业院校> ?y. }
+mult_jump_one	q2025:公孙绿萼的爸爸会什么武功？	select ?y where { <公孙绿萼> <父亲> ?x . ?x <武功> ?y . }
+mult_jump_one	q2037:宋远桥的儿子的喜欢谁？	select ?y where { <宋远桥> <儿子> ?x . ?x <心上人> ?y . }
+mult_jump_one	q2045:任盈盈的爸爸是什么门派？	select ?y where { <任盈盈> <父亲> ?x . ?x <门派> ?y . }
+mult_jump_one	q2195:孔子的爸爸是什么时候去世的？	select ?y where { <孔子_（儒家学派创始人）> <父亲> ?x . ?x <逝世日期> ?y . }
+mult_jump_one	q2506:"黑洞无毛定理"的提出者的成就主要有哪些？	select ?y where { <黑洞无毛定理> <提出者> ?x. ?x <主要成就> ?y. }
+mult_jump_one	q2520:飞机的发明者出生于哪里？	select ?y where { <飞机_（交通工具）> <发明者> ?x. ?x <出生地> ?y . }
+mult_jump_one	q2527:《额尔古纳河右岸》的作者来自哪个民族？	select ?y where { <额尔古纳河右岸> <作者> ?x. ?x <民族> ?y. }
+mult_jump_one	q2530:奥地利的首都在哪个时区？	select ?y where { <奥地利> <首都> ?x. ?x <时区> ?y. }
+mult_jump_one	q2531:《指环王》的原著作者毕业于哪所大学？	select ?y where { <指环王_（英美2001-2003年彼得·杰克逊执导系列电影）> <原著作者> ?x. ?x <毕业院校> ?y. }
+mult_jump_one	q2532:留声机的发明者是哪个国家的人？	select ?y where { <留声机_（放音装置）> <发明人> ?x. ?x <国籍> ?y . }
+mult_jump_one	q2541:《辛德勒的名单》的导演是哪个国家的？	select ?y where { <辛德勒的名单> <导演> ?x. ?x <国籍> ?y. }
+mult_jump_one	q2579:小说《伊豆的舞女》的作者在什么时间去世了？	select ?y where { <雪国_（日本川端康成著小说）> <作者> ?x. ?x <逝世日期> ?y. }
+mult_jump_one	q2584:电影《霸王别姬》中出生香港的著名男演员有哪些兴趣爱好？	select ?y where { <霸王别姬_（1993年陈凯歌执导，张国荣主演电影）> <主演> ?x. ?x <出生地> <香港_（中华人民共和国特别行政区）> . ?x <爱好> ?y. }
+mult_jump_one	q2588:冯小刚的女儿的出生日期是什么？	select ?y where { <冯小刚> <女儿> ?x. ?x <出生日期> ?y . }
+mult_jump_one	q2608:"柳暗花明又一村"的出处属于什么文学体裁？	select ?y where { <柳暗花明又一村> <作品出处> ?x . ?x <文学体裁> ?y . }
+mult_jump_one	q2610:肯德基的创始人的外文名是什么？	select ?y where { <肯德基> <创始人> ?x . ?x <外文名> ?y . }
 mult_jump_one	q2614:哈利波特系列小说的作者是哪个国家的？	select ?y where { <哈利·波特_（J.K.罗琳创作魔幻系列小说）> <作者> ?x. ?x <国籍> ?y. }
 mult_jump_one	q2620:流行演唱团体S.H.E.的成员分别是什么时候出生的？	select ?y where { <S.H.E> <组合成员> ?x. ?x <出生日期> ?y. }
 mult_jump_one	q2627:梅西所在俱乐部成立时间？	select ?y where { <里奥·梅西_（阿根廷足球运动员）> <所属运动队> ?x. ?x <成立时间> ?y. }
@@ -37,48 +87,274 @@ mult_jump_one	q2666:北大现任校长毕业于哪所大学？	select ?y where {
 mult_jump_one	q2680:在金庸小说《天龙八部》中，萧峰的师父属于哪个帮派？	select ?y where { <萧峰_（金庸武侠小说《天龙八部》的男主角）> <师傅> ?x. ?x <帮派> ?y. }
 mult_jump_one	q2688:《额尔古纳河右岸》的作者有何社会评价？	select ?y where { <额尔古纳河右岸> <作者> ?x. ?x <社会评价> ?y. }
 mult_jump_one	q2697:《西游记》小说的作者的出生地是哪里？	select ?y where { <西游记_（中国古典长篇小说）> <作者> ?x. ?x <出生地> ?y . }
-mult_constraints_two	q1095:出演了《仙剑奇侠传三》和《小时代》的明星是谁？	select ?x where { <仙剑奇侠传三_（2009年李国立执导电视剧）> <主演> ?x. <小时代_（2013年郭敬明执导电影）> <主演> ?x. }
-mult_constraints_three	q1519:《喜剧之王》中同时担任主演、导演和编剧的是谁？	select ?x where { <喜剧之王_（1999年周星驰主演并执导电影）> <主演> ?x. <喜剧之王_（1999年周星驰主演并执导电影）> <导演> ?x. <喜剧之王_（1999年周星驰主演并执导电影）> <编剧> ?x. }
-mult_constraints_two_reverse	q2687:李安导演过哪些3D电影？	select ?x where { ?x <类型> <3D_（三维的英文缩写）>. ?x <导演> <李安_（华人导演）>. }
-mult_constraints_two_reverse	q2690:我们会在哪个民俗节日里吃元宵？	select ?x where { ?x <类别> <民俗>. ?x <节日饮食> <元宵_（食品）>. }
-mult_constraints_two_reverse	q2695:成龙和周星驰共同出演的电影有哪些？	select ?x where { ?x <主演> <成龙_（中国香港演员、导演）>. ?x <主演> <周星驰>. }
-mult_constraints_two_reverse	q2972:位于上海的期货交易所叫什么？	select ?x where { ?x <位置> <上海>. ?x <类别> <期货交易所>. }
-mult_constraints_two_reverse	q2973:位于郑州的期货交易所叫什么？	select ?x where { ?x <位置> <郑州>. ?x <类别> <期货交易所>. }
-mult_constraints_three_reverse_simple	q969:去瞿塘峡、巫峡、西陵峡旅游需要多少钱门票？	select ?y where { ?x <组成> <瞿塘峡>. ?x <组成> <巫峡_（长江三峡第二峡）>. ?x <组成> <西陵峡>. ?x <门票价格> ?y. }
-mult_constraints_three_reverse	q3990:哪种检查与检测休克型肺炎、重症急性呼吸综合征和光气中毒有关？	select ?x where { ?x <涉及疾病> <休克型肺炎> . ?x <涉及疾病> <重症急性呼吸综合征> . ?x <涉及疾病> <光气中毒> . }
-mult_constraints_three_reverse	q3991:怎样的检查可以检测出重症急性呼吸综合征、光气中毒和慢性呼吸衰竭？	select ?x where { ?x <涉及疾病> <重症急性呼吸综合征> . ?x <涉及疾病> <光气中毒> . ?x <涉及疾病> <慢性呼吸衰竭> . }
-mult_constraints_three_reverse	q3992:患有光气中毒、慢性呼吸衰竭和肺泡蛋白沉着症时，应该做哪种检查项目？	select ?x where { ?x <涉及疾病> <光气中毒> . ?x <涉及疾病> <慢性呼吸衰竭> . ?x <涉及疾病> <肺泡蛋白沉着症> . }
-mult_constraints_three_reverse	q3993:当得了慢性呼吸衰竭、肺泡蛋白沉着症和气胸这些疾病时，哪一项检查项目是有必要考虑的？	select ?x where { ?x <涉及疾病> <慢性呼吸衰竭> . ?x <涉及疾病> <肺泡蛋白沉着症> . ?x <涉及疾病> <气胸> . }
-mult_constraints_three_reverse	q3994:能检测肺泡蛋白沉着症、气胸和特发性间质性肺炎这些疾病的检查是什么？	select ?x where { ?x <涉及疾病> <肺泡蛋白沉着症> . ?x <涉及疾病> <气胸> . ?x <涉及疾病> <特发性间质性肺炎> . }
-mult_constraints_one_reverse_simple	q2174:《浮夸》的演唱者又被戏称为？	select ?x where { ?y <代表作品> <浮夸_（陈奕迅主唱的歌曲）> . ?y <别名> ?x . }
-mult_constraints_one_reverse_simple	q2194:《东方主义》的作者出生在哪个地方？	select ?y where { ?x <代表作品> <东方主义> . ?x <出生地> ?y . }
-mult_constraints_one_reverse_simple	q2205:唱《七友》的歌手喜欢吃什么食物？	select ?x where { ?y <代表作品> <七友_（梁汉文演唱歌曲）> . ?y <喜爱的食物> ?x . }
-mult_constraints_one_reverse_simple	q2210:同时参与到日本1996年和2015年两版"恶作剧之吻"的男演员是？	select ?x where { ?x <代表作品> <恶作剧之吻_（2015年李海娜，MIKE主演电视剧）> . <恶作剧之吻_（日本1996年柏原崇、佐藤蓝子主演电视剧）> <主演> ?x . }
-mult_constraints_one_reverse_simple	q2216:"乐府双璧"中哪一首是北魏时期的民歌？	select ?x where { ?x <创作年代> <北魏> . <乐府双璧> <分类> ?x . }
-mult_constraints_one_reverse_simple	q2220:请列述《西风颂》作者的成就。	select ?x where { ?y <主要成就> ?x . <西风颂> <作者> ?y . }
-simple_res	q3431:湿疹属于什么?	select ?x where { <湿疹> <类型> ?x. }
-simple_res	q3432:湿疹适合去什么科室就诊？	select ?x where { <湿疹> <科室> ?x. }
-simple_res	q3433:湿疹的同义词是什么？	select ?x where { <湿疹> <同义词> ?x. }
-simple_res	q3434:湿疹涉及哪些症状？	select ?x where { <湿疹> <涉及症状> ?x. }
-simple_res	q3435:先天性卵巢发育不全属于什么?	select ?x where { <先天性卵巢发育不全> <类型> ?x. }
-simple_res	q3436:外耳炎有怎样的症状？	select ?x where { <外耳炎> <症状> ?x. }
-simple_res	q3437:宫外孕属于什么?	select ?x where { <宫外孕> <类型> ?x. }
-simple_res	q3438:甲状腺肿属于什么?	select ?x where { <甲状腺肿> <类型> ?x. }
-simple_res	q3439:颈部淋巴结结核属于什么?	select ?x where { <颈部淋巴结结核> <类型> ?x. }
-simple_res	q3440:异位妊娠属于什么?	select ?x where { <异位妊娠> <类型> ?x. }
-simple_res	q3441:痛性抽搐属于什么?	select ?x where { <痛性抽搐> <类型> ?x. }
-simple_res	q3442:角结膜干燥症属于什么?	select ?x where { <角结膜干燥症> <类型> ?x. }
-simple_res	q3443:雀斑属于什么?	select ?x where { <雀斑> <类型> ?x. }
-simple_res	q3444:肾衰竭属于什么?	select ?x where { <肾衰竭> <类型> ?x. }
-simple_res	q3445:会厌炎属于什么?	select ?x where { <会厌炎> <类型> ?x. }
-simple_res	q3446:肝内胆管结石属于什么?	select ?x where { <肝内胆管结石> <类型> ?x. }
-simple_res	q3447:足癣患者在什么科室就诊？	select ?x where { <足癣> <就诊科室> ?x. }
-simple_res	q3448:新生儿溶血属于什么?	select ?x where { <新生儿溶血> <类型> ?x. }
+simple_attr	q1391:查理·布朗是史努比的谁？	select ?x where { <史努比_（美国漫画《花生漫画》角色）> ?x <查理·布朗>. }
+simple_attr	q2041:令狐冲和岳灵珊是什么关系？	select ?x where { <令狐冲> ?x <岳灵珊>. }
+simple_res_reverse	q1361:有哪些地方的法律沿用大陆法系？	select ?x where { ?x <法律体系> <大陆法系>. }
+simple_res_reverse	q1432:流经湖南境内的河流？	select ?x where { ?x <流经地区> <湖南_（中国省级行政区）>. }
+simple_res_reverse	q1435:成语"西子捧心"形容的是哪位美女的美貌？	select ?x where { ?x <相关成语> <西子捧心>. }
+simple_res_reverse	q1440:济南是哪个省的省会城市？	select ?x where { ?x <政府驻地> <济南_（山东省省会）>. }
+simple_res_reverse	q1451:民国黎元洪创立了什么党派？	select ?x where { ?x <创始人> <黎元洪>. }
+simple_res_reverse	q1676:中国北京有一所大学校庆日是5月4日，它的现任校长是谁？	select ?y where { ?x <校庆日>"05-4". ?x <现任校长> ?y . ?x <所属地区> <北京_（中华人民共和国首都）>. }
+simple_res_reverse	q1687:房地产行业的上市公司有哪些？	select ?x where { ?x <行业> <房地产>. }
+simple_res_reverse	q1697:熔断机制实施时，证监会主席是谁？	select ?x where { ?x <政绩> <实施熔断机制>. }
+simple_res_reverse	q1789:深港股票市场交易互联互通机制是什么的全称？	select ?x where { ?x <全称> <深港股票市场交易互联互通机制>. }
+simple_res_reverse	q1790:沪港通是什么的简称？	select ?x where { ?x <简称> <沪港通>. }
+simple_res_reverse	q1818:量化基金之王是？	select ?x where { ?x <荣誉> <量化基金之王>. }
+simple_res_reverse	q1821:提出婴儿底的是哪一位？	select ?x where { ?x <观点> <婴儿底>. }
+simple_res_reverse	q1824:壁虎式投资法是谁提出的？	select ?x where { ?x <开创者> <壁虎式投资法>. }
+simple_res_reverse	q1825:詹森指数是谁提出的？	select ?x where { ?x <开创者> <詹森指数>. }
+simple_res_reverse	q1844:中国建银投资有限责任公司是哪些上市公司的股东？	select ?x where { ?x <股东> <中国建银投资有限责任公司>. }
+simple_res_reverse	q1864:发行余额宝的基金公司？	select ?x where { ?x <基金产品> <余额宝>. }
+simple_res_reverse	q1893:获英国《中央银行》终身成就奖的是？	select ?x where { ?x <荣誉> <英国《中央银行》终身成就奖>. }
+simple_res_reverse	q1945:国家意志推动产业升级对什么行业是利好？	select ?x where { ?x <事件> <国家意志推动产业升级>. }
+simple_res_reverse	q1949:MSI中文叫什么？	select ?x where { ?x <英文简称> <MSI>. }
+simple_res_reverse	q1958:养老金将迎15连涨影响的概念是？	select ?x where { ?x <事件> <养老金将迎15连涨>. }
+simple_res_reverse	q1959:2G3G要退网影响的概念是？	select ?x where { ?x <事件> <2G3G要退网>. }
+simple_res_reverse	q1975:以中药为主营产品的公司有？	select ?x where { ?x <主营产品> <中药>. }
+simple_res_reverse	q1987:以国内时效产品为主营业务的上市公司有？	select ?x where { ?x <主营业务> <国内时效产品>. }
+simple_res_reverse	q1993:NTDOY是哪个上市公司的股票代码？	select ?x where { ?x <股票代码> <NTDOY>. }
+simple_res_reverse	q2314:石原里美是主演的全部片子？	select ?x where { ?x <主演> <石原里美>. }
+simple_res_reverse	q2318:博尔赫斯的妻子是谁？	select ?y where { ?y <配偶> <豪尔赫·路易斯·博尔赫斯_（阿根廷作家）>. }
+simple_res_reverse	q2337:罗马神话中的丘比特是谁的儿子？	select ?x where { ?x <儿子> <丘比特_（罗马神话中的小爱神）>. }
+simple_res_reverse	q2343:给我推荐一些篮球游戏？	select ?x where { ?x <游戏类型> <篮球_（球类运动）>. }
+simple_res_reverse	q2344:哪些地方以意大利语作为官方语言？	select ?x where { ?x <官方语言> <意大利语>. }
+simple_res_reverse	q2370:哪些动物属于长角羚属？	select ?x where { ?x <属> <长角羚属>. }
+simple_res_reverse	q2412:你知道张一山都演过什么剧吗？	select ?x where { ?x <主演> <张一山_（中国内地演员）>. }
+simple_res_reverse	q2420:在金庸小说《天龙八部》中，萧峰的父亲是谁？	select ?x where { ?x <儿子> <萧峰_（金庸武侠小说《天龙八部》的男主角）>. }
+simple_res_reverse	q2436:剑桥大学的知名校友？	select ?x where { ?x <毕业院校> <剑桥大学>. }
+simple_res_reverse	q2446:叔本华提出了哪些观点？	select ?x where { ?x <提出者> <亚瑟·叔本华>. }
+simple_res_reverse	q2447:海贼里红发率领着哪个海贼团纵横新世界？	select ?x where { ?x <船长> <红发_（《海贼王》中人物）>. }
+simple_res_reverse	q2455:有哪些地方的法律沿用英美法系？	select ?x where { ?x <法律体系> <英美法系>. }
+simple_res_reverse	q2465:叔本华有哪些代表作？	select ?y where { ?y <作者> <亚瑟·叔本华>. }
+simple_res_reverse	q2471:"C9"高校有哪些？	select ?x where { ?x <属性> <C9_（九校联盟）>. }
+simple_res_reverse	q2474:三色堇是哪个国家的国花？	select ?x where { ?x <国花> <三色堇_（草本植物）>. }
+simple_res_reverse	q2475:赵本山是哪几部电视剧的制片人？	select ?x where { ?x <制片人> <赵本山>. }
+simple_res_reverse	q2484:黄泉果实被谁吃了？	select ?x where { ?x <恶魔果实> <黄泉果实>. }
+simple_res_reverse	q2521:指环王中有些人物？	select ?y where { ?y <登场作品> <指环王_（J.R.R.托尔金著系列小说）>. }
+simple_res_reverse	q2751:芝麻信用的所有者是谁？	select ?x where { ?x <产品> <芝麻信用>. }
 simple_res	q3449:神经性耳聋属于什么?	select ?x where { <神经性耳聋> <类型> ?x. }
-mult_jump_one	q2184:电视剧《失恋职人巧克力》的女主身高多少？	select ?x where { <失恋巧克力职人_（2014年日本富士电视台电视剧）> <主演> ?y . ?y <身高> ?x . }
-mult_jump_one	q2202:索肖队主教练有多高？	select ?x where { <索肖队> <主教练> ?y . ?y <身高> ?x . }
-mult_jump_one	q2207:角色谢尔顿·库珀最先于哪一年在影视作品中出现？	select ?x where { <谢尔顿·库珀> <登场作品> ?y . ?y <上映时间> ?x . }
-mult_jump_one	q2212:塑造了"平谷一点红"该角色形象的古装电视剧首播于哪个电视频道？	select ?x where { <平谷一点红> <登场作品> ?y . ?y <首播频道> ?x . }
-mult_jump_one	q2214:《南腔北调集》的作者是哪一年去世的？	select ?x where { <南腔北调集> <作者> ?y . ?y <逝世日期> ?x . }
-mult_jump_one	q2215:《资本论》的作者出生于哪个城市？	select ?x where { <资本论_（卡尔·马克思著作）> <作者> ?y . ?y <出生地> ?x . }
-mult_jump_one	q2218:《遐思录》的作者活了多少岁？	select ?x where { <遐思录> <作者> ?y . ?y <终年岁数> ?x . }
+simple_res	q3450:感音神经性耳聋属于什么?	select ?x where { <感音神经性耳聋> <类型> ?x. }
+simple_res	q3451:鼻窦炎有什么症状?	select ?x where { <鼻窦炎> <症状> ?x. }
+simple_res	q3452:鼻窦炎的风险因子（英语：Riskfactor）有哪些？	select ?x where { <鼻窦炎> <风险因子（英语：Riskfactor）> ?x. }
+simple_res	q3453:法洛四联症属于什么?	select ?x where { <法洛四联症> <类型> ?x. }
+simple_res	q3454:法洛四联症适合去什么科室？	select ?x where { <法洛四联症> <科室> ?x. }
+simple_res	q3455:法洛四联症有什么同义词？	select ?x where { <法洛四联症> <同义词> ?x. }
+simple_res	q3456:法洛四联症涉及什么症状？	select ?x where { <法洛四联症> <涉及症状> ?x. }
+simple_res	q3457:细菌性阴道炎属于什么?	select ?x where { <细菌性阴道炎> <类型> ?x. }
+simple_res	q3458:肾结石属于什么?	select ?x where { <肾结石> <类型> ?x. }
+simple_res	q3459:心脏性猝死属于什么?	select ?x where { <心脏性猝死> <类型> ?x. }
+simple_res	q3460:急性胆囊炎属于什么?	select ?x where { <急性胆囊炎> <类型> ?x. }
+simple_res	q3461:急性胆囊炎应该送往什么科？	select ?x where { <急性胆囊炎> <科室> ?x. }
+simple_res	q3462:急性胆囊炎的同义词是什么？	select ?x where { <急性胆囊炎> <同义词> ?x. }
+simple_res	q3463:急性胆囊炎涉及哪些症状？	select ?x where { <急性胆囊炎> <涉及症状> ?x. }
+simple_res	q3464:新生儿黄疸属于什么?	select ?x where { <新生儿黄疸> <类型> ?x. }
+simple_res	q3465:前列腺癌属于什么?	select ?x where { <前列腺癌> <类型> ?x. }
+simple_res	q3466:胃下垂属于什么?	select ?x where { <胃下垂> <类型> ?x. }
+simple_res	q3467:麻疹属于什么?	select ?x where { <麻疹> <类型> ?x. }
+simple_res	q3468:麻疹是怎么传播的？	select ?x where { <麻疹> <传播途径> ?x. }
+simple_res	q3469:麻疹在什么科室就诊？	select ?x where { <麻疹> <科室> ?x. }
+simple_res	q3470:麻疹的同义词是什么？	select ?x where { <麻疹> <同义词> ?x. }
+simple_res	q3471:麻疹涉及什么检查？	select ?x where { <麻疹> <涉及检查> ?x. }
+simple_res	q3472:麻疹涉及哪些症状？	select ?x where { <麻疹> <涉及症状> ?x. }
+simple_res	q3473:雪口病属于什么?	select ?x where { <雪口病> <类型> ?x. }
+simple_res	q3474:痔属于什么?	select ?x where { <痔> <类型> ?x. }
+simple_res	q3475:念珠菌病属于什么?	select ?x where { <念珠菌病> <类型> ?x. }
+simple_res	q3476:糖尿病足属于什么?	select ?x where { <糖尿病足> <类型> ?x. }
+simple_res	q3477:糖尿病足去什么科室就诊？	select ?x where { <糖尿病足> <科室> ?x. }
+simple_res	q3478:糖尿病足涉及什么检查？	select ?x where { <糖尿病足> <涉及检查> ?x. }
+simple_res	q3479:糖尿病足涉及哪些症状？	select ?x where { <糖尿病足> <涉及症状> ?x. }
+simple_res	q3480:不宁腿综合征属于什么?	select ?x where { <不宁腿综合征> <类型> ?x. }
+simple_res	q3481:老年疣属于什么?	select ?x where { <老年疣> <类型> ?x. }
+simple_res	q3482:烟雾病属于什么?	select ?x where { <烟雾病> <类型> ?x. }
+simple_res	q3483:牙髓炎属于什么?	select ?x where { <牙髓炎> <类型> ?x. }
+simple_res	q3484:急性单纯性胃炎属于什么?	select ?x where { <急性单纯性胃炎> <类型> ?x. }
+simple_res	q3485:狂躁症属于什么?	select ?x where { <狂躁症> <类型> ?x. }
+simple_res	q3486:蛲虫病属于什么?	select ?x where { <蛲虫病> <类型> ?x. }
+simple_res	q3487:多形红斑属于什么?	select ?x where { <多形红斑> <类型> ?x. }
+simple_res	q3488:干燥综合征属于什么?	select ?x where { <干燥综合征> <类型> ?x. }
+simple_res	q3489:主动脉夹层动脉瘤属于什么?	select ?x where { <主动脉夹层动脉瘤> <类型> ?x. }
+simple_res	q3490:椎间盘突出症属于什么?	select ?x where { <椎间盘突出症> <类型> ?x. }
+simple_res	q3491:虫咬皮炎属于什么?	select ?x where { <虫咬皮炎> <类型> ?x. }
+simple_res	q3492:磨牙属于什么?	select ?x where { <磨牙> <类型> ?x. }
+simple_res	q3493:斑秃属于什么?	select ?x where { <斑秃> <类型> ?x. }
+simple_res	q3494:肥胖症属于什么?	select ?x where { <肥胖症> <类型> ?x. }
+simple_res	q3495:肾小球肾炎属于什么?	select ?x where { <肾小球肾炎> <类型> ?x. }
+simple_res	q3496:胃食管反流病属于什么?	select ?x where { <胃食管反流病> <类型> ?x. }
+simple_res	q3497:肾病综合征属于什么?	select ?x where { <肾病综合征> <类型> ?x. }
+simple_res	q3498:躁狂症属于什么?	select ?x where { <躁狂症> <类型> ?x. }
+simple_res	q3499:Down综合征属于什么?	select ?x where { <Down综合征> <类型> ?x. }
+simple_res	q3500:黑素细胞痣属于什么?	select ?x where { <黑素细胞痣> <类型> ?x. }
+simple_res	q3501:烧伤属于什么?	select ?x where { <烧伤> <类型> ?x. }
+simple_res	q3502:烧伤应该去哪个科室就诊？	select ?x where { <烧伤> <科室> ?x. }
+simple_res	q3503:烧伤会涉及哪些症状？	select ?x where { <烧伤> <涉及症状> ?x. }
+simple_res	q3504:大叶性肺炎属于什么?	select ?x where { <大叶性肺炎> <类型> ?x. }
+simple_res	q3505:膝关节骨性关节炎属于什么?	select ?x where { <膝关节骨性关节炎> <类型> ?x. }
+simple_res	q3506:溃疡性结肠炎属于什么?	select ?x where { <溃疡性结肠炎> <类型> ?x. }
+simple_res	q3507:溃疡性结肠炎在什么科室就诊？	select ?x where { <溃疡性结肠炎> <科室> ?x. }
+simple_res	q3508:溃疡性结肠炎的同义词是什么？	select ?x where { <溃疡性结肠炎> <同义词> ?x. }
+simple_res	q3509:溃疡性结肠炎涉及哪些症状？	select ?x where { <溃疡性结肠炎> <涉及症状> ?x. }
+simple_res	q3510:肩周炎属于什么?	select ?x where { <肩周炎> <类型> ?x. }
+simple_res	q3511:高钾血症属于什么?	select ?x where { <高钾血症> <类型> ?x. }
+simple_res	q3512:滑膜肉瘤属于什么?	select ?x where { <滑膜肉瘤> <类型> ?x. }
+simple_res	q3513:耳鸣属于什么?	select ?x where { <耳鸣> <类型> ?x. }
+simple_res	q3514:耳鸣的肇因是什么？	select ?x where { <耳鸣> <肇因> ?x. }
+simple_res	q3515:腰椎间盘突出属于什么?	select ?x where { <腰椎间盘突出> <类型> ?x. }
+simple_res	q3516:流产属于什么?	select ?x where { <流产> <类型> ?x. }
+simple_res	q3517:胆管扩张症属于什么?	select ?x where { <胆管扩张症> <类型> ?x. }
+simple_res	q3518:腰椎间盘突出症属于什么?	select ?x where { <腰椎间盘突出症> <类型> ?x. }
+simple_res	q3519:口腔溃疡属于什么?	select ?x where { <口腔溃疡> <类型> ?x. }
+simple_res	q3520:三叉神经痛属于什么?	select ?x where { <三叉神经痛> <类型> ?x. }
+simple_res	q3521:小儿毛细支气管炎属于什么?	select ?x where { <小儿毛细支气管炎> <类型> ?x. }
+simple_res	q3522:小儿毛细支气管炎涉及什么检查？	select ?x where { <小儿毛细支气管炎> <涉及检查> ?x. }
+simple_res	q3523:类风湿关节炎属于什么?	select ?x where { <类风湿关节炎> <类型> ?x. }
+simple_res	q3524:输卵管积液属于什么?	select ?x where { <输卵管积液> <类型> ?x. }
+simple_res	q3525:多囊肾属于什么?	select ?x where { <多囊肾> <类型> ?x. }
+simple_res	q3526:消化性溃疡属于什么?	select ?x where { <消化性溃疡> <类型> ?x. }
+simple_res	q3527:精囊炎属于什么?	select ?x where { <精囊炎> <类型> ?x. }
+simple_res	q3528:肠息肉属于什么?	select ?x where { <肠息肉> <类型> ?x. }
+simple_res	q3529:再生障碍性贫血属于什么?	select ?x where { <再生障碍性贫血> <类型> ?x. }
+simple_res	q3530:脱发属于什么?	select ?x where { <脱发> <类型> ?x. }
+simple_res	q3531:丹毒属于什么?	select ?x where { <丹毒> <类型> ?x. }
+simple_res	q3532:痤疮属于什么?	select ?x where { <痤疮> <类型> ?x. }
+simple_res	q3533:肺癌属于什么?	select ?x where { <肺癌> <类型> ?x. }
+simple_res	q3534:肺癌患者应在什么科室就诊？	select ?x where { <肺癌> <科室> ?x. }
+simple_res	q3535:肺癌的同义词是什么？	select ?x where { <肺癌> <同义词> ?x. }
+simple_res	q3536:肺癌涉及哪些症状？	select ?x where { <肺癌> <涉及症状> ?x. }
+simple_res	q3537:小儿急性喉炎属于什么?	select ?x where { <小儿急性喉炎> <类型> ?x. }
+simple_res	q3538:小儿急性喉炎在什么科室就诊？	select ?x where { <小儿急性喉炎> <科室> ?x. }
+simple_res	q3539:小儿急性喉炎的同义词是什么？	select ?x where { <小儿急性喉炎> <同义词> ?x. }
+simple_res	q3540:小儿急性喉炎涉及哪些症状？	select ?x where { <小儿急性喉炎> <涉及症状> ?x. }
+simple_res	q3541:房间隔缺损属于什么?	select ?x where { <房间隔缺损> <类型> ?x. }
+simple_res	q3542:SARS属于什么?	select ?x where { <SARS> <类型> ?x. }
+simple_res	q3543:肠套叠属于什么?	select ?x where { <肠套叠> <类型> ?x. }
+simple_res	q3544:隐睾属于什么?	select ?x where { <隐睾> <类型> ?x. }
+simple_res	q3545:上消化道出血属于什么?	select ?x where { <上消化道出血> <类型> ?x. }
+simple_res	q3546:苯丙酮尿症属于什么?	select ?x where { <苯丙酮尿症> <类型> ?x. }
+simple_res	q3547:宫颈糜烂属于什么?	select ?x where { <宫颈糜烂> <类型> ?x. }
+simple_res	q3548:口唇疱疹属于什么?	select ?x where { <口唇疱疹> <类型> ?x. }
+simple_res	q3549:口唇疱疹涉及哪些症状？	select ?x where { <口唇疱疹> <涉及症状> ?x. }
+simple_res	q3550:口唇疱疹和什么疾病有关？	select ?x where { <口唇疱疹> <涉及疾病> ?x. }
+simple_res	q3551:气管炎属于什么?	select ?x where { <气管炎> <类型> ?x. }
+simple_res	q3552:结直肠癌属于什么?	select ?x where { <结直肠癌> <类型> ?x. }
+simple_res	q3553:肝血管瘤属于什么?	select ?x where { <肝血管瘤> <类型> ?x. }
+simple_res	q3554:川崎病属于什么?	select ?x where { <川崎病> <类型> ?x. }
+simple_res	q3555:川崎病应该去哪个科室？	select ?x where { <川崎病> <科室> ?x. }
+simple_res	q3556:川崎病的同义词是什么？	select ?x where { <川崎病> <同义词> ?x. }
+simple_res	q3557:川崎病涉及什么症状？	select ?x where { <川崎病> <涉及症状> ?x. }
+simple_res	q3558:恶性淋巴瘤属于什么?	select ?x where { <恶性淋巴瘤> <类型> ?x. }
+simple_res	q3559:肋间神经炎属于什么?	select ?x where { <肋间神经炎> <类型> ?x. }
+simple_res	q3560:矮小症属于什么?	select ?x where { <矮小症> <类型> ?x. }
+simple_res	q3561:急性中耳炎属于什么?	select ?x where { <急性中耳炎> <类型> ?x. }
+simple_res	q3562:细菌性阴道病属于什么?	select ?x where { <细菌性阴道病> <类型> ?x. }
+simple_res	q3563:细菌性阴道病在什么科室就诊？	select ?x where { <细菌性阴道病> <科室> ?x. }
+simple_res	q3564:细菌性阴道病的相近词汇是什么？	select ?x where { <细菌性阴道病> <同义词> ?x. }
+simple_res	q3565:细菌性阴道病涉及什么症状？	select ?x where { <细菌性阴道病> <涉及症状> ?x. }
+simple_res	q3566:多囊卵巢综合征属于什么?	select ?x where { <多囊卵巢综合征> <类型> ?x. }
+simple_res	q3567:睾丸炎属于什么?	select ?x where { <睾丸炎> <类型> ?x. }
+simple_res	q3568:突发性耳聋属于什么?	select ?x where { <突发性耳聋> <类型> ?x. }
+simple_res	q3569:重症肌无力属于什么?	select ?x where { <重症肌无力> <类型> ?x. }
+simple_res	q3570:重症肌无力属于哪个科室的疾病？	select ?x where { <重症肌无力> <科室> ?x. }
+simple_res	q3571:重症肌无力涉及什么症状？	select ?x where { <重症肌无力> <涉及症状> ?x. }
+simple_res	q3572:毛囊炎在什么科室就诊？	select ?x where { <毛囊炎> <就诊科室> ?x. }
+simple_res	q3573:蛔虫病属于什么?	select ?x where { <蛔虫病> <类型> ?x. }
+simple_res	q3574:鼠疫属于什么?	select ?x where { <鼠疫> <类型> ?x. }
+simple_res	q3575:唇炎属于什么?	select ?x where { <唇炎> <类型> ?x. }
+simple_res	q3576:眼球震颤属于什么?	select ?x where { <眼球震颤> <类型> ?x. }
+simple_res	q3577:肺炎有怎样的症状？	select ?x where { <肺炎> <症状> ?x. }
+simple_res	q3578:肺炎的肇因是什么？	select ?x where { <肺炎> <肇因> ?x. }
+simple_res	q3579:肺炎有怎样的风险因子（英语：R亚临床甲减iskfactor）？	select ?x where { <肺炎> <风险因子（英语：Riskfactor）> ?x. }
+simple_res	q3580:与肺炎相似的疾病或共病是什么？	select ?x where { <肺炎> <相似疾病或共病> ?x. }
+simple_res	q3581:肺炎属于什么?	select ?x where { <肺炎> <子类型> ?x. }
+simple_res	q3582:带状疱疹的就诊科室是什么？	select ?x where { <带状疱疹> <就诊科室> ?x. }
+simple_res	q3583:膀胱癌属于什么?	select ?x where { <膀胱癌> <类型> ?x. }
+simple_res	q3584:结核性胸膜炎属于什么?	select ?x where { <结核性胸膜炎> <类型> ?x. }
+simple_res	q3585:亚临床甲减属于什么?	select ?x where { <亚临床甲减> <类型> ?x. }
+simple_res	q3586:弥漫性非毒性甲状腺肿属于什么?	select ?x where { <弥漫性非毒性甲状腺肿> <类型> ?x. }
+simple_res	q3587:尖锐湿疣患者在什么科室就诊？	select ?x where { <尖锐湿疣> <就诊科室> ?x. }
+simple_res	q3588:脊髓灰质炎属于什么?	select ?x where { <脊髓灰质炎> <类型> ?x. }
+simple_res	q3589:脑干出血属于什么?	select ?x where { <脑干出血> <类型> ?x. }
+simple_res	q3590:新型冠状病毒肺炎的病原体是什么？	select ?x where { <新型冠状病毒肺炎> <病原体> ?x. }
+simple_res	q3591:新型冠状病毒肺炎属于什么?	select ?x where { <新型冠状病毒肺炎> <类型> ?x. }
+simple_res	q3592:新型冠状病毒肺炎的同义词有哪些？	select ?x where { <新型冠状病毒肺炎> <同义词> ?x. }
+simple_res	q3593:新型冠状病毒肺炎临床使用什么药剂治疗？	select ?x where { <新型冠状病毒肺炎> <临床治疗期中期推荐中成药> ?x. }
+simple_res	q3594:脂溢性脱发属于什么?	select ?x where { <脂溢性脱发> <类型> ?x. }
+simple_res	q3595:心律失常属于什么?	select ?x where { <心律失常> <类型> ?x. }
+simple_res	q3596:肠道菌群失调症属于什么?	select ?x where { <肠道菌群失调症> <类型> ?x. }
+simple_res	q3597:肠道菌群失调症的常见病症是什么？	select ?x where { <肠道菌群失调症> <常见症状> ?x. }
+simple_res	q3598:子宫内膜癌属于什么?	select ?x where { <子宫内膜癌> <类型> ?x. }
+simple_res	q3599:宫颈炎症属于什么?	select ?x where { <宫颈炎症> <类型> ?x. }
+simple_res	q3600:急性心肌梗死属于什么?	select ?x where { <急性心肌梗死> <类型> ?x. }
+simple_res	q3601:急性心肌梗死涉及什么检查？	select ?x where { <急性心肌梗死> <涉及检查> ?x. }
+simple_res	q3602:前置胎盘属于什么?	select ?x where { <前置胎盘> <类型> ?x. }
+simple_res	q3603:病毒性心肌炎属于什么?	select ?x where { <病毒性心肌炎> <类型> ?x. }
+simple_res	q3604:病毒性心肌炎患者应在什么科室就诊？	select ?x where { <病毒性心肌炎> <科室> ?x. }
+simple_res	q3605:病毒性心肌炎涉及什么检查？	select ?x where { <病毒性心肌炎> <涉及检查> ?x. }
+simple_res	q3606:病毒性心肌炎涉及哪些症状？	select ?x where { <病毒性心肌炎> <涉及症状> ?x. }
+simple_res	q3607:男性乳腺增生属于什么?	select ?x where { <男性乳腺增生> <类型> ?x. }
+simple_res	q3608:脂肪肝属于什么?	select ?x where { <脂肪肝> <类型> ?x. }
+simple_res	q3609:紧张性头痛属于什么?	select ?x where { <紧张性头痛> <类型> ?x. }
+simple_res	q3610:内痔属于什么?	select ?x where { <内痔> <类型> ?x. }
+simple_res	q3611:吸入性肺炎属于什么?	select ?x where { <吸入性肺炎> <类型> ?x. }
+simple_res	q3612:肝衰竭属于什么?	select ?x where { <肝衰竭> <类型> ?x. }
+simple_res	q3613:先天愚型属于什么?	select ?x where { <先天愚型> <类型> ?x. }
+simple_res	q3614:增龄性黄斑变性属于什么?	select ?x where { <增龄性黄斑变性> <类型> ?x. }
+simple_res	q3615:垂体瘤属于什么?	select ?x where { <垂体瘤> <类型> ?x. }
+simple_res	q3616:细菌性痢疾属于什么?	select ?x where { <细菌性痢疾> <类型> ?x. }
+simple_res	q3617:冻结肩属于什么?	select ?x where { <冻结肩> <类型> ?x. }
+simple_res	q3618:膀胱结石属于什么?	select ?x where { <膀胱结石> <类型> ?x. }
+simple_res	q3619:前庭神经元炎属于什么?	select ?x where { <前庭神经元炎> <类型> ?x. }
+simple_res	q3620:胸腺瘤属于什么?	select ?x where { <胸腺瘤> <类型> ?x. }
+simple_res	q3621:结核性胸膜炎的同义词是什么？	select ?x where { <结核性胸膜炎> <同义词> ?x. }
+simple_res	q3622:结核性胸膜炎涉及什么症状？	select ?x where { <结核性胸膜炎> <涉及症状> ?x. }
+simple_res	q3623:狂犬病属于什么?	select ?x where { <狂犬病> <类型> ?x. }
+simple_res	q3624:冠状动脉粥样硬化性心脏病属于什么?	select ?x where { <冠状动脉粥样硬化性心脏病> <类型> ?x. }
+simple_res	q3625:静脉曲张属于什么?	select ?x where { <静脉曲张> <类型> ?x. }
+simple_res	q3626:胸腺瘤属于什么科？	select ?x where { <胸腺瘤> <科室> ?x. }
+simple_res	q3627:胸腺瘤涉及什么症状？	select ?x where { <胸腺瘤> <涉及症状> ?x. }
+simple_res	q3628:上睑下垂属于什么?	select ?x where { <上睑下垂> <类型> ?x. }
+simple_res	q3629:汗疱疹属于什么?	select ?x where { <汗疱疹> <类型> ?x. }
+simple_res	q3630:淋病的并发症有哪些？	select ?x where { <淋病> <并发症> ?x. }
+simple_res	q3631:淋病在医学专科中怎么称呼？	select ?x where { <淋病> <医学专科> ?x. }
+simple_res	q3632:闭经属于什么?	select ?x where { <闭经> <类型> ?x. }
+simple_res	q3633:闭经患者应该去哪个科室就诊？	select ?x where { <闭经> <科室> ?x. }
+simple_res	q3634:闭经的同义词是什么？	select ?x where { <闭经> <同义词> ?x. }
+simple_res	q3635:闭经涉及哪些症状？	select ?x where { <闭经> <涉及症状> ?x. }
+simple_res	q3636:扩心病属于什么?	select ?x where { <扩心病> <类型> ?x. }
+simple_res	q3637:高泌乳素血症属于什么?	select ?x where { <高泌乳素血症> <类型> ?x. }
+simple_res	q3638:肺源性心脏病属于什么?	select ?x where { <肺源性心脏病> <类型> ?x. }
+simple_res	q3639:肺源性心脏病应该去哪个科室就诊？	select ?x where { <肺源性心脏病> <科室> ?x. }
+simple_res	q3640:肺源性心脏病的同义词是什么？	select ?x where { <肺源性心脏病> <同义词> ?x. }
+simple_res	q3641:肺源性心脏病涉及什么症状？	select ?x where { <肺源性心脏病> <涉及症状> ?x. }
+simple_res	q3642:肌腱炎属于什么?	select ?x where { <肌腱炎> <类型> ?x. }
+simple_res	q3643:风湿性心脏病属于什么?	select ?x where { <风湿性心脏病> <类型> ?x. }
+simple_res	q3644:出血热属于什么?	select ?x where { <出血热> <类型> ?x. }
+simple_res	q3645:疖肿属于什么?	select ?x where { <疖肿> <类型> ?x. }
+simple_res	q3646:角膜炎属于什么?	select ?x where { <角膜炎> <类型> ?x. }
+simple_res	q3647:嗜睡症属于什么?	select ?x where { <嗜睡症> <类型> ?x. }
+simple_res	q3648:胃息肉属于什么?	select ?x where { <胃息肉> <类型> ?x. }
+simple_res	q3649:肝硬化属于什么?	select ?x where { <肝硬化> <类型> ?x. }
+simple_res	q3650:肝硬化适合去什么科室就诊？	select ?x where { <肝硬化> <科室> ?x. }
+simple_res	q3651:肝硬化涉及哪些症状？	select ?x where { <肝硬化> <涉及症状> ?x. }
+simple_res	q3652:蛀牙属于什么?	select ?x where { <蛀牙> <类型> ?x. }
+simple_res	q3653:低血糖属于什么?	select ?x where { <低血糖> <类型> ?x. }
+simple_res	q3654:主动脉夹层属于什么?	select ?x where { <主动脉夹层> <类型> ?x. }
+simple_res	q3655:小细胞肺癌属于什么?	select ?x where { <小细胞肺癌> <类型> ?x. }
+simple_res	q3656:胰腺炎属于什么?	select ?x where { <胰腺炎> <类型> ?x. }
+simple_res	q3657:腮腺炎属于什么?	select ?x where { <腮腺炎> <类型> ?x. }
+simple_res	q3658:在医学专科中腮腺炎属于什么？	select ?x where { <腮腺炎> <医学专科> ?x. }
+simple_res	q3659:肝性脑病属于什么?	select ?x where { <肝性脑病> <类型> ?x. }
+simple_res	q3660:嗜铬细胞瘤属于什么?	select ?x where { <嗜铬细胞瘤> <类型> ?x. }
+simple_res	q3661:嗜铬细胞瘤患者应在什么科室就诊？	select ?x where { <嗜铬细胞瘤> <科室> ?x. }
+simple_res	q3662:嗜铬细胞瘤的同义词是什么？	select ?x where { <嗜铬细胞瘤> <同义词> ?x. }
+simple_res	q3663:嗜铬细胞瘤涉及哪些症状？	select ?x where { <嗜铬细胞瘤> <涉及症状> ?x. }
+simple_res	q3664:急性支气管炎属于什么?	select ?x where { <急性支气管炎> <类型> ?x. }
+simple_res	q3665:支气管肺炎属于什么?	select ?x where { <支气管肺炎> <类型> ?x. }
+simple_res	q3666:颈动脉狭窄属于什么?	select ?x where { <颈动脉狭窄> <类型> ?x. }
+simple_res	q3667:胆囊结石属于什么?	select ?x where { <胆囊结石> <类型> ?x. }
+simple_res	q3668:横纹肌肉瘤属于什么?	select ?x where { <横纹肌肉瘤> <类型> ?x. }
+simple_res	q3669:梅毒患者应在什么科室就诊？	select ?x where { <梅毒> <就诊科室> ?x. }
+simple_res	q3670:贫血属于什么?	select ?x where { <贫血> <类型> ?x. }
+simple_res	q3671:肾积水属于什么?	select ?x where { <肾积水> <类型> ?x. }
+simple_res	q3672:急性盆腔炎属于什么?	select ?x where { <急性盆腔炎> <类型> ?x. }
+simple_res	q3673:急性盆腔炎应该去哪个科室就诊？	select ?x where { <急性盆腔炎> <科室> ?x. }
+simple_res	q3674:急性盆腔炎涉及哪些症状？	select ?x where { <急性盆腔炎> <涉及症状> ?x. }
