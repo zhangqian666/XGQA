@@ -1,0 +1,84 @@
+type	string	select
+mult_constraints_two_reverse_simple	q2617:位于梵蒂冈的"Sweet Holiday Rome"酒店的中文名称是？	select ?x where { ?y <英文名称> "Sweet Holiday Rome". ?y <地理位置> <梵蒂冈>. ?y <中文名称> ?x. }
+mult_constraints_two_reverse_simple	q2621:小罗伯特·唐尼2008年主演的成名电影的导演是谁？	select ?x where { ?y <主演> <小罗伯特·唐尼>. ?y <出品时间> "2008". ?y <导演> ?x. }
+mult_constraints_two_reverse_simple	q2653:42小罗伯特·唐尼2008年主演的成名电影的制片人是谁？	select ?x where { ?y <主演> <小罗伯特·唐尼>. ?y <出品时间> "2008". ?y <制片人> ?x. }
+mult_constraints_two_reverse_simple	q2684:海贼王里外号海贼猎人、绿藻头的人长得有多高？	select ?x where { ?y <登场作品> <海贼王_（尾田荣一郎创作的漫画作品）>. ?y <其他名称> "海贼猎人、绿藻头". ?y <身高> ?x. }
+simple_res	q3666:颈动脉狭窄属于什么?	select ?x where { <颈动脉狭窄> <类型> ?x. }
+simple_res	q3667:胆囊结石属于什么?	select ?x where { <胆囊结石> <类型> ?x. }
+simple_res	q3668:横纹肌肉瘤属于什么?	select ?x where { <横纹肌肉瘤> <类型> ?x. }
+simple_res	q3669:梅毒患者应在什么科室就诊？	select ?x where { <梅毒> <就诊科室> ?x. }
+simple_res	q3670:贫血属于什么?	select ?x where { <贫血> <类型> ?x. }
+simple_res	q3671:肾积水属于什么?	select ?x where { <肾积水> <类型> ?x. }
+simple_res	q3672:急性盆腔炎属于什么?	select ?x where { <急性盆腔炎> <类型> ?x. }
+simple_res	q3673:急性盆腔炎应该去哪个科室就诊？	select ?x where { <急性盆腔炎> <科室> ?x. }
+simple_res	q3674:急性盆腔炎涉及哪些症状？	select ?x where { <急性盆腔炎> <涉及症状> ?x. }
+simple_res	q3675:荨麻疹属于什么?	select ?x where { <荨麻疹> <类型> ?x. }
+simple_res	q3676:荨麻疹的同义词是什么？	select ?x where { <荨麻疹> <同义词> ?x. }
+simple_res	q3677:荨麻疹涉及哪些症状？<斑疹>	select ?x where { <荨麻疹> <涉及症状> ?x. }
+simple_res	q3678:萎缩性鼻炎属于什么?	select ?x where { <萎缩性鼻炎> <类型> ?x. }
+simple_res	q3679:萎缩性鼻炎在什么科室就诊？	select ?x where { <萎缩性鼻炎> <科室> ?x. }
+simple_res	q3680:萎缩性鼻炎的同义词是什么？	select ?x where { <萎缩性鼻炎> <同义词> ?x. }
+simple_res	q3681:萎缩性鼻炎涉及哪些症状？	select ?x where { <萎缩性鼻炎> <涉及症状> ?x. }
+simple_res_reverse	q2474:三色堇是哪个国家的国花？	select ?x where { ?x <国花> <三色堇_（草本植物）>. }
+simple_res_reverse	q2475:赵本山是哪几部电视剧的制片人？	select ?x where { ?x <制片人> <赵本山>. }
+simple_res_reverse	q2484:黄泉果实被谁吃了？	select ?x where { ?x <恶魔果实> <黄泉果实>. }
+simple_res_reverse	q2521:指环王中有些人物？	select ?y where { ?y <登场作品> <指环王_（J.R.R.托尔金著系列小说）>. }
+simple_res_reverse	q2751:芝麻信用的所有者是谁？	select ?x where { ?x <产品> <芝麻信用>. }
+simple_attr	q1391:查理·布朗是史努比的谁？	select ?x where { <史努比_（美国漫画《花生漫画》角色）> ?x <查理·布朗>. }
+simple_attr	q2041:令狐冲和岳灵珊是什么关系？	select ?x where { <令狐冲> ?x <岳灵珊>. }
+mult_jump_one	q2614:哈利波特系列小说的作者是哪个国家的？	select ?y where { <哈利·波特_（J.K.罗琳创作魔幻系列小说）> <作者> ?x. ?x <国籍> ?y. }
+mult_jump_one	q2620:流行演唱团体S.H.E.的成员分别是什么时候出生的？	select ?y where { <S.H.E> <组合成员> ?x. ?x <出生日期> ?y. }
+mult_jump_one	q2627:梅西所在俱乐部成立时间？	select ?y where { <里奥·梅西_（阿根廷足球运动员）> <所属运动队> ?x. ?x <成立时间> ?y. }
+mult_jump_one	q2636:《甄嬛传》中甄嬛的饰演者的老公是谁？	select ?y where { <甄嬛_（小说《后宫·甄嬛传》的人物）> <饰演者> ?x. ?x <配偶> ?y. }
+mult_jump_one	q2639:Windows操作系统发行公司的创始人是谁？	select ?y where { <Windows操作系统> <发行者> ?x. ?x <联合创始人> ?y. }
+mult_jump_one	q2643:共产主义的发起者是哪个学校毕业的？	select ?y where { <共产主义> <发起者> ?x. ?x <毕业院校> ?y. }
+mult_jump_one	q2660:03版《天龙八部》电视剧的总制片人的妻子是谁？	select ?y where { <天龙八部_（2003年胡军主演电视剧）> <总制片人> ?x. ?x <配偶> ?y . }
+mult_jump_one	q2666:北大现任校长毕业于哪所大学？	select ?y where { <北京大学> <现任校长> ?x. ?x <毕业院校> ?y. }
+mult_jump_one	q2680:在金庸小说《天龙八部》中，萧峰的师父属于哪个帮派？	select ?y where { <萧峰_（金庸武侠小说《天龙八部》的男主角）> <师傅> ?x. ?x <帮派> ?y. }
+mult_jump_one	q2688:《额尔古纳河右岸》的作者有何社会评价？	select ?y where { <额尔古纳河右岸> <作者> ?x. ?x <社会评价> ?y. }
+mult_jump_one	q2697:《西游记》小说的作者的出生地是哪里？	select ?y where { <西游记_（中国古典长篇小说）> <作者> ?x. ?x <出生地> ?y . }
+mult_constraints_two	q1095:出演了《仙剑奇侠传三》和《小时代》的明星是谁？	select ?x where { <仙剑奇侠传三_（2009年李国立执导电视剧）> <主演> ?x. <小时代_（2013年郭敬明执导电影）> <主演> ?x. }
+mult_constraints_three	q1519:《喜剧之王》中同时担任主演、导演和编剧的是谁？	select ?x where { <喜剧之王_（1999年周星驰主演并执导电影）> <主演> ?x. <喜剧之王_（1999年周星驰主演并执导电影）> <导演> ?x. <喜剧之王_（1999年周星驰主演并执导电影）> <编剧> ?x. }
+mult_constraints_two_reverse	q2687:李安导演过哪些3D电影？	select ?x where { ?x <类型> <3D_（三维的英文缩写）>. ?x <导演> <李安_（华人导演）>. }
+mult_constraints_two_reverse	q2690:我们会在哪个民俗节日里吃元宵？	select ?x where { ?x <类别> <民俗>. ?x <节日饮食> <元宵_（食品）>. }
+mult_constraints_two_reverse	q2695:成龙和周星驰共同出演的电影有哪些？	select ?x where { ?x <主演> <成龙_（中国香港演员、导演）>. ?x <主演> <周星驰>. }
+mult_constraints_two_reverse	q2972:位于上海的期货交易所叫什么？	select ?x where { ?x <位置> <上海>. ?x <类别> <期货交易所>. }
+mult_constraints_two_reverse	q2973:位于郑州的期货交易所叫什么？	select ?x where { ?x <位置> <郑州>. ?x <类别> <期货交易所>. }
+mult_constraints_three_reverse_reverse_simple	q969:去瞿塘峡、巫峡、西陵峡旅游需要多少钱门票？	select ?y where { ?x <组成> <瞿塘峡>. ?x <组成> <巫峡_（长江三峡第二峡）>. ?x <组成> <西陵峡>. ?x <门票价格> ?y. }
+mult_constraints_three_reverse_reverse	q3990:哪种检查与检测休克型肺炎、重症急性呼吸综合征和光气中毒有关？	select ?x where { ?x <涉及疾病> <休克型肺炎> . ?x <涉及疾病> <重症急性呼吸综合征> . ?x <涉及疾病> <光气中毒> . }
+mult_constraints_three_reverse_reverse	q3991:怎样的检查可以检测出重症急性呼吸综合征、光气中毒和慢性呼吸衰竭？	select ?x where { ?x <涉及疾病> <重症急性呼吸综合征> . ?x <涉及疾病> <光气中毒> . ?x <涉及疾病> <慢性呼吸衰竭> . }
+mult_constraints_three_reverse_reverse	q3992:患有光气中毒、慢性呼吸衰竭和肺泡蛋白沉着症时，应该做哪种检查项目？	select ?x where { ?x <涉及疾病> <光气中毒> . ?x <涉及疾病> <慢性呼吸衰竭> . ?x <涉及疾病> <肺泡蛋白沉着症> . }
+mult_constraints_three_reverse_reverse	q3993:当得了慢性呼吸衰竭、肺泡蛋白沉着症和气胸这些疾病时，哪一项检查项目是有必要考虑的？	select ?x where { ?x <涉及疾病> <慢性呼吸衰竭> . ?x <涉及疾病> <肺泡蛋白沉着症> . ?x <涉及疾病> <气胸> . }
+mult_constraints_three_reverse_reverse	q3994:能检测肺泡蛋白沉着症、气胸和特发性间质性肺炎这些疾病的检查是什么？	select ?x where { ?x <涉及疾病> <肺泡蛋白沉着症> . ?x <涉及疾病> <气胸> . ?x <涉及疾病> <特发性间质性肺炎> . }
+mult_constraints_one_simple	q2174:《浮夸》的演唱者又被戏称为？	select ?x where { ?y <代表作品> <浮夸_（陈奕迅主唱的歌曲）> . ?y <别名> ?x . }
+mult_constraints_one_simple	q2194:《东方主义》的作者出生在哪个地方？	select ?y where { ?x <代表作品> <东方主义> . ?x <出生地> ?y . }
+mult_constraints_one_simple	q2205:唱《七友》的歌手喜欢吃什么食物？	select ?x where { ?y <代表作品> <七友_（梁汉文演唱歌曲）> . ?y <喜爱的食物> ?x . }
+mult_constraints_one_simple	q2210:同时参与到日本1996年和2015年两版"恶作剧之吻"的男演员是？	select ?x where { ?x <代表作品> <恶作剧之吻_（2015年李海娜，MIKE主演电视剧）> . <恶作剧之吻_（日本1996年柏原崇、佐藤蓝子主演电视剧）> <主演> ?x . }
+mult_constraints_one_simple	q2216:"乐府双璧"中哪一首是北魏时期的民歌？	select ?x where { ?x <创作年代> <北魏> . <乐府双璧> <分类> ?x . }
+mult_constraints_one_simple	q2220:请列述《西风颂》作者的成就。	select ?x where { ?y <主要成就> ?x . <西风颂> <作者> ?y . }
+simple_res	q3431:湿疹属于什么?	select ?x where { <湿疹> <类型> ?x. }
+simple_res	q3432:湿疹适合去什么科室就诊？	select ?x where { <湿疹> <科室> ?x. }
+simple_res	q3433:湿疹的同义词是什么？	select ?x where { <湿疹> <同义词> ?x. }
+simple_res	q3434:湿疹涉及哪些症状？	select ?x where { <湿疹> <涉及症状> ?x. }
+simple_res	q3435:先天性卵巢发育不全属于什么?	select ?x where { <先天性卵巢发育不全> <类型> ?x. }
+simple_res	q3436:外耳炎有怎样的症状？	select ?x where { <外耳炎> <症状> ?x. }
+simple_res	q3437:宫外孕属于什么?	select ?x where { <宫外孕> <类型> ?x. }
+simple_res	q3438:甲状腺肿属于什么?	select ?x where { <甲状腺肿> <类型> ?x. }
+simple_res	q3439:颈部淋巴结结核属于什么?	select ?x where { <颈部淋巴结结核> <类型> ?x. }
+simple_res	q3440:异位妊娠属于什么?	select ?x where { <异位妊娠> <类型> ?x. }
+simple_res	q3441:痛性抽搐属于什么?	select ?x where { <痛性抽搐> <类型> ?x. }
+simple_res	q3442:角结膜干燥症属于什么?	select ?x where { <角结膜干燥症> <类型> ?x. }
+simple_res	q3443:雀斑属于什么?	select ?x where { <雀斑> <类型> ?x. }
+simple_res	q3444:肾衰竭属于什么?	select ?x where { <肾衰竭> <类型> ?x. }
+simple_res	q3445:会厌炎属于什么?	select ?x where { <会厌炎> <类型> ?x. }
+simple_res	q3446:肝内胆管结石属于什么?	select ?x where { <肝内胆管结石> <类型> ?x. }
+simple_res	q3447:足癣患者在什么科室就诊？	select ?x where { <足癣> <就诊科室> ?x. }
+simple_res	q3448:新生儿溶血属于什么?	select ?x where { <新生儿溶血> <类型> ?x. }
+simple_res	q3449:神经性耳聋属于什么?	select ?x where { <神经性耳聋> <类型> ?x. }
+mult_jump_one	q2184:电视剧《失恋职人巧克力》的女主身高多少？	select ?x where { <失恋巧克力职人_（2014年日本富士电视台电视剧）> <主演> ?y . ?y <身高> ?x . }
+mult_jump_one	q2202:索肖队主教练有多高？	select ?x where { <索肖队> <主教练> ?y . ?y <身高> ?x . }
+mult_jump_one	q2207:角色谢尔顿·库珀最先于哪一年在影视作品中出现？	select ?x where { <谢尔顿·库珀> <登场作品> ?y . ?y <上映时间> ?x . }
+mult_jump_one	q2212:塑造了"平谷一点红"该角色形象的古装电视剧首播于哪个电视频道？	select ?x where { <平谷一点红> <登场作品> ?y . ?y <首播频道> ?x . }
+mult_jump_one	q2214:《南腔北调集》的作者是哪一年去世的？	select ?x where { <南腔北调集> <作者> ?y . ?y <逝世日期> ?x . }
+mult_jump_one	q2215:《资本论》的作者出生于哪个城市？	select ?x where { <资本论_（卡尔·马克思著作）> <作者> ?y . ?y <出生地> ?x . }
+mult_jump_one	q2218:《遐思录》的作者活了多少岁？	select ?x where { <遐思录> <作者> ?y . ?y <终年岁数> ?x . }
