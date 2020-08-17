@@ -16,6 +16,7 @@ simple_res_reverse	q236:给我一些3D电影。	select ?x where { ?x <类型> <3
 simple_res_reverse	q244:现在都有哪些计算机程序设计语言？	select ?x where { ?x <类别> <计算机程序设计语言>. }
 simple_res_reverse	q247:《蒙娜丽莎的微笑》的作者是谁？	select ?x where { ?x <代表作品> <蒙娜丽莎_（列奥纳多·达·芬奇画作）>. }
 simple_res_reverse	q265:SLK是哪个公司的产品？	select ?x where { ?x <主要产品> <奔驰SLK>. }
+simple_res_reverse	q268:和谐号有哪些车次？	select ?x where { ?x <列车类型> <和谐号动车组>. }
 simple_res_reverse	q283:谁会七十二变？	select ?x where { ?x <技能> <七十二变_（道教法术名称）>. }
 simple_res_reverse	q285:中国历史地图集是谁编纂的？	select ?x where { ?x <代表作品> <中国历史地图集>. }
 simple_res_reverse	q289:朝花夕拾的作者是谁？	select ?x where { ?x <代表作品> <朝花夕拾_（鲁迅散文集）>. }
@@ -23,7 +24,6 @@ simple_res_reverse	q319:博尔赫斯的作品有哪些？	select ?y where { ?y <
 simple_res_reverse	q326:有哪些国家使用欧元？	select ?x where { ?x <货币> <欧元>. }
 simple_res_reverse	q329:海贼王里乔巴拥有什么果实的能力？	select ?x where { ?x <拥有者> <乔巴_（《海贼王》中的角色）>. }
 simple_res_reverse	q332:我是上班族的一员，给我推销一些东西吧？	select ?x where { ?x <适用人群> <上班族_（亦叫月光族）>. }
-simple_res_reverse	q358:公开表明过对张国荣的崇拜之情的都有？	select ?x ?y where { ?x <偶像> <张国荣_（华语歌手、演员、音乐人）>. }
 simple_res_reverse	q367:英国导演诺兰的电影？	select ?x where { ?x <导演> <诺兰_（英国导演）>. }
 simple_res_reverse	q372:三国时期诸葛亮有什么发明？	select ?x where { ?x <发明者> <诸葛亮_（三国时期蜀汉丞相）>. }
 simple_res_reverse	q374:57哪些动画或漫画描绘了忍者们的故事？	select ?x where { ?x <类型> <忍者_（日本特殊职业）>. }
@@ -32,9 +32,6 @@ simple_res_reverse	q407:青年演员张子枫有哪些作品？	select ?x where 
 simple_res_reverse	q408:赵匡胤建立了哪个朝代？	select ?x where { ?x <开国皇帝> <赵匡胤_（宋朝开国皇帝）>. }
 simple_res_reverse	q455:赵薇导演的电影有哪些？	select ?x where { ?x <导演> <赵薇_（中国内地女演员、歌手、导演）>. }
 simple_res_reverse	q494:D大调卡农是谁的代表作？	select ?x where { ?x <代表作品> <D大调卡农>. }
-simple_res_reverse	q867:唐玄宗的出生地是哪里？	select ?y where { ?x <出生地> ?y. ?x <庙号> <玄宗_（帝王庙号）>. }
-simple_res_reverse	q1178:楚玉是哪位作家所创作的角色？	select ?x where { ?x <代表作品> ?z. ?z <主要人物> <楚玉>. }
-simple_res_reverse	q1183:丈夫是电视剧《红高粱》男主角的女明星？	select ?x where { ?x <丈夫> ?y. ?y <代表作品> <红高粱_（2014年郑晓龙执导周迅主演电视剧）>. }
 simple_res_reverse	q1294:听说咖啡是一个国家的国花，你知道是哪个国家吗？	select ?x where { ?x <国花> <咖啡_（世界三大饮料之一）>. }
 simple_res_reverse	q1305:冰与火之歌中有些人物？	select ?y where { ?y <登场作品> <冰与火之歌_（乔治·R·R·马丁所著小说）>. }
 simple_res_reverse	q1309:哥本哈根是哪个国家的首都？	select ?x where { ?x <首都> <哥本哈根_（丹麦王国首都）>. }
@@ -44,8 +41,8 @@ simple_res_reverse	q1361:有哪些地方的法律沿用大陆法系？	select ?x
 simple_res_reverse	q1432:流经湖南境内的河流？	select ?x where { ?x <流经地区> <湖南_（中国省级行政区）>. }
 simple_res_reverse	q1435:成语"西子捧心"形容的是哪位美女的美貌？	select ?x where { ?x <相关成语> <西子捧心>. }
 simple_res_reverse	q1440:济南是哪个省的省会城市？	select ?x where { ?x <政府驻地> <济南_（山东省省会）>. }
+simple_res_reverse	q1445:罗荣桓的妻子是谁？	select ?x where { ?x <配偶> <罗荣桓>. }
 simple_res_reverse	q1451:民国黎元洪创立了什么党派？	select ?x where { ?x <创始人> <黎元洪>. }
-simple_res_reverse	q1676:中国北京有一所大学校庆日是5月4日，它的现任校长是谁？	select ?y where { ?x <校庆日>"05-4". ?x <现任校长> ?y . ?x <所属地区> <北京_（中华人民共和国首都）>. }
 simple_res_reverse	q1687:房地产行业的上市公司有哪些？	select ?x where { ?x <行业> <房地产>. }
 simple_res_reverse	q1697:熔断机制实施时，证监会主席是谁？	select ?x where { ?x <政绩> <实施熔断机制>. }
 simple_res_reverse	q1789:深港股票市场交易互联互通机制是什么的全称？	select ?x where { ?x <全称> <深港股票市场交易互联互通机制>. }
@@ -64,11 +61,16 @@ simple_res_reverse	q1959:2G3G要退网影响的概念是？	select ?x where { ?x
 simple_res_reverse	q1975:以中药为主营产品的公司有？	select ?x where { ?x <主营产品> <中药>. }
 simple_res_reverse	q1987:以国内时效产品为主营业务的上市公司有？	select ?x where { ?x <主营业务> <国内时效产品>. }
 simple_res_reverse	q1993:NTDOY是哪个上市公司的股票代码？	select ?x where { ?x <股票代码> <NTDOY>. }
+simple_res_reverse	q2077:哪些药物可以用于抑郁症的治疗?	select ?x where { ?x <主要适用症> <抑郁症_（医疗百科）>. }
+simple_res_reverse	q2107:哪些学校属于C9联盟？	select ?y where { ?y <属性> <C9_（九校联盟）>. }
+simple_res_reverse	q2145:鹿晗主演过什么电影？	select ?x where { ?x <主演> <鹿晗>. }
+simple_res_reverse	q2146:鹿晗的男或女朋友是谁？	select ?x where { ?x <恋人> <鹿晗>. }
 simple_res_reverse	q2314:石原里美是主演的全部片子？	select ?x where { ?x <主演> <石原里美>. }
 simple_res_reverse	q2318:博尔赫斯的妻子是谁？	select ?y where { ?y <配偶> <豪尔赫·路易斯·博尔赫斯_（阿根廷作家）>. }
 simple_res_reverse	q2337:罗马神话中的丘比特是谁的儿子？	select ?x where { ?x <儿子> <丘比特_（罗马神话中的小爱神）>. }
 simple_res_reverse	q2343:给我推荐一些篮球游戏？	select ?x where { ?x <游戏类型> <篮球_（球类运动）>. }
 simple_res_reverse	q2344:哪些地方以意大利语作为官方语言？	select ?x where { ?x <官方语言> <意大利语>. }
+simple_res_reverse	q2353:许渊冲翻译过哪些作品？	select ?x where { ?x <译者> <许渊冲>. }
 simple_res_reverse	q2370:哪些动物属于长角羚属？	select ?x where { ?x <属> <长角羚属>. }
 simple_res_reverse	q2412:你知道张一山都演过什么剧吗？	select ?x where { ?x <主演> <张一山_（中国内地演员）>. }
 simple_res_reverse	q2420:在金庸小说《天龙八部》中，萧峰的父亲是谁？	select ?x where { ?x <儿子> <萧峰_（金庸武侠小说《天龙八部》的男主角）>. }

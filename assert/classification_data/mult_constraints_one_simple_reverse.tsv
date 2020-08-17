@@ -1,0 +1,16 @@
+mult_constraints_one_simple_reverse	q1084:指环王的导演还有哪些作品？	select ?y where { <指环王_（英美2001-2003年彼得·杰克逊执导系列电影）> <导演> ?x. ?y <导演> ?x. }
+mult_constraints_one_simple_reverse	q1511:哪些物质的化学式与碳相同？	select ?y where { <碳> <化学式> ?x. ?y <化学式> ?x. }
+mult_constraints_one_simple_reverse	q1600:指环王导演编剧过哪些电影？	select ?y where { <指环王_（英美2001-2003年彼得·杰克逊执导系列电影）> <导演> ?x. ?y <编剧> ?x. }
+mult_constraints_one_simple_reverse	q538:有哪些典故出自司马迁的代表作？	select ?x where { <司马迁_（西汉时期文学家、史学家、思想家）> <代表作品> ?y. ?x <典源> ?y. }
+mult_constraints_one_simple_reverse	q659:哪些国家和加拿大有相同的政治体制？	select ?x where { <加拿大_（北美洲国家）> <政治体制> ?y. ?x <政治体制> ?y. }
+mult_constraints_one_simple_reverse	q807:克苏鲁属于哪个群体都有哪些成员？	select ?x where { <克苏鲁_（克苏鲁的呼唤神话小说里面的邪灵角色）> <所属> ?y. ?x <所属> ?y. }
+mult_constraints_one_simple_reverse	q940:古典小说中武大郎的弟弟的原型是谁？	select ?x where { <武大郎_（古典小说人物）> <弟弟> ?y. ?x <原型> ?y. }
+mult_constraints_one_simple_reverse	q1054:歌曲《那些年》的原唱还有哪些歌曲？	select ?x where { <那些年_（《那些年，我们一起追的女孩》主题曲）> <歌曲原唱> ?y. ?x <歌曲原唱> ?y. }
+mult_constraints_one_simple_reverse	q1121:和叔本华拥有相同信仰的都有那些人？	select ?x where { <亚瑟·叔本华> <信仰> ?y. ?x <信仰> ?y. }
+mult_constraints_one_simple_reverse	q1162:和博尔赫斯同一民族的都有哪些人？	select ?x where { <豪尔赫·路易斯·博尔赫斯_（阿根廷作家）> <民族> ?y. ?x <民族> ?y. }
+mult_constraints_one_simple_reverse	q1234:歌曲《青花瓷》所属专辑有哪些歌曲？	select ?x where { <青花瓷_（周杰伦方文山创作歌曲）> <所属专辑> ?y. ?x <所属专辑> ?y. }
+mult_constraints_one_simple_reverse	q1674:钢铁侠有哪些队友？	select ?x where { <史塔克_（美国动漫及电影钢铁侠中的人物）> <所属团队> ?y. ?x <所属团队> ?y. }
+mult_constraints_one_simple_reverse	q1930:混泥土的下游上市公司？	select ?x where { <混泥土> <下游> ?y. ?x <主营产品> ?y. }
+mult_constraints_one_simple_reverse	q1931:混泥土的上游上市公司？	select ?x where { <混泥土> <上游> ?y. ?x <主营产品> ?y. }
+mult_constraints_one_simple_reverse	q1933:食用油的上游上市公司？	select ?x where { <食用油> <上游> ?y. ?x <主营产品> ?y. }
+mult_constraints_one_simple_reverse	q1934:食用油的下游上市公司？	select ?x where { <食用油> <下游> ?y. ?x <主营产品> ?y. }

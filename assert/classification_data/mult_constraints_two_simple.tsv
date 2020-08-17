@@ -1,0 +1,1 @@
+mult_constraints_two_simple	q990:无产阶级革命家的代表人物、对立统一原则的创始人在哪里去世？	select ?y where { <无产阶级革命家> <代表人物> ?x. <对立统一> <创始人> ?x. ?x <逝世地> ?y. }

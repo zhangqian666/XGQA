@@ -223,10 +223,12 @@ class XGProcessor(DataProcessor):
 
     def get_labels(self):
         """See base class."""
-        return ["simple_res", "simple_res_reverse", "simple_attr", "mult_jump_one",
+        return ["simple_res", "simple_res_reverse", "simple_attr",
                 "mult_constraints_two", "mult_constraints_three",
                 "mult_constraints_two_reverse", "mult_constraints_three_reverse",
-                "mult_constraints_two_simple", "mult_constraints_three_simple",
+                "mult_constraints_one_simple",
+                "mult_constraints_two_simple",
+                "mult_constraints_one_simple_reverse",
                 "mult_constraints_one_reverse_simple",
                 "mult_constraints_two_reverse_simple",
                 "mult_constraints_three_reverse_simple"]
@@ -243,7 +245,7 @@ class XGProcessor(DataProcessor):
                 label = "simple_res"
             else:
                 label = tokenization.convert_to_unicode(line[0])
-            print(text_a,label)
+            print(text_a, label)
             examples.append(
                 InputExample(guid=guid, text_a=text_a, text_b=None, label=label))
         return examples
