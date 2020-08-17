@@ -242,7 +242,7 @@ class XGProcessor(DataProcessor):
             guid = "%s-%s" % (set_type, i)
             text_a = tokenization.convert_to_unicode(line[1])
             if set_type == "test":
-                label = "simple_res"
+                label = "mult_constraints_three_reverse_simple"
             else:
                 label = tokenization.convert_to_unicode(line[0])
             examples.append(
