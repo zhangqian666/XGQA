@@ -1,254 +1,254 @@
-type	string	select
-simple_res	一战的主要影响？	select ?x where { <第一次世界大战_（20世纪初帝国主义国家之间的非正义战争）> <影响> ?x. }
-simple_res	南唐后主老家在哪？	select ?x where { <李煜_（南唐李后主）> <籍贯> ?x. }
-simple_res	著名建筑埃菲尔铁塔有多少层？	select ?x where { <埃菲尔铁塔_（巴黎城市地标之一）> <建筑层数> ?x. }
-simple_res	品牌纪梵希的英文名称是什么？	select ?x where { <纪梵希> <英文名称> ?x. }
-simple_res	京剧成为非物质文化遗产的时间是？	select ?x where { <京剧_（中国国粹）> <批准时间> ?x. }
-simple_res	马拉松全长多少？	select ?x where { <马拉松_（长跑比赛项目）> <总长> ?x. }
-simple_res	大漠英雄传中郭靖的妻子是谁？	select ?x where { <郭靖_（金庸武侠小说《射雕英雄传》男主角）> <妻子> ?x. }
-simple_res	漫威里灭霸翻译成英文应该是什么？	select ?x where { <灭霸> <外文名> ?x. }
-simple_res	adidas是哪个国家的公司？	select ?x where { <adidas> <总部> ?x. }
-simple_res	腾讯公司的总部在哪里？	select ?x where { <腾讯> <总部地点> ?x. }
-simple_res	iPhone使用的是什么操作系统？	select ?x where { <iPhone> <操作系统> ?x. }
-simple_res	香港四大天王是指哪四个人？	select ?x where { <四大天王_（香港四大天王）> <成员> ?x. }
-simple_res	电影《末路记事》是在哪个国家拍摄的？	select ?x where { <末路记事> <拍摄地点> ?x. }
-simple_res	水观乡的占地多少？	select ?x where { <水观乡> <面积> ?x. }
-simple_res	月全食的发生分为哪几个过程？	select ?x where { <月全食> <过程> ?x. }
-simple_res	书籍《绑在一起》是由哪个出版社出版的？	select ?x where { <绑在一起> <出版社> ?x. }
-simple_res	乌拉圭使用什么货币？	select ?x where { <乌拉圭> <货币> ?x. }
-simple_res	花样滑冰双人滑选手隋文静的舞伴是？	select ?x where { <隋文静> <搭档> ?x. }
-simple_res	如何向老外表达"人艰不拆"？	select ?y where { <人艰不拆_（网络语）> <外文名> ?y. }
-simple_res	周星驰是什么血型？	select ?x where { <周星驰> <血型> ?x. }
-simple_res	汽车的英文名是什么？	select ?x where { <汽车> <英文名> ?x. }
-simple_res	土豆的斗破苍穹写了多少字？	select ?x where { <斗破苍穹_（天蚕土豆第二部长篇小说）> <总字数> ?x. }
-simple_res_reverse	《湖上草》是谁的诗？	select ?x where { ?x <主要作品> <湖上草>. }
-simple_res_reverse	希拉里的老公是谁？	select ?x where { ?x <夫人> <希拉里·黛安·罗德姆·克林顿>. }
-simple_res_reverse	唐嫣工作室旗下都有哪些艺人？	select ?x where { ?x <经纪公司> <唐嫣工作室>. }
-simple_res_reverse	《悼李夫人赋》是谁的作品？	select ?x where { ?x <代表作品> <悼李夫人赋>. }
-simple_res_reverse	实行议会制君主立宪制的有哪些国家？	select ?x where { ?x <政治体制> <议会制君主立宪制>. }
-simple_res_reverse	《胡笳十八拍》是谁的传世之作？	select ?x where { ?x <主要作品> <胡笳十八拍_（长篇骚体叙事诗）>. }
-simple_res_reverse	我饿了，数据库里有什么好吃的吗？	select ?x where { ?x <类型> <美食>. }
-simple_res_reverse	奥斯陆是哪个国家的首都？	select ?x where { ?x <首都> <奥斯陆>. }
-simple_res_reverse	请列出马尔克斯的小说作品？	select ?x where { ?x <作者> <加夫列尔·加西亚·马尔克斯>. }
-simple_res_reverse	给出所有是枝裕和导演的电影？	select ?x where { ?x <导演> <是枝裕和>. }
-simple_res_reverse	大禹建立了哪个朝代？	select ?x where { ?x <开国君主> <禹_（夏朝开国君主）>. }
-simple_res_reverse	菲尔·奈特创立了什么品牌？	select ?x where { ?x <创始人> <菲尔·奈特>. }
-simple_res_reverse	有本巨著叫《中国音韵学》，它是谁写的？	select ?x where { ?x <代表作品> <中国音韵学>. }
-simple_res_reverse	爱伦·坡有哪些作品？	select ?y where { ?y <作者> <埃德加·爱伦·坡>. }
-simple_res_reverse	给我一些3D电影。	select ?x where { ?x <类型> <3D_（三维的英文缩写）>. }
-simple_res_reverse	现在都有哪些计算机程序设计语言？	select ?x where { ?x <类别> <计算机程序设计语言>. }
-simple_res_reverse	《蒙娜丽莎的微笑》的作者是谁？	select ?x where { ?x <代表作品> <蒙娜丽莎_（列奥纳多·达·芬奇画作）>. }
-simple_res_reverse	SLK是哪个公司的产品？	select ?x where { ?x <主要产品> <奔驰SLK>. }
-simple_res_reverse	和谐号有哪些车次？	select ?x where { ?x <列车类型> <和谐号动车组>. }
-simple_res_reverse	谁会七十二变？	select ?x where { ?x <技能> <七十二变_（道教法术名称）>. }
-simple_res_reverse	中国历史地图集是谁编纂的？	select ?x where { ?x <代表作品> <中国历史地图集>. }
-simple_res_reverse	朝花夕拾的作者是谁？	select ?x where { ?x <代表作品> <朝花夕拾_（鲁迅散文集）>. }
-simple_res_reverse	博尔赫斯的作品有哪些？	select ?y where { ?y <作者> <豪尔赫·路易斯·博尔赫斯_（阿根廷作家）>. }
-simple_attr	令狐冲和岳灵珊是什么关系？	select ?x where { <令狐冲> ?x <岳灵珊>. }
-mult_constraints_two_simple	无产阶级革命家的代表人物、对立统一原则的创始人在哪里去世？	select ?y where { <无产阶级革命家> <代表人物> ?x. <对立统一> <创始人> ?x. ?x <逝世地> ?y. }
-mult_constraints_two_reverse_simple	由景甜主演，张艺谋导演的电影的中文名是？	select ?x where { ?y <主演> <景甜>. ?y <导演> <张艺谋>. ?y <中文名> ?x. }
-mult_constraints_two_reverse_simple	古希腊诗人有哪些代表作品？	select ?y where { ?x <国籍> <古希腊_（爱琴海-色雷斯文明圈的黄金时期）>. ?x <职业> <诗人_（汉语词语）>. ?x <代表作品> ?y. }
-mult_constraints_two_reverse_simple	由伊达勇登导演、隅泽克之编剧的动画在哪个电视台首播？	select ?y where { ?x <导演> <伊达勇登>. ?x <编剧> <隅泽克之>. ?x <首播电视台> ?y. }
-mult_constraints_two_reverse_simple	我国近代擅长画虾的绘画大师出生在哪座城市？	select ?y where { ?x <职业> <画家>. ?x <代表作品> <墨虾>. ?x <出生地> ?y. }
-mult_constraints_two_reverse_simple	毕业于中央大学，出生于长野的日本作家有哪些代表作品？	select ?y where { ?x <毕业院校> <中央大学_（日本中央大学）>. ?x <出生地> <长野_（日本县份）>. ?x <代表作品> ?y. }
-mult_constraints_two_reverse_simple	诺兰执导的科幻片的英文名都有哪些？	select ?y where { ?x <导演> <诺兰_（英国导演）>. ?x <类型> <科学幻想>. ?x <外文名> ?y. }
-mult_constraints_two_reverse_simple	由大隈重信创始的综合性大学的英文名是？	select ?y where { ?x <创始人> <大隈重信>. ?x <类别> <综合性大学>. ?x <英文名> ?y. }
-mult_constraints_two_reverse_simple	写出《诀别书》和《白头吟》的这位才女是哪个朝代的？	select ?x where { ?y <主要作品> <诀别书>. ?y <主要作品> <白头吟_（卓文君诗作）>. ?y <所处时代> ?x. }
-mult_constraints_two_reverse_simple	海贼王里最贪财的主角是什么星座的？	select ?y where { ?x <登场作品> <海贼王_（尾田荣一郎创作的漫画作品）>. ?x <喜欢的东西> <金钱_（汉语词汇）>. ?x <星座> ?y. }
-mult_constraints_two_reverse	我们会在哪个民俗节日里猜灯谜？	select ?x where { ?x <类别> <民俗>. ?x <节日活动> <猜灯谜>. }
-mult_constraints_two_reverse	武汉大学出了哪些科学家	select ?x where { ?x <职业> <科学家_（从事科学研究的人群）>. ?x <毕业院校> <武汉大学>. }
-mult_constraints_two_reverse	拜仁的西班牙球员都有谁？	select ?x where { ?x <所属运动队> <拜仁慕尼黑足球俱乐部>. ?x <国籍> <西班牙_（西班牙王国）>. }
-mult_constraints_two_reverse	武汉大学出了哪些化学家	select ?x where { ?x <职业> <化学家>. ?x <毕业院校> <武汉大学>. }
-mult_constraints_two_reverse	天津大学出过哪些科学家？	select ?x where { ?x <职业> <科学家_（从事科学研究的人群）>. ?x <毕业院校> <天津大学>. }
-mult_constraints_two_reverse	南京大学出过哪些企业家？	select ?x where { ?x <职业> <企业家>. ?x <毕业院校> <南京大学>. }
-mult_constraints_two_reverse	有哪些主持人毕业于北京大学？	select ?x where { ?x <职业> <主持人>. ?x <毕业院校> <北京大学>. }
-mult_constraints_two_reverse	代表作品是黄飞鸿且信奉佛教的是谁？	select ?x where { ?x <信仰> <佛教>. ?x <代表作品> <黄飞鸿>. }
-mult_constraints_two_reverse	哈佛大学出了哪些总统？	select ?x where { ?x <职业> <总统_（国家元首称谓）>. ?x <毕业院校> <哈佛大学>. }
-mult_constraints_two_reverse	少女时代的门面担当是谁？	select ?x where { ?x <所属组合> <少女时代_（韩国女子演唱团体）>. ?x <队内职务> <门面担当>. }
-mult_constraints_two_reverse	北京大学培养了哪些中科院院士？	select ?x where { ?x <毕业院校> <北京大学>. ?x <职业> <中国科学院院士>. }
-mult_constraints_two_reverse	有哪些哲学家抱有无神论信仰？	select ?x where { ?x <职业> <哲学家_（基础含义）>. ?x <信仰> <无神论_（一种哲学观点）>. }
-mult_constraints_two_reverse	北京大学出了哪些哲学家	select ?x where { ?x <职业> <哲学家_（基础含义）>. ?x <毕业院校> <北京大学>. }
-mult_constraints_two_reverse	清华大学培养了哪些中科院院士？	select ?x where { ?x <毕业院校> <清华大学>. ?x <职业> <中国科学院院士>. }
-mult_constraints_two_reverse	陈奕迅的歌曲里由他自己填词的有哪些？	select ?x where { ?x <歌曲原唱> <陈奕迅>. ?x <填词> <陈奕迅>. }
-mult_constraints_two_reverse	周杰伦写的摇滚乐有哪些？	select ?x where { ?x <谱曲> <周杰伦>. ?x <音乐风格> <摇滚>. }
-mult_constraints_two_reverse	郭敬明写过哪些长篇小说？	select ?x where { ?x <作者> <郭敬明>. ?x <文学体裁> <长篇小说>. }
-mult_constraints_two_reverse	章子怡和范冰冰一起主演过的作品有哪些？	select ?x where { ?x <主演> <章子怡>. ?x <主演> <范冰冰>. }
-mult_constraints_two_reverse	范冰冰和陈柏霖合作过哪些作品呢？	select ?x where { ?x <主演> <陈柏霖_（台湾演员）>. ?x <主演> <范冰冰>. }
-mult_constraints_two_reverse	哈佛大学出了哪些文学家？	select ?x where { ?x <职业> <文学家>. ?x <毕业院校> <哈佛大学>. }
-mult_constraints_two_reverse	北京大学出了哪些地质学家	select ?x where { ?x <职业> <地质学家>. ?x <毕业院校> <北京大学>. }
-mult_constraints_two_reverse	复旦大学出了哪些科学家	select ?x where { ?x <职业> <科学家_（从事科学研究的人群）>. ?x <毕业院校> <复旦大学>. }
-mult_constraints_two_reverse	清华大学出了哪些科学家	select ?x where { ?x <职业> <科学家_（从事科学研究的人群）>. ?x <毕业院校> <清华大学>. }
-mult_constraints_two_reverse	亚洲哪个国家实行君主立宪制？	select ?x where { ?x <所属洲> <亚洲>. ?x <政治体制> <议会制君主立宪制>. }
-mult_constraints_two_reverse	华纳签了哪些回族歌手？	select ?x where { ?x <唱片公司> <华纳唱片>. ?x <民族> <回族>. }
-mult_constraints_two_reverse	主要分布于东南亚和东亚的宗教有？	select ?x where { ?x <主要分布区域> <东亚>. ?x <主要分布区域> <东南亚_（世界地理概念）>. }
-mult_constraints_two_reverse	浙江大学出了哪些物理学家	select ?x where { ?x <职业> <物理学家_（探索、研究物理学的科学家）>. ?x <毕业院校> <浙江大学>. }
-mult_constraints_two_reverse	清华大学出了哪些数学家	select ?x where { ?x <职业> <数学家_（数学家（世界著名数学家））>. ?x <毕业院校> <清华大学>. }
-mult_constraints_two_reverse	卢浮宫收藏了达芬奇的哪部画作？	select ?x where { ?x <收藏> <卢浮宫_（世界四大博物馆之一）>. ?x <作者> <达·芬奇_（欧洲文艺复兴时期最完美的代表）>. }
-mult_constraints_two_reverse	德国有哪些著名乒乓球员？	select ?x where { ?x <国籍> <德国_（德意志联邦共和国）>. ?x <运动项目> <乒乓球>. }
-mult_constraints_two_reverse	有一种起源于英格兰哈罗公学的活动，它是什么？	select ?x where { ?x <起源> <英格兰>. ?x <起源> <哈罗公学>. }
-mult_constraints_two_reverse	由周杰伦作曲以及演唱的歌曲是哪首？	select ?x where { ?x <作曲> <周杰伦>. ?x <演唱> <周杰伦>. }
-mult_constraints_two_reverse	福茂唱片的签约歌手有哪些？	select ?x where { ?x <经纪公司> <福茂唱片>. ?x <职业> <歌手_（职业名称）>. }
-mult_constraints_two_reverse	有哪些满族演员？	select ?x where { ?x <民族> <满族>. ?x <职业> <演员_（职业）>. }
-mult_constraints_two_reverse	武汉大学出了哪些数学家	select ?x where { ?x <职业> <数学家_（数学家（世界著名数学家））>. ?x <毕业院校> <武汉大学>. }
-mult_constraints_two_reverse	亚洲哪个国家的主要民族是印度人？	select ?x where { ?x <所属洲> <亚洲>. ?x <主要民族> <印度人>. }
-mult_constraints_two_reverse	蝙蝠侠和超人共同参与的团队是哪个？	select ?x where { ?x <主要成员> <超人_（美国DC漫画旗下超级英雄）>. ?x <主要成员> <蝙蝠侠_（美国DC漫画旗下超级英雄）>. }
-mult_constraints_two_reverse	由董洁和陈坤共同主演的电视剧？	select ?x where { ?x <主演> <董洁_（中国内地女演员）>. ?x <主演> <陈坤_（中国内地男演员、歌手）>. }
-mult_constraints_two_reverse	清华大学出了哪些文学家	select ?x where { ?x <职业> <文学家>. ?x <毕业院校> <清华大学>. }
-mult_constraints_two_reverse	从古到今，哪些个欧洲国家有巴斯克人聚居？	select ?x where { ?x <所属洲> <欧洲_（地球七大洲之一）>. ?x <主要民族> <巴斯克人>. }
-mult_constraints_two_reverse	复旦大学出了哪些物理学家	select ?x where { ?x <职业> <物理学家_（探索、研究物理学的科学家）>. ?x <毕业院校> <复旦大学>. }
-mult_constraints_two_reverse	武汉大学出了哪些翻译家	select ?x where { ?x <职业> <翻译家>. ?x <毕业院校> <武汉大学>. }
-mult_constraints_two_reverse	南京大学出过哪些科学家？	select ?x where { ?x <职业> <科学家_（从事科学研究的人群）>. ?x <毕业院校> <南京大学>. }
-mult_constraints_two_reverse	复旦大学出了哪些文学家	select ?x where { ?x <职业> <文学家>. ?x <毕业院校> <复旦大学>. }
-mult_constraints_two_reverse	王菲演唱的曲子中，哪些是由林夕填过词？	select ?x where { ?x <填词> <林夕_（著名填词人）>. ?x <歌曲原唱> <王菲_（华语女歌手、演员）>. }
-mult_constraints_two_reverse	复旦大学出了哪些导演	select ?x where { ?x <职业> <导演>. ?x <毕业院校> <复旦大学>. }
-mult_constraints_two_reverse	清华大学出了哪些企业家	select ?x where { ?x <职业> <企业家>. ?x <毕业院校> <清华大学>. }
-mult_constraints_two_reverse	北京大学出了哪些文学家	select ?x where { ?x <职业> <文学家>. ?x <毕业院校> <北京大学>. }
-mult_constraints_two_reverse	浙江大学出了哪些生物学家	select ?x where { ?x <职业> <生物学家>. ?x <毕业院校> <浙江大学>. }
-mult_constraints_two_reverse	清华大学出了哪些导演	select ?x where { ?x <职业> <导演>. ?x <毕业院校> <清华大学>. }
-mult_constraints_two_reverse	浙江大学出了哪些翻译家	select ?x where { ?x <职业> <翻译家>. ?x <毕业院校> <浙江大学>. }
-mult_constraints_two_reverse	摩羯座的物理学家有哪些？	select ?x where { ?x <星座> <摩羯座_（占星学）>. ?x <职业> <物理学家_（探索、研究物理学的科学家）>. }
-mult_constraints_two_reverse	从古到今，阿拉伯国家里有哪些是君主专制的体制？	select ?x where { ?x <主要民族> <阿拉伯人_（西亚和北非的伊斯兰文化群体）>. ?x <政治体制> <君主专制政体>. }
-mult_constraints_two_reverse	北京大学出了哪些导演	select ?x where { ?x <职业> <导演>. ?x <毕业院校> <北京大学>. }
-mult_constraints_two_reverse	陈思诚做导演以后，请刘昊然主演的片子有什么？	select ?x where { ?x <主演> <刘昊然>. ?x <导演> <陈思成_（青年导演、演员、编剧）>. }
-mult_constraints_two_reverse	浙江大学出了哪些企业家	select ?x where { ?x <职业> <企业家>. ?x <毕业院校> <浙江大学>. }
-mult_constraints_two_reverse	章子怡和何润东一起主演过的作品有哪些？	select ?x where { ?x <主演> <章子怡>. ?x <主演> <何润东>. }
-mult_constraints_two_reverse	复旦大学出了哪些企业家	select ?x where { ?x <职业> <企业家>. ?x <毕业院校> <复旦大学>. }
-mult_constraints_two_reverse	清华大学出了哪些作家	select ?x where { ?x <职业> <作家_（汉语词语）>. ?x <毕业院校> <清华大学>. }
-mult_constraints_two_reverse	武汉大学出了哪些经济学家	select ?x where { ?x <职业> <经济学家_（拥有原创的经济学基础理论的经济学人）>. ?x <毕业院校> <武汉大学>. }
-mult_constraints_two_reverse	梅丽尔·斯特里普曾经在克林特·伊斯特伍德的哪一部经典电影里出演女主角？	select ?x where { ?x <主演> <梅丽尔·斯特里普>. ?x <导演> <克林特·伊斯特伍德>. }
-mult_constraints_two_reverse	吉林大学出了哪些翻译家？	select ?x where { ?x <职业> <翻译家>. ?x <毕业院校> <吉林大学>. }
-mult_constraints_two_reverse	哪部电影是由周迅和彭于晏共同出演？	select ?x where { ?x <主演> <周迅_（中国内地女演员、歌手）>. ?x <主演> <彭于晏>. }
-mult_constraints_two_reverse	浙江大学出了哪些数学家	select ?x where { ?x <职业> <数学家_（数学家（世界著名数学家））>. ?x <毕业院校> <浙江大学>. }
-mult_constraints_two_reverse	由林玉芬导演、郑爽主演的作品是哪一部？	select ?x where { ?x <主演> <郑爽_（中国内地90后女演员）>. ?x <导演> <林玉芬>. }
-mult_constraints_two_reverse	有哪些苗族的歌唱家？	select ?x where { ?x <民族> <苗族>. ?x <职业> <歌唱家>. }
-mult_constraints_two_reverse	哪些技术可以同时应用于农业和工业？	select ?x where { ?x <应用领域> <工业>. ?x <应用领域> <农业>. }
-mult_constraints_two_reverse	鲁迅写过哪些散文诗集？	select ?x where { ?x <作者> <鲁迅_（文学家、思想家）>. ?x <类别> <散文诗集>. }
-mult_constraints_two_reverse	清华大学出了哪些地质学家	select ?x where { ?x <职业> <地质学家>. ?x <毕业院校> <清华大学>. }
-mult_constraints_two_reverse	复旦大学出了哪些经济学家	select ?x where { ?x <职业> <经济学家_（拥有原创的经济学基础理论的经济学人）>. ?x <毕业院校> <复旦大学>. }
-mult_constraints_two_reverse	四川大学出了哪些数学家	select ?x where { ?x <职业> <数学家_（数学家（世界著名数学家））>. ?x <毕业院校> <四川大学>. }
-mult_constraints_two_reverse	在以色列聚居的希伯来人的后代是什么人？	select ?x where { ?x <祖先> <希伯来人>. ?x <聚居国家> <以色列>. }
-mult_constraints_two_reverse	在电击文库MAGAZINE上连载的魔幻类型的漫画是?？	select ?x where { ?x <连载杂志> <电击文库MAGAZINE>. ?x <类型> <魔幻>. }
-mult_constraints_two_reverse	北京大学出了哪些数学家	select ?x where { ?x <职业> <数学家_（数学家（世界著名数学家））>. ?x <毕业院校> <北京大学>. }
-mult_constraints_two_reverse	中国的航天员有哪些？	select ?x where { ?x <国籍> <中华人民共和国>. ?x <职业> <航天员>. }
-mult_constraints_two_reverse	冰与火之歌中有哪些男性角色？	select ?y where { ?y <登场作品> <冰与火之歌_（乔治·R·R·马丁所著小说）>. ?y <性别> <男>. }
-mult_constraints_two_reverse	厦门大学出过哪些企业家？	select ?x where { ?x <职业> <企业家>. ?x <毕业院校> <厦门大学>. }
-mult_constraints_two_reverse	武汉大学出了哪些文学家	select ?x where { ?x <职业> <文学家>. ?x <毕业院校> <武汉大学>. }
-mult_constraints_two_reverse	清华大学出了哪些物理学家	select ?x where { ?x <职业> <物理学家_（探索、研究物理学的科学家）>. ?x <毕业院校> <清华大学>. }
-mult_constraints_two_reverse	浙江大学出了哪些作家	select ?x where { ?x <职业> <作家_（汉语词语）>. ?x <毕业院校> <浙江大学>. }
-mult_constraints_two_reverse	武汉大学出了哪些物理学家	select ?x where { ?x <职业> <物理学家_（探索、研究物理学的科学家）>. ?x <毕业院校> <武汉大学>. }
-mult_constraints_two_reverse	清华大学出了哪些经济学家	select ?x where { ?x <职业> <经济学家_（拥有原创的经济学基础理论的经济学人）>. ?x <毕业院校> <清华大学>. }
-mult_constraints_two_reverse	大连理工大学出过哪些企业家？	select ?x where { ?x <职业> <企业家>. ?x <毕业院校> <大连理工大学>. }
-mult_constraints_two_reverse	由妮娜和伊恩共同主演的美剧？	select ?x where { ?x <主演> <妮娜·杜波夫>. ?x <主演> <伊恩·萨默海尔德>. }
-mult_constraints_two_reverse	在纳斯达克上市的社交网络公司有?？	select ?x where { ?x <上市市场> <纳斯达克>. ?x <领域> <社交网站_（社会性网络网站）>. }
-mult_constraints_two_reverse	莫文蔚和张柏芝共同出演的电影？	select ?x where { ?x <主演> <莫文蔚>. ?x <主演> <张柏芝>. }
-mult_constraints_two_reverse	卡内基梅隆大学出过哪些计算机科学家？	select ?x where { ?x <职业> <计算机科学家>. ?x <毕业院校> <卡内基·梅隆大学>. }
-mult_constraints_two_reverse	罗马帝国信仰天主教的人有？	select ?x where { ?x <国籍> <罗马帝国_（古代罗马文明的一个阶段）>. ?x <信仰> <天主教>. }
-mult_constraints_two_reverse	又被称为肺形草和寒莓的植物是什么？	select ?x where { ?x <别称> <肺形草>. ?x <别称> <寒莓>. }
-mult_constraints_two_reverse	出生于川沙县的学者是谁？	select ?x where { ?x <出生地> <川沙县>. ?x <职业> <学者_（名词解析）>. }
-mult_constraints_two_reverse	四川大学出了哪些经济学家	select ?x where { ?x <职业> <经济学家_（拥有原创的经济学基础理论的经济学人）>. ?x <毕业院校> <四川大学>. }
-mult_constraints_two_reverse	南京大学出了哪些翻译家？	select ?x where { ?x <职业> <翻译家>. ?x <毕业院校> <南京大学>. }
-mult_constraints_two_reverse	浙江大学出了哪些经济学家	select ?x where { ?x <职业> <经济学家_（拥有原创的经济学基础理论的经济学人）>. ?x <毕业院校> <浙江大学>. }
-mult_constraints_two_reverse	四川大学出了哪些科学家	select ?x where { ?x <职业> <科学家_（从事科学研究的人群）>. ?x <毕业院校> <四川大学>. }
-mult_constraints_two_reverse	李隼教练的弟子，打法为弧圈结合快攻的运动员？	select ?x where { ?x <专业特点> <弧圈结合快攻打法>. ?x <教练> <李隼>. }
-mult_constraints_two_reverse	北京大学出了哪些翻译家	select ?x where { ?x <职业> <翻译家>. ?x <毕业院校> <北京大学>. }
-mult_constraints_two_reverse	北京大学出了哪些企业家	select ?x where { ?x <职业> <企业家>. ?x <毕业院校> <北京大学>. }
-mult_constraints_two_reverse	章子怡和李安合作过什么作品？	select ?x where { ?x <主演> <章子怡>. ?x <导演> <李安_（华人导演）>. }
-mult_constraints_two_reverse	亚洲哪个国家的主要宗教是逊尼派？	select ?x where { ?x <所属洲> <亚洲>. ?x <主要宗教> <逊尼派>. }
-mult_constraints_two_reverse	四川大学出了哪些导演	select ?x where { ?x <职业> <导演>. ?x <毕业院校> <四川大学>. }
-mult_constraints_two_reverse	导演诺兰和休·杰克曼合作的电影是哪一部？	select ?x where { ?x <主演> <休·杰克曼>. ?x <导演> <诺兰_（英国导演）>. }
-mult_constraints_two_reverse	有哪些藏族歌手？	select ?x where { ?x <民族> <藏族>. ?x <职业> <歌手_（职业名称）>. }
-mult_constraints_two_reverse	剑桥大学培养出的著名物理学家有哪些？	select ?x where { ?x <毕业院校> <剑桥大学>. ?x <职业> <物理学家_（探索、研究物理学的科学家）>. }
-mult_constraints_two_reverse	葛优和周润发一起演过什么电影？	select ?x where { ?x <主演> <葛优>. ?x <主演> <周润发>. }
-mult_constraints_two_reverse	东南大学出过哪些企业家？	select ?x where { ?x <职业> <企业家>. ?x <毕业院校> <东南大学>. }
-mult_constraints_two_reverse	亚洲哪个国家的主要民族是华人？	select ?x where { ?x <所属洲> <亚洲>. ?x <主要民族> <华人_（族群）>. }
-mult_constraints_two_reverse	四川大学出了哪些生物学家	select ?x where { ?x <职业> <生物学家>. ?x <毕业院校> <四川大学>. }
-mult_constraints_two_reverse	浙江大学出了哪些化学家	select ?x where { ?x <职业> <化学家>. ?x <毕业院校> <浙江大学>. }
-mult_constraints_two_reverse	北京大学出了哪些诗人	select ?x where { ?x <职业> <诗人_（汉语词语）>. ?x <毕业院校> <北京大学>. }
-mult_constraints_two_reverse	武汉大学出了哪些导演	select ?x where { ?x <职业> <导演>. ?x <毕业院校> <武汉大学>. }
-mult_constraints_two_reverse	毕业于哈工大的乒乓球运动员都有谁？	select ?x where { ?x <运动项目> <乒乓球>. ?x <毕业院校> <哈尔滨工业大学>. }
-mult_constraints_two_reverse	哈佛大学出了哪些计算机科学家？	select ?x where { ?x <职业> <计算机科学家>. ?x <毕业院校> <哈佛大学>. }
-mult_constraints_two_reverse	哈佛大学出了哪些数学家？	select ?x where { ?x <职业> <数学家_（数学家（世界著名数学家））>. ?x <毕业院校> <哈佛大学>. }
-mult_constraints_two_reverse	南京大学出过哪些生物学家？	select ?x where { ?x <职业> <生物学家>. ?x <毕业院校> <南京大学>. }
-mult_constraints_two_reverse	复旦大学出了哪些生物学家	select ?x where { ?x <职业> <生物学家>. ?x <毕业院校> <复旦大学>. }
-mult_constraints_two_reverse	有哪些西班牙语的剧情片？	select ?x where { ?x <语言> <西班牙语_（语言）>. ?x <类型> <剧情>. }
-mult_constraints_two_reverse	我们会在哪个民俗节日里赏灯？	select ?x where { ?x <类别> <民俗>. ?x <节日活动> <赏灯>. }
-mult_constraints_two_reverse	北京大学出了哪些政治家	select ?x where { ?x <职业> <政治家>. ?x <毕业院校> <北京大学>. }
-mult_constraints_two_reverse	拿加沙足球俱乐部的后卫是谁？	select ?x where { ?x <所属运动队> <拿加沙足球俱乐部>. ?x <技术特点> <后卫_（足球运动比赛队员的位置名称）>. }
-mult_constraints_two_reverse	王菲演唱，林夕填词的歌曲有哪些？	select ?x where { ?x <演唱> <王菲_（华语女歌手、演员）>. ?x <词> <林夕_（著名填词人）>. }
-mult_constraints_two	《革命之路》与《朗读者》的女主角是谁？	select ?x where { <革命之路_（2008年美国影片）> <主演> ?x. <朗读者_（2008年美国电影）> <主演> ?x. }
-mult_constraints_two	周杰伦和钟兴民的共同创作的歌曲是？	select ?x where { <周杰伦> <代表作品> ?x. <钟兴民> <代表作品> ?x. }
-mult_constraints_three_reverse_simple	去瞿塘峡、巫峡、西陵峡旅游需要多少钱门票？	select ?y where { ?x <组成> <瞿塘峡>. ?x <组成> <巫峡_（长江三峡第二峡）>. ?x <组成> <西陵峡>. ?x <门票价格> ?y. }
-mult_constraints_three_reverse	由海源作词、作曲以及演唱的歌曲是哪首？	select ?x where { ?x <作词> <海源>. ?x <作曲> <海源>. ?x <演唱> <海源>. }
-mult_constraints_three_reverse	他不仅是武术家，还是演员、慈善家，他是谁？	select ?x where { ?x <职业> <演员_（薛之谦歌曲）>. ?x <职业> <武术家>. ?x <职业> <慈善家_（杂志）>. }
-mult_constraints_three_reverse	由刘亦菲,胡歌和安以轩共同主演电视剧是哪部?？	select ?x where { ?x <主演> <刘亦菲_（影视女演员、歌手）>. ?x <主演> <胡歌_（中国内地男演员）>. ?x <主演> <安以轩>. }
-mult_constraints_three_reverse	出生于哥伦比亚，曾是一名小说家和记者的人是谁？	select ?x where { ?x <国籍> <哥伦比亚_（哥伦比亚共和国）>. ?x <职业> <小说家_（写小说的作家）>. ?x <职业> <记者_（词语释义）>. }
-mult_constraints_three_reverse	哪位英国演员出演电影《摩登时代》？	select ?x where { ?x <国籍> <英国_（大不列颠及北爱尔兰联合王国）>. ?x <职业> <演员_（职业）>. ?x <代表作品> <摩登时代_（美国1936年卓别林主演电影）>. }
-mult_constraints_three_reverse	西南地区有哪个直辖市？	select ?x where { ?x <行政区类别> <直辖市>. ?x <所属地区> <西南地区>. ?x <方言> <土家语>. }
-mult_constraints_three_reverse	周杰伦作曲，方文山作词的中国风音乐有什么？	select ?x where { ?x <谱曲> <周杰伦>. ?x <填词> <方文山>. ?x <音乐风格> <中国风_（中国风格、中国流行风尚）>. }
-mult_constraints_three_reverse	有哪些会说粤语的上海导演？	select ?x where { ?x <语言> <粤语_（汉藏语系下的语言）>. ?x <职业> <导演>. ?x <出生地> <上海_（中华人民共和国直辖市）>. }
-mult_constraints_three_reverse	非洲同时以英语和法语为官方语言的国家有哪些？	select ?x where { ?x <所属洲> <非洲_（世界七大洲之一）>. ?x <官方语言> <法语>. ?x <官方语言> <英语_（语言）>. }
-mult_constraints_three_reverse	华中地区有哪些省份的人以讲中原官话为主？	select ?x where { ?x <行政区类别> <省_（一级地方行政区）>. ?x <所属地区> <华中_（中国中部地区简称）>. ?x <方言> <中原官话>. }
-mult_constraints_three_reverse	出身四川师范大学的射手座歌手是谁？	select ?x where { ?x <毕业院校> <四川师范大学>. ?x <职业> <歌手_（职业名称）>. ?x <星座> <射手座_（占星学）>. }
-mult_constraints_three_reverse	双子座的香港作家都有谁？	select ?x where { ?x <星座> <双子座_（天文学）>. ?x <出生地> <香港_（中华人民共和国特别行政区）>. ?x <职业> <文学家>. }
-mult_constraints_three_reverse	本科毕业于北京大学，博士毕业于威斯康星大学麦迪逊分校的老师是谁？	select ?x where { ?x <职业> <老师_（培养学生的专业工作者）>. ?x <毕业院校> <北京大学>. ?x <毕业院校> <威斯康星大学麦迪逊分校>. }
-mult_constraints_three_reverse	安徽合肥出过哪些物理学家？	select ?x where { ?x <出生地> <安徽>. ?x <出生地> <合肥>. ?x <职业> <物理学家_（探索、研究物理学的科学家）>. }
-mult_constraints_three_reverse	美国第一位非裔总统是谁？	select ?x where { ?x <国籍> <美国_（美利坚合众国）>. ?x <职业> <总统_（国家元首称谓）>. ?x <民族> <非裔美国人>. }
-mult_constraints_three_reverse	你知道几部华仔，发哥，星爷主演的电影？	select ?x where { ?x <主演> <刘德华_（中国香港男演员、歌手、词作人）>. ?x <主演> <周润发>. ?x <主演> <周星驰>. }
-mult_constraints_three_reverse	有哪些犹太裔的物理学家同时还是政治家？	select ?x where { ?x <民族> <犹太人>. ?x <职业> <政治家>. ?x <职业> <物理学家_（探索、研究物理学的科学家）>. }
-mult_constraints_three_reverse	北京有哪些全天开放的宗教建筑？	select ?x where { ?x <开放时间> <全天>. ?x <类型> <宗教建筑>. ?x <所属城市> <北京_（中华人民共和国首都）>. }
-mult_constraints_three_reverse	有哪些毕业于北京电影学院的青岛籍演员？	select ?x where { ?x <职业> <演员_（职业）>. ?x <毕业院校> <北京电影学院>. ?x <出生地> <青岛_（山东省地级市、计划单列市）>. }
-mult_constraints_three_reverse	尾田写的、由集英社出版的漫画是啥？	select ?x where { ?x <作者> <尾田荣一郎>. ?x <出版社> <集英社_（日本综合出版社）>. ?x <类型> <少年漫画>. }
-mult_constraints_three_reverse	出生于日本毕业于美国的中国建筑师是？	select ?x where { ?x <出生地> <日本_（日本国）>. ?x <毕业院校> <美国_（美利坚合众国）>. ?x <国籍> <中华人民共和国>. }
-mult_constraints_three_reverse	方文山填词，周杰伦演唱的中国风歌曲有哪些？	select ?x where { ?x <填词> <方文山>. ?x <歌曲原唱> <周杰伦>. ?x <音乐风格> <中国风_（中国风格、中国流行风尚）>. }
-mult_constraints_three_reverse	保罗·安德森兼任编剧、制片和导演的电影有什么？	select ?x where { ?x <导演> <保罗·安德森_（英国导演）>. ?x <编剧> <保罗·安德森_（英国导演）>. ?x <制片人> <保罗·安德森_（英国导演）>. }
-mult_constraints_three_reverse	O型血处女座的满族演员有？	select ?x where { ?x <血型> <O型>. ?x <民族> <满族>. ?x <星座> <处女座_（占星学）>. }
-mult_constraints_three_reverse	海贼王里像猴子一样的男人是谁？	select ?x where { ?x <登场作品> <海贼王_（尾田荣一郎创作的漫画作品）>. ?x <代表动物> <猴子_（动物）>. ?x <性别> <男>. }
-mult_constraints_three_reverse	在北京的哪些公立大学的校训含有"实事求是"？	select ?x where { ?x <校训> <实事求是_（词语释义）>. ?x <类别> <公立大学>. ?x <所属地区> <北京_（中华人民共和国首都）>. }
-mult_constraints_three_reverse	纽伦堡这个地方诞生过哪些伟大的日耳曼血统的画家？	select ?x where { ?x <出生地> <纽伦堡_（德国东南部城市）>. ?x <职业> <画家>. ?x <民族> <日耳曼人>. }
-mult_constraints_three_reverse	李安导演、章子怡主演的武侠片是哪部？	select ?x where { ?x <导演> <李安_（华人导演）>. ?x <主演> <章子怡>. ?x <类型> <武侠_（武侠文化）>. }
-mult_constraints_three_reverse	有哪些同时是物理学家、数学家和科学家的学者？	select ?x where { ?x <职业> <物理学家_（探索、研究物理学的科学家）>. ?x <职业> <数学家_（数学家（世界著名数学家））>. ?x <职业> <科学家_（从事科学研究的人群）>. }
-mult_constraints_three_reverse	哪名哲学家同时在数学、形而上学和知识论领域有所建树？	select ?x where { ?x <主要领域> <数学_（学科）>. ?x <主要领域> <形而上学_（哲学术语）>. ?x <主要领域> <知识学>. }
-mult_constraints_three_reverse	亚利桑那大学毕业过哪些优秀的篮球得分后卫？	select ?x where { ?x <毕业院校> <亚利桑那州立大学>. ?x <场上位置> <得分后卫>. ?x <运动项目> <篮球_（球类运动）>. }
-mult_constraints_three_reverse	金城武和梁朝伟一起出演了王家卫导演的哪部电影？	select ?x where { ?x <主演> <金城武>. ?x <主演> <梁朝伟>. ?x <导演> <王家卫>. }
-mult_constraints_three_reverse	佩妮莱·费舍尔·克里斯滕森导演的丹麦喜剧片叫什么名字？	select ?x where { ?x <导演> <佩妮莱·费舍尔·克里斯滕森>. ?x <制片地区> <丹麦>. ?x <类型> <喜剧_（艺术体裁）>. }
-mult_constraints_three_reverse	有哪些毕业于中央戏剧学院的北京籍演员？	select ?x where { ?x <职业> <演员_（职业）>. ?x <毕业院校> <中央戏剧学院>. ?x <出生地> <北京_（中华人民共和国首都）>. }
-mult_constraints_three_reverse	在金庸小说《天龙八部》中，哪个女性会天山六阳掌和天山折梅手？	select ?x where { ?x <性别> <女_（汉字）>. ?x <绝学> <天山六阳掌>. ?x <绝学> <天山折梅手>. }
-mult_constraints_three_reverse	哪位古希腊思想家提出了著名的"形而上学"？	select ?x where { ?x <职业> <思想家_（词语）>. ?x <代表作品> <形而上学_（哲学术语）>. ?x <国籍> <古希腊_（爱琴海-色雷斯文明圈的黄金时期）>. }
-mult_constraints_three_reverse	有哪些盛产荔枝和龙眼的地级市？	select ?x where { ?x <行政区类别> <地级市>. ?x <特产> <荔枝>. ?x <特产> <龙眼_（无患子科龙眼属植物）>. }
-mult_constraints_three_reverse	李谷一演唱，王酩作曲，乔羽填词的经典歌曲是？	select ?x where { ?x <歌曲原唱> <李谷一>. ?x <谱曲> <王酩>. ?x <填词> <乔羽_（北京大学歌剧研究院名誉院长）>. }
-mult_constraints_three_reverse	有哪些双鱼座的歌手，同时还是模特？	select ?x where { ?x <职业> <歌手_（职业名称）>. ?x <职业> <模特_（职业（展示艺术、时尚产品等））>. ?x <星座> <双鱼座_（占星学）>. }
-mult_constraints_three_reverse	在其他免疫学检查中，哪项检查可以检测严重急性呼吸综合征和重症急性呼吸综合征疾病？	select ?x where { ?x <类型> <其他免疫学检查>. ?x <涉及疾病> <严重急性呼吸综合征>. ?x <涉及疾病> <重症急性呼吸综合征>. }
-mult_constraints_three_reverse	哪项检查项目对检测严重急性呼吸综合征、重症急性呼吸综合征以及非典有效？	select ?x where { ?x <涉及疾病> <严重急性呼吸综合征>. ?x <涉及疾病> <重症急性呼吸综合征>. ?x <涉及疾病> <非典>. }
-mult_constraints_three_reverse	在红细胞检查中，哪一项检查项目能测定乙肝小三阳症状？	select ?x where { ?x <类型> <红细胞检查>. ?x <类型> <检查项目>. ?x <涉及症状> <乙肝小三阳>. }
-mult_constraints_three_reverse	在医学检查中，哪一项对检测乙肝小三阳以及色素沉着有作用？	select ?x where { ?x <类型> <检查项目>. ?x <涉及症状> <乙肝小三阳>. ?x <涉及症状> <色素沉着>. }
-mult_constraints_three_reverse	对于肝炎患者来讲检测乙肝小三阳以及色素沉着，哪项检查比较有效？	select ?x where { ?x <涉及症状> <乙肝小三阳>. ?x <涉及症状> <色素沉着>. ?x <涉及疾病> <肝炎>. }
-mult_constraints_three_reverse	患有肝炎与巴多林氏腺癌且出现色素沉着症状该做哪项检查？	select ?x where { ?x <涉及症状> <色素沉着>. ?x <涉及疾病> <肝炎>. ?x <涉及疾病> <巴多林氏腺癌>. }
-mult_constraints_three	在金庸小说《天龙八部》中，鸠摩智、游坦之和扫地僧都会什么武功？	select ?x where { <鸠摩智> <武功> ?x. <游坦之> <内功> ?x. <扫地僧_（金庸武侠小说《天龙八部》中的人物）> <绝技> ?x. }
-mult_constraints_one_simple_reverse	指环王的导演还有哪些作品？	select ?y where { <指环王_（英美2001-2003年彼得·杰克逊执导系列电影）> <导演> ?x. ?y <导演> ?x. }
-mult_constraints_one_simple_reverse	哪些物质的化学式与碳相同？	select ?y where { <碳> <化学式> ?x. ?y <化学式> ?x. }
-mult_constraints_one_simple_reverse	指环王导演编剧过哪些电影？	select ?y where { <指环王_（英美2001-2003年彼得·杰克逊执导系列电影）> <导演> ?x. ?y <编剧> ?x. }
-mult_constraints_one_simple_reverse	有哪些典故出自司马迁的代表作？	select ?x where { <司马迁_（西汉时期文学家、史学家、思想家）> <代表作品> ?y. ?x <典源> ?y. }
-mult_constraints_one_reverse_simple	宗馥莉任董事长的公司的公司口号是？	select ?y where { ?x <董事长> <宗馥莉>. ?x <公司口号> ?y. }
-mult_constraints_one_reverse_simple	被称为诗佛的诗人有什么作品？	select ?y where { ?x <别称> <诗佛_（唐代诗人王维绰号）>. ?x <主要作品> ?y. }
-mult_constraints_one_reverse_simple	红豆的演唱者出生在？	select ?y where { ?x <代表作品> <红豆_（王菲演唱歌曲）>. ?x <出生地> ?y. }
-mult_constraints_one_reverse_simple	《自然哲学的数学原理》的作者的IQ有多高？	select ?y where { ?x <代表作品> <自然哲学的数学原理>. ?x <智商> ?y. }
-mult_constraints_one_reverse_simple	熊本县的著名人物职业是什么？	select ?y where { ?x <地理位置> <熊本县>. ?x <职业> ?y. }
-mult_constraints_one_reverse_simple	侦探们的经典台词有哪些？	select ?y where { ?x <职业> <侦探_（ACGN侦探们）>. ?x <名言> ?y. }
-mult_constraints_one_reverse_simple	陈嗣庆的女儿写了什么书？	select ?y where { ?x <父亲> <陈嗣庆>. ?x <代表作品> ?y. }
-mult_constraints_one_reverse_simple	朝花夕拾的作者原名是什么？	select ?y where { ?x <代表作品> <朝花夕拾_（鲁迅散文集）>. ?x <原名> ?y. }
-mult_constraints_one_reverse_simple	写作《关于费尔巴哈的提纲》的社会学家的主要成就是？	select ?y where { ?x <代表作品> <关于费尔巴哈的提纲>. ?x <主要成就> ?y. }
-mult_constraints_one_reverse_simple	《实践理性批判》的作者从事的职业是？	select ?y where { ?x <代表作品> <实践理性批判>. ?x <职业> ?y. }
-mult_constraints_one_reverse_simple	《卖炭翁》的作者生活在哪个朝代？	select ?y where { ?x <主要作品> <卖炭翁>. ?x <所处时代> ?y. }
-mult_constraints_one_reverse_simple	《背影》的作者毕业于哪个大学？	select ?y where { ?x <代表作品> <背影_（朱自清散文）>. ?x <毕业院校> ?y. }
-mult_constraints_one_reverse_simple	主要作品是临川先生文集的先生曾任什么官职？	select ?y where { ?x <主要作品> <临川先生文集>. ?x <官职> ?y. }
-mult_constraints_one_reverse_simple	中国历史上以门阀政治为主要政治制度的时期，其对应的政体是什么？	select ?y where { ?x <政治制度> <门阀政治>. ?x <政治体制> ?y. }
-mult_constraints_one_reverse_simple	天空之城的作者是哪个星座？	select ?y where { ?x <代表作品> <天空之城_（日本1986年宫崎骏执导动画电影）>. ?x <星座> ?y. }
-mult_constraints_one_reverse_simple	总部设在意大利的FILA主要销售什么？	select ?y where { ?x <公司总部> <意大利_（意大利共和国）>. ?x <主营产品> ?y. }
-mult_constraints_one_reverse_simple	美国漫画里的超级英雄们都毕业于哪些高校？	select ?y where { ?x <职业> <超级英雄_（美国漫画里的超级英雄）>. ?x <毕业院校> ?y. }
-mult_constraints_one_reverse_simple	释永信担任主持的寺庙有哪些著名景点？	select ?y where { ?x <现任住持> <释永信>. ?x <著名景点> ?y. }
-mult_constraints_one_reverse_simple	市花是月季花的城市机场叫什么？	select ?y where { ?x <市花、市树> <月季_（蔷薇科植物之一）>. ?x <机场> ?y. }
-mult_constraints_one_reverse_simple	美国总统罗斯福的母校的位置？	select ?y where { ?x <知名校友> <罗斯福_（美国第三十二届总统）>. ?x <所属地区> ?y. }
-mult_constraints_one_reverse_simple	被称为"李供奉"的诗人有哪些作品？	select ?y where { ?x <别称> <李供奉>. ?x <主要作品> ?y. }
-mult_constraints_one_reverse_simple	当拓跋焘执掌政权时，国家的人口数量大约是多少？	select ?y where { ?x <国家领袖> <拓跋焘>. ?x <人口数量> ?y. }
-mult_constraints_one_reverse_simple	《论衡》的作者是哪个民族的人氏？	select ?y where { ?x <代表作品> <论衡>. ?x <民族> ?y. }
-mult_constraints_one_reverse_simple	《纯粹理性批判》的作者诞生于什么时间？	select ?y where { ?x <代表作品> <纯粹理性批判>. ?x <出生日期> ?y. }
+type	string
+simple_res	一战的主要影响？
+simple_res	南唐后主老家在哪？
+simple_res	著名建筑埃菲尔铁塔有多少层？
+simple_res	品牌纪梵希的英文名称是什么？
+simple_res	京剧成为非物质文化遗产的时间是？
+simple_res	马拉松全长多少？
+simple_res	大漠英雄传中郭靖的妻子是谁？
+simple_res	漫威里灭霸翻译成英文应该是什么？
+simple_res	adidas是哪个国家的公司？
+simple_res	腾讯公司的总部在哪里？
+simple_res	iPhone使用的是什么操作系统？
+simple_res	香港四大天王是指哪四个人？
+simple_res	电影《末路记事》是在哪个国家拍摄的？
+simple_res	水观乡的占地多少？
+simple_res	月全食的发生分为哪几个过程？
+simple_res	书籍《绑在一起》是由哪个出版社出版的？
+simple_res	乌拉圭使用什么货币？
+simple_res	花样滑冰双人滑选手隋文静的舞伴是？
+simple_res	如何向老外表达"人艰不拆"？
+simple_res	周星驰是什么血型？
+simple_res	汽车的英文名是什么？
+simple_res	土豆的斗破苍穹写了多少字？
+simple_res_reverse	《湖上草》是谁的诗？
+simple_res_reverse	希拉里的老公是谁？
+simple_res_reverse	唐嫣工作室旗下都有哪些艺人？
+simple_res_reverse	《悼李夫人赋》是谁的作品？
+simple_res_reverse	实行议会制君主立宪制的有哪些国家？
+simple_res_reverse	《胡笳十八拍》是谁的传世之作？
+simple_res_reverse	我饿了，数据库里有什么好吃的吗？
+simple_res_reverse	奥斯陆是哪个国家的首都？
+simple_res_reverse	请列出马尔克斯的小说作品？
+simple_res_reverse	给出所有是枝裕和导演的电影？
+simple_res_reverse	大禹建立了哪个朝代？
+simple_res_reverse	菲尔·奈特创立了什么品牌？
+simple_res_reverse	有本巨著叫《中国音韵学》，它是谁写的？
+simple_res_reverse	爱伦·坡有哪些作品？
+simple_res_reverse	给我一些3D电影。
+simple_res_reverse	现在都有哪些计算机程序设计语言？
+simple_res_reverse	《蒙娜丽莎的微笑》的作者是谁？
+simple_res_reverse	SLK是哪个公司的产品？
+simple_res_reverse	和谐号有哪些车次？
+simple_res_reverse	谁会七十二变？
+simple_res_reverse	中国历史地图集是谁编纂的？
+simple_res_reverse	朝花夕拾的作者是谁？
+simple_res_reverse	博尔赫斯的作品有哪些？
+simple_attr	令狐冲和岳灵珊是什么关系？
+mult_constraints_two_simple	无产阶级革命家的代表人物、对立统一原则的创始人在哪里去世？
+mult_constraints_two_reverse_simple	由景甜主演，张艺谋导演的电影的中文名是？
+mult_constraints_two_reverse_simple	古希腊诗人有哪些代表作品？
+mult_constraints_two_reverse_simple	由伊达勇登导演、隅泽克之编剧的动画在哪个电视台首播？
+mult_constraints_two_reverse_simple	我国近代擅长画虾的绘画大师出生在哪座城市？
+mult_constraints_two_reverse_simple	毕业于中央大学，出生于长野的日本作家有哪些代表作品？
+mult_constraints_two_reverse_simple	诺兰执导的科幻片的英文名都有哪些？
+mult_constraints_two_reverse_simple	由大隈重信创始的综合性大学的英文名是？
+mult_constraints_two_reverse_simple	写出《诀别书》和《白头吟》的这位才女是哪个朝代的？
+mult_constraints_two_reverse_simple	海贼王里最贪财的主角是什么星座的？
+mult_constraints_two_reverse	我们会在哪个民俗节日里猜灯谜？
+mult_constraints_two_reverse	武汉大学出了哪些科学家
+mult_constraints_two_reverse	拜仁的西班牙球员都有谁？
+mult_constraints_two_reverse	武汉大学出了哪些化学家
+mult_constraints_two_reverse	天津大学出过哪些科学家？
+mult_constraints_two_reverse	南京大学出过哪些企业家？
+mult_constraints_two_reverse	有哪些主持人毕业于北京大学？
+mult_constraints_two_reverse	代表作品是黄飞鸿且信奉佛教的是谁？
+mult_constraints_two_reverse	哈佛大学出了哪些总统？
+mult_constraints_two_reverse	少女时代的门面担当是谁？
+mult_constraints_two_reverse	北京大学培养了哪些中科院院士？
+mult_constraints_two_reverse	有哪些哲学家抱有无神论信仰？
+mult_constraints_two_reverse	北京大学出了哪些哲学家
+mult_constraints_two_reverse	清华大学培养了哪些中科院院士？
+mult_constraints_two_reverse	陈奕迅的歌曲里由他自己填词的有哪些？
+mult_constraints_two_reverse	周杰伦写的摇滚乐有哪些？
+mult_constraints_two_reverse	郭敬明写过哪些长篇小说？
+mult_constraints_two_reverse	章子怡和范冰冰一起主演过的作品有哪些？
+mult_constraints_two_reverse	范冰冰和陈柏霖合作过哪些作品呢？
+mult_constraints_two_reverse	哈佛大学出了哪些文学家？
+mult_constraints_two_reverse	北京大学出了哪些地质学家
+mult_constraints_two_reverse	复旦大学出了哪些科学家
+mult_constraints_two_reverse	清华大学出了哪些科学家
+mult_constraints_two_reverse	亚洲哪个国家实行君主立宪制？
+mult_constraints_two_reverse	华纳签了哪些回族歌手？
+mult_constraints_two_reverse	主要分布于东南亚和东亚的宗教有？
+mult_constraints_two_reverse	浙江大学出了哪些物理学家
+mult_constraints_two_reverse	清华大学出了哪些数学家
+mult_constraints_two_reverse	卢浮宫收藏了达芬奇的哪部画作？
+mult_constraints_two_reverse	德国有哪些著名乒乓球员？
+mult_constraints_two_reverse	有一种起源于英格兰哈罗公学的活动，它是什么？
+mult_constraints_two_reverse	由周杰伦作曲以及演唱的歌曲是哪首？
+mult_constraints_two_reverse	福茂唱片的签约歌手有哪些？
+mult_constraints_two_reverse	有哪些满族演员？
+mult_constraints_two_reverse	武汉大学出了哪些数学家
+mult_constraints_two_reverse	亚洲哪个国家的主要民族是印度人？
+mult_constraints_two_reverse	蝙蝠侠和超人共同参与的团队是哪个？
+mult_constraints_two_reverse	由董洁和陈坤共同主演的电视剧？
+mult_constraints_two_reverse	清华大学出了哪些文学家
+mult_constraints_two_reverse	从古到今，哪些个欧洲国家有巴斯克人聚居？
+mult_constraints_two_reverse	复旦大学出了哪些物理学家
+mult_constraints_two_reverse	武汉大学出了哪些翻译家
+mult_constraints_two_reverse	南京大学出过哪些科学家？
+mult_constraints_two_reverse	复旦大学出了哪些文学家
+mult_constraints_two_reverse	王菲演唱的曲子中，哪些是由林夕填过词？
+mult_constraints_two_reverse	复旦大学出了哪些导演
+mult_constraints_two_reverse	清华大学出了哪些企业家
+mult_constraints_two_reverse	北京大学出了哪些文学家
+mult_constraints_two_reverse	浙江大学出了哪些生物学家
+mult_constraints_two_reverse	清华大学出了哪些导演
+mult_constraints_two_reverse	浙江大学出了哪些翻译家
+mult_constraints_two_reverse	摩羯座的物理学家有哪些？
+mult_constraints_two_reverse	从古到今，阿拉伯国家里有哪些是君主专制的体制？
+mult_constraints_two_reverse	北京大学出了哪些导演
+mult_constraints_two_reverse	陈思诚做导演以后，请刘昊然主演的片子有什么？
+mult_constraints_two_reverse	浙江大学出了哪些企业家
+mult_constraints_two_reverse	章子怡和何润东一起主演过的作品有哪些？
+mult_constraints_two_reverse	复旦大学出了哪些企业家
+mult_constraints_two_reverse	清华大学出了哪些作家
+mult_constraints_two_reverse	武汉大学出了哪些经济学家
+mult_constraints_two_reverse	梅丽尔·斯特里普曾经在克林特·伊斯特伍德的哪一部经典电影里出演女主角？
+mult_constraints_two_reverse	吉林大学出了哪些翻译家？
+mult_constraints_two_reverse	哪部电影是由周迅和彭于晏共同出演？
+mult_constraints_two_reverse	浙江大学出了哪些数学家
+mult_constraints_two_reverse	由林玉芬导演、郑爽主演的作品是哪一部？
+mult_constraints_two_reverse	有哪些苗族的歌唱家？
+mult_constraints_two_reverse	哪些技术可以同时应用于农业和工业？
+mult_constraints_two_reverse	鲁迅写过哪些散文诗集？
+mult_constraints_two_reverse	清华大学出了哪些地质学家
+mult_constraints_two_reverse	复旦大学出了哪些经济学家
+mult_constraints_two_reverse	四川大学出了哪些数学家
+mult_constraints_two_reverse	在以色列聚居的希伯来人的后代是什么人？
+mult_constraints_two_reverse	在电击文库MAGAZINE上连载的魔幻类型的漫画是?？
+mult_constraints_two_reverse	北京大学出了哪些数学家
+mult_constraints_two_reverse	中国的航天员有哪些？
+mult_constraints_two_reverse	冰与火之歌中有哪些男性角色？
+mult_constraints_two_reverse	厦门大学出过哪些企业家？
+mult_constraints_two_reverse	武汉大学出了哪些文学家
+mult_constraints_two_reverse	清华大学出了哪些物理学家
+mult_constraints_two_reverse	浙江大学出了哪些作家
+mult_constraints_two_reverse	武汉大学出了哪些物理学家
+mult_constraints_two_reverse	清华大学出了哪些经济学家
+mult_constraints_two_reverse	大连理工大学出过哪些企业家？
+mult_constraints_two_reverse	由妮娜和伊恩共同主演的美剧？
+mult_constraints_two_reverse	在纳斯达克上市的社交网络公司有?？
+mult_constraints_two_reverse	莫文蔚和张柏芝共同出演的电影？
+mult_constraints_two_reverse	卡内基梅隆大学出过哪些计算机科学家？
+mult_constraints_two_reverse	罗马帝国信仰天主教的人有？
+mult_constraints_two_reverse	又被称为肺形草和寒莓的植物是什么？
+mult_constraints_two_reverse	出生于川沙县的学者是谁？
+mult_constraints_two_reverse	四川大学出了哪些经济学家
+mult_constraints_two_reverse	南京大学出了哪些翻译家？
+mult_constraints_two_reverse	浙江大学出了哪些经济学家
+mult_constraints_two_reverse	四川大学出了哪些科学家
+mult_constraints_two_reverse	李隼教练的弟子，打法为弧圈结合快攻的运动员？
+mult_constraints_two_reverse	北京大学出了哪些翻译家
+mult_constraints_two_reverse	北京大学出了哪些企业家
+mult_constraints_two_reverse	章子怡和李安合作过什么作品？
+mult_constraints_two_reverse	亚洲哪个国家的主要宗教是逊尼派？
+mult_constraints_two_reverse	四川大学出了哪些导演
+mult_constraints_two_reverse	导演诺兰和休·杰克曼合作的电影是哪一部？
+mult_constraints_two_reverse	有哪些藏族歌手？
+mult_constraints_two_reverse	剑桥大学培养出的著名物理学家有哪些？
+mult_constraints_two_reverse	葛优和周润发一起演过什么电影？
+mult_constraints_two_reverse	东南大学出过哪些企业家？
+mult_constraints_two_reverse	亚洲哪个国家的主要民族是华人？
+mult_constraints_two_reverse	四川大学出了哪些生物学家
+mult_constraints_two_reverse	浙江大学出了哪些化学家
+mult_constraints_two_reverse	北京大学出了哪些诗人
+mult_constraints_two_reverse	武汉大学出了哪些导演
+mult_constraints_two_reverse	毕业于哈工大的乒乓球运动员都有谁？
+mult_constraints_two_reverse	哈佛大学出了哪些计算机科学家？
+mult_constraints_two_reverse	哈佛大学出了哪些数学家？
+mult_constraints_two_reverse	南京大学出过哪些生物学家？
+mult_constraints_two_reverse	复旦大学出了哪些生物学家
+mult_constraints_two_reverse	有哪些西班牙语的剧情片？
+mult_constraints_two_reverse	我们会在哪个民俗节日里赏灯？
+mult_constraints_two_reverse	北京大学出了哪些政治家
+mult_constraints_two_reverse	拿加沙足球俱乐部的后卫是谁？
+mult_constraints_two_reverse	王菲演唱，林夕填词的歌曲有哪些？
+mult_constraints_two	《革命之路》与《朗读者》的女主角是谁？
+mult_constraints_two	周杰伦和钟兴民的共同创作的歌曲是？
+mult_constraints_three_reverse_simple	去瞿塘峡、巫峡、西陵峡旅游需要多少钱门票？
+mult_constraints_three_reverse	由海源作词、作曲以及演唱的歌曲是哪首？
+mult_constraints_three_reverse	他不仅是武术家，还是演员、慈善家，他是谁？
+mult_constraints_three_reverse	由刘亦菲,胡歌和安以轩共同主演电视剧是哪部?？
+mult_constraints_three_reverse	出生于哥伦比亚，曾是一名小说家和记者的人是谁？
+mult_constraints_three_reverse	哪位英国演员出演电影《摩登时代》？
+mult_constraints_three_reverse	西南地区有哪个直辖市？
+mult_constraints_three_reverse	周杰伦作曲，方文山作词的中国风音乐有什么？
+mult_constraints_three_reverse	有哪些会说粤语的上海导演？
+mult_constraints_three_reverse	非洲同时以英语和法语为官方语言的国家有哪些？
+mult_constraints_three_reverse	华中地区有哪些省份的人以讲中原官话为主？
+mult_constraints_three_reverse	出身四川师范大学的射手座歌手是谁？
+mult_constraints_three_reverse	双子座的香港作家都有谁？
+mult_constraints_three_reverse	本科毕业于北京大学，博士毕业于威斯康星大学麦迪逊分校的老师是谁？
+mult_constraints_three_reverse	安徽合肥出过哪些物理学家？
+mult_constraints_three_reverse	美国第一位非裔总统是谁？
+mult_constraints_three_reverse	你知道几部华仔，发哥，星爷主演的电影？
+mult_constraints_three_reverse	有哪些犹太裔的物理学家同时还是政治家？
+mult_constraints_three_reverse	北京有哪些全天开放的宗教建筑？
+mult_constraints_three_reverse	有哪些毕业于北京电影学院的青岛籍演员？
+mult_constraints_three_reverse	尾田写的、由集英社出版的漫画是啥？
+mult_constraints_three_reverse	出生于日本毕业于美国的中国建筑师是？
+mult_constraints_three_reverse	方文山填词，周杰伦演唱的中国风歌曲有哪些？
+mult_constraints_three_reverse	保罗·安德森兼任编剧、制片和导演的电影有什么？
+mult_constraints_three_reverse	O型血处女座的满族演员有？
+mult_constraints_three_reverse	海贼王里像猴子一样的男人是谁？
+mult_constraints_three_reverse	在北京的哪些公立大学的校训含有"实事求是"？
+mult_constraints_three_reverse	纽伦堡这个地方诞生过哪些伟大的日耳曼血统的画家？
+mult_constraints_three_reverse	李安导演、章子怡主演的武侠片是哪部？
+mult_constraints_three_reverse	有哪些同时是物理学家、数学家和科学家的学者？
+mult_constraints_three_reverse	哪名哲学家同时在数学、形而上学和知识论领域有所建树？
+mult_constraints_three_reverse	亚利桑那大学毕业过哪些优秀的篮球得分后卫？
+mult_constraints_three_reverse	金城武和梁朝伟一起出演了王家卫导演的哪部电影？
+mult_constraints_three_reverse	佩妮莱·费舍尔·克里斯滕森导演的丹麦喜剧片叫什么名字？
+mult_constraints_three_reverse	有哪些毕业于中央戏剧学院的北京籍演员？
+mult_constraints_three_reverse	在金庸小说《天龙八部》中，哪个女性会天山六阳掌和天山折梅手？
+mult_constraints_three_reverse	哪位古希腊思想家提出了著名的"形而上学"？
+mult_constraints_three_reverse	有哪些盛产荔枝和龙眼的地级市？
+mult_constraints_three_reverse	李谷一演唱，王酩作曲，乔羽填词的经典歌曲是？
+mult_constraints_three_reverse	有哪些双鱼座的歌手，同时还是模特？
+mult_constraints_three_reverse	在其他免疫学检查中，哪项检查可以检测严重急性呼吸综合征和重症急性呼吸综合征疾病？
+mult_constraints_three_reverse	哪项检查项目对检测严重急性呼吸综合征、重症急性呼吸综合征以及非典有效？
+mult_constraints_three_reverse	在红细胞检查中，哪一项检查项目能测定乙肝小三阳症状？
+mult_constraints_three_reverse	在医学检查中，哪一项对检测乙肝小三阳以及色素沉着有作用？
+mult_constraints_three_reverse	对于肝炎患者来讲检测乙肝小三阳以及色素沉着，哪项检查比较有效？
+mult_constraints_three_reverse	患有肝炎与巴多林氏腺癌且出现色素沉着症状该做哪项检查？
+mult_constraints_three	在金庸小说《天龙八部》中，鸠摩智、游坦之和扫地僧都会什么武功？
+mult_constraints_one_simple_reverse	指环王的导演还有哪些作品？
+mult_constraints_one_simple_reverse	哪些物质的化学式与碳相同？
+mult_constraints_one_simple_reverse	指环王导演编剧过哪些电影？
+mult_constraints_one_simple_reverse	有哪些典故出自司马迁的代表作？
+mult_constraints_one_reverse_simple	宗馥莉任董事长的公司的公司口号是？
+mult_constraints_one_reverse_simple	被称为诗佛的诗人有什么作品？
+mult_constraints_one_reverse_simple	红豆的演唱者出生在？
+mult_constraints_one_reverse_simple	《自然哲学的数学原理》的作者的IQ有多高？
+mult_constraints_one_reverse_simple	熊本县的著名人物职业是什么？
+mult_constraints_one_reverse_simple	侦探们的经典台词有哪些？
+mult_constraints_one_reverse_simple	陈嗣庆的女儿写了什么书？
+mult_constraints_one_reverse_simple	朝花夕拾的作者原名是什么？
+mult_constraints_one_reverse_simple	写作《关于费尔巴哈的提纲》的社会学家的主要成就是？
+mult_constraints_one_reverse_simple	《实践理性批判》的作者从事的职业是？
+mult_constraints_one_reverse_simple	《卖炭翁》的作者生活在哪个朝代？
+mult_constraints_one_reverse_simple	《背影》的作者毕业于哪个大学？
+mult_constraints_one_reverse_simple	主要作品是临川先生文集的先生曾任什么官职？
+mult_constraints_one_reverse_simple	中国历史上以门阀政治为主要政治制度的时期，其对应的政体是什么？
+mult_constraints_one_reverse_simple	天空之城的作者是哪个星座？
+mult_constraints_one_reverse_simple	总部设在意大利的FILA主要销售什么？
+mult_constraints_one_reverse_simple	美国漫画里的超级英雄们都毕业于哪些高校？
+mult_constraints_one_reverse_simple	释永信担任主持的寺庙有哪些著名景点？
+mult_constraints_one_reverse_simple	市花是月季花的城市机场叫什么？
+mult_constraints_one_reverse_simple	美国总统罗斯福的母校的位置？
+mult_constraints_one_reverse_simple	被称为"李供奉"的诗人有哪些作品？
+mult_constraints_one_reverse_simple	当拓跋焘执掌政权时，国家的人口数量大约是多少？
+mult_constraints_one_reverse_simple	《论衡》的作者是哪个民族的人氏？
+mult_constraints_one_reverse_simple	《纯粹理性批判》的作者诞生于什么时间？
