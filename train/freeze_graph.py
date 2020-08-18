@@ -122,7 +122,7 @@ def create_classification_model(bert_config, is_training, input_ids, input_mask,
 
 
 def init_predict_var(path):
-    num_labels = 2
+    num_labels = 3
     label2id = None
     id2label = None
     label2id_file = os.path.join(path, 'label2id.pkl')
