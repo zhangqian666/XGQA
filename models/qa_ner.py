@@ -10,7 +10,6 @@
 
 import time
 from bert_base.client import BertClient
-from utils.printUtil import printi
 import os
 import jieba
 from pyltp import Segmentor, Postagger, NamedEntityRecognizer
