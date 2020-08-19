@@ -109,12 +109,10 @@ class Model():
 
     def query_answer(self, entity, attribute):
         current_query = """
-          SELECT ?x WHERE {<%s> <%s> ?x . 
-                            } 
-
+          SELECT ?x WHERE {<%s> <%s> ?x . } 
         """ % (entity, attribute)
-        list1 = self.parse_json_answer(self.make_query(current_query))
-        return list1
+        list = self.parse_json_answer(self.make_query(current_query))
+        return list
 
     def query_answer_other_simple(self, entity, attribute):
         current_query = """
