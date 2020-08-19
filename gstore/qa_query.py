@@ -63,17 +63,10 @@ class Model():
             results_bindings = results['bindings']  # 获取results标签下的bingdings内容
             # 定义一个list，将数据全部放到list中
             for res in results_bindings:
-                res2 = res['s']
-                res2 = res2['value']
-                res1 = ""
-                try:
-                    res1 = res['x']
-                    res1 = res1['value']
-                except:
-                    print("parse_json_answer 未获取到 x 如果没有数据 为正常现象")
-
-                if (res1, res2) not in end_ls:
-                    end_ls.append([res1, res2])
+                res1 = res['x']
+                res1 = res1['value']
+                if res1 not in end_ls:
+                    end_ls.append(res1)
 
 
         except:
@@ -116,17 +109,7 @@ class Model():
 
     def query_answer(self, entity, attribute):
         current_query = """
-          prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-          prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-          prefix xsd: <http://www.w3.org/2001/XMLSchema#>
-          prefix poetryc: <http://ictdba.apex.ac.cn/poetry/class/>
-          prefix poetryp: <http://ictdba.apex.ac.cn/poetry/property/>
-          prefix poetryr: <http://ictdba.apex.ac.cn/poetry/resource/>
-          SELECT ?s ?x WHERE {<%s> <%s> ?s . 
-                            OPTIONAL
-                            {
-                               ?s  rdfs:label ?x .
-                            }
+          SELECT ?x WHERE {<%s> <%s> ?x . 
                             } 
 
         """ % (entity, attribute)
