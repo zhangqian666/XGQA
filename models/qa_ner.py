@@ -44,7 +44,7 @@ def ner_on_work(question):
         rst = bc.encode([question])
         question_labels = list(rst[0])
 
-        printi('命名实体识别进程 - compete 用时 ： {} s'.format(time.perf_counter() - start_t))
+        print('命名实体识别进程 - compete 用时 ： {} s'.format(time.perf_counter() - start_t))
 
         print(question_labels)
 
