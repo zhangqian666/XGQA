@@ -118,8 +118,8 @@ def disambiguation_entity(question, en, data_list):
     dict_entity_score = {}
 
     for entity in candidate_entity:  # 候选属性
-        vector_entity = bc.encode(entity)
-        vector_question = bc.encode(question)
+        vector_entity = bc.encode([entity])
+        vector_question = bc.encode([question])
 
         c = cos_sim(vector_entity, vector_question)
         # scores_array.append(c)
