@@ -108,6 +108,30 @@ def cos_sim(vector_a, vector_b):
     return sim
 
 
+def disambiguation_entity(question, en, data_list):
+    question = question.replace(en, "")
+
+    bc = BertClient2(port=5557, port_out=5558)
+
+    candidate_entity = data_list
+    c = 0
+    dict_entity_score = {}
+
+    for entity in candidate_entity:  # 候选属性
+        vector_entity = bc.encode(entity)
+        vector_question = bc.encode(question)
+
+        c = cos_sim(vector_entity, vector_question)
+        # scores_array.append(c)
+        dict_entity_score[c] = entity
+
+    keys = list(dict_entity_score.keys())
+    keys.sort(reverse=True)
+    end_entity = dict_entity_score[keys[0]]
+    print(end_entity)
+    return end_entity
+
+
 def disambiguation(question, entity, data_list):
     # ltp模型目录的路径
     LTP_DATA_DIR = '/home/admin/EA-CKGQA/nltp/ltp_data_v3.4.0'
