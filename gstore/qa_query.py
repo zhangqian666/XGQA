@@ -97,7 +97,7 @@ class Model():
         list = self.parse_json_entity(self.make_query(query))
         return list
 
-    def query_attribute(self, entity_uri):
+    def query_attribute(self, entity):
         """
                 获取实体的所有属性
                 :param entity:
