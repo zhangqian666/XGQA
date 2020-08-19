@@ -108,9 +108,7 @@ def cos_sim(vector_a, vector_b):
     return sim
 
 
-def disambiguation_entity(question, en, data_list):
-    question = question.replace(en, "")
-
+def disambiguation_entity(question, data_list):
     bc = BertClient2(port=5557, port_out=5558)
 
     candidate_entity = data_list
