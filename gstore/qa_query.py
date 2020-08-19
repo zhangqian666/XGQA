@@ -7,7 +7,7 @@
 
 @Created on: 2020-07-12 14:29
 """
-from gstore_set.GstoreConnector import GstoreConnector
+from gstore.GstoreConnector import GstoreConnector
 import json
 
 
