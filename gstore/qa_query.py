@@ -111,7 +111,7 @@ class Model():
                   }
                 """ % entity
 
-        list = self.parse_json_entity(self.make_query(query))
+        list = self.parse_json_attr(self.make_query(query))
         return list
 
     def query_answer(self, entity, attribute):
