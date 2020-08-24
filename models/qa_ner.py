@@ -127,7 +127,7 @@ def disambiguation_entity(question, data_list):
         vector_question = bc.encode([question])
 
         c = cos_sim(vector_entity, vector_question)
-        # scores_array.append(c)
+
         dict_entity_score[c] = entity
 
     sorted_end = sorted(dict_entity_score.items(), key=lambda x: x[0], reverse=True)
@@ -175,7 +175,7 @@ def disambiguation(question, entity, data_list):
 
     sorted_end = sorted(dict_attribute_score.items(), key=lambda x: x[0], reverse=True)
 
-    end_attribute = sorted_end[0][1]
+    end_attribute = data_list[sorted_end[0][1]]
     print(end_attribute)
     return end_attribute
 
@@ -229,7 +229,7 @@ def disambiguation_mult(question, entity, data_list):
 
     sorted_end = sorted(dict_attribute_score.items(), key=lambda x: x[0], reverse=True)
 
-    end_attribute = sorted_end[0][1]
+    end_attribute = data_list[sorted_end[0][1]]
     print(end_attribute)
     return end_attribute
 
