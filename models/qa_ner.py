@@ -131,9 +131,8 @@ def disambiguation_entity(question, data_list):
         dict_entity_score[c] = entity
 
     sorted_end = sorted(dict_entity_score.items(), key=lambda x: x[0], reverse=True)
-
+    print(dict_entity_score.items())
     end_entity = sorted_end[0][1]
-    print(end_entity)
     return end_entity
 
 
@@ -174,9 +173,8 @@ def disambiguation(question, entity, data_list):
             dict_attribute_score[c] = attribute[0]
 
     sorted_end = sorted(dict_attribute_score.items(), key=lambda x: x[0], reverse=True)
-
+    print(dict_attribute_score.items())
     end_attribute = data_list[sorted_end[0][1]]
-    print(end_attribute)
     return end_attribute
 
 
@@ -228,9 +226,9 @@ def disambiguation_mult(question, entity, data_list):
         all_key_num = all_key_num + 1
 
     sorted_end = sorted(dict_attribute_score.items(), key=lambda x: x[0], reverse=True)
-
+    print(dict_attribute_score.items())
     end_attribute = data_list[sorted_end[0][1]]
-    print(end_attribute)
+
     return end_attribute
 
 
