@@ -53,6 +53,21 @@ def mult_constraints_one_simple_process(question):
     gstore_query_attr_end = model.query_attribute_simple_src(true_entity)
     print("通过gstore查询到的候选属性  ： {}".format(gstore_query_attr_end))
 
+    true_attr = disambiguation(question, ner_candi_res, gstore_query_attr_end)
+    print("消歧后的属性  ： {}".format(true_attr))
+
+    answer_end = model.query_answer_simple_src(true_entity, true_attr)
+
+    gstore_query_attr_end = model.query_attribute_simple_src(answer_end[0])
+
+    print("通过gstore查询到的候选属性  ： {}".format(gstore_query_attr_end))
+
+    true_attr = disambiguation(question, ner_candi_res, gstore_query_attr_end)
+    print("消歧后的属性  ： {}".format(true_attr))
+
+    answer_end = model.query_answer_simple_src(true_entity, true_attr)
+    return answer_end
+
 
 def simple_res_reverse_process(question):
     print("start simple_res_reverse_parse -- >")
