@@ -27,41 +27,103 @@ def classification_process(question, ques_type):
         return simple_res_reverse_process(question, ques_type)
     elif ques_type == "mult_constraints_one_simple":
         return mult_constraints_one_simple_process(question, ques_type)
+    elif ques_type == "mult_constraints_one_reverse_simple":
+        return mult_constraints_one_reverse_simple_process(question, ques_type)
+    elif ques_type == "mult_constraints_two_reverse":
+        return mult_constraints_two_reverse_process(question, ques_type)
     else:
         return "暂未解决该类问题 {}".format(ques_type)
 
 
-def mult_constraints_one_simple_process(question, ques_type):
+def mult_constraints_two_reverse_process(question, ques_type):
     print("start {} parse -- >".format(ques_type))
 
-    ner_candi_list = ner_on_work(question)
+    false_entity_list, true_entity_list = entity_normal_fun(question)
 
-    print(ner_candi_list)
+    if len(true_entity_list) != 2:
+        return "识别实体数量错误"
 
-    if len(ner_candi_list) == 0:
-        return "未识别到实体"
+    false_entity = false_entity_list
+    true_entity = true_entity_list
 
-    ner_candi_res = ner_candi_list[0][1]
-
-    normal_query_entity_end = find_candi_entity(ner_candi_res)
-    if len(normal_query_entity_end) == 0:
-        return "未查到合适的对应实体"
     model = Model()
 
-    print("通过字典查询到的候选实体  ： {}".format(normal_query_entity_end))
+    false_attr = model.query_attribute_mult_constraints_two_reverse_simple(
+        true_entity)
 
-    true_entity = disambiguation_entity(question, normal_query_entity_end)
+    print("通过gstore查询到的候选属性  ： {}".format(false_attr))
 
-    print("消歧后的实体  ： {}".format(true_entity))
+    if len(false_attr) == 0:
+        return "未查到合适的候选属性"
 
-    gstore_query_attr_end = model.query_attribute_mult_constraints_one_simple(true_entity)
+    true_attr = disambiguation_mult(question, false_entity, false_attr)
+
+    print("消歧后的属性  ： {}".format(true_attr))
+
+    answer_end = model.query_answer_mult_constraints_two_reverse_simple(
+        true_entity,
+        true_attr)
+
+    print("查询到的结果 : {}".format(answer_end))
+
+    print("end {}   parse -- >".format(ques_type))
+
+    return answer_end
+
+
+def mult_constraints_one_reverse_simple_process(question, ques_type):
+    print("start {} parse -- >".format(ques_type))
+
+    false_entity_list, true_entity_list = entity_normal_fun(question)
+
+    if len(true_entity_list) != 1:
+        return "识别实体数量错误"
+
+    false_entity = false_entity_list[0]
+    true_entity = true_entity_list[0]
+
+    model = Model()
+
+    gstore_query_attr_end = model.query_attribute_mult_constraints_one_reverse_simple(true_entity)
 
     print("通过gstore查询到的候选属性  ： {}".format(gstore_query_attr_end))
 
     if len(gstore_query_attr_end) == 0:
         return "未查到合适的候选属性"
 
-    true_attr = disambiguation_mult(question, ner_candi_res, gstore_query_attr_end)
+    true_attr = disambiguation_mult(question, [false_entity], gstore_query_attr_end)
+
+    print("消歧后的属性  ： {}".format(true_attr))
+
+    answer_end = model.query_answer_mult_constraints_one_reverse_simple(true_entity, true_attr)
+
+    print("查询到的结果 : {}".format(answer_end))
+
+    print("end {}   parse -- >".format(ques_type))
+    return answer_end
+
+
+def mult_constraints_one_simple_process(question, ques_type):
+    print("start {} parse -- >".format(ques_type))
+
+    false_entity_list, true_entity_list = entity_normal_fun(question)
+
+    if len(true_entity_list) != 1:
+        return "识别实体数量错误"
+
+    false_entity = false_entity_list[0]
+    true_entity = true_entity_list[0]
+
+    model = Model()
+
+    false_attr = model.query_attribute_mult_constraints_one_simple(true_entity)
+
+    print("通过gstore查询到的候选属性  ： {}".format(false_attr))
+
+    if len(false_attr) == 0:
+        return "未查到合适的候选属性"
+
+    true_attr = disambiguation_mult(question, [false_entity], false_attr)
 
     print("消歧后的属性  ： {}".format(true_attr))
 
@@ -76,33 +138,23 @@ def mult_constraints_one_simple_process(question, ques_type):
 def simple_res_reverse_process(question, ques_type):
     print("start {} parse -- >".format(ques_type))
 
-    ner_candi_list = ner_on_work(question)
+    false_entity_list, true_entity_list = entity_normal_fun(question)
 
-    print(ner_candi_list)
+    if len(true_entity_list) != 1:
+        return "识别实体数量错误"
 
-    if len(ner_candi_list) == 0:
-        return "未识别到实体"
+    false_entity = false_entity_list[0]
+    true_entity = true_entity_list[0]
 
-    ner_candi_res = ner_candi_list[0][1]
-
-    normal_query_entity_end = find_candi_entity(ner_candi_res)
-    if len(normal_query_entity_end) == 0:
-        return "未查到合适的对应实体"
     model = Model()
 
-    print("通过字典查询到的候选实体  ： {}".format(normal_query_entity_end))
+    false_attr = model.query_attribute_simple_src(true_entity)
+    print("通过gstore查询到的候选属性  ： {}".format(false_attr))
 
-    true_entity = disambiguation_entity(question, normal_query_entity_end)
-
-    print("消歧后的实体  ： {}".format(true_entity))
-
-    gstore_query_attr_end = model.query_attribute_simple_src(true_entity)
-    print("通过gstore查询到的候选属性  ： {}".format(gstore_query_attr_end))
-
-    if len(gstore_query_attr_end) == 0:
+    if len(false_attr) == 0:
         return "未查到合适的候选属性"
 
-    true_attr = disambiguation(question, ner_candi_res, gstore_query_attr_end)
+    true_attr = disambiguation(question, false_entity, false_attr)
     print("消歧后的属性  ： {}".format(true_attr))
 
     answer_end = model.query_answer_simple_res_reverse(true_entity, true_attr)
@@ -115,32 +167,23 @@ def simple_res_reverse_process(question, ques_type):
 def simple_res_process(question, ques_type):
     print("start {} parse -- >".format(ques_type))
 
-    ner_candi_list = ner_on_work(question)
+    false_entity_list, true_entity_list = entity_normal_fun(question)
 
-    print(ner_candi_list)
-    if len(ner_candi_list) == 0:
-        return "未识别到实体"
+    if len(true_entity_list) != 1:
+        return "识别实体数量错误"
 
-    ner_candi_res = ner_candi_list[0][1]
+    false_entity = false_entity_list[0]
+    true_entity = true_entity_list[0]
 
-    normal_query_entity_end = find_candi_entity(ner_candi_res)
-    if len(normal_query_entity_end) == 0:
-        return "未查到合适的对应实体"
     model = Model()
 
-    print("通过字典查询到的候选实体  ： {}".format(normal_query_entity_end))
+    false_attr = model.query_attribute_simple_src(true_entity)
+    print("通过gstore查询到的候选属性  ： {}".format(false_attr))
 
-    true_entity = disambiguation_entity(question, normal_query_entity_end)
-
-    print("消歧后的实体  ： {}".format(true_entity))
-
-    gstore_query_attr_end = model.query_attribute_simple_src(true_entity)
-    print("通过gstore查询到的候选属性  ： {}".format(gstore_query_attr_end))
-
-    if len(gstore_query_attr_end) == 0:
+    if len(false_attr) == 0:
         return "未查到合适的候选属性"
 
-    true_attr = disambiguation(question, ner_candi_res, gstore_query_attr_end)
+    true_attr = disambiguation(question, false_entity, false_attr)
     print("消歧后的属性  ： {}".format(true_attr))
 
     answer_end = model.query_answer_simple_src(true_entity, true_attr)
@@ -148,3 +191,27 @@ def simple_res_process(question, ques_type):
 
     print("end {}   parse -- >".format(ques_type))
     return answer_end
+
+
+def entity_normal_fun(question):
+    entity_list = ner_on_work(question)
+    print(entity_list)
+
+    true_entity_list = []
+    false_entity_list = []
+
+    for ner in entity_list:
+        false_entity = ner[1]
+        normal_query_entity_end = find_candi_entity(false_entity)
+        if len(normal_query_entity_end) == 0:
+            continue
+
+        print("通过字典查询到的候选实体  ： {}".format(normal_query_entity_end))
+
+        true_entity = disambiguation_entity(question, normal_query_entity_end)
+        print("消歧后的实体  ： {}".format(true_entity))
+
+        true_entity_list.append(true_entity)
+        false_entity_list.append(false_entity)
+
+    return false_entity_list, true_entity_list

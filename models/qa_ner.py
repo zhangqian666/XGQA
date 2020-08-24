@@ -47,6 +47,7 @@ def ner_on_work(question):
                 if len(entity_list) > 0:
                     entity_str = "".join(entity_list)
                     all_entity.append((current_b_labels, entity_str))
+                    current_b_labels = ""
                     entity_list = []
 
             entity_list_number += 1
@@ -166,14 +167,14 @@ def disambiguation(question, entity, data_list):
         max_score = 0
 
         for keyword in keyword_list:  # 关键词
-            vector_attribute = bc.encode([attribute[0]])
+            vector_attribute = bc.encode([attribute])
             vector_keyword = bc.encode([keyword])
 
             c = cos_sim(vector_attribute, vector_keyword)
             if c > max_score:
                 max_score = c
 
-        dict_attribute_score[max_score] = attribute[0]
+        dict_attribute_score[max_score] = attribute
 
     sorted_end = sorted(dict_attribute_score.items(), key=lambda x: x[0], reverse=True)
     print(sorted_end)
@@ -181,13 +182,14 @@ def disambiguation(question, entity, data_list):
     return end_attribute
 
 
-def disambiguation_mult(question, entity, data_list):
+def disambiguation_mult(question, entity_list, data_list):
     # ltp模型目录的路径
     LTP_DATA_DIR = '/home/admin/EA-CKGQA/nltp/ltp_data_v3.4.0'
 
     pos_model_path = os.path.join(LTP_DATA_DIR, 'pos.model')  # 词性标注模型路径，模型名称为`pos.model`
 
-    question = question.replace(entity, "")
+    for en in entity_list:
+        question = question.replace(en, "")
 
     seg_list = list(jieba.cut(question))  # 分词处理，并且转化为列表形式
 
