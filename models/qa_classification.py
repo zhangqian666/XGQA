@@ -17,7 +17,7 @@ def question_classif(question):
     bc = BertClient(port=7000, port_out=7001, mode="CLASS")
     result = bc.encode([question])
 
-    return result[0]["pred_label"]
+    return result[0]["pred_label"][0]
 
 
 def classification_process(question, ques_type):
