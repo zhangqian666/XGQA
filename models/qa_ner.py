@@ -245,9 +245,9 @@ def disambiguation_mult(question, entity, data_list):
                 c = cos_sim(vector_attribute, vector_keyword)
                 all_score = all_score + c
 
-        all_key_num = all_key_num + 1
-
         dict_attribute_score[all_score] = all_key_num
+
+        all_key_num = all_key_num + 1
     #     scores_array = np.asarray(scores_array)np.mean(scores_array)
 
     keys = list(dict_attribute_score.keys())
