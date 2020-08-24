@@ -163,18 +163,21 @@ def disambiguation(question, entity, data_list):
     dict_attribute_score = {}
 
     for attribute in candidate_attributes:  # 候选属性
+        max_score = 0
 
         for keyword in keyword_list:  # 关键词
             vector_attribute = bc.encode([attribute[0]])
             vector_keyword = bc.encode([keyword])
 
             c = cos_sim(vector_attribute, vector_keyword)
+            if c > max_score:
+                max_score = c
 
-            dict_attribute_score[c] = attribute[0]
+        dict_attribute_score[max_score] = attribute[0]
 
     sorted_end = sorted(dict_attribute_score.items(), key=lambda x: x[0], reverse=True)
     print(dict_attribute_score.items())
-    end_attribute = data_list[sorted_end[0][1]]
+    end_attribute = sorted_end[0][1]
     return end_attribute
 
 
