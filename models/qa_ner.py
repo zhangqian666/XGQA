@@ -229,12 +229,13 @@ def disambiguation_mult(question, entity, data_list):
     bc = BertClient2(port=5557, port_out=5558)
 
     candidate_attributes = data_list
-    c = 0
+
     dict_attribute_score = {}
+
+    all_key_num = 0
 
     for attribute in candidate_attributes:  # 候选属性
         #     scores_array = []
-        all_key_num = 0
         all_score = 0
         for attri in attribute:
             vector_attribute = bc.encode([attri])
