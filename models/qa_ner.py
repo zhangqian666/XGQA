@@ -202,6 +202,60 @@ def disambiguation(question, entity, data_list):
     return end_attribute
 
 
+def disambiguation_mult(question, entity, data_list):
+    # ltp模型目录的路径
+    LTP_DATA_DIR = '/home/admin/EA-CKGQA/nltp/ltp_data_v3.4.0'
+    pos_model_path = os.path.join(LTP_DATA_DIR, 'pos.model')  # 词性标注模型路径，模型名称为`pos.model`
+
+    question = question.replace(entity, "")
+
+    seg_list = list(jieba.cut(question))  # 分词处理，并且转化为列表形式
+    wei_true_index = -1
+    if seg_list.count(data_list) > 0:
+        wei_true_index = seg_list.index(entity)
+
+    print('seg_list为：', seg_list)  # 分词后的列表
+    postagger = Postagger()  # 初始化实例
+    postagger.load(pos_model_path)  # 加载模型
+    postags_str = postagger.postag(seg_list)  # 对列表进行词性标注,并输出为str
+    postags = list(postags_str)  # 转化为列表
+    print(postags)  # 打印列表
+    postagger.release()  # 释放模型
+
+    keyword_list = keyword_chou(postags, 1, wei_true_index, seg_list)
+
+    print('keywords_List为：', keyword_list)
+
+    bc = BertClient2(port=5557, port_out=5558)
+
+    candidate_attributes = data_list
+    c = 0
+    dict_attribute_score = {}
+
+    for attribute in candidate_attributes:  # 候选属性
+        #     scores_array = []
+        for keyword in keyword_list:  # 关键词
+
+            vector_keyword = bc.encode([keyword])
+            all_score = 0
+            all_key_num = 0
+            for attri in attribute:
+                vector_attribute = bc.encode([attri])
+                c = cos_sim(vector_attribute, vector_keyword)
+                all_score = all_score + c
+                all_key_num = all_key_num + 1
+
+            # scores_array.append(c)
+            dict_attribute_score[all_score] = all_key_num
+    #     scores_array = np.asarray(scores_array)np.mean(scores_array)
+
+    keys = list(dict_attribute_score.keys())
+    keys.sort(reverse=True)
+    end_attribute = data_list[dict_attribute_score[keys[0]]]
+    print(end_attribute)
+    return data_list[end_attribute]
+
+
 def keyword_chou(form_pos_list, form_entity_flag, form_wei_index, form_seg_list):
     """
     实体确认过后，再执行此函数才有效；

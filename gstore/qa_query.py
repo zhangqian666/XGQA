@@ -54,6 +54,26 @@ class Model():
             print("解析错误/或者数据为空")
         return end_ls
 
+    def parse_json_two_attr(self, json_str):
+        # print(json_str)
+
+        all_part = json.loads(json_str)  # 读取所有文件内容
+        end_ls = []
+        try:
+            results = all_part['results']  # 获取results标签下的内容
+            results_bindings = results['bindings']  # 获取results标签下的bingdings内容
+            # 定义一个list，将数据全部放到list中
+            for res in results_bindings:
+                res1 = res['p']
+                res1 = res1['value']
+                res2 = res["p1"]
+                res2 = res2["value"]
+                if (res1, res2) not in end_ls:
+                    end_ls.append([res1, res2])
+        except:
+            print("解析错误/或者数据为空")
+        return end_ls
+
     def parse_json_answer(self, json_str):
         # print(json_str)
         all_part = json.loads(json_str)  # 读取所有文件内容
@@ -153,7 +173,7 @@ class Model():
         """ % (attribute, entity)
         return self.parse_json_answer(self.make_query(current_query))
 
-    #################   simple_res_reverse    #################
+    #################   mult_constraints_one_simple    #################
 
     def query_attribute_mult_constraints_one_simple(self, entity):
         """
@@ -163,11 +183,20 @@ class Model():
 
                 """
         query = """
-                  select distinct ?x ?r
+                  select ?p ?p1
                   where {
-                    <%s> ?x ?r
-                    ?x ?p ?answer.
-                  }
+                        <%s> ?p ?r.
+                         ?r ?p1 ?r2 .
+                      }
                 """ % entity
 
-        return self.parse_json_attr(self.make_query(query))
+        return self.parse_json_two_attr(self.make_query(query))
+
+    def query_answer_mult_constraints_one_simple(self, entity, attribute):
+        current_query = """
+             SELECT ?x WHERE {<%s> <%s> ?r .
+                                ?r <%s> ?x .
+                                } 
+           """ % (entity, attribute[0], attribute[1])
+
+        return self.parse_json_answer(self.make_query(current_query))

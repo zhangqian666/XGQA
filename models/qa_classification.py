@@ -50,22 +50,18 @@ def mult_constraints_one_simple_process(question):
 
     print("消歧后的实体  ： {}".format(true_entity))
 
-    gstore_query_attr_end = model.query_attribute_simple_src(true_entity)
-    print("通过gstore查询到的候选属性  ： {}".format(gstore_query_attr_end))
-
-    true_attr = disambiguation(question, ner_candi_res, gstore_query_attr_end)
-    print("消歧后的属性  ： {}".format(true_attr))
-
-    answer_end = model.query_answer_simple_src(true_entity, true_attr)
-
-    gstore_query_attr_end = model.query_attribute_simple_src(answer_end[0])
+    gstore_query_attr_end = model.query_attribute_mult_constraints_one_simple(true_entity)
 
     print("通过gstore查询到的候选属性  ： {}".format(gstore_query_attr_end))
 
-    true_attr = disambiguation(question, ner_candi_res, gstore_query_attr_end)
+    true_attr = disambiguation_mult(question, ner_candi_res, gstore_query_attr_end)
+
     print("消歧后的属性  ： {}".format(true_attr))
 
-    answer_end = model.query_answer_simple_src(true_entity, true_attr)
+    answer_end = model.query_answer_mult_constraints_one_simple(true_entity, true_attr)
+
+    print("查询到的结果 : {}".format(answer_end))
+    print("end mult_constraints_one_simple_parse -- >")
     return answer_end
 
 
