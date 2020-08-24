@@ -21,11 +21,11 @@ def question_classif(question):
 
 
 def classification_process(question, ques_type):
-    if ques_type is "simple_res":
+    if ques_type == "simple_res":
         simple_res_process(question)
-    elif ques_type is "simple_res_reverse":
+    elif ques_type == "simple_res_reverse":
         simple_res_reverse_process(question)
-    elif ques_type is "mult_constraints_one_simple":
+    elif ques_type == "mult_constraints_one_simple":
         mult_constraints_one_simple_process(question)
     else:
         return "暂未解决该类问题 {}".format(ques_type)
