@@ -35,7 +35,7 @@ def ner_on_work(question):
         all_entity = []
         entity_list = []
         entity_list_number = 0
-        current_b_labels = ""
+        current_b_labels = None
         for labels in question_labels:
 
             if labels in entity_labels:
@@ -46,8 +46,9 @@ def ner_on_work(question):
             else:
                 if len(entity_list) > 0:
                     entity_str = "".join(entity_list)
-                    all_entity.append((current_b_labels, entity_str))
-                    current_b_labels = ""
+                    if current_b_labels is not None:
+                        all_entity.append((current_b_labels, entity_str))
+                    current_b_labels = None
                     entity_list = []
 
             entity_list_number += 1
