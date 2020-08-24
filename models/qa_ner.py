@@ -15,6 +15,7 @@ import jieba
 from pyltp import Segmentor, Postagger, NamedEntityRecognizer
 from bert_serving.client import BertClient as BertClient2
 import numpy as np
+import pandas as pd
 
 all_labels = ["B-POE",  # 诗名首字
               "I-POE",  # 诗名其它字
@@ -106,6 +107,29 @@ def cos_sim(vector_a, vector_b):
     cos = num / denom
     sim = 0.5 + 0.5 * cos
     return sim
+
+
+frame_new = None
+
+
+def find_candi_entity(candi_entity):
+    global frame_new
+    try:
+        if frame_new is None:
+            frame_new = pd.read_pickle("/home/admin/EA-CKGQA/NED/pkubase-mention2ent.pkl")
+    except:
+        print("读取pkubase-mention2ent.pkl失败")
+
+    ner_end = frame_new.loc[frame_new["alias"] == candi_entity]
+
+    ready_to_entity = []
+    if len(ner_end) > 0:
+        for i in range(len(ner_end)):
+            ready_to_entity.append(ner_end.iloc[i]["entity"])
+    else:
+        print("未找到候选实体")
+
+    return ready_to_entity
 
 
 def disambiguation_entity(question, data_list):

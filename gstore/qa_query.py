@@ -73,7 +73,8 @@ class Model():
             print("解析错误/或者数据为空")
         return end_ls
 
-    def query_entity(self, entity):
+    #################   simple_src    #################
+    def query_entity_simple_src(self, entity):
         """
         查询实体 用于实体消歧
         :param entity:
@@ -87,10 +88,9 @@ class Model():
                   }
                """ % entity
 
-        list = self.parse_json_entity(self.make_query(query))
-        return list
+        return self.parse_json_entity(self.make_query(query))
 
-    def query_attribute(self, entity):
+    def query_attribute_simple_src(self, entity):
         """
                 获取实体的所有属性
                 :param entity:
@@ -104,49 +104,70 @@ class Model():
                   }
                 """ % entity
 
-        list = self.parse_json_attr(self.make_query(query))
-        return list
+        return self.parse_json_attr(self.make_query(query))
 
-    def query_answer(self, entity, attribute):
+    def query_answer_simple_src(self, entity, attribute):
         current_query = """
           SELECT ?x WHERE {<%s> <%s> ?x . } 
         """ % (entity, attribute)
-        list = self.parse_json_answer(self.make_query(current_query))
-        return list
 
-    def query_answer_other_simple(self, entity, attribute):
+        return self.parse_json_answer(self.make_query(current_query))
+
+    #################   simple_res_reverse    #################
+
+    def query_entity_simple_res_reverse(self, entity):
+        """
+        查询实体 用于实体消歧
+        :param entity:
+        :return:
+        """
+
+        query = """
+                  select distinct ?x
+                  where {
+                    ?x ?res <%s>.
+                  }
+               """ % entity
+
+        return self.parse_json_entity(self.make_query(query))
+
+    def query_attribute_simple_res_reverse(self, entity):
+        """
+                获取实体的所有属性
+                :param entity:
+                :return:
+
+                """
+        query = """
+                  select distinct ?x ?r
+                  where {
+                     ?x ?r <%s>.
+                  }
+                """ % entity
+
+        return self.parse_json_attr(self.make_query(query))
+
+    def query_answer_simple_res_reverse(self, entity, attribute):
         current_query = """
-          prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-          prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-          prefix xsd: <http://www.w3.org/2001/XMLSchema#>
-          prefix poetryc: <http://ictdba.apex.ac.cn/poetry/class/>
-          prefix poetryp: <http://ictdba.apex.ac.cn/poetry/property/>
-          prefix poetryr: <http://ictdba.apex.ac.cn/poetry/resource/>
-          SELECT ?s ?x WHERE {<%s> <%s> ?s.
-                            OPTIONAL
-                            {
-                               ?s  rdfs:label ?x .
-                            }
-                            } 
+          SELECT ?x WHERE { ?x <%s> <%s>. } 
+        """ % (attribute, entity)
+        return self.parse_json_answer(self.make_query(current_query))
 
-        """ % (entity, attribute)
-        list1 = self.parse_json_answer(self.make_query(current_query))
+    #################   simple_res_reverse    #################
 
-        current_query2 = """
-                  prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-                  prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-                  prefix xsd: <http://www.w3.org/2001/XMLSchema#>
-                  prefix poetryc: <http://ictdba.apex.ac.cn/poetry/class/>
-                  prefix poetryp: <http://ictdba.apex.ac.cn/poetry/property/>
-                  prefix poetryr: <http://ictdba.apex.ac.cn/poetry/resource/>
-                  SELECT ?s ?x WHERE {?s <%s> <%s> .
-                                    OPTIONAL
-                                    {
-                                       ?s  rdfs:label ?x .
-                                    }
-                                    } 
+    def query_attribute_mult_constraints_one_simple(self, entity):
+        """
+                获取实体的所有属性
+                :param entity:
+                :return:
 
-                """ % (attribute, entity)
-        list2 = self.parse_json_answer(self.make_query(current_query2))
-        list1.extend(list2)
-        return list1
+                """
+        query = """
+                  select distinct ?x ?r
+                  where {
+                    <%s> ?x ?r
+                    ?x ?p ?answer.
+                  }
+                """ % entity
+
+        return self.parse_json_attr(self.make_query(query))
