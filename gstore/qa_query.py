@@ -183,7 +183,7 @@ class Model():
 
                 """
         query = """
-                  select ?p ?p1
+                  select distinct ?p ?p1
                   where {
                         <%s> ?p ?r.
                          ?r ?p1 ?r2 .
@@ -194,7 +194,7 @@ class Model():
 
     def query_answer_mult_constraints_one_simple(self, entity, attribute):
         current_query = """
-             SELECT ?x WHERE {<%s> <%s> ?r .
+             SELECT distinct ?x WHERE {<%s> <%s> ?r .
                                 ?r <%s> ?x .
                                 } 
            """ % (entity, attribute[0], attribute[1])
