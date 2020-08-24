@@ -130,9 +130,9 @@ def disambiguation_entity(question, data_list):
         # scores_array.append(c)
         dict_entity_score[c] = entity
 
-    keys = list(dict_entity_score.keys())
-    keys.sort(reverse=True)
-    end_entity = dict_entity_score[keys[0]]
+    sorted_end = sorted(dict_entity_score.items(), key=lambda x: x[0], reverse=True)
+
+    end_entity = sorted_end[0][1]
     print(end_entity)
     return end_entity
 
