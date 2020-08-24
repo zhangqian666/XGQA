@@ -50,7 +50,8 @@ def mult_constraints_one_simple_process(question):
 
     print("通过字典查询到的候选实体  ： {}".format(normal_query_entity_end))
 
-    true_entity = normal_query_entity_end[0]
+    # true_entity = normal_query_entity_end[0]
+    true_entity = disambiguation_entity(question, normal_query_entity_end)
 
     print("消歧后的实体  ： {}".format(true_entity))
 
@@ -88,8 +89,8 @@ def simple_res_reverse_process(question):
 
     print("通过字典查询到的候选实体  ： {}".format(normal_query_entity_end))
 
-    #             true_entity = disambiguation_entity(question,normal_query_entity_end)
-    true_entity = normal_query_entity_end[0]
+    true_entity = disambiguation_entity(question, normal_query_entity_end)
+    # true_entity = normal_query_entity_end[0]
 
     print("消歧后的实体  ： {}".format(true_entity))
 
@@ -124,8 +125,8 @@ def simple_res_process(question):
 
     print("通过字典查询到的候选实体  ： {}".format(normal_query_entity_end))
 
-    #             true_entity = disambiguation_entity(question,normal_query_entity_end)
-    true_entity = normal_query_entity_end[0]
+    true_entity = disambiguation_entity(question, normal_query_entity_end)
+    # true_entity = normal_query_entity_end[0]
 
     print("消歧后的实体  ： {}".format(true_entity))
 

@@ -136,7 +136,8 @@ def disambiguation_entity(question, data_list):
     bc = BertClient2(port=5557, port_out=5558)
 
     candidate_entity = data_list
-    c = 0
+
+
     dict_entity_score = {}
 
     for entity in candidate_entity:  # 候选属性
