@@ -234,19 +234,19 @@ def disambiguation_mult(question, entity, data_list):
 
     for attribute in candidate_attributes:  # 候选属性
         #     scores_array = []
-        for keyword in keyword_list:  # 关键词
+        all_key_num = 0
+        all_score = 0
+        for attri in attribute:
+            vector_attribute = bc.encode([attri])
 
-            vector_keyword = bc.encode([keyword])
-            all_score = 0
-            all_key_num = 0
-            for attri in attribute:
-                vector_attribute = bc.encode([attri])
+            for keyword in keyword_list:  # 关键词
+                vector_keyword = bc.encode([keyword])
                 c = cos_sim(vector_attribute, vector_keyword)
                 all_score = all_score + c
-                all_key_num = all_key_num + 1
 
-            # scores_array.append(c)
-            dict_attribute_score[all_score] = all_key_num
+        all_key_num = all_key_num + 1
+
+        dict_attribute_score[all_score] = all_key_num
     #     scores_array = np.asarray(scores_array)np.mean(scores_array)
 
     keys = list(dict_attribute_score.keys())
