@@ -253,7 +253,7 @@ def disambiguation_mult(question, entity, data_list):
     keys.sort(reverse=True)
     end_attribute = data_list[dict_attribute_score[keys[0]]]
     print(end_attribute)
-    return data_list[end_attribute]
+    return end_attribute
 
 
 def keyword_chou(form_pos_list, form_entity_flag, form_wei_index, form_seg_list):
