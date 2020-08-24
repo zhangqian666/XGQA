@@ -22,17 +22,17 @@ def question_classif(question):
 
 def classification_process(question, ques_type):
     if ques_type == "simple_res":
-        return simple_res_process(question)
+        return simple_res_process(question, ques_type)
     elif ques_type == "simple_res_reverse":
-        return simple_res_reverse_process(question)
+        return simple_res_reverse_process(question, ques_type)
     elif ques_type == "mult_constraints_one_simple":
-        return mult_constraints_one_simple_process(question)
+        return mult_constraints_one_simple_process(question, ques_type)
     else:
         return "暂未解决该类问题 {}".format(ques_type)
 
 
-def mult_constraints_one_simple_process(question):
-    print("start mult_constraints_one_simple_parse -- >")
+def mult_constraints_one_simple_process(question, ques_type):
+    print("start {} parse -- >".format(ques_type))
 
     ner_candi_list = ner_on_work(question)
 
@@ -50,7 +50,6 @@ def mult_constraints_one_simple_process(question):
 
     print("通过字典查询到的候选实体  ： {}".format(normal_query_entity_end))
 
-    # true_entity = normal_query_entity_end[0]
     true_entity = disambiguation_entity(question, normal_query_entity_end)
 
     print("消歧后的实体  ： {}".format(true_entity))
@@ -59,6 +58,9 @@ def mult_constraints_one_simple_process(question):
 
     print("通过gstore查询到的候选属性  ： {}".format(gstore_query_attr_end))
 
+    if len(gstore_query_attr_end) == 0:
+        return "未查到合适的候选属性"
+
     true_attr = disambiguation_mult(question, ner_candi_res, gstore_query_attr_end)
 
     print("消歧后的属性  ： {}".format(true_attr))
@@ -66,12 +68,13 @@ def mult_constraints_one_simple_process(question):
     answer_end = model.query_answer_mult_constraints_one_simple(true_entity, true_attr)
 
     print("查询到的结果 : {}".format(answer_end))
-    print("end mult_constraints_one_simple_parse -- >")
+
+    print("end {}   parse -- >".format(ques_type))
     return answer_end
 
 
-def simple_res_reverse_process(question):
-    print("start simple_res_reverse_parse -- >")
+def simple_res_reverse_process(question, ques_type):
+    print("start {} parse -- >".format(ques_type))
 
     ner_candi_list = ner_on_work(question)
 
@@ -90,12 +93,14 @@ def simple_res_reverse_process(question):
     print("通过字典查询到的候选实体  ： {}".format(normal_query_entity_end))
 
     true_entity = disambiguation_entity(question, normal_query_entity_end)
-    # true_entity = normal_query_entity_end[0]
 
     print("消歧后的实体  ： {}".format(true_entity))
 
     gstore_query_attr_end = model.query_attribute_simple_src(true_entity)
     print("通过gstore查询到的候选属性  ： {}".format(gstore_query_attr_end))
+
+    if len(gstore_query_attr_end) == 0:
+        return "未查到合适的候选属性"
 
     true_attr = disambiguation(question, ner_candi_res, gstore_query_attr_end)
     print("消歧后的属性  ： {}".format(true_attr))
@@ -103,12 +108,12 @@ def simple_res_reverse_process(question):
     answer_end = model.query_answer_simple_res_reverse(true_entity, true_attr)
     print("查询到的结果 : {}".format(answer_end))
 
-    print("end simple_res_reverse_parse -- >")
+    print("end {}   parse -- >".format(ques_type))
     return answer_end
 
 
-def simple_res_process(question):
-    print("start simple_res_parse -- >")
+def simple_res_process(question, ques_type):
+    print("start {} parse -- >".format(ques_type))
 
     ner_candi_list = ner_on_work(question)
 
@@ -126,12 +131,14 @@ def simple_res_process(question):
     print("通过字典查询到的候选实体  ： {}".format(normal_query_entity_end))
 
     true_entity = disambiguation_entity(question, normal_query_entity_end)
-    # true_entity = normal_query_entity_end[0]
 
     print("消歧后的实体  ： {}".format(true_entity))
 
     gstore_query_attr_end = model.query_attribute_simple_src(true_entity)
     print("通过gstore查询到的候选属性  ： {}".format(gstore_query_attr_end))
+
+    if len(gstore_query_attr_end) == 0:
+        return "未查到合适的候选属性"
 
     true_attr = disambiguation(question, ner_candi_res, gstore_query_attr_end)
     print("消歧后的属性  ： {}".format(true_attr))
@@ -139,5 +146,5 @@ def simple_res_process(question):
     answer_end = model.query_answer_simple_src(true_entity, true_attr)
     print("查询到的结果 : {}".format(answer_end))
 
-    print("end simple_res_parse -- >")
+    print("end {}   parse -- >".format(ques_type))
     return answer_end

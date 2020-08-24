@@ -17,23 +17,6 @@ from bert_serving.client import BertClient as BertClient2
 import numpy as np
 import pandas as pd
 
-all_labels = ["B-POE",  # 诗名首字
-              "I-POE",  # 诗名其它字
-              "B-VER",  # 诗句首字
-              "I-VER",  # 诗句其它字
-              "B-PEO",  # 人名首字
-              "I-PEO",  # 人名其它字
-              "B-LOC",  # 地点首字
-              "I-LOC",  # 地点其它字
-              "B-POT",  # 状物首字
-              "I-POT",  # 状物其它字
-              "B-DYN",  # 朝代首字
-              "I-DYN",  # 朝代其它字
-              "B-POC",  # 类别首字
-              "I-POC",  # 类别其它字
-              "B-POG",  # 体裁首字
-              "I-POG",  # 体裁其它字
-              ]
 entity_labels = ["B"]
 
 
@@ -137,7 +120,6 @@ def disambiguation_entity(question, data_list):
 
     candidate_entity = data_list
 
-
     dict_entity_score = {}
 
     for entity in candidate_entity:  # 候选属性
@@ -158,47 +140,42 @@ def disambiguation_entity(question, data_list):
 def disambiguation(question, entity, data_list):
     # ltp模型目录的路径
     LTP_DATA_DIR = '/home/admin/EA-CKGQA/nltp/ltp_data_v3.4.0'
+
     pos_model_path = os.path.join(LTP_DATA_DIR, 'pos.model')  # 词性标注模型路径，模型名称为`pos.model`
 
     question = question.replace(entity, "")
 
     seg_list = list(jieba.cut(question))  # 分词处理，并且转化为列表形式
-    wei_true_index = -1
-    if seg_list.count(data_list) > 0:
-        wei_true_index = seg_list.index(entity)
-
-    print('seg_list为：', seg_list)  # 分词后的列表
     postagger = Postagger()  # 初始化实例
     postagger.load(pos_model_path)  # 加载模型
     postags_str = postagger.postag(seg_list)  # 对列表进行词性标注,并输出为str
     postags = list(postags_str)  # 转化为列表
-    print(postags)  # 打印列表
+    print("分词列表：{},识别词性列表：{}".format(seg_list, postags))  # 打印列表
     postagger.release()  # 释放模型
 
-    keyword_list = keyword_chou(postags, 1, wei_true_index, seg_list)
+    keyword_list = keyword_chou(postags, 1, -1, seg_list)
 
-    print('keywords_List为：', keyword_list)
+    print('关键词为：', keyword_list)
 
     bc = BertClient2(port=5557, port_out=5558)
 
     candidate_attributes = data_list
-    c = 0
+
     dict_attribute_score = {}
 
     for attribute in candidate_attributes:  # 候选属性
-        #     scores_array = []
+
         for keyword in keyword_list:  # 关键词
             vector_attribute = bc.encode([attribute[0]])
             vector_keyword = bc.encode([keyword])
 
             c = cos_sim(vector_attribute, vector_keyword)
-            # scores_array.append(c)
-            dict_attribute_score[c] = attribute[0]
-    #     scores_array = np.asarray(scores_array)np.mean(scores_array)
 
-    keys = list(dict_attribute_score.keys())
-    keys.sort(reverse=True)
-    end_attribute = dict_attribute_score[keys[0]]
+            dict_attribute_score[c] = attribute[0]
+
+    sorted_end = sorted(dict_attribute_score.items(), key=lambda x: x[0], reverse=True)
+
+    end_attribute = sorted_end[0][1]
     print(end_attribute)
     return end_attribute
 
@@ -206,26 +183,22 @@ def disambiguation(question, entity, data_list):
 def disambiguation_mult(question, entity, data_list):
     # ltp模型目录的路径
     LTP_DATA_DIR = '/home/admin/EA-CKGQA/nltp/ltp_data_v3.4.0'
+
     pos_model_path = os.path.join(LTP_DATA_DIR, 'pos.model')  # 词性标注模型路径，模型名称为`pos.model`
 
     question = question.replace(entity, "")
 
     seg_list = list(jieba.cut(question))  # 分词处理，并且转化为列表形式
-    wei_true_index = -1
-    if seg_list.count(data_list) > 0:
-        wei_true_index = seg_list.index(entity)
 
-    print('seg_list为：', seg_list)  # 分词后的列表
     postagger = Postagger()  # 初始化实例
     postagger.load(pos_model_path)  # 加载模型
     postags_str = postagger.postag(seg_list)  # 对列表进行词性标注,并输出为str
     postags = list(postags_str)  # 转化为列表
-    print(postags)  # 打印列表
+    print("分词列表：{},识别词性列表：{}".format(seg_list, postags))  # 打印列表
     postagger.release()  # 释放模型
 
-    keyword_list = keyword_chou(postags, 1, wei_true_index, seg_list)
-
-    print('keywords_List为：', keyword_list)
+    keyword_list = keyword_chou(postags, 1, -1, seg_list)
+    print('关键词为：', keyword_list)
 
     bc = BertClient2(port=5557, port_out=5558)
 
@@ -236,24 +209,27 @@ def disambiguation_mult(question, entity, data_list):
     all_key_num = 0
 
     for attribute in candidate_attributes:  # 候选属性
-        #     scores_array = []
-        all_score = 0
-        for attri in attribute:
-            vector_attribute = bc.encode([attri])
 
+        all_score = 0
+
+        for attri in attribute:
+
+            vector_attribute = bc.encode([attri])
+            max_score = 0
             for keyword in keyword_list:  # 关键词
                 vector_keyword = bc.encode([keyword])
                 c = cos_sim(vector_attribute, vector_keyword)
-                all_score = all_score + c
+                if c > max_score:
+                    max_score = c
+            all_score += max_score
 
         dict_attribute_score[all_score] = all_key_num
 
         all_key_num = all_key_num + 1
-    #     scores_array = np.asarray(scores_array)np.mean(scores_array)
 
-    keys = list(dict_attribute_score.keys())
-    keys.sort(reverse=True)
-    end_attribute = data_list[dict_attribute_score[keys[0]]]
+    sorted_end = sorted(dict_attribute_score.items(), key=lambda x: x[0], reverse=True)
+
+    end_attribute = sorted_end[0][1]
     print(end_attribute)
     return end_attribute
 
@@ -268,7 +244,7 @@ def keyword_chou(form_pos_list, form_entity_flag, form_wei_index, form_seg_list)
     :param form_wei_index:上面函数return出来的临时保存索引号，此函数中对此索引号自动过滤掉
     :return:返回所有除去实体以外的关键词
     """
-    pos_list = ["n", "nh", "ni", "nl", "ns", "nt", "nz", "ws", "v", "i", "r"]
+    pos_list = ["n", "nh", "ni", "nl", "ns", "nt", "nz", "v"]
 
     pos_list_count = 0  # 下方遍历计数使用
 
