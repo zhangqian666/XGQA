@@ -20,26 +20,26 @@ def question_classif(question):
     return result[0]["pred_label"][0]
 
 
-def classification_process(question, ques_type):
+def classification_process(num, question, ques_type):
     if ques_type == "simple_res":
-        return simple_res_process(question, ques_type)
+        return simple_res_process(num, question, ques_type)
     elif ques_type == "simple_res_reverse":
-        return simple_res_reverse_process(question, ques_type)
+        return simple_res_reverse_process(num, question, ques_type)
     elif ques_type == "mult_constraints_one_simple":
-        return mult_constraints_one_simple_process(question, ques_type)
+        return mult_constraints_one_simple_process(num, question, ques_type)
     elif ques_type == "mult_constraints_one_reverse_simple":
-        return mult_constraints_one_reverse_simple_process(question, ques_type)
+        return mult_constraints_one_reverse_simple_process(num, question, ques_type)
     elif ques_type == "mult_constraints_two_reverse":
-        return mult_constraints_two_reverse_process(question, ques_type)
+        return mult_constraints_two_reverse_process(num, question, ques_type)
     elif ques_type == "mult_constraints_two_reverse_simple":
-        return mult_constraints_two_reverse_simple_process(question, ques_type)
+        return mult_constraints_two_reverse_simple_process(num, question, ques_type)
     elif ques_type == "mult_constraints_three_reverse":
-        return mult_constraints_three_reverse_process(question, ques_type)
+        return mult_constraints_three_reverse_process(num, question, ques_type)
     else:
         return "暂未解决该类问题 {}".format(ques_type)
 
 
-def mult_constraints_three_reverse_process(question, ques_type):
+def mult_constraints_three_reverse_process(num, question, ques_type):
     print("start {} parse -- >".format(ques_type))
 
     false_entity_list, true_entity_list = entity_normal_fun(question)
@@ -69,13 +69,13 @@ def mult_constraints_three_reverse_process(question, ques_type):
         true_attr)
 
     print("查询到的结果 : {}".format(answer_end))
-    end_process(question, answer_end, current_query)
+    end_process(num, question, answer_end, current_query)
     print("end {}   parse -- >".format(ques_type))
 
     return answer_end
 
 
-def mult_constraints_two_reverse_simple_process(question, ques_type):
+def mult_constraints_two_reverse_simple_process(num, question, ques_type):
     print("start {} parse -- >".format(ques_type))
 
     false_entity_list, true_entity_list = entity_normal_fun(question)
@@ -105,13 +105,13 @@ def mult_constraints_two_reverse_simple_process(question, ques_type):
         true_attr)
 
     print("查询到的结果 : {}".format(answer_end))
-    end_process(question, answer_end, current_query)
+    end_process(num, question, answer_end, current_query)
     print("end {}   parse -- >".format(ques_type))
 
     return answer_end
 
 
-def mult_constraints_two_reverse_process(question, ques_type):
+def mult_constraints_two_reverse_process(num, question, ques_type):
     print("start {} parse -- >".format(ques_type))
 
     false_entity_list, true_entity_list = entity_normal_fun(question)
@@ -141,13 +141,13 @@ def mult_constraints_two_reverse_process(question, ques_type):
         true_attr)
 
     print("查询到的结果 : {}".format(answer_end))
-    end_process(question, answer_end, current_query)
+    end_process(num, question, answer_end, current_query)
     print("end {}   parse -- >".format(ques_type))
 
     return answer_end
 
 
-def mult_constraints_one_reverse_simple_process(question, ques_type):
+def mult_constraints_one_reverse_simple_process(num, question, ques_type):
     print("start {} parse -- >".format(ques_type))
 
     false_entity_list, true_entity_list = entity_normal_fun(question)
@@ -174,12 +174,12 @@ def mult_constraints_one_reverse_simple_process(question, ques_type):
     answer_end, current_query = model.query_answer_mult_constraints_one_reverse_simple(true_entity, true_attr)
 
     print("查询到的结果 : {}".format(answer_end))
-    end_process(question, answer_end, current_query)
+    end_process(num, question, answer_end, current_query)
     print("end {}   parse -- >".format(ques_type))
     return answer_end
 
 
-def mult_constraints_one_simple_process(question, ques_type):
+def mult_constraints_one_simple_process(num, question, ques_type):
     print("start {} parse -- >".format(ques_type))
 
     false_entity_list, true_entity_list = entity_normal_fun(question)
@@ -206,12 +206,12 @@ def mult_constraints_one_simple_process(question, ques_type):
     answer_end, current_query = model.query_answer_mult_constraints_one_simple(true_entity, true_attr)
 
     print("查询到的结果 : {}".format(answer_end))
-    end_process(question, answer_end, current_query)
+    end_process(num, question, answer_end, current_query)
     print("end {}   parse -- >".format(ques_type))
     return answer_end
 
 
-def simple_res_reverse_process(question, ques_type):
+def simple_res_reverse_process(num, question, ques_type):
     print("start {} parse -- >".format(ques_type))
 
     false_entity_list, true_entity_list = entity_normal_fun(question)
@@ -235,12 +235,12 @@ def simple_res_reverse_process(question, ques_type):
 
     answer_end, current_query = model.query_answer_simple_res_reverse(true_entity, true_attr)
     print("查询到的结果 : {}".format(answer_end))
-    end_process(question, answer_end, current_query)
+    end_process(num, question, answer_end, current_query)
     print("end {}   parse -- >".format(ques_type))
     return answer_end
 
 
-def simple_res_process(question, ques_type):
+def simple_res_process(num, question, ques_type):
     print("start {} parse -- >".format(ques_type))
 
     false_entity_list, true_entity_list = entity_normal_fun(question)
@@ -266,7 +266,7 @@ def simple_res_process(question, ques_type):
     print("查询到的结果 : {}".format(answer_end))
 
     print("end {}   parse -- >".format(ques_type))
-    end_process(question, answer_end, current_query)
+    end_process(num, question, answer_end, current_query)
     return answer_end
 
 
@@ -294,6 +294,6 @@ def entity_normal_fun(question):
     return false_entity_list, true_entity_list
 
 
-def end_process(question, answer_end, current_query):
+def end_process(num, question, answer_end, current_query):
     with open("./answer.txt", "a+", encoding="utf-8") as f:
-        f.write("{}\n{}\n{}\n\n".format(question, current_query, answer_end))
+        f.write("q{}:{}\n{}\n{}\n\n".format(num, question, current_query, answer_end))
