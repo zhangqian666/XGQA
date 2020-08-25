@@ -64,7 +64,7 @@ def mult_constraints_three_reverse_process(question, ques_type):
 
     print("消歧后的属性  ： {}".format(true_attr))
 
-    answer_end = model.query_answer_mult_constraints_three_reverse(
+    answer_end, current_query = model.query_answer_mult_constraints_three_reverse(
         true_entity,
         true_attr)
 
@@ -100,7 +100,7 @@ def mult_constraints_two_reverse_simple_process(question, ques_type):
 
     print("消歧后的属性  ： {}".format(true_attr))
 
-    answer_end = model.query_answer_mult_constraints_two_reverse_simple(
+    answer_end, current_query = model.query_answer_mult_constraints_two_reverse_simple(
         true_entity,
         true_attr)
 
@@ -136,7 +136,7 @@ def mult_constraints_two_reverse_process(question, ques_type):
 
     print("消歧后的属性  ： {}".format(true_attr))
 
-    answer_end = model.query_answer_mult_constraints_two_reverse(
+    answer_end, current_query = model.query_answer_mult_constraints_two_reverse(
         true_entity,
         true_attr)
 
@@ -171,7 +171,7 @@ def mult_constraints_one_reverse_simple_process(question, ques_type):
 
     print("消歧后的属性  ： {}".format(true_attr))
 
-    answer_end = model.query_answer_mult_constraints_one_reverse_simple(true_entity, true_attr)
+    answer_end, current_query = model.query_answer_mult_constraints_one_reverse_simple(true_entity, true_attr)
 
     print("查询到的结果 : {}".format(answer_end))
 
@@ -203,7 +203,7 @@ def mult_constraints_one_simple_process(question, ques_type):
 
     print("消歧后的属性  ： {}".format(true_attr))
 
-    answer_end = model.query_answer_mult_constraints_one_simple(true_entity, true_attr)
+    answer_end, current_query = model.query_answer_mult_constraints_one_simple(true_entity, true_attr)
 
     print("查询到的结果 : {}".format(answer_end))
 
@@ -233,7 +233,7 @@ def simple_res_reverse_process(question, ques_type):
     true_attr = disambiguation(question, false_entity, false_attr)
     print("消歧后的属性  ： {}".format(true_attr))
 
-    answer_end = model.query_answer_simple_res_reverse(true_entity, true_attr)
+    answer_end, current_query = model.query_answer_simple_res_reverse(true_entity, true_attr)
     print("查询到的结果 : {}".format(answer_end))
 
     print("end {}   parse -- >".format(ques_type))
@@ -262,10 +262,11 @@ def simple_res_process(question, ques_type):
     true_attr = disambiguation(question, false_entity, false_attr)
     print("消歧后的属性  ： {}".format(true_attr))
 
-    answer_end = model.query_answer_simple_src(true_entity, true_attr)
+    answer_end, current_query = model.query_answer_simple_src(true_entity, true_attr)
     print("查询到的结果 : {}".format(answer_end))
 
     print("end {}   parse -- >".format(ques_type))
+
     return answer_end
 
 
@@ -291,3 +292,8 @@ def entity_normal_fun(question):
         false_entity_list.append(false_entity)
 
     return false_entity_list, true_entity_list
+
+
+def end_process(question, answer_end, current_query):
+    with open("./answer.txt", "a+", encoding="utf-8") as f:
+        f.write("{}\n{}\n{}\n\n".format(question, current_query, answer_end))

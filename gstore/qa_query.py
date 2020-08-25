@@ -113,7 +113,7 @@ class Model():
           select ?x where {<%s> <%s> ?x.} 
         """ % (entity, attribute)
 
-        return self.parse_json_answer(self.make_query(current_query))
+        return self.parse_json_answer(self.make_query(current_query)),current_query
 
     #################   simple_res_reverse    #################
 
@@ -134,7 +134,7 @@ class Model():
         current_query = """
           select ?x where { ?x <%s> <%s>. } 
         """ % (attribute, entity)
-        return self.parse_json_answer(self.make_query(current_query))
+        return self.parse_json_answer(self.make_query(current_query)),current_query
 
     #################   mult_constraints_one_simple    #################
 
@@ -156,7 +156,7 @@ class Model():
         SELECT distinct ?x WHERE {<%s> <%s> ?r . ?r <%s> ?x.} 
            """ % (entity, attribute[0], attribute[1])
 
-        return self.parse_json_answer(self.make_query(current_query))
+        return self.parse_json_answer(self.make_query(current_query)),current_query
 
     #################   mult_constraints_one_simple    #################
 
@@ -182,7 +182,7 @@ class Model():
         SELECT distinct ?x WHERE {?r <%s> <%s> .?r <%s> ?x .} 
            """ % (attribute[0], entity, attribute[1])
 
-        return self.parse_json_answer(self.make_query(current_query))
+        return self.parse_json_answer(self.make_query(current_query)),current_query
 
     #################   mult_constraints_two_reverse    #################
 
@@ -207,7 +207,7 @@ class Model():
         select distinct ?x where {?x <%s> <%s>. ?x <%s> <%s>. }        
            """ % (attribute[0], entity[0], attribute[1], entity[1])
 
-        return self.parse_json_answer(self.make_query(current_query))
+        return self.parse_json_answer(self.make_query(current_query)),current_query
 
     #################   mult_constraints_two_reverse_simple    #################
 
@@ -234,7 +234,7 @@ class Model():
         select distinct ?x where {?x <%s> <%s>. ?x <%s> <%s>. ?x <%s> ?y }        
            """ % (attribute[0], entity[0], attribute[1], entity[1], attribute[2])
 
-        return self.parse_json_answer(self.make_query(current_query))
+        return self.parse_json_answer(self.make_query(current_query)),current_query
 
     #################   mult_constraints_three_reverse    #################
     def query_attribute_mult_constraints_three_reverse(self, entity):
@@ -259,4 +259,4 @@ class Model():
                select distinct ?x where {?x <%s> <%s>. ?x <%s> <%s>. ?x <%s> <%s> }        
                   """ % (attribute[0], entity[0], attribute[1], entity[1], attribute[2], entity[2])
 
-        return self.parse_json_answer(self.make_query(current_query))
+        return self.parse_json_answer(self.make_query(current_query)),current_query
