@@ -31,11 +31,51 @@ def classification_process(question, ques_type):
         return mult_constraints_one_reverse_simple_process(question, ques_type)
     elif ques_type == "mult_constraints_two_reverse":
         return mult_constraints_two_reverse_process(question, ques_type)
+    elif ques_type == "mult_constraints_two_reverse_simple":
+        return mult_constraints_two_reverse_simple_process(question, ques_type)
+    elif ques_type == "mult_constraints_three_reverse":
+        return mult_constraints_three_reverse_process(question, ques_type)
     else:
         return "暂未解决该类问题 {}".format(ques_type)
 
 
-def mult_constraints_two_reverse_process(question, ques_type):
+def mult_constraints_three_reverse_process(question, ques_type):
+    print("start {} parse -- >".format(ques_type))
+
+    false_entity_list, true_entity_list = entity_normal_fun(question)
+
+    if len(true_entity_list) != 3:
+        return "识别实体数量错误"
+
+    false_entity = false_entity_list
+    true_entity = true_entity_list
+
+    model = Model()
+
+    false_attr = model.query_attribute_mult_constraints_three_reverse(
+        true_entity)
+
+    print("通过gstore查询到的候选属性  ： {}".format(false_attr))
+
+    if len(false_attr) == 0:
+        return "未查到合适的候选属性"
+
+    true_attr = disambiguation_mult(question, false_entity, false_attr)
+
+    print("消歧后的属性  ： {}".format(true_attr))
+
+    answer_end = model.query_answer_mult_constraints_three_reverse(
+        true_entity,
+        true_attr)
+
+    print("查询到的结果 : {}".format(answer_end))
+
+    print("end {}   parse -- >".format(ques_type))
+
+    return answer_end
+
+
+def mult_constraints_two_reverse_simple_process(question, ques_type):
     print("start {} parse -- >".format(ques_type))
 
     false_entity_list, true_entity_list = entity_normal_fun(question)
@@ -61,6 +101,42 @@ def mult_constraints_two_reverse_process(question, ques_type):
     print("消歧后的属性  ： {}".format(true_attr))
 
     answer_end = model.query_answer_mult_constraints_two_reverse_simple(
+        true_entity,
+        true_attr)
+
+    print("查询到的结果 : {}".format(answer_end))
+
+    print("end {}   parse -- >".format(ques_type))
+
+    return answer_end
+
+
+def mult_constraints_two_reverse_process(question, ques_type):
+    print("start {} parse -- >".format(ques_type))
+
+    false_entity_list, true_entity_list = entity_normal_fun(question)
+
+    if len(true_entity_list) != 2:
+        return "识别实体数量错误"
+
+    false_entity = false_entity_list
+    true_entity = true_entity_list
+
+    model = Model()
+
+    false_attr = model.query_attribute_mult_constraints_two_reverse(
+        true_entity)
+
+    print("通过gstore查询到的候选属性  ： {}".format(false_attr))
+
+    if len(false_attr) == 0:
+        return "未查到合适的候选属性"
+
+    true_attr = disambiguation_mult(question, false_entity, false_attr)
+
+    print("消歧后的属性  ： {}".format(true_attr))
+
+    answer_end = model.query_answer_mult_constraints_two_reverse(
         true_entity,
         true_attr)
 
