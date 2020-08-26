@@ -20,6 +20,12 @@ def question_classif(question):
     return result[0]["pred_label"][0]
 
 
+def write_file_classification_process(num, question, ques_type):
+    all_answer = classification_process(num, question, ques_type)
+    print("write =========> {}".format(all_answer))
+    end_process(all_answer)
+
+
 def classification_process(num, question, ques_type):
     if ques_type == "simple_res":
         return simple_res_process(num, question, ques_type)
@@ -45,7 +51,7 @@ def mult_constraints_three_reverse_process(num, question, ques_type):
     false_entity_list, true_entity_list = entity_normal_fun(question)
 
     if len(true_entity_list) != 3:
-        return "识别实体数量错误"
+        return "<识别实体数量错误>"
 
     false_entity = false_entity_list
     true_entity = true_entity_list
@@ -60,7 +66,7 @@ def mult_constraints_three_reverse_process(num, question, ques_type):
     print("通过gstore查询到的候选属性  ： {}".format(false_attr))
 
     if len(false_attr) == 0:
-        return "未查到合适的候选属性"
+        return "<未查到合适的候选属性>"
 
     true_attr = disambiguation_mult(question, false_entity, false_attr)
 
@@ -71,7 +77,7 @@ def mult_constraints_three_reverse_process(num, question, ques_type):
         true_attr)
 
     print("查询到的结果 : {}".format(answer_end))
-    end_process(answer_end)
+
     print("end {}   parse -- >".format(ques_type))
 
     return answer_end
@@ -83,7 +89,7 @@ def mult_constraints_two_reverse_simple_process(num, question, ques_type):
     false_entity_list, true_entity_list = entity_normal_fun(question)
 
     if len(true_entity_list) != 2:
-        return "识别实体数量错误"
+        return "<识别实体数量错误>"
 
     false_entity = false_entity_list
     true_entity = true_entity_list
@@ -96,7 +102,7 @@ def mult_constraints_two_reverse_simple_process(num, question, ques_type):
     print("通过gstore查询到的候选属性  ： {}".format(false_attr))
 
     if len(false_attr) == 0:
-        return "未查到合适的候选属性"
+        return "<未查到合适的候选属性>"
 
     true_attr = disambiguation_mult(question, false_entity, false_attr)
 
@@ -107,7 +113,7 @@ def mult_constraints_two_reverse_simple_process(num, question, ques_type):
         true_attr)
 
     print("查询到的结果 : {}".format(answer_end))
-    end_process(answer_end)
+
     print("end {}   parse -- >".format(ques_type))
 
     return answer_end
@@ -119,7 +125,7 @@ def mult_constraints_two_reverse_process(num, question, ques_type):
     false_entity_list, true_entity_list = entity_normal_fun(question)
 
     if len(true_entity_list) != 2:
-        return "识别实体数量错误"
+        return "<识别实体数量错误>"
 
     false_entity = false_entity_list
     true_entity = true_entity_list
@@ -132,7 +138,7 @@ def mult_constraints_two_reverse_process(num, question, ques_type):
     print("通过gstore查询到的候选属性  ： {}".format(false_attr))
 
     if len(false_attr) == 0:
-        return "未查到合适的候选属性"
+        return "<未查到合适的候选属性>"
 
     true_attr = disambiguation_mult(question, false_entity, false_attr)
 
@@ -143,7 +149,7 @@ def mult_constraints_two_reverse_process(num, question, ques_type):
         true_attr)
 
     print("查询到的结果 : {}".format(answer_end))
-    end_process(answer_end)
+
     print("end {}   parse -- >".format(ques_type))
 
     return answer_end
@@ -155,7 +161,7 @@ def mult_constraints_one_reverse_simple_process(num, question, ques_type):
     false_entity_list, true_entity_list = entity_normal_fun(question)
 
     if len(true_entity_list) != 1:
-        return "识别实体数量错误"
+        return "<识别实体数量错误>"
 
     false_entity = false_entity_list[0]
     true_entity = true_entity_list[0]
@@ -167,7 +173,7 @@ def mult_constraints_one_reverse_simple_process(num, question, ques_type):
     print("通过gstore查询到的候选属性  ： {}".format(gstore_query_attr_end))
 
     if len(gstore_query_attr_end) == 0:
-        return "未查到合适的候选属性"
+        return "<未查到合适的候选属性>"
 
     true_attr = disambiguation_mult(question, [false_entity], gstore_query_attr_end)
 
@@ -176,7 +182,7 @@ def mult_constraints_one_reverse_simple_process(num, question, ques_type):
     answer_end, current_query = model.query_answer_mult_constraints_one_reverse_simple(true_entity, true_attr)
 
     print("查询到的结果 : {}".format(answer_end))
-    end_process(answer_end)
+
     print("end {}   parse -- >".format(ques_type))
     return answer_end
 
@@ -187,7 +193,7 @@ def mult_constraints_one_simple_process(num, question, ques_type):
     false_entity_list, true_entity_list = entity_normal_fun(question)
 
     if len(true_entity_list) != 1:
-        return "识别实体数量错误"
+        return "<识别实体数量错误>"
 
     false_entity = false_entity_list[0]
     true_entity = true_entity_list[0]
@@ -199,7 +205,7 @@ def mult_constraints_one_simple_process(num, question, ques_type):
     print("通过gstore查询到的候选属性  ： {}".format(false_attr))
 
     if len(false_attr) == 0:
-        return "未查到合适的候选属性"
+        return "<未查到合适的候选属性>"
 
     true_attr = disambiguation_mult(question, [false_entity], false_attr)
 
@@ -208,7 +214,7 @@ def mult_constraints_one_simple_process(num, question, ques_type):
     answer_end, current_query = model.query_answer_mult_constraints_one_simple(true_entity, true_attr)
 
     print("查询到的结果 : {}".format(answer_end))
-    end_process(answer_end)
+
     print("end {}   parse -- >".format(ques_type))
     return answer_end
 
@@ -219,7 +225,7 @@ def simple_res_reverse_process(num, question, ques_type):
     false_entity_list, true_entity_list = entity_normal_fun(question)
 
     if len(true_entity_list) != 1:
-        return "识别实体数量错误"
+        return "<识别实体数量错误>"
 
     false_entity = false_entity_list[0]
     true_entity = true_entity_list[0]
@@ -230,14 +236,14 @@ def simple_res_reverse_process(num, question, ques_type):
     print("通过gstore查询到的候选属性  ： {}".format(false_attr))
 
     if len(false_attr) == 0:
-        return "未查到合适的候选属性"
+        return "<未查到合适的候选属性>"
 
     true_attr = disambiguation(question, false_entity, false_attr)
     print("消歧后的属性  ： {}".format(true_attr))
 
     answer_end, current_query = model.query_answer_simple_res_reverse(true_entity, true_attr)
     print("查询到的结果 : {}".format(answer_end))
-    end_process(answer_end)
+
     print("end {}   parse -- >".format(ques_type))
     return answer_end
 
@@ -248,7 +254,7 @@ def simple_res_process(num, question, ques_type):
     false_entity_list, true_entity_list = entity_normal_fun(question)
 
     if len(true_entity_list) != 1:
-        return "识别实体数量错误"
+        return "<识别实体数量错误>"
 
     false_entity = false_entity_list[0]
     true_entity = true_entity_list[0]
@@ -259,7 +265,7 @@ def simple_res_process(num, question, ques_type):
     print("通过gstore查询到的候选属性  ： {}".format(false_attr))
 
     if len(false_attr) == 0:
-        return "未查到合适的候选属性"
+        return "<未查到合适的候选属性>"
 
     true_attr = disambiguation(question, false_entity, false_attr)
     print("消歧后的属性  ： {}".format(true_attr))
@@ -268,7 +274,7 @@ def simple_res_process(num, question, ques_type):
     print("查询到的结果 : {}".format(answer_end))
 
     print("end {}   parse -- >".format(ques_type))
-    end_process(answer_end)
+
     return answer_end
 
 
