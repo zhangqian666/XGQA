@@ -69,7 +69,7 @@ def mult_constraints_three_reverse_process(num, question, ques_type):
         true_attr)
 
     print("查询到的结果 : {}".format(answer_end))
-    end_process(num, question, answer_end, current_query)
+    end_process(answer_end)
     print("end {}   parse -- >".format(ques_type))
 
     return answer_end
@@ -105,7 +105,7 @@ def mult_constraints_two_reverse_simple_process(num, question, ques_type):
         true_attr)
 
     print("查询到的结果 : {}".format(answer_end))
-    end_process(num, question, answer_end, current_query)
+    end_process(answer_end)
     print("end {}   parse -- >".format(ques_type))
 
     return answer_end
@@ -141,7 +141,7 @@ def mult_constraints_two_reverse_process(num, question, ques_type):
         true_attr)
 
     print("查询到的结果 : {}".format(answer_end))
-    end_process(num, question, answer_end, current_query)
+    end_process(answer_end)
     print("end {}   parse -- >".format(ques_type))
 
     return answer_end
@@ -174,7 +174,7 @@ def mult_constraints_one_reverse_simple_process(num, question, ques_type):
     answer_end, current_query = model.query_answer_mult_constraints_one_reverse_simple(true_entity, true_attr)
 
     print("查询到的结果 : {}".format(answer_end))
-    end_process(num, question, answer_end, current_query)
+    end_process(answer_end)
     print("end {}   parse -- >".format(ques_type))
     return answer_end
 
@@ -206,7 +206,7 @@ def mult_constraints_one_simple_process(num, question, ques_type):
     answer_end, current_query = model.query_answer_mult_constraints_one_simple(true_entity, true_attr)
 
     print("查询到的结果 : {}".format(answer_end))
-    end_process(num, question, answer_end, current_query)
+    end_process(answer_end)
     print("end {}   parse -- >".format(ques_type))
     return answer_end
 
@@ -235,7 +235,7 @@ def simple_res_reverse_process(num, question, ques_type):
 
     answer_end, current_query = model.query_answer_simple_res_reverse(true_entity, true_attr)
     print("查询到的结果 : {}".format(answer_end))
-    end_process(num, question, answer_end, current_query)
+    end_process(answer_end)
     print("end {}   parse -- >".format(ques_type))
     return answer_end
 
@@ -266,7 +266,7 @@ def simple_res_process(num, question, ques_type):
     print("查询到的结果 : {}".format(answer_end))
 
     print("end {}   parse -- >".format(ques_type))
-    end_process(num, question, answer_end, current_query)
+    end_process(answer_end)
     return answer_end
 
 
@@ -294,6 +294,6 @@ def entity_normal_fun(question):
     return false_entity_list, true_entity_list
 
 
-def end_process(num, question, answer_end, current_query):
+def end_process(answer_end):
     with open("./answer.txt", "a+", encoding="utf-8") as f:
-        f.write("q{}:{}\n{}\n{}\n\n".format(num, question, current_query, answer_end))
+        f.write("{}\n\n".format(answer_end))

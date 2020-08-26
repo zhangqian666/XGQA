@@ -14,7 +14,7 @@ import json
 class Model():
 
     def make_query(self, query_content):
-        gstoreConnector = GstoreConnector("gstore9001.ngrok.apex.ac.cn", 6060, "root", "123456")
+        gstoreConnector = GstoreConnector("http://pkubase.gstore.cn/", 80, "root", "123456")
         return gstoreConnector.query("pku", "json", query_content)
 
     def parse_json_attr(self, json_str):
@@ -85,6 +85,11 @@ class Model():
             for res in results_bindings:
                 res1 = res['x']
                 res1 = res1['value']
+                res_type = res["type"]
+                if res_type == "literal":
+                    res1 = r'"%s"' % res1
+                elif res_type == "uri":
+                    res1 = r'<%s>"' % res1
                 if res1 not in end_ls:
                     end_ls.append(res1)
 
