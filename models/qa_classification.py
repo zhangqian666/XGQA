@@ -50,6 +50,8 @@ def mult_constraints_three_reverse_process(num, question, ques_type):
     false_entity = false_entity_list
     true_entity = true_entity_list
 
+    print("消歧后的实体  ： {}".format(true_entity))
+
     model = Model()
 
     false_attr = model.query_attribute_mult_constraints_three_reverse(
