@@ -109,21 +109,22 @@ def find_candi_entity(candi_entity):
     ner_end = frame_new.loc[frame_new["alias"] == candi_entity]
 
     ready_to_entity = []
-    if len(ner_end) > 0:
-        ready_to_entity.append(ner_end.iloc[0]["entity"])
-        # for i in range(len(ner_end)):
-        #     ready_to_entity.append(ner_end.iloc[i]["entity"])
+    
+    # if len(ner_end) > 0:
+    #     ready_to_entity.append(ner_end.iloc[0]["entity"])
+    #     # for i in range(len(ner_end)):
+    #     #     ready_to_entity.append(ner_end.iloc[i]["entity"])
+    # else:
+    model = Model()
+    attr_list = model.query_attribute_simple_src(candi_entity)
+    if len(attr_list) > 0:
+        ready_to_entity.append(candi_entity)
     else:
-        model = Model()
-        attr_list = model.query_attribute_simple_src(candi_entity)
+        attr_list = model.query_attribute_simple_res_reverse(candi_entity)
         if len(attr_list) > 0:
             ready_to_entity.append(candi_entity)
         else:
-            attr_list = model.query_attribute_simple_res_reverse(candi_entity)
-            if len(attr_list) > 0:
-                ready_to_entity.append(candi_entity)
-            else:
-                print("未找到候选实体")
+            print("未找到候选实体")
 
     return ready_to_entity
 
