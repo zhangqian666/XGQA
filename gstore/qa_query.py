@@ -84,15 +84,16 @@ class Model():
             # 定义一个list，将数据全部放到list中
             for res in results_bindings:
                 res1 = res['x']
-                res1 = res1['value']
-                res_type = res["type"]
-                if res_type == "literal":
-                    res1 = r'"%s"' % res1
-                elif res_type == "uri":
-                    res1 = r'<%s>"' % res1
+                res_type = res1["type"]
+                res_value = res1['value']
 
-                if res1 not in end_ls:
-                    end_ls.append(res1)
+                if res_type == "literal":
+                    res_value = r'"%s"' % res_value
+                elif res_type == "uri":
+                    res_value = r'<%s>"' % res_value
+
+                if res_value not in end_ls:
+                    end_ls.append(res_value)
 
 
         except:
