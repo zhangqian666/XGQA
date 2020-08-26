@@ -110,8 +110,9 @@ def find_candi_entity(candi_entity):
 
     ready_to_entity = []
     if len(ner_end) > 0:
-        for i in range(len(ner_end)):
-            ready_to_entity.append(ner_end.iloc[i]["entity"])
+        ready_to_entity.append(ner_end.iloc[0]["entity"])
+        # for i in range(len(ner_end)):
+        #     ready_to_entity.append(ner_end.iloc[i]["entity"])
     else:
         model = Model()
         attr_list = model.query_attribute_simple_src(candi_entity)
