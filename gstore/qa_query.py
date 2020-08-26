@@ -14,7 +14,7 @@ import json
 class Model():
 
     def make_query(self, query_content):
-        gstoreConnector = GstoreConnector("http://pkubase.gstore.cn/", 80, "endpoint", "123")
+        gstoreConnector = GstoreConnector("pkubase.gstore.cn", 80, "endpoint", "123")
         return gstoreConnector.query("pku", "json", query_content)
 
     def parse_json_attr(self, json_str):
@@ -90,6 +90,7 @@ class Model():
                     res1 = r'"%s"' % res1
                 elif res_type == "uri":
                     res1 = r'<%s>"' % res1
+
                 if res1 not in end_ls:
                     end_ls.append(res1)
 
