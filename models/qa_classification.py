@@ -24,6 +24,7 @@ def write_file_classification_process(num, question, ques_type):
     all_answer = classification_process(num, question, ques_type)
     print("write =========> {}".format(all_answer))
     end_process(all_answer)
+    return all_answer
 
 
 def classification_process(num, question, ques_type):
