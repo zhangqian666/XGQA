@@ -304,5 +304,5 @@ def entity_normal_fun(question):
 
 
 def end_process(answer_end):
-    with open("./answer2.txt", "a+", encoding="utf-8") as f:
-        f.write("{}\n\n".format(answer_end))
+    with open("./answer3.txt", "a+", encoding="utf-8") as f:
+        f.write("{}\n".format(answer_end))
