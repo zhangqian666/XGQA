@@ -2,9 +2,13 @@
 .gitignore
 .idea/
 assert/.DS_Store
-assert/pkubase-mention2ent.txt
+assert/valid_data/pkubase-mention2ent.txt
 assert/train_data/__init__.py
 assert/train_data/pkubase-complete2.txt
 assert/train_data/pkubase-complete2.txt.zip
 gstore/__pycache__/
 utils/__pycache__/
+.DS_Store
+assert/ner_train_data/.DS_Store
+assert/ner_train_data/train_all.txt
+models/__pycache__/
