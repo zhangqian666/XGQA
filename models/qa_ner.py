@@ -16,6 +16,7 @@ from pyltp import Segmentor, Postagger, NamedEntityRecognizer
 from bert_serving.client import BertClient as BertClient2
 import numpy as np
 import pandas as pd
+from gstore.qa_query import *
 
 entity_labels = ["B"]
 
@@ -112,7 +113,16 @@ def find_candi_entity(candi_entity):
         for i in range(len(ner_end)):
             ready_to_entity.append(ner_end.iloc[i]["entity"])
     else:
-        print("未找到候选实体")
+        model = Model()
+        attr_list = model.query_attribute_simple_src(candi_entity)
+        if len(attr_list) > 0:
+            ready_to_entity.append(candi_entity)
+        else:
+            attr_list = model.query_attribute_simple_res_reverse(candi_entity)
+            if len(attr_list) > 0:
+                ready_to_entity.append(candi_entity)
+            else:
+                print("未找到候选实体")
 
     return ready_to_entity
 
