@@ -90,7 +90,7 @@ class Model():
                 if res_type == "literal":
                     res_value = r'"%s"' % res_value
                 elif res_type == "uri":
-                    res_value = r'<%s>"' % res_value
+                    res_value = r'<%s>' % res_value
 
                 if res_value not in end_ls:
                     end_ls.append(res_value)
