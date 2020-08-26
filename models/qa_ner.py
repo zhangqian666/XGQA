@@ -113,6 +113,8 @@ def find_candi_entity(candi_entity):
         tmp_ner = ner_end.iloc[0]["entity"]
         if tmp_ner.endswith("（医疗百科）"):
             ready_to_entity.append(candi_entity)
+        else:
+            ready_to_entity.append(tmp_ner)
         # for i in range(len(ner_end)):
         #     ready_to_entity.append(ner_end.iloc[i]["entity"])
     else:
