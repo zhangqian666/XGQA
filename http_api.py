@@ -11,7 +11,7 @@ from flask import jsonify, Flask, request
 from models.qa_classification import *
 
 app = Flask(__name__)
-app.config['JSON_AS_ASCII'] = False
+app.config['JSONIFY_MIMETYPE'] = "application/json;charset=utf-8"
 
 
 @app.route('/predict')
