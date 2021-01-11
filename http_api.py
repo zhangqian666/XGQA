@@ -18,8 +18,7 @@ def predict():
     question = request.args.get("question")
     # question = "电影《沉默的羔羊》是一部什么类型的电影？"
     classification = question_classif(question)
-    print(classification)
-    end_data = classification_process("1", question, classification)
+    end_data = simple_res_process("1", question, classification)
     return jsonify(result=end_data)
 
 
