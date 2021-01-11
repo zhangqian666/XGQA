@@ -21,7 +21,14 @@ def predict():
         return jsonify(data="问题不能为空")
     # question = "电影《沉默的羔羊》是一部什么类型的电影？"
     classification = question_classif(question)
-    end_data = classification_process("1", question, classification)
+    answer_end, false_entity, true_entity, false_attr, true_attr = simple_res_process("1", question, classification)
+    end_data = {
+        "answer_end": answer_end,
+        "false_entity": false_entity,
+        "true_entity": true_entity,
+        "false_attr": false_attr,
+        "true_attr": true_attr
+    }
     return jsonify(data=end_data)
 
 

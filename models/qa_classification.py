@@ -276,7 +276,7 @@ def simple_res_process(num, question, ques_type):
 
     print("end {}   parse -- >".format(ques_type))
 
-    return answer_end
+    return answer_end, false_entity, true_entity, false_attr, true_attr
 
 
 def entity_normal_fun(question):
@@ -297,7 +297,7 @@ def entity_normal_fun(question):
         # true_entity = disambiguation_entity(question, normal_query_entity_end)
         # print("消歧后的实体  ： {}".format(true_entity))
 
-        true_entity = disambiguation_http(question,false_entity)
+        true_entity = disambiguation_http(question, false_entity)
 
         true_entity_list.append(true_entity)
         false_entity_list.append(false_entity)
