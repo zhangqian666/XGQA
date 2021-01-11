@@ -288,14 +288,16 @@ def entity_normal_fun(question):
 
     for ner in entity_list:
         false_entity = ner[1]
-        normal_query_entity_end = find_candi_entity(false_entity)
-        if len(normal_query_entity_end) == 0:
-            continue
+        # normal_query_entity_end = find_candi_entity(false_entity)
+        # if len(normal_query_entity_end) == 0:
+        #     continue
+        #
+        # print("通过字典查询到的候选实体  ： {}".format(normal_query_entity_end))
+        #
+        # true_entity = disambiguation_entity(question, normal_query_entity_end)
+        # print("消歧后的实体  ： {}".format(true_entity))
 
-        print("通过字典查询到的候选实体  ： {}".format(normal_query_entity_end))
-
-        true_entity = disambiguation_entity(question, normal_query_entity_end)
-        print("消歧后的实体  ： {}".format(true_entity))
+        true_entity = disambiguation_http(question,false_entity)
 
         true_entity_list.append(true_entity)
         false_entity_list.append(false_entity)

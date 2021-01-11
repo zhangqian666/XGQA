@@ -9,6 +9,8 @@
 """
 
 import time
+
+import requests
 from bert_base.client import BertClient
 import os
 import jieba
@@ -196,6 +198,14 @@ def disambiguation(question, entity, data_list):
     print(sorted_end)
     end_attribute = sorted_end[0][1]
     return end_attribute
+
+
+def disambiguation_http(question, entity):
+    url = 'http://127.0.0.1:5000/predict'
+    data = {'question': question,
+            'pre_mention': entity}
+    r = requests.get(url, params=data)  # 发get请求
+    return r.json()["result"][0][0]
 
 
 def disambiguation_mult(question, entity_list, data_list):
