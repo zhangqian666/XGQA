@@ -16,7 +16,9 @@ app.config['JSONIFY_MIMETYPE'] = "application/json;charset=utf-8"
 
 @app.route('/predict', methods=["POST", "GET"])
 def predict():
-    question = request.args.get("question")
+    question = request.values.get("message")
+    if (question is None) or (question is ""):
+        return jsonify(data="问题不能为空")
     # question = "电影《沉默的羔羊》是一部什么类型的电影？"
     classification = question_classif(question)
     end_data = classification_process("1", question, classification)
