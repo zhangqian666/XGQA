@@ -7,7 +7,7 @@
 
 @Created on: 2021-01-11 20:14
 """
-from flask import jsonify, Flask, request
+from flask import jsonify, Flask, request, render_template
 from models.qa_classification import *
 
 app = Flask(__name__)
@@ -20,7 +20,12 @@ def predict():
     # question = "电影《沉默的羔羊》是一部什么类型的电影？"
     classification = question_classif(question)
     end_data = classification_process("1", question, classification)
-    return jsonify(result=end_data)
+    return jsonify(data=end_data)
+
+
+@app.route('/', methods=["GET"])
+def index():
+    return render_template("index.html")
 
 
 if __name__ == '__main__':
