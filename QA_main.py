@@ -19,7 +19,6 @@ import pandas as pd
 if __name__ == "__main__":
     questions = get_question_list(question_url)
 
-
     for question in questions:
         classification = question_classif(question)
 
