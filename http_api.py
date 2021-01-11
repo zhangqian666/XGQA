@@ -14,7 +14,7 @@ app = Flask(__name__)
 app.config['JSONIFY_MIMETYPE'] = "application/json;charset=utf-8"
 
 
-@app.route('/predict')
+@app.route('/predict', methods=["POST", "GET"])
 def predict():
     question = request.args.get("question")
     # question = "电影《沉默的羔羊》是一部什么类型的电影？"
