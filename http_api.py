@@ -21,7 +21,7 @@ def predict():
         return jsonify(data="问题不能为空")
     # question = "电影《沉默的羔羊》是一部什么类型的电影？"
     classification = question_classif(question)
-    answer_end, false_entity, true_entity, false_attr, true_attr = simple_res_process("1", question, classification)
+    answer_end, false_entity, true_entity, false_attr, true_attr = classification_process("1", question, classification)
     end_data = "命名实体识别结果:{};\n" \
                "实体消除歧义结果:{};\n" \
                "获取到相关属性:{};\n" \

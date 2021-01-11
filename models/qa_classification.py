@@ -81,7 +81,7 @@ def mult_constraints_three_reverse_process(num, question, ques_type):
 
     print("end {}   parse -- >".format(ques_type))
 
-    return answer_end
+    return answer_end, false_entity, true_entity, false_attr, true_attr
 
 
 def mult_constraints_two_reverse_simple_process(num, question, ques_type):
@@ -117,7 +117,7 @@ def mult_constraints_two_reverse_simple_process(num, question, ques_type):
 
     print("end {}   parse -- >".format(ques_type))
 
-    return answer_end
+    return answer_end, false_entity, true_entity, false_attr, true_attr
 
 
 def mult_constraints_two_reverse_process(num, question, ques_type):
@@ -153,7 +153,7 @@ def mult_constraints_two_reverse_process(num, question, ques_type):
 
     print("end {}   parse -- >".format(ques_type))
 
-    return answer_end
+    return answer_end, false_entity, true_entity, false_attr, true_attr
 
 
 def mult_constraints_one_reverse_simple_process(num, question, ques_type):
@@ -185,7 +185,7 @@ def mult_constraints_one_reverse_simple_process(num, question, ques_type):
     print("查询到的结果 : {}".format(answer_end))
 
     print("end {}   parse -- >".format(ques_type))
-    return answer_end
+    return answer_end, false_entity, true_entity, false_attr, true_attr
 
 
 def mult_constraints_one_simple_process(num, question, ques_type):
@@ -217,7 +217,7 @@ def mult_constraints_one_simple_process(num, question, ques_type):
     print("查询到的结果 : {}".format(answer_end))
 
     print("end {}   parse -- >".format(ques_type))
-    return answer_end
+    return answer_end, false_entity, true_entity, false_attr, true_attr
 
 
 def simple_res_reverse_process(num, question, ques_type):
@@ -246,7 +246,7 @@ def simple_res_reverse_process(num, question, ques_type):
     print("查询到的结果 : {}".format(answer_end))
 
     print("end {}   parse -- >".format(ques_type))
-    return answer_end
+    return answer_end, false_entity, true_entity, false_attr, true_attr
 
 
 def simple_res_process(num, question, ques_type):
